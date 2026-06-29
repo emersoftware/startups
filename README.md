@@ -1,8 +1,11 @@
-# Chile, Startups — trayectorias del portafolio Platanus
+# Chile, Startups — trayectorias de startups chilenas
 
-Dataset + visualización de **cómo evolucionaron las startups del portafolio de
-[Platanus Ventures](https://platan.us)**: pivots de producto, rebrands, rondas de
-inversión, adquisiciones y cierres, datados y con fuente.
+Dataset + visualización de **cómo evolucionaron las startups chilenas**: pivots de
+producto, rebrands, rondas de inversión, adquisiciones y cierres, datados y con fuente.
+
+> Hoy parte sembrado con el portafolio de [Platanus Ventures](https://platan.us) y se irá
+> ampliando a startups *bootstrapped* y de Start-Up Chile. El hilo común no es un fondo: son
+> **startups chilenas**.
 
 Agrega **información pública de negocios** (sitios de las empresas, prensa, perfiles de
 aceleradora, registros) para análisis de ecosistema. No publica datos personales ni privados.
