@@ -1,0 +1,9 @@
+{
+  // Static-asset deploy for the Astro build (web/dist).
+  // Used by Cloudflare Workers Builds: `bunx astro build` then `npx wrangler deploy`.
+  "name": "startups",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
