@@ -53,8 +53,8 @@ const startups = data.startups.map((s: any) => {
 const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"],["inactiva","Sin señal"]];
 const tagChips = [["pivot","Pivotearon"],["capital","Levantaron capital"]];
 
-const pageTitle = "Chile, Startups — trayectorias del portafolio Platanus";
-const description = "Cómo evolucionaron las 82 startups del portafolio de Platanus Ventures: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres — datados y con fuente.";
+const pageTitle = "Chile, Startups — trayectorias de startups chilenas";
+const description = "Cómo evolucionaron las startups chilenas: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres — datados y con fuente.";
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL("/og.png", Astro.site).href;
 ---
@@ -78,7 +78,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Chile, Startups — trayectorias del portafolio Platanus" />
+  <meta property="og:image:alt" content="Chile, Startups — cómo evolucionaron las startups chilenas" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={pageTitle} />
