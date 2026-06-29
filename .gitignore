@@ -2,6 +2,10 @@
 node_modules/
 .venv/
 
+# ── Downloaded skills ──
+# Re-fetched from scraper/skills-lock.json; only the lockfile is versioned.
+scraper/.claude/skills/
+
 # ── Python artifacts ──
 __pycache__/
 *.py[cod]
