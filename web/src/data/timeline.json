@@ -1,0 +1,2441 @@
+{
+  "meta": {
+    "title": "Chile, Startups",
+    "count": 82,
+    "preliminary": false,
+    "note": "Datos verificados. Cada hito enlaza a su fuente.",
+    "range": {
+      "start": 2020.0,
+      "end": 2026.5
+    },
+    "ticks": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "startups": [
+    {
+      "name": "Cardda",
+      "domain": "cardda.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2020-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Cardda entró a una de las primeras generaciones de Platanus Ventures a comienzos de 2020 con su inversión estándar de la época (~US$100K), inicialmente enfocada en la contratación de servicios digitales con factura local.",
+          "source": "Pitchbook",
+          "basis": "batch 2020-1, Platanus",
+          "source_url": "https://platan.us/startups/cardda"
+        },
+        {
+          "type": "pivot",
+          "date": "2020-10",
+          "title": "De Rentz a Cardda",
+          "prose": "El equipo venía de Rentz (arriendo de maquinaria pesada, rentz.cl); a fines de 2020 lanzó Cardda, contratación de servicios online con factura para empresas.",
+          "quote": "",
+          "source": "cardda.com · oct 2020",
+          "source_url": "https://web.archive.org/web/20201025164629/http://cardda.com/",
+          "wayback_url": "https://web.archive.org/web/20201025164629/http://cardda.com/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2021-05",
+          "title": "De contratar servicios a tarjetas para startups",
+          "prose": "Ya como Cardda (contratar servicios SaaS para empresas desde un solo lugar), a mediados de 2021 viró a emitir tarjetas virtuales al instante para que las startups controlaran sus pagos y suscripciones.",
+          "quote": "",
+          "source": "cardda.com · may 2021",
+          "source_url": "https://web.archive.org/web/20210512145505/http://cardda.com/",
+          "wayback_url": "https://web.archive.org/web/20210512145505/http://cardda.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2021-06",
+          "title": "Financiamiento acumulado ~US$455K con apoyo externo",
+          "prose": "Hacia 2021 su financiamiento acumulado alcanzó cerca de US$455K, con participación de Y Combinator y Start-Up Chile además de Platanus, sumando respaldo más allá del inversión inicial.",
+          "source": "Pitchbook",
+          "basis": "monto acumulado reportado",
+          "source_url": "https://pitchbook.com/profiles/company/489558-61"
+        }
+      ],
+      "aliases": [
+        "Rentz"
+      ],
+      "search_blob": "cardda cardda cardda cardda rentz rentz.cl cardda.com"
+    },
+    {
+      "name": "Reversso",
+      "domain": "reversso.com",
+      "status": "activa",
+      "tag": "E-commerce",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2020-03",
+          "title": "Pre-seed con Platanus",
+          "prose": "Reversso entró a Platanus Ventures en 2020 con una ronda pre-seed de US$160.000 de la aceleradora, para simplificar los cambios y devoluciones de las tiendas online.",
+          "source": "Contxto",
+          "basis": "batch 2020-1; inversión Platanus US$160K",
+          "source_url": "https://platan.us/startups/reversso"
+        },
+        {
+          "type": "capital",
+          "date": "2022-08",
+          "title": "Seed de US$1,1M liderada por Genesis Ventures",
+          "prose": "Levantó una ronda seed de US$1,1 millón liderada por Genesis Ventures para escalar su solución de devoluciones y cambios.",
+          "source": "Contxto",
+          "basis": "ronda seed con fondo externo",
+          "source_url": "https://contxto.com/en/news/reversso-raises-us1-1-million-to-improve-returns-and-exchanges-at-online-stores/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "reversso reversso reversso reversso reversso.com reversso.cl"
+    },
+    {
+      "name": "Fintoc",
+      "domain": "fintoc.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2020-03",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Fintoc se incorporó a una de las primeras generaciones de Platanus Ventures (2020-1), recibiendo el inversión estándar de aceleración (~US$100K) para construir su infraestructura de transferencias y pagos cuenta a cuenta en Latinoamérica.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2020-1",
+          "source_url": "https://platan.us/startups/fintoc"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Ronda Seed US$3M",
+          "prose": "Levantó una ronda semilla de US$3 millones liderada por Monashees, para acelerar el desarrollo de su API de pagos en Chile y México.",
+          "source": "LatamList",
+          "basis": "Seed; lead Monashees",
+          "source_url": "https://latamlist.com/fintoc-fintech-raises-3m-seed-round/"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-02",
+          "title": "De API de datos bancarios a pagos",
+          "prose": "Fintoc partió como una API de open banking para conectar cuentas y leer balances y movimientos. A inicios de 2023 sumó su negocio principal: la iniciación de pagos —que los usuarios transfieran sin salir de la app del cliente—, más débito directo y conciliación bancaria automática.",
+          "quote": "",
+          "source": "fintoc.com · feb 2023",
+          "source_url": "https://web.archive.org/web/20230206133729/http://fintoc.com/",
+          "wayback_url": "https://web.archive.org/web/20230206133729/http://fintoc.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2024-04",
+          "title": "Serie A US$7M",
+          "prose": "Cerró una Serie A de US$7 millones con Monashees y Propel Venture Partners para expandir sus pagos cuenta a cuenta en Chile y México.",
+          "source": "TechCrunch",
+          "basis": "Series A; lead Monashees, Propel",
+          "source_url": "https://techcrunch.com/2024/04/25/fintoc-a2a-payments-chile-mexico/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "fintoc fintoc fintoc fintoc fintoc.com fintoc.cl fintoc.mx"
+    },
+    {
+      "name": "Milla",
+      "domain": "milla.travel",
+      "status": "inactiva",
+      "tag": "Travel",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2020-03",
+          "title": "Entra a Platanus (batch 2020-1)",
+          "prose": "Milla entró al batch 2020-1 de Platanus Ventures, que la respaldó con un inversión Seed de US$80K, para gestionar los viajes corporativos de los equipos.",
+          "source": "CB Insights",
+          "basis": "batch 2020-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/milla"
+        },
+        {
+          "type": "inactivo",
+          "date": "2025-10",
+          "title": "Sin señal reciente",
+          "prose": "Al parecer no hay actividad reciente: el sitio dejó de actualizarse y el dominio cayó. Pudo haberse cerrado silenciosamente, sin anuncio formal.",
+          "quote": "",
+          "source": "Última señal · oct 2025",
+          "source_url": "https://web.archive.org/web/20251005150358/http://milla.travel/",
+          "basis": "Inferido: sin noticia de cierre. La fecha es la última señal de actividad registrada del sitio; no hay confirmación de cierre."
+        }
+      ],
+      "aliases": [
+        "Milla Travel"
+      ],
+      "search_blob": "milla milla milla milla travel milla milla.travel"
+    },
+    {
+      "name": "Cacttus",
+      "domain": "cacttus.cl",
+      "status": "activa",
+      "tag": "Insurtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-03",
+          "title": "Entra a Platanus (batch 2021-1)",
+          "prose": "Entró al batch 2021-1 de Platanus Ventures con el inversión estándar del acelerador (~US$100.000), para ofrecer seguros basados en software para mascotas, autos y hogares en Latinoamérica.",
+          "source": "Platanus Ventures",
+          "basis": "Inversión estándar del cohorte 2021-1.",
+          "source_url": "https://platan.us/startups/cacttus"
+        },
+        {
+          "type": "capital",
+          "date": "2022-05",
+          "title": "Ronda Seed de US$228K",
+          "prose": "Cerró una ronda Seed de US$228.000 con Platanus Ventures y los ángeles Jaime Arrieta (Buk) e Ian Lee (Examedi), y lanzó su primer seguro al mercado.",
+          "source": "Diario Financiero · may 2022",
+          "basis": "Ronda Seed reportada por Diario Financiero.",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/cacttus-cierra-ronda-con-platanus-ventures-y-lanza-el-primer-seguro"
+        },
+        {
+          "type": "pivot",
+          "date": "2022-10",
+          "title": "De seguro digital a seguro de mascotas",
+          "prose": "Cacttus partió como un seguro digital de contratación instantánea (cotizas y te suscribes en segundos, con posventa rápida). Se enfocó en un nicho: el seguro de salud para mascotas, con reembolsos en minutos (y seguro de auto en camino).",
+          "quote": "",
+          "source": "cacttus.cl · oct 2022",
+          "source_url": "https://web.archive.org/web/20221001035514/http://cacttus.cl/",
+          "wayback_url": "https://web.archive.org/web/20221001035514/http://cacttus.cl/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "cacttus cacttus cacttus cacttus cacttus.cl app.cacttus.cl"
+    },
+    {
+      "name": "Con Yappa",
+      "domain": "conyappa.cl",
+      "status": "inactiva",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró al portafolio de Platanus Ventures en el primer batch de 2021 con el inversión estándar del acelerador (~US$100K), lanzando una cuenta de ahorro que sorteaba premios entre sus usuarios.",
+          "source": "Crunchbase",
+          "basis": "Batch 2021-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/con-yappa"
+        },
+        {
+          "type": "inactivo",
+          "date": "2021-07",
+          "title": "Sin señal reciente",
+          "prose": "Al parecer no hay actividad reciente: el sitio dejó de actualizarse y el dominio cayó. Pudo haberse cerrado silenciosamente, sin anuncio formal.",
+          "quote": "",
+          "source": "Última señal · jul 2021",
+          "source_url": "https://web.archive.org/web/20210725090519/http://conyappa.cl/",
+          "basis": "Inferido: sin noticia de cierre. La fecha es la última señal de actividad registrada del sitio; no hay confirmación de cierre."
+        }
+      ],
+      "aliases": [],
+      "search_blob": "con yappa con-yappa con yappa con-yappa conyappa.cl"
+    },
+    {
+      "name": "Examedi",
+      "domain": "examedi.cl",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-03",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Examedi se sumó a la generación 2021-1 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$100K) para construir su 'súper app' de salud a domicilio en Latinoamérica.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2021-1",
+          "source_url": "https://platan.us/startups/examedi"
+        },
+        {
+          "type": "capital",
+          "date": "2021-09",
+          "title": "Ronda Seed US$3,5M",
+          "prose": "Levantó una ronda semilla de US$3,5 millones para escalar sus servicios de toma de exámenes y atención de salud a domicilio.",
+          "source": "LatamList",
+          "basis": "Seed US$3,5M",
+          "source_url": "https://latamlist.com/chilean-startup-examedi-raises-17m-to-improve-latams-relationship-with-healthcare/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-06",
+          "title": "Serie A US$17M",
+          "prose": "Cerró una Serie A de US$17 millones liderada por General Catalyst, una de las rondas más grandes para una healthtech chilena de su etapa.",
+          "source": "Global Private Capital",
+          "basis": "Series A; lead General Catalyst",
+          "source_url": "https://www.globalprivatecapital.org/newsroom/general-catalyst-leads-usd17m-series-a-for-chiles-examedi/"
+        },
+        {
+          "type": "capital",
+          "date": "2025-11",
+          "title": "Ronda de recompra US$750K (Platanus)",
+          "prose": "Concretó una ronda de US$750 mil liderada por Platanus Ventures, enmarcada en una recompra y reestructuración de la propiedad de la compañía más que en una ronda de crecimiento.",
+          "source": "LatamList",
+          "basis": "Recompra/reestructuración; lead Platanus",
+          "source_url": "https://latamlist.com/examedi-raises-750k-in-a-round-led-by-platanus/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "examedi examedi examedi examedi examedi.com examedi.cl examedi.mx examedi.co"
+    },
+    {
+      "name": "Toku",
+      "domain": "trytoku.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-03",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Toku entró a la generación 2021-1 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$100K) para desarrollar su plataforma de cobros y pagos para empresas de suscripción en Latinoamérica.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2021-1",
+          "source_url": "https://platan.us/startups/toku"
+        },
+        {
+          "type": "capital",
+          "date": "2023-03",
+          "title": "Ronda Seed US$7,15M",
+          "prose": "Levantó una ronda semilla de US$7,15 millones para escalar su infraestructura de pagos recurrentes en la región.",
+          "source": "PR Newswire",
+          "basis": "Seed US$7,15M",
+          "source_url": "https://www.prnewswire.com/news-releases/toku-raises-usd-7-15-million-in-seed-round-to-revolutionize-subscription-payments-in-latam-301778995.html"
+        },
+        {
+          "type": "capital",
+          "date": "2024-04",
+          "title": "Serie A US$9,3M",
+          "prose": "Cerró una Serie A de US$9,3 millones liderada por Gradient Ventures, el fondo de inteligencia artificial de Google.",
+          "source": "The SaaS News",
+          "basis": "Series A; lead Gradient Ventures",
+          "source_url": "https://www.thesaasnews.com/news/toku-raises-9-3-million-in-series-a"
+        },
+        {
+          "type": "capital",
+          "date": "2025-04",
+          "title": "Extensión Serie A US$48M",
+          "prose": "Sumó una extensión de Serie A de US$48 millones liderada por Oak HC/FT para expandir su plataforma de pagos en Latinoamérica.",
+          "source": "LatamList",
+          "basis": "Series A extension; lead Oak HC/FT",
+          "source_url": "https://latamlist.com/toku-raises-48m-series-a-extension-to-expand-payments-platform/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "toku toku toku toku trytoku.com"
+    },
+    {
+      "name": "Unifyr",
+      "domain": "unifyr.ai",
+      "status": "cerrada",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-09",
+          "title": "Entra a Platanus como Payhaus (batch 2021-2)",
+          "prose": "Entró al batch 2021-2 de Platanus Ventures como Payhaus —enfocada en salario devengado— con el inversión estándar del acelerador para esa cohorte (~US$100.000).",
+          "source": "Platanus Ventures",
+          "basis": "Rondas no registradas; inversión estándar del cohorte 2021-2.",
+          "source_url": "https://platan.us/startups/payhaus"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-05",
+          "title": "De Payhaus a Unifyr",
+          "prose": "Payhaus (salario devengado, payhaus.app) pivoteó a analítica y se renombró Unifyr (unifyr.ai) en mayo 2023 antes de cesar operaciones.",
+          "quote": "",
+          "source": "unifyr.ai · may 2023",
+          "source_url": "https://web.archive.org/web/20230522051534/http://unifyr.ai/",
+          "wayback_url": "https://web.archive.org/web/20230522051534/http://unifyr.ai/",
+          "basis": ""
+        },
+        {
+          "type": "cierre",
+          "date": "2024-06",
+          "title": "Queda inactiva (deadpooled)",
+          "prose": "Quedó inactiva: Tracxn marca a unifyr.ai como 'deadpooled' (no debe confundirse con unifyr.com, una empresa distinta que levantó US$20M de Investcorp).",
+          "source": "Tracxn",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "https://tracxn.com/d/companies/unifyr/__UDuLITfTkRuSxY5O5OI_Ychh1k5bUb9hFK8_tLBx6q4"
+        }
+      ],
+      "aliases": [
+        "Payhaus"
+      ],
+      "search_blob": "unifyr payhaus unifyr payhaus payhaus payhaus.com payhaus.app unifyr.ai"
+    },
+    {
+      "name": "Salduu",
+      "domain": "salduu.com",
+      "status": "activa",
+      "tag": "E-commerce",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-09",
+          "title": "Entra a Platanus (batch 2021-2)",
+          "prose": "Entró al batch 2021-2 de Platanus Ventures con el inversión estándar del acelerador (~US$100.000) y la coinversión de 500 Global, ofreciendo una plataforma todo-en-uno para vender productos y servicios digitales.",
+          "source": "Crunchbase",
+          "basis": "Inversión de aceleradora con 500 Global como coinversor; Crunchbase.",
+          "source_url": "https://platan.us/startups/salduu"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-05",
+          "title": "De Profe.Social a Salduu",
+          "prose": "Antes era Profe.Social (plataforma para profesores); el mismo equipo (CEO Angelo López Espíndola, Profe Social SpA) se relanzó como Salduu: plataforma para vender productos y servicios digitales.",
+          "quote": "",
+          "source": "Platanus · may 2024",
+          "source_url": "https://web.archive.org/web/20240527010143/https://platan.us/startups/salduu",
+          "wayback_url": "https://web.archive.org/web/20240527010143/https://platan.us/startups/salduu",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Profe Social"
+      ],
+      "search_blob": "salduu salduu profe social profe.social salduu salduu salduu.com"
+    },
+    {
+      "name": "Crecy",
+      "domain": "crecy.io",
+      "status": "cerrada",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-09",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el segundo batch de 2021 con el inversión estándar del acelerador (~US$100K), ofreciendo préstamos garantizados con colateral en criptomonedas en México.",
+          "source": "Crunchbase",
+          "basis": "Batch 2021-2 mapeado a septiembre.",
+          "source_url": "https://platan.us/startups/crecy"
+        },
+        {
+          "type": "capital",
+          "date": "2022-06",
+          "title": "Pre-Seed US$633K",
+          "prose": "Levantó una ronda Pre-Seed de US$633K liderada por Mucker Capital, con participación de Platanus Ventures, 500 Global LatAm y CAPEM.",
+          "source": "Crunchbase",
+          "basis": "Ronda solo con año (2022) mapeada a junio.",
+          "source_url": "https://www.crunchbase.com/organization/crecy"
+        },
+        {
+          "type": "cierre",
+          "date": "2023-06",
+          "title": "Cierre",
+          "prose": "Interrumpió operaciones; su dominio quedó inactivo o en venta.",
+          "source": "Descubre.vc",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "https://www.descubre.vc/crecy"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "crecy crecy crecy crecy crecy.io"
+    },
+    {
+      "name": "Plutto",
+      "domain": "getplutto.com",
+      "status": "activa",
+      "tag": "Regtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-09",
+          "title": "Entra a Platanus (batch 2021-2)",
+          "prose": "Plutto entró a Platanus Ventures en el batch 2021-2 con el inversión inicial del programa (cerca de US$100K), construyendo un servicio de background check (KYB) de empresas.",
+          "source": "Platanus",
+          "basis": "Batch 2021-2 Platanus; inversión inicial ~US$100K.",
+          "source_url": "https://platan.us/startups/plutto"
+        },
+        {
+          "type": "capital",
+          "date": "2022-06",
+          "title": "Ronda pre-seed US$500K",
+          "prose": "Plutto, destacada como la única chilena en Y Combinator, cerró una ronda pre-seed de US$500K para escalar su verificación de empresas.",
+          "source": "DF MAS",
+          "basis": "Ronda US$500K reportada en 2022; mes aproximado.",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/plutto-la-unica-chilena-en-y-combinator-cierra-ronda-por-us-500-mil"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-06",
+          "title": "De KYB a riesgo de terceros",
+          "prose": "Plutto amplió de background-check de empresas (KYB) a una plataforma de evaluación y gestión de riesgo de terceros / compliance.",
+          "quote": "",
+          "source": "getplutto.com · jun 2025",
+          "source_url": "https://web.archive.org/web/20250623100918/http://getplutto.com/",
+          "wayback_url": "https://web.archive.org/web/20250623100918/http://getplutto.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "plutto plutto plutto plutto plutto.cl getplutto.com plutto.ai"
+    },
+    {
+      "name": "eSponsor",
+      "domain": "esponsor.com",
+      "status": "activa",
+      "tag": "Creator Economy",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2021-09",
+          "title": "Entra a Platanus (batch 2021-2)",
+          "prose": "eSponsor entró a Platanus Ventures en el batch 2021-2 con un inversión inicial cercano a US$50K, para permitir a creadores de contenido y talentos lanzar su ecommerce.",
+          "source": "DF MAS",
+          "basis": "Batch 2021-2 Platanus; inversión ~US$50K reportado.",
+          "source_url": "https://platan.us/startups/esponsor"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "esponsor esponsor esponsor esponsor esponsor.com blog.esponsor.com try.esponsor.com"
+    },
+    {
+      "name": "Morfy",
+      "domain": "morfy.app",
+      "status": "activa",
+      "tag": "Foodtech",
+      "events": [
+        {
+          "type": "pivot",
+          "date": "2021-12",
+          "title": "De El Club del Bajón a Morfy",
+          "prose": "Nació como 'El Club del Bajón' (clubdelbajon.com, publicidad/gastronomía); rebranding a Morfy, la app de recomendaciones gastronómicas, a fines de 2021.",
+          "quote": "",
+          "source": "morfy.app · dic 2021",
+          "source_url": "https://web.archive.org/web/20211203221123/http://morfy.app/",
+          "wayback_url": "https://web.archive.org/web/20211203221123/http://morfy.app/",
+          "basis": ""
+        },
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Entró al batch 2023-2 de Platanus Ventures en octubre de 2023 con US$100.000, con la ambición de ser un 'Google Maps de la gastronomía' 100x para Latinoamérica y expandirse a México.",
+          "source": "Contxto · oct 2023",
+          "basis": "Inversión de aceleradora US$100K; Contxto.",
+          "source_url": "https://platan.us/startups/morfy"
+        },
+        {
+          "type": "capital",
+          "date": "2024-08",
+          "title": "Ronda Seed de US$500K (Mr Pink)",
+          "prose": "Levantó una ronda Seed de US$500.000 liderada por Mr Pink, su primer capital relevante más allá del inversión del acelerador.",
+          "source": "Totalmedios · ago 2024",
+          "basis": "Ronda Seed reportada por Totalmedios.",
+          "source_url": "https://www.totalmedios.com/nota/57267/la-app-de-gastronomia-morfy-levanto-usd-500000-dolares-en-una-ronda-de-capital-de-riesgo"
+        }
+      ],
+      "aliases": [
+        "El Club del Bajon"
+      ],
+      "search_blob": "morfy morfy morfy ex-club del bajón (ig) morfy el club del bajon clubdelbajon.com elclubdelbajon.com morfy.app"
+    },
+    {
+      "name": "Watermelon Tools",
+      "domain": "watermelontools.com",
+      "status": "cerrada",
+      "tag": "Dev Tools",
+      "events": [
+        {
+          "type": "pivot",
+          "date": "2022-01",
+          "title": "De cultura de equipo a entender el código",
+          "prose": "Watermelon partió como una app de Slack para conectar compañeros por intereses en común y mejorar la cultura de los equipos remotos. A inicios de 2022 pivoteó por completo a una herramienta para developers: dentro de VS Code muestra el contexto histórico de cualquier trozo de código —rastreando GitHub y Slack— y responde dudas en lenguaje simple.",
+          "quote": "",
+          "source": "watermelon.tools · ene 2022",
+          "source_url": "https://web.archive.org/web/20220129080924/http://watermelon.tools/",
+          "wayback_url": "https://web.archive.org/web/20220129080924/http://watermelon.tools/",
+          "basis": ""
+        },
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Startup colombiana entra a Platanus (batch 2022-1)",
+          "prose": "Startup colombiana que entró al batch 2022-1 de Platanus Ventures con el inversión estándar del acelerador (~US$100.000), desarrollando un copiloto open-source para revisión de código.",
+          "source": "Platanus Ventures",
+          "basis": "Inversión estándar del cohorte 2022-1.",
+          "source_url": "https://platan.us/startups/watermelon-tools"
+        },
+        {
+          "type": "capital",
+          "date": "2023-02",
+          "title": "Pre-Seed de US$120K (Techstars)",
+          "prose": "Sumó una ronda Pre-Seed de US$120.000 liderada por Techstars, tras pasar también por ese acelerador.",
+          "source": "Crunchbase · feb 2023",
+          "basis": "Ronda Techstars registrada en Crunchbase.",
+          "source_url": "https://www.crunchbase.com/funding_round/watermelon-3d11-pre-seed--11d3a32d"
+        },
+        {
+          "type": "cierre",
+          "date": "2024-03",
+          "title": "Cierre",
+          "prose": "Anunció el sunset del servicio y archivó sus repositorios open-source hacia marzo de 2024.",
+          "source": "GitHub / YC",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "https://github.com/watermelontools/watermelon"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "watermelon tools watermelon-tools watermelon tools watermelon-tools watermelon.tools watermelontools.com app.watermelontools.com docs.watermelontools.com"
+    },
+    {
+      "name": "Pulso Escolar",
+      "domain": "pulsoescolar.cl",
+      "status": "activa",
+      "tag": "Edtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus como Pipoll (batch 2022-1)",
+          "prose": "Ingresó al batch 2022-1 de Platanus Ventures como Pipoll, con el inversión estándar del acelerador (~US$100.000), para llevar la gestión de la cultura escolar a una plataforma basada en datos.",
+          "source": "Crunchbase",
+          "basis": "Inversión de Platanus; ronda en Crunchbase (cierre nov-2022).",
+          "source_url": "https://platan.us/startups/pipoll"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-06",
+          "title": "Consolidación en Pulso Escolar",
+          "prose": "La razón social Pipoll operó la marca B2B (engagement de colaboradores) en paralelo a Pulso Escolar (cultura escolar); el negocio se consolidó bajo Pulso Escolar.",
+          "quote": "",
+          "source": "pulsoescolar.cl · jun 2023",
+          "source_url": "https://web.archive.org/web/20230608222759/http://pulsoescolar.cl/",
+          "wayback_url": "https://web.archive.org/web/20230608222759/http://pulsoescolar.cl/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Pipoll"
+      ],
+      "search_blob": "pulso escolar pipoll pulso escolar pipoll pipoll technologies spa pipoll pulsoescolar.cl pipoll.com pulsoescolar.com"
+    },
+    {
+      "name": "LarnU",
+      "domain": "larnu.com",
+      "status": "cerrada",
+      "tag": "Edtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus (batch 2022-1)",
+          "prose": "Entró al batch 2022-1 de Platanus Ventures con el inversión estándar del acelerador (~US$100.000) y la idea de ser 'el Duolingo para aprender a programar'.",
+          "source": "Platanus Ventures",
+          "basis": "Monto exacto no informado; inversión estándar del cohorte 2022-1.",
+          "source_url": "https://platan.us/startups/larnu"
+        },
+        {
+          "type": "pivot",
+          "date": "2022-06",
+          "title": "De upskilling profesional a aprender a programar",
+          "prose": "LarnU partió como una app de upskilling profesional gamificado (cursos de carrera, incluso de web3 y cripto, en 10 minutos al día). Se enfocó en enseñar a programar: el 'Duolingo para programar', con lecciones y proyectos cortos.",
+          "quote": "",
+          "source": "larnu.com · jun 2022",
+          "source_url": "https://web.archive.org/web/20220624220340/http://larnu.com/",
+          "wayback_url": "https://web.archive.org/web/20220624220340/http://larnu.com/",
+          "basis": ""
+        },
+        {
+          "type": "cierre",
+          "date": "2024-02",
+          "title": "Cierre",
+          "prose": "Los fundadores cerraron LarnU y apagaron los servidores a comienzos de 2024, tras superar 400 mil usuarios pero sin alcanzar product-market fit.",
+          "source": "Fundadores (LinkedIn)",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "https://web.archive.org/web/20231202223209/http://larnu.app/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "larnu larnu larnu larnu larnu.com larnu.app"
+    },
+    {
+      "name": "Fiscoclic",
+      "domain": "fiscoclic.mx",
+      "status": "activa",
+      "tag": "HR Tech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el primer batch de 2022 con el inversión estándar del acelerador (~US$100K), ofreciendo nómina de sueldos para pequeños negocios en México.",
+          "source": "Pitchbook",
+          "basis": "Batch 2022-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/fiscoclic"
+        }
+      ],
+      "aliases": [
+        "FiscoClic People"
+      ],
+      "search_blob": "fiscoclic fiscoclic fiscoclic fiscoclic fiscoclic people fiscoclic fiscoclic.mx fiscoclic.io"
+    },
+    {
+      "name": "Brolly",
+      "domain": "brolly.cl",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el primer batch de 2022 con el inversión estándar del acelerador (~US$100K), facilitando acceso a créditos baratos y simples para trabajadores.",
+          "source": "Pitchbook",
+          "basis": "Batch 2022-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/brolly"
+        },
+        {
+          "type": "pivot",
+          "date": "2022-12",
+          "title": "De gestión de remuneraciones a créditos digitales",
+          "prose": "Brolly partió como una plataforma de gestión de remuneraciones y RRHH para empresas, con créditos y beneficios para empleados como complemento. Pivoteó a fintech: créditos digitales de bajo costo y educación financiera para los trabajadores.",
+          "quote": "",
+          "source": "brolly.cl · dic 2022",
+          "source_url": "https://web.archive.org/web/20221207025137/http://brolly.cl/",
+          "wayback_url": "https://web.archive.org/web/20221207025137/http://brolly.cl/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "brolly brolly brolly brolly brolly.cl app.brolly.cl"
+    },
+    {
+      "name": "Tiki",
+      "domain": "tiki.cl",
+      "status": "inactiva",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el primer batch de 2022 con el inversión estándar del acelerador (~US$100K), permitiendo invertir en portafolios diversificados de criptomonedas.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2022-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/tiki"
+        },
+        {
+          "type": "inactivo",
+          "date": "2022-11",
+          "title": "Sin señal reciente",
+          "prose": "Al parecer no hay actividad reciente: el sitio dejó de actualizarse y el dominio cayó. Pudo haberse cerrado silenciosamente, sin anuncio formal.",
+          "quote": "",
+          "source": "Última señal · nov 2022",
+          "source_url": "https://web.archive.org/web/20221127114108/http://tiki.cl/",
+          "basis": "Inferido: sin noticia de cierre. La fecha es la última señal de actividad registrada del sitio; no hay confirmación de cierre."
+        }
+      ],
+      "aliases": [],
+      "search_blob": "tiki tiki tiki tiki tiki.cl"
+    },
+    {
+      "name": "Fraccional",
+      "domain": "fraccional.cl",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "El proyecto ingresó al batch de comienzos de 2022 de Platanus Ventures, que aportó su inversión estándar de la época (~US$100K), entonces operando como URVANA, un portal de terrenos para inmobiliarias.",
+          "source": "Tekios",
+          "basis": "batch 2022-1, Platanus",
+          "source_url": "https://platan.us/startups/fraccional"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-01",
+          "title": "De Urvana a Fraccional",
+          "prose": "El equipo venía de Urvana: valorización y compra/venta de suelo para proyectos inmobiliarios. A inicios de 2023 lanzó Fraccional, su producto principal: invertir en fracciones de propiedades, sin créditos ni trámites.",
+          "quote": "",
+          "source": "fraccional.cl · ene 2023",
+          "source_url": "https://web.archive.org/web/20230131011419/http://fraccional.cl/",
+          "wayback_url": "https://web.archive.org/web/20230131011419/http://fraccional.cl/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2024-06",
+          "title": "Ronda Seed cerca de US$1M vía Broota",
+          "prose": "Fraccional levantó una ronda de financiamiento colectivo a través de Broota que se acercó a US$1 millón, su primera ronda relevante más allá del inversión inicial de Platanus.",
+          "source": "Tekios/Broota",
+          "basis": "ronda crowdfunding reportada",
+          "source_url": "https://tekios.co/2024/03/21/fraccional-cl-a-punto-de-alcanzar-us1-millon-a-traves-de-financiamiento-colectivo-via-broota/"
+        }
+      ],
+      "aliases": [
+        "URVANA"
+      ],
+      "search_blob": "fraccional fraccional fraccional urvana (proyecto inicial) fraccional urvana urvana.net fraccional.cl urvana.cl"
+    },
+    {
+      "name": "Mercately",
+      "domain": "mercately.com",
+      "status": "activa",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Mercately ingresó al batch de comienzos de 2022 de Platanus Ventures, que aportó su inversión estándar de la época (~US$100K), para ayudar a negocios a vender más por WhatsApp desde Ecuador.",
+          "source": "Platanus",
+          "basis": "batch 2022-1, Platanus",
+          "source_url": "https://platan.us/startups/mercately"
+        },
+        {
+          "type": "capital",
+          "date": "2024-09",
+          "title": "Pre-Seed de US$2,6M liderada por Inventus",
+          "prose": "La compañía levantó una ronda Pre-Seed de US$2,6 millones liderada por Inventus Capital Partners, con participación de Silicon Valley Quad, su primera ronda relevante con fondos externos.",
+          "source": "LatamList",
+          "basis": "ronda externa reportada",
+          "source_url": "https://latamlist.com/mercately-raises-2-6m-pre-seed-round/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "mercately mercately mercately mercately mercately.com"
+    },
+    {
+      "name": "Carvuk",
+      "domain": "carvuk.com",
+      "status": "activa",
+      "tag": "Automotriz",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Ingreso a Platanus",
+          "prose": "Carvuk ingresó a Platanus Ventures en la generación 2022-1, recibiendo el inversión de la aceleradora, con una plataforma para automatizar la gestión y propiedad de un auto.",
+          "source": "Pitchbook",
+          "basis": "batch 2022-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/carvuk"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "carvuk carvuk carvuk carvuk carvuk.com carvuk.cl"
+    },
+    {
+      "name": "Trendi",
+      "domain": "jointrendi.com",
+      "status": "cerrada",
+      "tag": "Creator Economy",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Ingreso a Platanus",
+          "prose": "Trendi ingresó a Platanus Ventures en la generación 2022-1 con un inversión ángel de US$100.000, posicionándose como 'el YC para los creadores de Latinoamérica'.",
+          "source": "platan.us",
+          "basis": "batch 2022-1; inversión Platanus US$100K",
+          "source_url": "https://platan.us/startups/trendi"
+        },
+        {
+          "type": "cierre",
+          "date": "2022-12",
+          "title": "Cierre y devolución de capital",
+          "prose": "Tras cerca de un año, los cofundadores cerraron la empresa por la disfunción en la relación entre socios y devolvieron el capital restante a Platanus, su único inversor.",
+          "source": "alanarguello.me",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "https://www.alanarguello.me/blog/closing-trendi"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "trendi trendi trendi trendi jointrendi.com"
+    },
+    {
+      "name": "TiendaDa",
+      "domain": "tiendada.com",
+      "status": "activa",
+      "tag": "E-commerce",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus (batch 2022-1)",
+          "prose": "La peruana TiendaDa ingresó a Platanus Ventures en el batch 2022-1 con un inversión inicial cercano a US$100K, partiendo como herramienta para crear tiendas online y vender por WhatsApp.",
+          "source": "Crunchbase",
+          "basis": "Batch 2022-1 Platanus; inversión inicial ~US$100K.",
+          "source_url": "https://platan.us/startups/tiendada"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "tiendada tiendada tiendada tiendada tiendada tiendada.com"
+    },
+    {
+      "name": "Bemmbo",
+      "domain": "bemmbo.com",
+      "status": "adquirida",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus (batch 2022-1)",
+          "prose": "Bemmbo entró a Platanus Ventures en el batch 2022-1 con un inversión inicial cercano a US$100K, simplificando pagos y cobros para empresas.",
+          "source": "Blog Platanus",
+          "basis": "Batch 2022-1 Platanus; inversión inicial ~US$100K.",
+          "source_url": "https://platan.us/startups/bemmbo"
+        },
+        {
+          "type": "capital",
+          "date": "2023-06",
+          "title": "Ronda pre-seed ~US$500K",
+          "prose": "Bemmbo sumó una ronda pre-seed en torno a US$500K para escalar su plataforma de cuentas por pagar y cobrar.",
+          "source": "Dealroom",
+          "basis": "Ronda ~US$500K según tracker; mes aproximado, pendiente verificar.",
+          "source_url": "https://app.dealroom.co/companies/bemmbo"
+        },
+        {
+          "type": "adquisicion",
+          "date": "2025-08",
+          "title": "Adquirida por Buk (Buk Finanzas)",
+          "prose": "El 11 de agosto de 2025 la HR-tech chilena Buk anunció la adquisición de Bemmbo, que pasó a operar como 'Buk Finanzas'; el precio no fue revelado oficialmente.",
+          "source": "LatamList",
+          "basis": "Anuncio 11-ago-2025; cifra ~US$6M no verificada.",
+          "source_url": "https://latamlist.com/buk-acquires-bemmbo-launches-buk-finanzas/"
+        }
+      ],
+      "aliases": [
+        "Buk Finanzas"
+      ],
+      "search_blob": "bemmbo bemmbo buk finanzas bemmbo bemmbo buk.cl bemmbo.com blog.bemmbo.com"
+    },
+    {
+      "name": "WallState",
+      "domain": "wallstate.cl",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Entra a Platanus (batch 2022-1)",
+          "prose": "WallState ingresó a Platanus Ventures en el batch 2022-1 con el inversión inicial del programa (cerca de US$100K), con una propuesta para invertir en propiedades desde US$1.",
+          "source": "Platanus",
+          "basis": "Batch 2022-1 Platanus; sin rondas externas registradas.",
+          "source_url": "https://platan.us/startups/wallstate"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "wallstate wallstate wallstate wallstate wallstate.cl wallstate.co"
+    },
+    {
+      "name": "Carttera",
+      "domain": "getcarttera.com",
+      "status": "cerrada",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-03",
+          "title": "Ingreso a Platanus (como Verso)",
+          "prose": "Nacida como Verso, ingresó a la generación 2022-1 de Platanus Ventures, que respaldó su etapa pre-seed para construir una plataforma que permite vender, agendar y gestionar servicios en minutos.",
+          "source": "Crunchbase",
+          "basis": "Batch 2022-1; respaldo Platanus",
+          "source_url": "https://platan.us/startups/verso"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-02",
+          "title": "De Verso a Carttera",
+          "prose": "Verso (Verso Technologies, verso.ai, agenda/cobros para independientes) se renombró Carttera (cobros y conciliación por WhatsApp) antes de cerrar.",
+          "quote": "",
+          "source": "getcarttera.com · feb 2024",
+          "source_url": "https://web.archive.org/web/20240223221635/http://getcarttera.com/",
+          "wayback_url": "https://web.archive.org/web/20240223221635/http://getcarttera.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Verso"
+      ],
+      "search_blob": "carttera verso carttera verso verso technologies verso verso (verso technologies llc) verso.ai getcarttera.com"
+    },
+    {
+      "name": "Strade",
+      "domain": "stradeworld.com",
+      "status": "activa",
+      "tag": "Marketplace",
+      "events": [
+        {
+          "type": "pivot",
+          "date": "2022-07",
+          "title": "De Viking Studio a Strade",
+          "prose": "Viking Studio (sneakers custom + NFTs) se renombró Strade; para 2022 operaba como Strade World.",
+          "quote": "",
+          "source": "stradeworld.com · jul 2022",
+          "source_url": "https://web.archive.org/web/20230131161918/http://stradeworld.com/",
+          "wayback_url": "https://web.archive.org/web/20230131161918/http://stradeworld.com/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2023-08",
+          "title": "Strade 2.0: reventa de lujo",
+          "prose": "Pasó de sneakers custom + NFTs a un marketplace de reventa y autenticación de productos de lujo (Strade 2.0).",
+          "quote": "",
+          "source": "stradeworld.com · ago 2023",
+          "source_url": "https://web.archive.org/web/20231130041934/http://stradeworld.com/",
+          "wayback_url": "https://web.archive.org/web/20231130041934/http://stradeworld.com/",
+          "basis": ""
+        },
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el primer batch de 2024 con el inversión estándar del acelerador (~US$200K por ~7%); previamente había levantado un Pre-Seed de ~US$145K junto a Arrebol Capital y el ángel Ian Lee.",
+          "source": "Bouncewatch",
+          "basis": "Batch 2024-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/strade"
+        }
+      ],
+      "aliases": [
+        "Strade World",
+        "Viking Studio"
+      ],
+      "search_blob": "strade strade strade viking studio strade world strade strade (strade / strade world) stradeworld.com stradecustom.com resellers.stradeworld.com"
+    },
+    {
+      "name": "Divisso",
+      "domain": "divisso.com",
+      "status": "inactiva",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Divisso entra a Platanus (batch 2022-2)",
+          "prose": "Divisso entró al batch 2022-2 de Platanus Ventures con la ambición de ser el 'Roofstock para Latinoamérica': una plataforma para que personas naturales invirtieran en propiedades de forma fraccionada. Su ingreso incluyó el inversión estándar del acelerador, de unos US$100.000.",
+          "source": "Crunchbase",
+          "basis": "Inversión estándar de Platanus (batch 2022-2); ronda registrada en Crunchbase.",
+          "source_url": "https://platan.us/startups/divisso"
+        },
+        {
+          "type": "inactivo",
+          "date": "2023-11",
+          "title": "Sin señal reciente",
+          "prose": "Al parecer no hay actividad reciente: el sitio dejó de actualizarse y el dominio cayó. Pudo haberse cerrado silenciosamente, sin anuncio formal.",
+          "quote": "",
+          "source": "Última señal · nov 2023",
+          "source_url": "https://web.archive.org/web/20231128224546/http://divisso.com/",
+          "basis": "Inferido: sin noticia de cierre. La fecha es la última señal de actividad registrada del sitio; no hay confirmación de cierre."
+        }
+      ],
+      "aliases": [],
+      "search_blob": "divisso divisso divisso divisso divisso.com app.divisso.com divisso.cl"
+    },
+    {
+      "name": "Partsflow",
+      "domain": "partsflow.ai",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Nace como Repartes en Platanus (batch 2022-2)",
+          "prose": "Nació como Repartes dentro del batch 2022-2 de Platanus Ventures, levantando el inversión estándar del acelerador (~US$100.000) con la coinversión de Driven Ventures, para construir un marketplace B2B de repuestos.",
+          "source": "Pitchbook",
+          "basis": "Inversión de aceleradora con Driven Ventures como coinversor; dato en Pitchbook.",
+          "source_url": "https://platan.us/startups/repartes"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-04",
+          "title": "De Repartes a Partsflow",
+          "prose": "Repartes (marketplace B2B de repuestos, repartes.com) se relanzó como Partsflow: CRM con agentes de IA para automatizar la venta de repuestos por WhatsApp.",
+          "quote": "",
+          "source": "partsflow.ai · abr 2025",
+          "source_url": "https://web.archive.org/web/20250415221811/http://partsflow.ai/",
+          "wayback_url": "https://web.archive.org/web/20250415221811/http://partsflow.ai/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Repartes"
+      ],
+      "search_blob": "partsflow repartes partsflow repartes repartes repartes.com partsflow.ai"
+    },
+    {
+      "name": "Lokal",
+      "domain": "somoslokal.cl",
+      "status": "activa",
+      "tag": "Marketplace",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Entró a Platanus Ventures en el segundo batch de 2022 con el inversión estándar del acelerador (~US$100K), construyendo un marketplace mayorista para tiendas, al estilo de un Faire para Latam.",
+          "source": "Crunchbase",
+          "basis": "Batch 2022-2 mapeado a septiembre.",
+          "source_url": "https://platan.us/startups/lokal"
+        }
+      ],
+      "aliases": [
+        "Somos Lokal"
+      ],
+      "search_blob": "lokal lokal lokal somos lokal lokal somoslokal.cl somoslokal.com"
+    },
+    {
+      "name": "Appio",
+      "domain": "appio.ai",
+      "status": "activa",
+      "tag": "Foodtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Ingreso a Platanus como Fudata",
+          "prose": "Fudata ingresó a Platanus Ventures en la generación 2022-2, recibiendo el inversión inicial de la aceleradora junto a la participación de Angel Hub y Colabora Ventures, con la propuesta de operar cocinas fantasma basadas en datos en México.",
+          "source": "Crunchbase",
+          "basis": "batch 2022-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/fudata"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-09",
+          "title": "De Fudata a Appio",
+          "prose": "Fudata (marcas de restaurantes basadas en datos, fudata.com.mx) se consolidó como Appio (appio.ai): crecimiento/delivery por WhatsApp para restaurantes.",
+          "quote": "",
+          "source": "appio.ai · sep 2023",
+          "source_url": "https://web.archive.org/web/20230930202958/http://appio.ai/",
+          "wayback_url": "https://web.archive.org/web/20230930202958/http://appio.ai/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Fudata"
+      ],
+      "search_blob": "appio fudata appio fudata fudata appio.com.mx fudata.com.mx appio.ai"
+    },
+    {
+      "name": "Saludtech",
+      "domain": "saludtech.cl",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Ingreso a Platanus",
+          "prose": "Saludtech se incorporó a Platanus Ventures en la generación 2022-2 con el inversión de US$100.000 de la aceleradora, operando una clínica digital que conecta pacientes con profesionales de la salud en Chile.",
+          "source": "saludtech.cl",
+          "basis": "batch 2022-2; inversión Platanus US$100K",
+          "source_url": "https://platan.us/startups/saludtech"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "saludtech saludtech saludtech saludtech saludtech.cl w.saludtech.cl"
+    },
+    {
+      "name": "Bircle",
+      "domain": "bircle.ai",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Entra a Platanus (batch 2022-2)",
+          "prose": "La argentina Bircle entró a Platanus Ventures en el batch 2022-2 con el inversión inicial del programa (cerca de US$100K), partiendo como solución de cobranza autónoma con IA.",
+          "source": "Crunchbase",
+          "basis": "Batch 2022-2 Platanus; inversión inicial ~US$100K.",
+          "source_url": "https://platan.us/startups/bircle"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-12",
+          "title": "De Phygital a BircleAI",
+          "prose": "Bircle empezó como 'Phygital' (marketplace NFT de prendas físico-digitales) y pivoteó a agentes de IA para relacionamiento con clientes (cobranza/ventas/atención).",
+          "quote": "",
+          "source": "bircle.io · dic 2023",
+          "source_url": "https://web.archive.org/web/20231206070201/http://bircle.io/",
+          "wayback_url": "https://web.archive.org/web/20231206070201/http://bircle.io/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Bircle AI"
+      ],
+      "search_blob": "bircle bircle bircle bircle ai bircle bircle.io bircle.ai"
+    },
+    {
+      "name": "Vivvidero",
+      "domain": "vivvidero.com",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "La startup colombiana de remodelación de viviendas entró a la generación 2022-2 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$100K) para impulsar su plataforma todo en uno de remodelación rápida y segura.",
+          "source": "La República",
+          "basis": "Batch 2022-2; ronda Platanus US$100K",
+          "source_url": "https://platan.us/startups/vivvidero"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "vivvidero vivvidero vivvidero vivvidero vivvidero.com"
+    },
+    {
+      "name": "Bree",
+      "domain": "bree.mx",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Bree entró a la generación 2022-2 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$100K) para desarrollar su marketplace de arriendo por horas de espacios para profesionales de la salud y el bienestar, una suerte de 'Airbnb' de consultas.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2022-2",
+          "source_url": "https://platan.us/startups/bree"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "bree bree bree bree bree.mx"
+    },
+    {
+      "name": "Crema",
+      "domain": "crema.cm",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-09",
+          "title": "Entra a Platanus (batch 2022-2)",
+          "prose": "Crema entró al batch 2022-2 de Platanus Ventures, que la respaldó con su inversión estándar (~US$100K), para ofrecer una cuenta bancaria internacional y productos financieros pensados para freelancers.",
+          "source": "Platanus Ventures",
+          "basis": "batch 2022-2",
+          "source_url": "https://platan.us/startups/crema"
+        },
+        {
+          "type": "capital",
+          "date": "2023-06",
+          "title": "Techstars NYC y capital acumulado ~US$500K",
+          "prose": "La fintech pasó por Techstars NYC (J.P. Morgan) y RevTech Labs, sumando un capital acumulado de alrededor de US$500K que incluye el respaldo inicial de Platanus.",
+          "source": "startupslatam.com",
+          "basis": "capital acumulado con leads externos",
+          "source_url": "https://startupslatam.com/la-fintech-crema-y-su-cierre-de-ano-integrar-a-chile-y-colombia-a-su-cartera-de-transferencias-locales/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "crema crema crema crema crema.cm"
+    },
+    {
+      "name": "Perhaps",
+      "domain": "perhaps.inc",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2022-10",
+          "title": "Ingreso a Platanus como Wireworks",
+          "prose": "Wireworks ingresó a Platanus Ventures en octubre de 2022 con el inversión inicial de US$100.000 de la aceleradora.",
+          "source": "platan.us",
+          "basis": "inversión Platanus US$100K dic. 2022",
+          "source_url": "https://platan.us/startups/wireworks"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-12",
+          "title": "De Wireworks a Perhaps",
+          "prose": "Wireworks (flujos colaborativos desde grabaciones, wireworks.app) se renombró Perhaps (getperhaps.com), un studio AI-native.",
+          "quote": "",
+          "source": "getperhaps.com · dic 2023",
+          "source_url": "https://web.archive.org/web/20231208184409/http://getperhaps.com/",
+          "wayback_url": "https://web.archive.org/web/20231208184409/http://getperhaps.com/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2025-05",
+          "title": "Perhaps lanza Faces",
+          "prose": "Tras iterar (Workspace, Workers, Interfaces), el producto se centró en Faces (faces.app): presentaciones interactivas.",
+          "quote": "",
+          "source": "faces.app · may 2025",
+          "source_url": "https://web.archive.org/web/20250515143607/http://faces.app/",
+          "wayback_url": "https://web.archive.org/web/20250515143607/http://faces.app/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Faces",
+        "Wireworks"
+      ],
+      "search_blob": "perhaps wireworks perhaps (producto: faces) perhaps wireworks faces wireworks wireworks (wireworks, inc.) perhaps (ai assistants / ai-native studio) faces (interactive presentations product) wireworks.app getperhaps.com faces.app perhaps.inc"
+    },
+    {
+      "name": "Tu Mejor Amigo",
+      "domain": "tumejoramigo.com.mx",
+      "status": "adquirida",
+      "tag": "Pet Care",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Esta pet-tech de fundadores argentinos operando en México entró al batch 2023-1 de Platanus Ventures con un inversión de aceleradora de US$250.000, ofreciendo una suscripción con paseos, veterinarios a domicilio y otros servicios para mascotas.",
+          "source": "StartupsLATAM",
+          "basis": "Inversión de aceleradora ~US$250K; StartupsLATAM.",
+          "source_url": "https://platan.us/startups/tu-mejor-amigo"
+        },
+        {
+          "type": "adquisicion",
+          "date": "2024-02",
+          "title": "Adquirida por Cuida Mi Mascota",
+          "prose": "Fue adquirida por la pet-tech mexicana Cuida Mi Mascota —operación cerrada en enero y anunciada el 22 de febrero de 2024— por un monto no revelado.",
+          "source": "StartupsLATAM · feb 2024",
+          "basis": "Exit anunciado 22-feb-2024; monto no revelado.",
+          "source_url": "https://startupslatam.com/la-pet-tech-mexicana-tu-mejor-amigo-anuncia-su-exit-tras-ser-adquirida-por-cuida-mi-mascota/"
+        }
+      ],
+      "aliases": [
+        "Cuida Mi Mascota"
+      ],
+      "search_blob": "tu mejor amigo tu-mejor-amigo cuida mi mascota tu mejor amigo tu-mejor-amigo tumejoramigo.com.mx cuidamimascota.com.mx"
+    },
+    {
+      "name": "Sento",
+      "domain": "sento-ai.com",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Startup guatemalteca entra a Platanus (batch 2023-1)",
+          "prose": "Startup guatemalteca que logró entrar al batch 2023-1 de Platanus Ventures con el inversión estándar del acelerador (~US$100.000), junto a los coinversores Caricaco Ventures y MGV Capital Group, para analizar llamadas con IA y potenciar la toma de decisiones.",
+          "source": "LatamRepublic",
+          "basis": "Inversión de aceleradora con coinversores; LatamRepublic.",
+          "source_url": "https://platan.us/startups/sento"
+        }
+      ],
+      "aliases": [
+        "Sento AI"
+      ],
+      "search_blob": "sento sento sento sento ai sento sento-ai.com"
+    },
+    {
+      "name": "Flair",
+      "domain": "goflair.cl",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Ingresó a Platanus Ventures en el primer batch de 2023 con el inversión estándar del acelerador (~US$200K por ~7%), con un SaaS para crear edificios sanos, sostenibles y eficientes energéticamente.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2023-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/flair"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-03",
+          "title": "De medidor de CO2 a ahorro energético HVAC",
+          "prose": "Flair partió como un medidor de calidad del aire / CO2 (Airly). Pivoteó a la eficiencia energética de edificios: un sistema plug-and-play que retrofittea y optimiza el aire acondicionado (HVAC) para reducir hasta 30% del consumo.",
+          "quote": "",
+          "source": "goflair.cl · mar 2024",
+          "source_url": "https://web.archive.org/web/20240301101201/http://goflair.cl/",
+          "wayback_url": "https://web.archive.org/web/20240301101201/http://goflair.cl/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "flair flair flair  flair goflair.cl"
+    },
+    {
+      "name": "Kambia",
+      "domain": "kambia.app",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Kambia ingresó al sexto batch de Platanus Ventures a comienzos de 2023 con la tesis de ofrecer microcréditos por WhatsApp en Perú, recibiendo el inversión estándar de la aceleradora para esa generación (~US$100K).",
+          "source": "Contxto",
+          "basis": "batch 2023-1, Platanus",
+          "source_url": "https://platan.us/startups/kambia"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "kambia kambia kambia kambia kambia.pe kambia.app"
+    },
+    {
+      "name": "Lummy",
+      "domain": "getlummy.com",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "El equipo entró al batch de comienzos de 2023 de Platanus Ventures, que aportó su inversión estándar de la época (~US$100K) para financiar el proyecto que más tarde se convertiría en Lummy.",
+          "source": "Ecosistemas Startup",
+          "basis": "batch 2023-1, Platanus",
+          "source_url": "https://platan.us/startups/telaio"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-10",
+          "title": "De Telaio/Kapibara a Lummy",
+          "prose": "Telaio Finance (software contable) → Kapibara (seguridad infantil) → en octubre 2023 lanzó Lummy, app de salud mental (getlummy.com).",
+          "quote": "",
+          "source": "getlummy.com · oct 2023",
+          "source_url": "https://web.archive.org/web/20231012230331/http://getlummy.com/",
+          "wayback_url": "https://web.archive.org/web/20231012230331/http://getlummy.com/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2024-08",
+          "title": "Lummy pasa a B2B (Lummy.ai)",
+          "prose": "El producto consumer de salud mental viró a un chatbot de IA B2B para atención al cliente y ventas (lummy.ai); más adelante se enfocó en clínicas.",
+          "quote": "",
+          "source": "lummy.ai · ago 2024",
+          "source_url": "https://web.archive.org/web/20240818164747/http://lummy.ai/",
+          "wayback_url": "https://web.archive.org/web/20240818164747/http://lummy.ai/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Kapibara",
+        "Telaio Finance"
+      ],
+      "search_blob": "lummy telaio lummy telaio finance spa kapibara telaio telaio finance lummy (consumer mental health, getlummy.com) lummy.ai (b2b ai chatbot for clinics) telaio.finance getlummy.com lummy.ai"
+    },
+    {
+      "name": "Nodek",
+      "domain": "nodekbrands.com",
+      "status": "activa",
+      "tag": "E-commerce",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Nodek entró al sexto batch de Platanus Ventures a comienzos de 2023 con su inversión estándar de la época (~US$100K), con la tesis de levantar una marca de moda para cada nicho del mercado desde Colombia.",
+          "source": "Contxto",
+          "basis": "batch 2023-1, Platanus",
+          "source_url": "https://platan.us/startups/nodek"
+        }
+      ],
+      "aliases": [
+        "Nodek Brands"
+      ],
+      "search_blob": "nodek nodek nodek nodek brands nodek nodekbrands.com"
+    },
+    {
+      "name": "Winston",
+      "domain": "elwinston.io",
+      "status": "activa",
+      "tag": "HR Tech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Winston ingresó a la aceleradora Platanus Ventures en el batch 2023-1, levantando un inversión inicial cercano a US$100K co-invertido junto a UDD Ventures, para desarrollar su plataforma de coaching de liderazgo potenciado con IA orientada a managers de empresas.",
+          "source": "UDD Ventures",
+          "basis": "Batch 2023-1 Platanus; ronda inicial ~US$100K reportada por UDD Ventures.",
+          "source_url": "https://platan.us/startups/winston"
+        }
+      ],
+      "aliases": [
+        "El Winston"
+      ],
+      "search_blob": "winston winston winston el winston winston elwinston.io walio.elwinston.io"
+    },
+    {
+      "name": "Konstruedu",
+      "domain": "konstruedu.com",
+      "status": "adquirida",
+      "tag": "Edtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "La peruana Konstruedu se sumó a Platanus Ventures en el batch 2023-1 con un inversión inicial en torno a US$100K, ofreciendo formación online para profesionales de ingeniería, construcción y arquitectura.",
+          "source": "Bouncewatch",
+          "basis": "Batch 2023-1 Platanus; inversión inicial ~US$100K.",
+          "source_url": "https://platan.us/startups/konstruedu-com"
+        },
+        {
+          "type": "adquisicion",
+          "date": "2025-07",
+          "title": "Adquirida por Netzun",
+          "prose": "Tras alcanzar más de 50 mil estudiantes en más de 25 países, Konstruedu fue adquirida por la edtech Netzun hacia mediados de 2025; su dominio dejó de operar de forma independiente.",
+          "source": "Rumbo Económico",
+          "basis": "Adquisición por Netzun ~jul-2025.",
+          "source_url": "https://rumboeconomico.com/la-startup-konstruedu-es-adquirida-por-netzun-tras-conquistar-latam-en-solo-3-anos/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "konstruedu konstruedu-com konstruedu (netzun) konstruedu konstruedu-com konstruedu.com netzun.com"
+    },
+    {
+      "name": "Kunzapp",
+      "domain": "kunzapp.com",
+      "status": "activa",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Kunzapp ingresó a Platanus Ventures en el batch 2023-1 con el inversión inicial del programa, atacando la gestión del gasto en software (SaaS) para reducir horas y costos a los CFO.",
+          "source": "Contxto",
+          "basis": "Batch 2023-1 Platanus.",
+          "source_url": "https://platan.us/startups/kunzapp"
+        },
+        {
+          "type": "capital",
+          "date": "2023-09",
+          "title": "Ronda pre-seed US$750K",
+          "prose": "Kunzapp levantó una ronda pre-seed de US$750K con la participación de Fen Ventures y Daedalus junto a Platanus Ventures.",
+          "source": "Contxto",
+          "basis": "Ronda US$750K reportada en 2023; mes aproximado.",
+          "source_url": "https://contxto.com/en/deals/kunzapp-raises-usd-750000-in-investment-round/"
+        },
+        {
+          "type": "capital",
+          "date": "2025-08",
+          "title": "Ronda Seed US$2M (Wollef)",
+          "prose": "Kunzapp cerró una ronda Seed de US$2M liderada por el fondo Wollef.",
+          "source": "LatamList",
+          "basis": "Ronda Seed US$2M liderada por Wollef, ago-2025.",
+          "source_url": "https://latamlist.com/kunzapp-raises-2m-seed-round-from-wollef/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "kunzapp kunzapp kunzapp kunzapp kunzapp.com"
+    },
+    {
+      "name": "Blokay",
+      "domain": "blokay.com",
+      "status": "activa",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Ingreso a Platanus (como Pronty)",
+          "prose": "Bajo el nombre Pronty se integró a la generación 2023-1 de Platanus Ventures, recibiendo el inversión estándar de la aceleradora (~US$200K por ~7%) para desarrollar su plataforma de software orientada a hacer más eficiente la operación de las empresas.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2023-1",
+          "source_url": "https://platan.us/startups/pronty"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-06",
+          "title": "De Pronty/Sigfre a Blokay",
+          "prose": "El equipo pasó por Pronty (pronty.co) y Sigfre antes de relanzarse como Blokay (jun-2024): dashboards, backoffices y APIs en segundos. Mismos fundadores (Daniela Garzón, Juan David Restrepo).",
+          "quote": "",
+          "source": "blokay.com · jun 2024",
+          "source_url": "https://web.archive.org/web/20240617044328/http://blokay.com/",
+          "wayback_url": "https://web.archive.org/web/20240617044328/http://blokay.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Pronty",
+        "Sigfre"
+      ],
+      "search_blob": "blokay pronty blokay pronty pronty sigfre blokay.com blokay.co pronty.co"
+    },
+    {
+      "name": "Caudal",
+      "domain": "caudal.app",
+      "status": "activa",
+      "tag": "Agtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Ingreso a Platanus (como UnaCuarta)",
+          "prose": "Nacida como UnaCuarta, una plataforma de inversión inmobiliaria fraccionada, ingresó a la generación 2023-1 de Platanus Ventures con el inversión estándar de la aceleradora (~US$200K por ~7%).",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2023-1",
+          "source_url": "https://platan.us/startups/unacuarta"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-07",
+          "title": "De UnaCuarta a Caudal",
+          "prose": "El mismo equipo pivoteó de proptech (inversión inmobiliaria fraccionada, unacuarta.com) a logística de agua: Caudal (caudal.app), mediados de 2025.",
+          "quote": "",
+          "source": "caudal.app · jul 2025",
+          "source_url": "https://web.archive.org/web/20250710052800/http://caudal.app/",
+          "wayback_url": "https://web.archive.org/web/20250710052800/http://caudal.app/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "UnaCuarta"
+      ],
+      "search_blob": "caudal unacuarta caudal unacuarta unacuarta unacuarta.com caudal.app"
+    },
+    {
+      "name": "Calypso",
+      "domain": "calypso.so",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Calypso ingresó al batch 2023-1 de Platanus Ventures, que respaldó al equipo con su inversión estándar de la época (~US$100K), para desarrollar 'empleados de IA' que automatizaran la mensajería de las empresas.",
+          "source": "Platanus Ventures",
+          "basis": "batch 2023-1",
+          "source_url": "https://platan.us/startups/calypso"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "calypso calypso calypso calypso calypso.so"
+    },
+    {
+      "name": "Pullpo",
+      "domain": "pullpo.io",
+      "status": "activa",
+      "tag": "Dev Tools",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Pullpo ingresó al batch 2023-1 de Platanus Ventures, que lideró su pre-seed con el inversión estándar de ~US$110K, para multiplicar la eficiencia de los equipos de desarrollo de software.",
+          "source": "parsers.vc",
+          "basis": "batch 2023-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/pullpo"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "pullpo pullpo pullpo pullpo pullpo.io"
+    },
+    {
+      "name": "Trutix",
+      "domain": "trutix.io",
+      "status": "activa",
+      "tag": "E-commerce",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-03",
+          "title": "Entra a Platanus (batch 2023-1)",
+          "prose": "Trutix ingresó al batch 2023-1 de Platanus Ventures, que lideró su pre-seed con el inversión estándar de US$100K, para construir una plataforma de intercambio de entradas para eventos.",
+          "source": "Crunchbase",
+          "basis": "batch 2023-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/trutix"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "trutix trutix trutix trutix trutix.io trutix.co"
+    },
+    {
+      "name": "Shinkansen",
+      "domain": "shinkansen.finance",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "capital",
+          "date": "2023-07",
+          "title": "Seed US$3M",
+          "prose": "Cerró una ronda Seed de US$3M liderada por ALLVP (Chile Ventures participó) para escalar su infraestructura de pagos entre bancos a la velocidad de internet.",
+          "source": "LatamList · jul 2023",
+          "basis": "Fecha de la ronda informada por la fuente.",
+          "source_url": "https://latamlist.com/shinkansen-closes-a-3m-seed-round/"
+        }
+      ],
+      "aliases": [
+        "Shinkansen Finance"
+      ],
+      "search_blob": "shinkansen shinkansen shinkansen shinkansen finance shinkansen blog.shinkansen.finance shinkansen.finance shinkansen.tech"
+    },
+    {
+      "name": "Manifest",
+      "domain": "manifest-hq.com",
+      "status": "cerrada",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Ingresó a Platanus Ventures en el segundo batch de 2023 con el inversión estándar del acelerador (~US$200K por ~7%), con una plataforma para crear apps a partir de un simple prompt.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2023-2 mapeado a septiembre.",
+          "source_url": "https://platan.us/startups/grandpa"
+        },
+        {
+          "type": "cierre",
+          "date": "2025-06",
+          "title": "Cierre",
+          "prose": "Tras el rebrand a Bloocks, el dominio quedó parqueado 'en venta', sin producto activo.",
+          "source": "Trayectoria",
+          "basis": "Cierre CONFIRMADO por fuente (fundadores/prensa/registro).",
+          "source_url": "http://web.archive.org/web/20260625063441/https://bloocks.com/"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-07",
+          "title": "De Manifest a Bloocks",
+          "prose": "Manifest (crear apps desde un prompt, manifest-hq.com) se renombró Bloocks a mediados de 2025; manifest-hq.com redirige a bloocks.com, hoy dominio en venta.",
+          "quote": "",
+          "source": "bloocks.com · jul 2025",
+          "source_url": "https://web.archive.org/web/20250710192550/http://bloocks.com/",
+          "wayback_url": "https://web.archive.org/web/20250710192550/http://bloocks.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Bloocks"
+      ],
+      "search_blob": "manifest grandpa bloocks manifest codename grandpa grandpa bloocks.com manifest-hq.com"
+    },
+    {
+      "name": "Sendmage",
+      "domain": "sendmage.com",
+      "status": "inactiva",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Ingresó a Platanus Ventures en el segundo batch de 2023 con el inversión estándar del acelerador (~US$200K por ~7%), con un CRM para ventas outbound que opera de forma autónoma.",
+          "source": "Crunchbase",
+          "basis": "Batch 2023-2 mapeado a septiembre.",
+          "source_url": "https://platan.us/startups/sendmage"
+        },
+        {
+          "type": "inactivo",
+          "date": "2025-02",
+          "title": "Sin señal reciente",
+          "prose": "Al parecer no hay actividad reciente: el sitio dejó de actualizarse y el dominio cayó. Pudo haberse cerrado silenciosamente, sin anuncio formal.",
+          "quote": "",
+          "source": "Última señal · feb 2025",
+          "source_url": "https://web.archive.org/web/20250210113132/http://sendmage.com/",
+          "basis": "Inferido: sin noticia de cierre. La fecha es la última señal de actividad registrada del sitio; no hay confirmación de cierre."
+        }
+      ],
+      "aliases": [],
+      "search_blob": "sendmage sendmage sendmage sendmage sendmage.com"
+    },
+    {
+      "name": "Identyz",
+      "domain": "identyz.com",
+      "status": "activa",
+      "tag": "Regtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "El proyecto entró al batch de la segunda mitad de 2023 de Platanus Ventures, que aportó su inversión estándar (~US$100K), para facilitar la integración de verificación de identidad y firma digital, entonces bajo la marca Autentiz.",
+          "source": "Platanus",
+          "basis": "batch 2023-2, Platanus",
+          "source_url": "https://platan.us/startups/auth4all"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-02",
+          "title": "De Autentiz a Identyz",
+          "prose": "Autentiz (verificación de identidad, autentiz.com) se renombró Identyz; autentiz.com redirige a identyz.com. La razón social Autentiz SpA se mantuvo.",
+          "quote": "",
+          "source": "identyz.com · feb 2024",
+          "source_url": "https://web.archive.org/web/20240229122711/http://identyz.com/",
+          "wayback_url": "https://web.archive.org/web/20240229122711/http://identyz.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Autentiz"
+      ],
+      "search_blob": "identyz auth4all identyz autentiz auth4all autentiz.com identyz.com identyz.cl"
+    },
+    {
+      "name": "Plenti",
+      "domain": "plenti.com.co",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Plenti entró al batch de la segunda mitad de 2023 de Platanus Ventures con una ronda Friends & Family de US$165K liderada por la aceleradora, con la que aterrizó en Colombia para ofrecer una billetera multimoneda que protege a las personas de la devaluación.",
+          "source": "LatamFintech",
+          "basis": "batch 2023-2, Platanus",
+          "source_url": "https://platan.us/startups/plenti"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "plenti plenti plenti plenti plenti.com.co"
+    },
+    {
+      "name": "Wizybot",
+      "domain": "wizybot.com",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Ingreso a Platanus",
+          "prose": "Wizybot ingresó a Platanus Ventures en la generación 2023-2, recibiendo el inversión estándar de la aceleradora, con la primera integración de ChatGPT en Shopify para soporte al cliente.",
+          "source": "Crunchbase",
+          "basis": "batch 2023-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/wizybot"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "wizybot wizybot wizybot wizybot wizybot.com"
+    },
+    {
+      "name": "Gokei",
+      "domain": "getgokei.com",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Gokei ingresó al batch 2023-2 de Platanus Ventures (inversión inicial ~US$100K) con una app amplia para coordinar la salud —agendar horas, exámenes, medicamentos— e incluso la idea de un seguro complementario digital, antes de encontrar su foco en los reembolsos.",
+          "source": "Platanus",
+          "basis": "Batch 2023-2 Platanus; inversión estándar aprox.",
+          "source_url": "https://platan.us/startups/gokei"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-09",
+          "title": "De gestión de salud a reembolsos automáticos",
+          "prose": "Empezó como una app amplia para coordinar la salud (agendar horas, exámenes, medicamentos) e incluso evaluó vender un seguro complementario. Tras el programa se enfocó en lo que más usaban sus usuarios: el reembolso automático de gastos médicos ante isapres y seguros.",
+          "quote": "",
+          "source": "getgokei.com · sep 2024",
+          "source_url": "https://web.archive.org/web/20240915234927/http://getgokei.com/",
+          "wayback_url": "https://web.archive.org/web/20240915234927/http://getgokei.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2025-09",
+          "title": "Ronda ángel ~US$200K",
+          "prose": "Gokei levantó alrededor de US$200K en una ronda ángel encabezada por Buenaonda junto a inversionistas como Matías Daire, José Tomás Daire y Georges Bourguignon, para expandir su plataforma de reembolsos de salud.",
+          "source": "LatamList",
+          "basis": "Ronda ~US$200K reportada en 2025; mes aproximado.",
+          "source_url": "https://latamlist.com/gokei-raises-200k-to-expand-health-reimbursement-platform/"
+        },
+        {
+          "type": "pivot",
+          "date": "2026-01",
+          "title": "De Gokei a Skip",
+          "prose": "A inicios de 2026 Gokei se renombró Skip y sumó un copago virtual ('atiéndete ahora, paga después'): el paciente paga solo el 30% de la prestación y Skip adelanta el resto, cobrándolo cuando llega el reembolso. Respaldada por fundadores de Cornershop.",
+          "quote": "",
+          "source": "getskip.ai · ene 2026",
+          "source_url": "https://web.archive.org/web/20260131120659/http://getskip.ai/",
+          "wayback_url": "https://web.archive.org/web/20260131120659/http://getskip.ai/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Skip"
+      ],
+      "search_blob": "gokei gokei skip gokei gokei gokei.cl getgokei.com getskip.ai"
+    },
+    {
+      "name": "Teambit",
+      "domain": "teambit.dev",
+      "status": "activa",
+      "tag": "Dev Tools",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Teambit ingresó a Platanus Ventures en el batch 2023-2 con el inversión estándar del programa (del orden de US$200K por ~7%), con una herramienta para maximizar el rendimiento de los equipos de desarrollo.",
+          "source": "Platanus",
+          "basis": "Batch 2023-2 Platanus; sin rondas externas registradas.",
+          "source_url": "https://platan.us/startups/teambit"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "teambit teambit teambit teambit teambit.dev"
+    },
+    {
+      "name": "Altur",
+      "domain": "altur.io",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Altur entró al batch 2023-2 de Platanus Ventures, que la respaldó con su inversión estándar (~US$100K), para automatizar las operaciones de cobranza con IA.",
+          "source": "Platanus Ventures",
+          "basis": "batch 2023-2",
+          "source_url": "https://platan.us/startups/altur"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-04",
+          "title": "De chatbots a agentes de voz IA",
+          "prose": "Altur pasó de chatbots de cobranza por WhatsApp a agentes de Voz con IA (telefonía propia) para cobranza y ventas.",
+          "quote": "",
+          "source": "altur.io · abr 2025",
+          "source_url": "https://web.archive.org/web/20250415153915/http://altur.io/",
+          "wayback_url": "https://web.archive.org/web/20250415153915/http://altur.io/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2025-06",
+          "title": "Seed US$1.5M en YC (S25)",
+          "prose": "Altur levantó una ronda Seed de US$1.5M en el marco de Y Combinator (S25), con participación de Y Combinator, Platanus Ventures y Eight Capital Group.",
+          "source": "Y Combinator",
+          "basis": "ronda con leads externos (YC S25)",
+          "source_url": "https://www.ycombinator.com/companies/altur"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "altur altur altur altur altur.io"
+    },
+    {
+      "name": "Frust",
+      "domain": "frust.co",
+      "status": "activa",
+      "tag": "Dev Tools",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Frust entró al batch 2023-2 de Platanus Ventures, que la respaldó con una nota convertible de US$100K, para ayudar a las empresas a ahorrar en gasto de cloud.",
+          "source": "Crunchbase",
+          "basis": "batch 2023-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/frust"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "frust frust frust frust frust.co"
+    },
+    {
+      "name": "Blar",
+      "domain": "blar.io",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2023-09",
+          "title": "Entra a Platanus (batch 2023-2)",
+          "prose": "Blar entró al batch 2023-2 de Platanus Ventures (inversión inicial ~US$100K) con una idea muy distinta a la actual: un 'ChatGPT para datos financieros', o sea traducir lenguaje natural a SQL (NL2SQL). De ahí derivó la tecnología de grafos de código que la llevó por varios pivots.",
+          "source": "Platanus Ventures",
+          "basis": "batch 2023-2",
+          "source_url": "https://platan.us/startups/blar"
+        },
+        {
+          "type": "capital",
+          "date": "2023-11",
+          "title": "Pre-Seed US$929K liderada por Collide Capital",
+          "prose": "Blar levantó una ronda Pre-Seed de US$929.500 liderada por Collide Capital junto a Platanus Ventures.",
+          "source": "Crunchbase",
+          "basis": "ronda con lead externo Collide Capital",
+          "source_url": "https://www.crunchbase.com/funding_round/blar-pre-seed--74bff27e"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-07",
+          "title": "De NL2SQL a encontrar la causa raíz de bugs",
+          "prose": "Blar nació como un 'ChatGPT para datos financieros' (NL2SQL; su paper Blar-SQL es de ene-2024). Pivoteó a entender el código: representa el repositorio como un grafo que un agente recorre para encontrar la causa raíz de bugs y errores.",
+          "quote": "",
+          "source": "blar.io · jul 2024",
+          "source_url": "https://web.archive.org/web/20240718205443/http://blar.io/",
+          "wayback_url": "https://web.archive.org/web/20240718205443/http://blar.io/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2024-11",
+          "title": "De depurar bugs a gestionar deuda técnica",
+          "prose": "Con su grafo del código, Blar pasó a actuar como un desarrollador senior automatizado: detecta y prioriza deuda técnica, propone arreglos y revisa los pull requests antes de que lleguen al equipo.",
+          "quote": "",
+          "source": "blar.io · nov 2024",
+          "source_url": "https://web.archive.org/web/20241113152545/http://blar.io/",
+          "wayback_url": "https://web.archive.org/web/20241113152545/http://blar.io/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2025-10",
+          "title": "De herramienta para devs a soporte de usuarios con IA",
+          "prose": "Último pivot: Blar dejó las herramientas para developers y se volcó al soporte de usuarios. Hoy es un agente de IA que vive dentro del producto del cliente y usa el conocimiento del código y la documentación para resolver tickets de soporte y guiar al usuario por la interfaz.",
+          "quote": "",
+          "source": "blar.io · oct 2025",
+          "source_url": "https://web.archive.org/web/20251007183503/http://blar.io/",
+          "wayback_url": "https://web.archive.org/web/20251007183503/http://blar.io/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "blar blar blar blar getblar.com blar.io blar.tech"
+    },
+    {
+      "name": "Fireflux",
+      "domain": "fireflux.app",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Entra a Platanus como Utomata (batch 2024-1)",
+          "prose": "Ingresó al batch 2024-1 de Platanus Ventures como Utomata, con el inversión estándar del acelerador (US$200.000), para mejorar las tareas de campo con IA y sin código.",
+          "source": "Pitchbook",
+          "basis": "Inversión estándar de Platanus 2024; Pitchbook.",
+          "source_url": "https://platan.us/startups/utomata"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-03",
+          "title": "De Utomata a Fireflux",
+          "prose": "El codename interno era Utomata; para el primer landing público (fireflux.app, marzo 2024) ya operaba como Fireflux, no-code + IA para operaciones de campo.",
+          "quote": "",
+          "source": "fireflux.app · mar 2024",
+          "source_url": "https://web.archive.org/web/20240517144803/http://fireflux.app/",
+          "wayback_url": "https://web.archive.org/web/20240517144803/http://fireflux.app/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Utomata"
+      ],
+      "search_blob": "fireflux utomata fireflux utomata utomata fireflux.com fireflux.app fireflux.dev utomata.com"
+    },
+    {
+      "name": "comOS",
+      "domain": "comos.ai",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Entrada a Platanus Ventures",
+          "prose": "Ingresó a Platanus Ventures en el primer batch de 2024 con el inversión estándar del acelerador (~US$200K por ~7%), con un sistema operativo de comunicaciones con IA para automatizar la relación con clientes.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2024-1 mapeado a marzo.",
+          "source_url": "https://platan.us/startups/comos"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "comos comos comos comos comos.ai"
+    },
+    {
+      "name": "Grupalia",
+      "domain": "creditogrupalia.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Ingreso a Platanus",
+          "prose": "Grupalia entró a Platanus Ventures en la generación 2024-1, recibiendo el inversión estándar de la aceleradora, con un modelo de créditos grupales digitales para microempresas en México.",
+          "source": "LatamList",
+          "basis": "batch 2024-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/grupalia"
+        },
+        {
+          "type": "capital",
+          "date": "2025-10",
+          "title": "Seed US$4,8M (equity + deuda)",
+          "prose": "Levantó una ronda seed de US$4,8M (equity + deuda), con Platanus Ventures, Semilla, Innogen, CAPEM y Addem, para créditos grupales digitales a micro-empresas en México.",
+          "source": "LatamList",
+          "basis": "ronda con fondos externos",
+          "source_url": "https://latamlist.com/grupalia-raises-4-8m-seed-round/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "grupalia grupalia grupalia grupalia creditogrupalia.com grupalia.com"
+    },
+    {
+      "name": "GOPA",
+      "domain": "gopa.mx",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "GOPA se integró a la generación 2024-1 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$200K) para entregar poder de compra y financiamiento a concesionarios de autos en México.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2024-1",
+          "source_url": "https://platan.us/startups/gopa"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "gopa gopa gopa gopa gopa.mx"
+    },
+    {
+      "name": "Lici",
+      "domain": "lici.cl",
+      "status": "activa",
+      "tag": "Govtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Lici entró a la generación 2024-1 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$200K) para su plataforma que facilita a las empresas participar en licitaciones del mercado público.",
+          "source": "Platanus Ventures",
+          "basis": "Batch 2024-1",
+          "source_url": "https://platan.us/startups/lici"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "lici lici lici lici lici.cl"
+    },
+    {
+      "name": "Wayak",
+      "domain": "wayak.io",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Entra a Platanus (batch 2024-1)",
+          "prose": "Wayak entró al batch 2024-1 de Platanus Ventures, que la respaldó con su inversión estándar de ~US$200K por 7%, para construir un 'AI Operating System'.",
+          "source": "Platanus Ventures",
+          "basis": "batch 2024-1",
+          "source_url": "https://platan.us/startups/wayak"
+        },
+        {
+          "type": "pivot",
+          "date": "2024-05",
+          "title": "De app social a plataforma de agentes de IA",
+          "prose": "Wayak partió como una app social para registrar el avance de tus metas e ideas en una línea de tiempo y motivarte junto a una comunidad. En 2024 se reinventó como una plataforma para crear y orquestar agentes de IA: defines cada agente (nombre, propósito y tarea), los combinas en equipos y eliges el modelo (LLM) para cada uno.",
+          "quote": "",
+          "source": "wayak.io · may 2024",
+          "source_url": "https://web.archive.org/web/20240517144749/http://wayak.io/",
+          "wayback_url": "https://web.archive.org/web/20240517144749/http://wayak.io/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "wayak wayak wayak wayak wayak.io"
+    },
+    {
+      "name": "Onda",
+      "domain": "onda.lol",
+      "status": "activa",
+      "tag": "Marketplace",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-03",
+          "title": "Entra a Platanus (batch 2024-1)",
+          "prose": "Onda ingresó al batch 2024-1 de Platanus Ventures, que lideró su pre-seed con el inversión estándar de US$200K, para crear un 'Twitch meets Ebay' enfocado en Latinoamérica.",
+          "source": "Crunchbase",
+          "basis": "batch 2024-1; inversión Platanus",
+          "source_url": "https://platan.us/startups/onda"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "onda onda onda onda onda.lol"
+    },
+    {
+      "name": "Taxflow",
+      "domain": "jointaxflow.ai",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-06",
+          "title": "Pre-seed con Platanus",
+          "prose": "Taxflow se sumó a Platanus Ventures con una ronda pre-seed de US$750.000 liderada por la aceleradora, para desarrollar agentes de IA que preparan impuestos para firmas contables en Estados Unidos.",
+          "source": "LatamList",
+          "basis": "ronda pre-seed liderada por Platanus",
+          "source_url": "https://platan.us/startups/taxflow"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "taxflow taxflow taxflow taxflow jointaxflow.ai"
+    },
+    {
+      "name": "Superposition Labs",
+      "domain": "superposition.company",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Superposition Labs se sumó al batch de la segunda mitad de 2024 de Platanus Ventures, que invirtió su inversión estándar (~US$200K por ~7%), inicialmente con una API de firma electrónica.",
+          "source": "Platanus",
+          "basis": "batch 2024-2, Platanus",
+          "source_url": "https://platan.us/startups/signature-api"
+        }
+      ],
+      "aliases": [
+        "SignatureAPI"
+      ],
+      "search_blob": "superposition labs signature-api superposition labs codename signature-api signature-api signatureapi signatureapi.com superposition.company"
+    },
+    {
+      "name": "Felz",
+      "domain": "tiendasfelz.com",
+      "status": "activa",
+      "tag": "Retail",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Felz entró al batch de la segunda mitad de 2024 de Platanus Ventures con una ronda de ~US$200K liderada por la aceleradora, en la que también participaron 99 Startups, QAPU Ventures y Redwood Ventures, para digitalizar tienditas en México.",
+          "source": "Mackmeyer",
+          "basis": "batch 2024-2, Platanus + ángeles",
+          "source_url": "https://platan.us/startups/felz"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-11",
+          "title": "De SaaS a operar mini-markets",
+          "prose": "Felz pasó de SaaS para tienditas a adquirir y operar su propia red de mini-markets híper-locales.",
+          "quote": "",
+          "source": "tiendasfelz.com · nov 2025",
+          "source_url": "https://web.archive.org/web/20251115232430/http://tiendasfelz.com/",
+          "wayback_url": "https://web.archive.org/web/20251115232430/http://tiendasfelz.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [
+        "Tiendas Felz"
+      ],
+      "search_blob": "felz felz felz tiendas felz felz tiendasfelz.com"
+    },
+    {
+      "name": "JARO",
+      "domain": "jaro.mx",
+      "status": "activa",
+      "tag": "Logística",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "JARO se incorporó al batch de la segunda mitad de 2024 de Platanus Ventures, que invirtió su inversión estándar (~US$200K por ~7%), para construir una propuesta de freight confiable con finanzas embebidas apalancada en transportistas en México.",
+          "source": "Crunchbase",
+          "basis": "batch 2024-2, Platanus",
+          "source_url": "https://platan.us/startups/jaro"
+        }
+      ],
+      "aliases": [
+        "JARO Freight"
+      ],
+      "search_blob": "jaro jaro jaro jaro freight jaro jaro.mx jarofreight.com"
+    },
+    {
+      "name": "Kapso",
+      "domain": "kapso.ai",
+      "status": "activa",
+      "tag": "Dev Tools",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Entra a Platanus Ventures",
+          "prose": "Kapso se incorporó al batch de la segunda mitad de 2024 de Platanus Ventures con un producto totalmente distinto al actual: personal training online, entrenamiento de fuerza personalizado con coaches humanos + IA (prensa, may-2024).",
+          "source": "Platanus",
+          "basis": "batch 2024-2, Platanus",
+          "source_url": "https://platan.us/startups/kapso"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-03",
+          "title": "De personal training con IA a WhatsApp para developers",
+          "prose": "Kapso nació como personal training online: una sesión inicial con un coach humano y luego rutinas de fuerza personalizadas con IA vía app (prensa, may-2024). A inicios de 2025 pivoteó por completo a infraestructura de WhatsApp para developers: API y agentes de IA para sumar WhatsApp a cualquier producto.",
+          "quote": "",
+          "source": "kapso.ai · mar 2025",
+          "source_url": "https://web.archive.org/web/20250328232141/http://kapso.ai/",
+          "wayback_url": "https://web.archive.org/web/20250328232141/http://kapso.ai/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "kapso kapso kapso kapso kapso.ai kapso.com getkapso.com"
+    },
+    {
+      "name": "Horizon",
+      "domain": "usehorizon.ai",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Ingreso a Platanus",
+          "prose": "Horizon ingresó a Platanus Ventures en la generación 2024-2, recibiendo el inversión estándar de la aceleradora, con una plataforma de IA para que las empresas detecten ineficiencias diez veces más rápido.",
+          "source": "platan.us",
+          "basis": "batch 2024-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/horizon"
+        },
+        {
+          "type": "capital",
+          "date": "2026-01",
+          "title": "Seed de US$3,5M liderada por NXTP",
+          "prose": "La startup uruguaya levantó una ronda seed de US$3,5 millones liderada por el fondo NXTP.",
+          "source": "Gunder",
+          "basis": "ronda seed con fondo externo",
+          "source_url": "https://www.gunder.com/en/news-insights/client-news/uruguayan-ai-startup-horizon-raises-35-million-usd-seed-investment"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "horizon horizon horizon horizon usehorizon.ai"
+    },
+    {
+      "name": "Runni",
+      "domain": "runni.co",
+      "status": "activa",
+      "tag": "Logística",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Ingreso a Platanus",
+          "prose": "Runni ingresó a Platanus Ventures en la generación 2024-2, recibiendo el inversión estándar de la aceleradora, para arrendar e-bikes con intercambio ilimitado de baterías a repartidores de plataformas como Rappi.",
+          "source": "Crunchbase",
+          "basis": "batch 2024-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/runni"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "runni runni runni runni runni.co"
+    },
+    {
+      "name": "Wasabil",
+      "domain": "wasabil.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Entra a Platanus (batch 2024-2)",
+          "prose": "Wasabil ingresó a Platanus Ventures en el batch 2024-2 con el inversión estándar del programa (del orden de US$200K), complementado con un grant de Start-Up Chile, para automatizar facturas y documentos tributarios y recuperar IVA.",
+          "source": "Bizfortune",
+          "basis": "Batch 2024-2 Platanus + grant Start-Up Chile (~US$225K combinado).",
+          "source_url": "https://platan.us/startups/wasabil"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "wasabil wasabil wasabil wasabil wasabil.com wasabil.cl"
+    },
+    {
+      "name": "CuidaPet",
+      "domain": "cuidapet.cl",
+      "status": "activa",
+      "tag": "Pet Care",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "Fundada por ex integrantes de Examedi, CuidaPet se sumó a la generación 2024-2 de Platanus Ventures, que junto a inversionistas ángeles y QAPU Ventures aportó el inversión de aceleración (~US$200K) para su servicio de salud y bienestar veterinario a domicilio.",
+          "source": "DF MAS",
+          "basis": "Batch 2024-2; ronda aceleradora + ángeles US$200K",
+          "source_url": "https://platan.us/startups/cuida-pet"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "cuidapet cuida-pet cuidapet cuida-pet cuidapet.cl"
+    },
+    {
+      "name": "ElCeroKm",
+      "domain": "elcerokm.com",
+      "status": "activa",
+      "tag": "Automotriz",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-09",
+          "title": "Ingreso a Platanus Ventures",
+          "prose": "La startup argentina se integró a la generación 2024-2 de Platanus Ventures, que la respaldó con su inversión de aceleración (~US$200K) para su marketplace de autos nuevos 100% online y sin intermediarios para Latinoamérica.",
+          "source": "Infonegocios",
+          "basis": "Batch 2024-2; ronda Platanus US$200K",
+          "source_url": "https://platan.us/startups/elcerokm"
+        },
+        {
+          "type": "pivot",
+          "date": "2025-04",
+          "title": "De comparador de precios a marketplace de autos 0km",
+          "prose": "ElCeroKm empezó como un sitio para consultar el precio real de los autos 0km en Argentina y evitar sobreprecios. En 2025 pasó a un marketplace transaccional: comparar y comprar el auto nuevo online, sin moverse de la casa.",
+          "quote": "",
+          "source": "elcerokm.com · abr 2025",
+          "source_url": "https://web.archive.org/web/20250401190608/http://elcerokm.com/",
+          "wayback_url": "https://web.archive.org/web/20250401190608/http://elcerokm.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "elcerokm elcerokm elcerokm elcerokm elcerokm.com"
+    },
+    {
+      "name": "Movana",
+      "domain": "movana.io",
+      "status": "activa",
+      "tag": "HR Tech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2024-10",
+          "title": "Pre-seed con Platanus",
+          "prose": "Movana ingresó a Platanus Ventures en la generación 2024-2, recibiendo el inversión estándar de la aceleradora, para conectar trabajadores con empleos a escala en México.",
+          "source": "Crunchbase",
+          "basis": "batch 2024-2; inversión Platanus",
+          "source_url": "https://platan.us/startups/movana"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "movana movana movana movana movana.io"
+    }
+  ]
+}

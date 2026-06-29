@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+html, body { margin: 0; overflow-x: hidden; background: #ffffff; }
+body {
+  font-family: 'Rubik', system-ui, -apple-system, sans-serif;
+  color: #1a1916;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+::selection { background: #dfe6fb; }
+input::placeholder { color: #bdbab2; }
+
+@keyframes starSpin {
+  0%   { transform: rotate(0deg);   animation-timing-function: cubic-bezier(.5,.04,.25,1); }
+  14%  { transform: rotate(72deg); }
+  25%  { transform: rotate(72deg);  animation-timing-function: cubic-bezier(.5,.04,.25,1); }
+  39%  { transform: rotate(144deg); }
+  50%  { transform: rotate(144deg); animation-timing-function: cubic-bezier(.5,.04,.25,1); }
+  64%  { transform: rotate(216deg); }
+  100% { transform: rotate(216deg); }
+}
+@keyframes expandIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+.row:hover { background: #faf9f6; }
+.expand { animation: expandIn .18s ease both; }
+.searchbtn:hover { color: #2f5fe6; }
+.evdot-hit:hover { filter: brightness(.92); }
+.srcchip { cursor: default; }
+.srcchip-link { cursor: pointer; transition: color .12s, border-color .12s; }
+.srcchip-link:hover { color: #2f5fe6; border-color: #c7d2f7; }
