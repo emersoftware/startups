@@ -32,15 +32,16 @@ input::placeholder { color: #bdbab2; }
 /* ── Móvil (portrait): Idea 1 — nombre arriba, eje a ancho completo ── */
 /* >640px (incl. teléfono en landscape) conserva la UI de escritorio tal cual. */
 @media (max-width: 640px) {
-  /* scroll de documento normal en vez del app-shell 100vh */
-  .shell { display: block !important; height: auto !important; min-height: 0 !important; padding: 20px 0 48px !important; }
-  .shell > div { display: block !important; max-width: none !important; }
-  .hdr { padding: 22px 16px 0 !important; }
+  /* SOLO la lista scrollea; el header (marca+buscador, filtros, eje) queda fijo.
+     100dvh evita que la barra de Safari tape contenido (cae a 100vh si no hay soporte). */
+  .shell { height: 100dvh !important; min-height: 0 !important; padding: 16px 0 0 !important; }
+  .shell > div { max-width: none !important; }
+  .hdr { padding: 18px 16px 0 !important; }
   .searchwrap { max-width: none !important; }
-  #rows { display: block !important; overflow: visible !important; padding: 4px 16px 40px !important; }
+  #rows { padding: 4px 16px 16px !important; }
 
   /* eje de años a ancho completo (sin la columna de 200px) */
-  .axishead { grid-template-columns: 1fr !important; padding: 16px 16px 6px !important; margin-top: 16px !important; }
+  .axishead { grid-template-columns: 1fr !important; padding: 14px 16px 6px !important; margin-top: 12px !important; }
   .axishead > div:first-child { display: none !important; }
 
   /* cada fila se apila: nombre arriba, timeline a ancho completo y alineado */

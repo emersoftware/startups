@@ -38,10 +38,11 @@ const startups = data.startups.map((s: any) => {
   }));
   // KISS: the status is only the outcome (Activa/Adquirida/Cerrada); the pivot
   // is an event, not a status. The "pivot" ones are still alive -> Activa.
-  const status = s.status === "pivot" ? "activa" : s.status;
+  const status = s.status === "pivot" ? "activa" : s.status === "inactiva" ? "cerrada" : s.status;
   return {
     ...s, events, status,
-    years: [...new Set(s.events.map((e: any) => e.date.slice(0, 4)))],
+    // El filtro de año matchea solo el PRIMER evento (año de fundación).
+    years: s.events[0] ? [s.events[0].date.slice(0, 4)] : [],
     hasPivot: s.events.some((e: any) => e.type === "pivot"),
     hasCapital: s.events.some((e: any) => e.type === "capital"),
     st: ST[status] ?? ST.activa,
@@ -50,7 +51,7 @@ const startups = data.startups.map((s: any) => {
   };
 });
 
-const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"],["inactiva","Sin señal"]];
+const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"]];
 const tagChips = [["pivot","Pivotearon"],["capital","Levantaron capital"]];
 
 const pageTitle = "Chile, Startups — trayectorias de startups chilenas";
@@ -91,27 +92,26 @@ const ogImage = new URL("/og.png", Astro.site).href;
 
     <div style="flex-shrink:0;background:#ffffff">
       <div class="hdr" style="padding:22px 30px 0">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
-          <div style="display:flex;align-items:center;gap:11px">
+        <div class="topbar" style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:center;gap:11px;flex-shrink:0">
             <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg></span>
             <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
           </div>
-        </div>
-
-        <div style="display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:18px">
-          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:180px;max-width:260px">
+          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:140px;max-width:300px">
             <div style="flex:1;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:6px">
-              <input id="search" placeholder="" style="flex:1;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
+              <input id="search" placeholder="" style="flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
             </div>
             <button class="searchbtn" style="width:30px;height:30px;align-self:flex-end;background:transparent;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;color:#1a1916;padding:0">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"></circle><line x1="20.5" y1="20.5" x2="16.5" y2="16.5"></line></svg>
             </button>
           </div>
+        </div>
 
+        <div style="display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:16px">
           <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
             <div style="display:flex;align-items:center;gap:8px">
               <span style="font-size:11px;color:#a8a49b">Año</span>
-              {data.meta.ticks.map((y: number) => (
+              {data.meta.ticks.filter((y: number) => y <= 2024).map((y: number) => (
                 <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
               ))}
             </div>
@@ -131,9 +131,10 @@ const ogImage = new URL("/og.png", Astro.site).href;
       <div class="axishead" style="display:grid;grid-template-columns:200px 1fr;gap:0;padding:8px 30px 8px;margin-top:26px">
         <div></div>
         <div style="position:relative;height:13px">
-          {ticks.map((t) => (
-            <span style={`position:absolute;left:${t.left}%;transform:translateX(-50%);font-size:10px;color:#bdbab2`}>{t.y}</span>
-          ))}
+          {ticks.map((t) => {
+            const tx = t.left <= 1 ? "0" : t.left >= 99 ? "-100%" : "-50%";
+            return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}>{`'${String(t.y).slice(2)}`}</span>);
+          })}
         </div>
       </div>
     </div>
