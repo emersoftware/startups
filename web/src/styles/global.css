@@ -44,7 +44,8 @@ input::placeholder { color: #bdbab2; }
   .axishead > div:first-child { display: none !important; }
 
   /* cada fila se apila: nombre arriba, timeline a ancho completo y alineado */
-  .row { grid-template-columns: 1fr !important; height: auto !important; row-gap: 18px; padding: 12px 0 10px !important; align-items: stretch !important; }
+  /* row-gap necesita !important: el estilo inline de .row trae gap:0 que si no, gana. */
+  .row { grid-template-columns: 1fr !important; height: auto !important; row-gap: 18px !important; padding: 12px 0 10px !important; align-items: stretch !important; }
   .namecell { padding-left: 0 !important; }
   .statusdot { display: none !important; }
   .nameline { display: none !important; }
