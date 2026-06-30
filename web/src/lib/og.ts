@@ -34,20 +34,17 @@ const EV: Record<string, { fill: string; stroke?: string; dash?: boolean }> = {
   inactivo:    { fill: "#ffffff", stroke: "#a8a39a", dash: true },
 };
 
-// Rubik estática (instancias 400/500) leída del árbol fuente; opentype la usa para
-// sacar los contornos de glifos. cwd = web/ en `astro build` y en el CI.
-const load = (f: string) => {
-  const b = readFileSync(join(process.cwd(), "src/lib", f));
-  return opentype.parse(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength));
-};
-const RUBIK = { 400: load("Rubik-Regular.ttf"), 500: load("Rubik-Medium.ttf") };
+// Rubik Regular (400) — mismo peso que la plataforma (App.astro: marca y nombres en 400).
+// opentype la usa para sacar los contornos de glifos. cwd = web/ en `astro build` y en el CI.
+const fontBuf = readFileSync(join(process.cwd(), "src/lib", "Rubik-Regular.ttf"));
+const RUBIK = opentype.parse(fontBuf.buffer.slice(fontBuf.byteOffset, fontBuf.byteOffset + fontBuf.byteLength));
 
 // Texto → contornos. Cada glifo se saca en origen (0,0) y se posiciona con
 // transform="translate" (lo aplica resvg). Pasar el pen fraccionario a opentype
 // gatilla un bug de toPathData que emite NaN en glifos con curvas y rompe el path.
 // tracking = letter-spacing en px (negativo aprieta).
-function text(str: string, x: number, baseY: number, size: number, weight: 400 | 500, fill: string, tracking = 0) {
-  const font = RUBIK[weight];
+function text(str: string, x: number, baseY: number, size: number, fill: string, tracking = 0) {
+  const font = RUBIK;
   const scale = size / font.unitsPerEm;
   let pen = x;
   const parts: string[] = [];
@@ -84,12 +81,12 @@ function buildSvg(name: string, events: Ev[], start: number, end: number) {
   <g transform="translate(${PADX},66)">
     <rect width="40" height="40" rx="11" fill="${ACCENT}"/>
     <path transform="translate(8,8)" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z" fill="#ffffff"/>
-    ${text("Chile, Startups", 56, 28, 27, 500, "#1a1916", -0.3)}
+    ${text("Chile, Startups", 56, 28, 27, "#1a1916", -0.3)}
   </g>
-  ${text(name, PADX, 318, nameSize, 500, "#1a1916", -1.2)}
+  ${text(name, PADX, 318, nameSize, "#1a1916", -1.2)}
   ${axis}
   ${dots}
-  ${text("startups.emersoftware.cl", PADX, 566, 22, 400, "#bdbab2", -0.2)}
+  ${text("startups.emersoftware.cl", PADX, 566, 22, "#bdbab2", -0.2)}
 </svg>`;
 }
 
