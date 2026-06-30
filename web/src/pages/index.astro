@@ -97,7 +97,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
             <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg></span>
             <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
           </div>
-          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:140px;max-width:300px">
+          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:140px;max-width:210px">
             <div style="flex:1;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:6px">
               <input id="search" placeholder="" style="flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
             </div>
@@ -109,17 +109,17 @@ const ogImage = new URL("/og.png", Astro.site).href;
 
         <div style="display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:16px">
           <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-            <div style="display:flex;align-items:center;gap:8px">
+            <div class="yearsub" style="display:flex;align-items:center;gap:8px">
               <span style="font-size:11px;color:#a8a49b">Año</span>
               {data.meta.ticks.filter((y: number) => y <= 2024).map((y: number) => (
                 <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
               ))}
             </div>
-            <div style="width:1px;height:13px;background:#e3e1da"></div>
+            <div class="fdiv" style="width:1px;height:13px;background:#e3e1da"></div>
             {estadoChips.map(([k, l]) => (
               <button class="chip-estado" data-estado={k} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12.5px;font-weight:400;color:#75726b;cursor:pointer">{l}</button>
             ))}
-            <div style="width:1px;height:13px;background:#e3e1da"></div>
+            <div class="fdiv" style="width:1px;height:13px;background:#e3e1da"></div>
             {tagChips.map(([k, l]) => (
               <button class="chip-tag" data-tag={k} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12.5px;font-weight:400;color:#75726b;cursor:pointer">{l}</button>
             ))}
@@ -141,7 +141,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
 
     <div id="rows" data-rows style="padding:4px 30px 14px;overflow-y:auto;overflow-x:hidden;flex:1;min-height:0">
       {startups.map((s) => (
-        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hascapital={s.hasCapital} data-name={s.name} data-stcolor={s.st.color} data-stlabel={s.st.label}>
+        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hascapital={s.hasCapital}>
           <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
             <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
               <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
@@ -245,54 +245,12 @@ const ogImage = new URL("/og.png", Astro.site).href;
   clearBtn.addEventListener("click", clearAll);
   $("#clear2").addEventListener("click", clearAll);
 
-  const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
-
-  // ── Hoja inferior (móvil): tocar un punto o una fila → trayectoria de la startup ──
-  const scrim = document.createElement("div"); scrim.id = "sheet-scrim";
-  const sheet = document.createElement("div"); sheet.id = "sheet";
-  sheet.innerHTML = `<div class="sheet-handle"></div><div class="sheet-head"></div><div class="sheet-body"></div>`;
-  document.body.append(scrim, sheet);
-  const sheetHead = sheet.querySelector(".sheet-head") as HTMLElement;
-  const sheetBody = sheet.querySelector(".sheet-body") as HTMLElement;
-
-  function openSheet(el: HTMLElement, evIndex: number) {
-    const d = el.dataset;
-    const panel = el.querySelector(".expand") as HTMLElement;
-    sheetHead.innerHTML = `<div style="display:flex;align-items:center;gap:9px"><span style="width:9px;height:9px;flex-shrink:0;background:${d.stcolor};border-radius:2.5px"></span><span style="font-size:18px;font-weight:500;letter-spacing:-0.015em">${d.name}</span><span style="margin-left:auto;font-size:11px;color:${d.stcolor}">${d.stlabel}</span></div>`;
-    sheetBody.innerHTML = "";
-    for (const node of Array.from(panel.children)) sheetBody.appendChild(node.cloneNode(true));
-    const ps = sheetBody.querySelectorAll("p");
-    ps.forEach((p) => p.classList.remove("sheet-hl"));
-    if (evIndex >= 0 && ps[evIndex]) {
-      ps[evIndex].classList.add("sheet-hl");
-      requestAnimationFrame(() => (ps[evIndex] as HTMLElement).scrollIntoView({ block: "center" }));
-    } else { sheetBody.scrollTop = 0; }
-    document.body.style.overflow = "hidden";
-    scrim.classList.add("open"); sheet.classList.add("open");
-  }
-  function closeSheet() {
-    scrim.classList.remove("open"); sheet.classList.remove("open");
-    sheet.style.transform = ""; document.body.style.overflow = "";
-  }
-  scrim.addEventListener("click", closeSheet);
-  let touchY = 0;
-  sheet.addEventListener("touchstart", (e) => { touchY = e.touches[0].clientY; }, { passive: true });
-  sheet.addEventListener("touchmove", (e) => {
-    const dy = e.touches[0].clientY - touchY;
-    if (dy > 0 && sheetBody.scrollTop <= 0) sheet.style.transform = `translateY(${dy}px)`;
-  }, { passive: true });
-  sheet.addEventListener("touchend", (e) => {
-    const dy = e.changedTouches[0].clientY - touchY; sheet.style.transform = "";
-    if (dy > 90) closeSheet();
-  });
-
-  // ── filas: escritorio = panel inline (una a la vez); móvil = hoja ──
+  // expand rows (one at a time)
   let openPanel: HTMLElement | null = null;
   all.forEach((el) => {
     const row = el.querySelector("[data-toggle]") as HTMLElement;
     const panel = el.querySelector(".expand") as HTMLElement;
     row.addEventListener("click", () => {
-      if (isMobile()) { openSheet(el, -1); return; }
       const isOpen = !panel.hidden;
       if (openPanel && openPanel !== panel) openPanel.hidden = true;
       panel.hidden = isOpen;
@@ -300,39 +258,28 @@ const ogImage = new URL("/og.png", Astro.site).href;
       if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: "smooth" }));
     });
   });
-  document.addEventListener("keydown", (e) => {
-    if (e.key !== "Escape") return;
-    if (sheet.classList.contains("open")) closeSheet();
-    else if (openPanel) { openPanel.hidden = true; openPanel = null; }
-  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; openPanel = null; } });
 
-  // ── puntos: escritorio = tooltip al hover; móvil = tap abre la hoja en ese hito ──
+  // floating event tooltip
   const tip = document.createElement("div");
   tip.style.cssText = "position:fixed;width:200px;background:#fff;border:1px solid #e3e1da;border-radius:9px;box-shadow:0 8px 24px rgba(26,25,22,.13);padding:9px 11px;pointer-events:none;z-index:9999;display:none";
   document.body.appendChild(tip);
-  document.querySelectorAll<HTMLElement>(".startup").forEach((st) => {
-    [...st.querySelectorAll<HTMLElement>(".evdot")].forEach((dot, i) => {
-      dot.addEventListener("click", (e) => {
-        if (!isMobile()) return;
-        e.stopPropagation(); openSheet(st, i);
-      });
-      dot.addEventListener("mouseenter", () => {
-        if (isMobile()) return;
-        const d = dot.dataset;
-        tip.innerHTML = `<div style="font-size:11.5px;font-weight:500;color:#1a1916;letter-spacing:-0.005em">${d.tl}</div>`
-          + `<div style="font-size:12px;color:#3a382f;margin-top:2px">${d.ti}</div>`
-          + `<div style="font-size:10.5px;color:#a8a49b;margin-top:5px;line-height:1.5">${d.dl}${d.ba ? " · " + d.ba : ""}</div>`;
-        const r = dot.getBoundingClientRect();
-        const vw = window.innerWidth;
-        const cx = Math.max(108, Math.min(vw - 108, r.left + r.width / 2));
-        const below = r.top < 150;
-        tip.style.display = "block";
-        tip.style.left = cx + "px";
-        tip.style.top = (below ? r.bottom + 12 : r.top - 12) + "px";
-        tip.style.transform = below ? "translateX(-50%)" : "translate(-50%,-100%)";
-      });
-      dot.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+  document.querySelectorAll<HTMLElement>(".evdot").forEach((dot) => {
+    dot.addEventListener("mouseenter", () => {
+      const d = dot.dataset;
+      tip.innerHTML = `<div style="font-size:11.5px;font-weight:500;color:#1a1916;letter-spacing:-0.005em">${d.tl}</div>`
+        + `<div style="font-size:12px;color:#3a382f;margin-top:2px">${d.ti}</div>`
+        + `<div style="font-size:10.5px;color:#a8a49b;margin-top:5px;line-height:1.5">${d.dl}${d.ba ? " · " + d.ba : ""}</div>`;
+      const r = dot.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const cx = Math.max(108, Math.min(vw - 108, r.left + r.width / 2));
+      const below = r.top < 150;
+      tip.style.display = "block";
+      tip.style.left = cx + "px";
+      tip.style.top = (below ? r.bottom + 12 : r.top - 12) + "px";
+      tip.style.transform = below ? "translateX(-50%)" : "translate(-50%,-100%)";
     });
+    dot.addEventListener("mouseleave", () => { tip.style.display = "none"; });
   });
 </script>
 </body>
