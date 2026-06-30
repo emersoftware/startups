@@ -86,11 +86,11 @@ const ogImage = new URL("/og.png", Astro.site).href;
   <meta name="twitter:image" content={ogImage} />
 </head>
 <body>
-<div style="height:100vh;background:#ffffff;padding:38px 24px 38px;display:flex;flex-direction:column">
+<div class="shell" style="height:100vh;background:#ffffff;padding:38px 24px 38px;display:flex;flex-direction:column">
   <div style="max-width:1180px;width:100%;margin:0 auto;background:#ffffff;display:flex;flex-direction:column;min-height:0;flex:1">
 
     <div style="flex-shrink:0;background:#ffffff">
-      <div style="padding:22px 30px 0">
+      <div class="hdr" style="padding:22px 30px 0">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
           <div style="display:flex;align-items:center;gap:11px">
             <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg></span>
@@ -99,7 +99,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
         </div>
 
         <div style="display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:18px">
-          <div style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:180px;max-width:260px">
+          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:180px;max-width:260px">
             <div style="flex:1;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:6px">
               <input id="search" placeholder="" style="flex:1;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
             </div>
@@ -108,11 +108,11 @@ const ogImage = new URL("/og.png", Astro.site).href;
             </button>
           </div>
 
-          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-            <div style="display:flex;align-items:center;gap:6px">
+          <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:8px">
               <span style="font-size:11px;color:#a8a49b">Año</span>
               {data.meta.ticks.map((y: number) => (
-                <button class="chip-year" data-year={y} style="width:23px;height:23px;border:1px solid #e3e1da;border-radius:7px;background:transparent;color:#75726b;font-size:10px;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center">{`'${String(y).slice(2)}`}</button>
+                <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
               ))}
             </div>
             <div style="width:1px;height:13px;background:#e3e1da"></div>
@@ -128,7 +128,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
         </div>
       </div>
 
-      <div style="display:grid;grid-template-columns:200px 1fr;gap:0;padding:8px 30px 8px;margin-top:26px">
+      <div class="axishead" style="display:grid;grid-template-columns:200px 1fr;gap:0;padding:8px 30px 8px;margin-top:26px">
         <div></div>
         <div style="position:relative;height:13px">
           {ticks.map((t) => (
@@ -142,15 +142,15 @@ const ogImage = new URL("/og.png", Astro.site).href;
       {startups.map((s) => (
         <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hascapital={s.hasCapital}>
           <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
-            <div style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
-              <span style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
+            <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
+              <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
               <span style="font-size:13.5px;font-weight:400;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0">{s.name}</span>
               {s.aliases.length > 0 && (
                 <span title={`También conocida como: ${s.aliases.join(", ")}`} style="font-size:11px;color:#c4c0b8;white-space:nowrap;flex-shrink:0;overflow:hidden;text-overflow:ellipsis">· {s.aliases[0]}</span>
               )}
-              <div style="flex:1;height:1px;background:#eceae4;min-width:10px"></div>
+              <div class="nameline" style="flex:1;height:1px;background:#eceae4;min-width:10px"></div>
             </div>
-            <div style="position:relative;height:22px">
+            <div class="lane" style="position:relative;height:22px">
               {ticks.map((t) => (<div style={`position:absolute;top:0;bottom:0;width:1px;background:#f3f2ed;left:${t.left}%`}></div>))}
               <div style="position:absolute;left:0;right:0;top:50%;height:1px;background:#eceae4"></div>
               {s.events.map((e) => (
@@ -220,7 +220,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
     clearBtn.style.visibility = any ? "visible" : "hidden";
   }
 
-  function paintYear(b: HTMLElement, on: boolean) { b.style.background = on ? "#1a1916" : "transparent"; b.style.color = on ? "#ffffff" : "#75726b"; }
+  function paintYear(b: HTMLElement, on: boolean) { b.style.borderBottomColor = on ? ACC : "transparent"; b.style.color = on ? "#1a1916" : "#75726b"; }
   function paintUnderline(b: HTMLElement, on: boolean) { b.style.borderBottomColor = on ? ACC : "transparent"; b.style.color = on ? "#1a1916" : "#75726b"; }
 
   document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => b.addEventListener("click", () => {
