@@ -5,7 +5,8 @@
   "compatibility_date": "2025-06-01",
   "assets": {
     "directory": "./dist",
-    // Sirve index.html en rutas como /cardda (deep-links de startups) en vez de 404.
-    "not_found_handling": "single-page-application"
+    // Las páginas /cardda están prerenderizadas (una por startup), así que las rutas
+    // válidas existen como asset; las desconocidas devuelven el 404.html real.
+    "not_found_handling": "404-page"
   }
 }

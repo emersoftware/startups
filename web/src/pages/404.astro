@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+const title = "Página no encontrada · Chile, Startups";
+---
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2f5fe6" />
+</head>
+<body>
+  <main style="min-height:100dvh;display:flex;flex-direction:column;background:#ffffff">
+    <!-- marca, igual que el app -->
+    <a href="/" style="display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:inherit;padding:40px 30px 0">
+      <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px">
+        <svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg>
+      </span>
+      <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
+    </a>
+
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px 96px">
+      <div style="font-size:13px;color:#bdbab2;letter-spacing:0.04em;margin-bottom:14px">ERROR 404</div>
+      <h1 style="font-size:30px;font-weight:400;letter-spacing:-0.02em;margin:0;color:#1a1916">Esta página no existe</h1>
+      <p style="font-size:14px;color:#a8a49b;margin:12px 0 0;max-width:320px;line-height:1.65">
+        La startup o ruta que buscas no está acá.<br />Quizás cambió de nombre o nunca existió.
+      </p>
+      <a href="/" style="margin-top:28px;display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:#2f5fe6;text-decoration:none;border:1px solid #c7d2f7;border-radius:9px;padding:9px 16px">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Volver al inicio
+      </a>
+    </div>
+  </main>
+</body>
+</html>

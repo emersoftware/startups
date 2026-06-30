@@ -65,14 +65,17 @@ function buildSvg(name: string, events: Ev[], start: number, end: number) {
 </svg>`;
 }
 
-// Leída desde el árbol fuente (cwd = web/ en `astro build` y en el CI de Cloudflare);
-// no se bundlea, así sobrevive al prerender de endpoints.
-const fontData = readFileSync(join(process.cwd(), "src/lib/Rubik-var.ttf"));
+// Rubik ESTÁTICA (instancias 400/500). La variable font renderizaba mal en resvg
+// (ignoraba el peso → otra tipografía en prod); las estáticas dan el peso exacto del home.
+// Leídas desde el árbol fuente (cwd = web/ en `astro build` y en el CI); no se bundlean.
+const fonts = ["Rubik-Regular.ttf", "Rubik-Medium.ttf"].map((f) =>
+  readFileSync(join(process.cwd(), "src/lib", f)),
+);
 
 export function ogPng(name: string, events: Ev[], range: { start: number; end: number }): Buffer {
   const resvg = new Resvg(buildSvg(name, events, range.start, range.end), {
     fitTo: { mode: "width", value: W },
-    font: { fontBuffers: [fontData], loadSystemFonts: false, defaultFontFamily: "Rubik" },
+    font: { fontBuffers: fonts, loadSystemFonts: false, defaultFontFamily: "Rubik" },
   });
   return resvg.render().asPng();
 }
