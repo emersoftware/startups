@@ -5,10 +5,8 @@
     "": {
       "name": "chile-startups-web",
       "dependencies": {
-        "astro": "^7.0.3",
-      },
-      "devDependencies": {
         "@resvg/resvg-js": "^2.6.2",
+        "astro": "^7.0.3",
       },
     },
   },
