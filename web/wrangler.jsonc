@@ -4,6 +4,8 @@
   "name": "startups",
   "compatibility_date": "2025-06-01",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    // Sirve index.html en rutas como /cardda (deep-links de startups) en vez de 404.
+    "not_found_handling": "single-page-application"
   }
 }

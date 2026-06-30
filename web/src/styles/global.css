@@ -52,6 +52,11 @@ input::placeholder { color: #bdbab2; }
   .lane { height: 20px !important; }
   .expand { padding: 4px 0 30px 2px !important; }
 
+  /* Filtros colapsables tras el chevron (solo móvil). En desktop van inline siempre. */
+  #filtertoggle { display: flex !important; }
+  #filterpanel { display: none; flex-basis: 100%; min-width: 0; }
+  #filterpanel.open { display: block; }
+
   /* filtros prolijos: años en su propia fila; estados/tags abajo; sin barritas. */
   .filterbar { width: 100% !important; row-gap: 11px !important; margin-top: 6px; gap: 13px; }
   .yearsub { flex-basis: 100% !important; }

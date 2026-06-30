@@ -1,0 +1,16 @@
+---
+import App from "../components/App.astro";
+import data from "../data/timeline.json";
+import { slugify } from "../lib/slug";
+
+// Una página estática por startup: /blar, /cardda, /watermelon-tools, …
+// Cada una abre su trayectoria en primera plana y trae su propio título/OG.
+export function getStaticPaths() {
+  const seen = new Set<string>();
+  return data.startups
+    .map((s: any) => slugify(s.name))
+    .filter((slug: string) => slug && !seen.has(slug) && seen.add(slug))
+    .map((slug: string) => ({ params: { slug } }));
+}
+---
+<App open={Astro.params.slug} />

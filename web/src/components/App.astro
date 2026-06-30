@@ -1,0 +1,331 @@
+---
+import "../styles/global.css";
+import data from "../data/timeline.json";
+import { slugify } from "../lib/slug";
+
+// `open` = slug de la startup a abrir en primera plana (desde /[slug].astro). Sin él = home.
+const { open } = Astro.props as { open?: string };
+
+const ACCENT = "#2f5fe6";
+const { start, end } = data.meta.range;
+const MES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+
+const ST: Record<string, { color: string; label: string }> = {
+  activa:    { color: "#2f7d4f", label: "Activa" },
+  pivot:     { color: "#b5760f", label: "Pivoteó" },
+  adquirida: { color: "#2f5fe6", label: "Adquirida" },
+  cerrada:   { color: "#c0492f", label: "Cerrada" },
+  inactiva:  { color: "#a8a39a", label: "Sin señal" },
+};
+const EV: Record<string, { fill: string; border: string; label: string; dot: string }> = {
+  fundacion:   { fill: "#1a1916", border: "0",                   label: "Fundación",       dot: "#1a1916" },
+  capital:     { fill: ACCENT,    border: "0",                   label: "Levantó capital", dot: ACCENT },
+  pivot:       { fill: "#ffffff", border: "1.6px solid #b5760f", label: "Pivot", dot: "#b5760f" },
+  adquisicion: { fill: "#2f7d4f", border: "0",                   label: "Adquisición",     dot: "#2f7d4f" },
+  cierre:      { fill: "#c0492f", border: "0",                   label: "Cierre",          dot: "#c0492f" },
+  inactivo:    { fill: "#ffffff", border: "1.4px dashed #a8a39a", label: "Sin señal reciente", dot: "#a8a39a" },
+};
+
+const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return y + (m - 0.5) / 12; };
+const pos = (d: string) => ((tval(d) - start) / (end - start)) * 100;
+const dateLabel = (d: string) => { const [y, m] = d.split("-").map(Number); return `${MES[m - 1]} ${y}`; };
+
+const ticks = data.meta.ticks.map((y: number) => ({ y, left: ((y - start) / (end - start)) * 100 }));
+
+const startups = data.startups.map((s: any) => {
+  const events = s.events.map((e: any) => ({
+    ...e, left: pos(e.date), fill: EV[e.type].fill, border: EV[e.type].border,
+    typeLabel: EV[e.type].label, dateLabel: dateLabel(e.date), chipColor: EV[e.type].dot,
+    // The source chip is a link: for pivots (our own heuristic) it points to the
+    // Wayback snapshot; for the rest, to the source (press/tracker/Platanus).
+    href: e.wayback_url || e.source_url || null,
+  }));
+  // KISS: the status is only the outcome (Activa/Adquirida/Cerrada); the pivot
+  // is an event, not a status. The "pivot" ones are still alive -> Activa.
+  const status = s.status === "pivot" ? "activa" : s.status === "inactiva" ? "cerrada" : s.status;
+  return {
+    ...s, events, status, slug: slugify(s.name),
+    // El filtro de año matchea solo el PRIMER evento (año de fundación).
+    years: s.events[0] ? [s.events[0].date.slice(0, 4)] : [],
+    hasPivot: s.events.some((e: any) => e.type === "pivot"),
+    hasCapital: s.events.some((e: any) => e.type === "capital"),
+    st: ST[status] ?? ST.activa,
+    aliases: s.aliases ?? [],
+    search: (s.search_blob ?? `${s.name} ${s.domain}`).toLowerCase(),
+  };
+});
+
+const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"]];
+const tagChips = [["pivot","Pivotearon"],["capital","Levantaron capital"]];
+
+// Startup a abrir (deep-link). Su panel se renderiza abierto server-side.
+const openMatch = open ? startups.find((s: any) => s.slug === open) : null;
+
+const baseTitle = "Chile, Startups — trayectorias de startups chilenas";
+const baseDesc = "Cómo evolucionaron las startups chilenas: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres — datados y con fuente.";
+const pageTitle = openMatch ? `${openMatch.name} — su trayectoria · Chile, Startups` : baseTitle;
+const description = openMatch
+  ? `${openMatch.name}: ${String(openMatch.events[0]?.prose || "").replace(/\s+/g, " ").slice(0, 165)}`
+  : baseDesc;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL("/og.png", Astro.site).href;
+---
+
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2f5fe6" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chile, Startups" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Chile, Startups — cómo evolucionaron las startups chilenas" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+</head>
+<body>
+<div class="shell" style="height:100vh;background:#ffffff;padding:38px 24px 38px;display:flex;flex-direction:column">
+  <div style="max-width:1180px;width:100%;margin:0 auto;background:#ffffff;display:flex;flex-direction:column;min-height:0;flex:1">
+
+    <div style="flex-shrink:0;background:#ffffff">
+      <div class="hdr" style="padding:22px 30px 0">
+        <div class="topbar" style="display:flex;align-items:center;gap:16px">
+          <a href="/" style="display:flex;align-items:center;gap:11px;flex-shrink:0;text-decoration:none;color:inherit">
+            <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg></span>
+            <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
+          </a>
+        </div>
+
+        <div class="controls" style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-top:18px">
+          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:0;max-width:340px">
+            <div style="flex:1;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:6px">
+              <input id="search" placeholder="Buscar…" style="flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
+            </div>
+            <button class="searchbtn" style="width:30px;height:30px;align-self:flex-end;background:transparent;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;color:#1a1916;padding:0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"></circle><line x1="20.5" y1="20.5" x2="16.5" y2="16.5"></line></svg>
+            </button>
+          </div>
+          <button id="filtertoggle" type="button" aria-expanded="false" style="display:none;align-items:center;gap:6px;align-self:flex-end;border:0;background:transparent;font:inherit;font-size:13px;color:#1a1916;cursor:pointer;padding:0 0 7px;flex-shrink:0">
+            Filtros<span id="fcount" style="color:#75726b"></span>
+            <svg id="fchev" width="12" height="12" viewBox="0 0 24 24" style="transition:transform .18s"><path fill="currentColor" d="M7 10l5 5 5-5z"></path></svg>
+          </button>
+          <div id="filterpanel">
+            <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div class="yearsub" style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:11px;color:#a8a49b">Año</span>
+              {data.meta.ticks.filter((y: number) => y <= 2024).map((y: number) => (
+                <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
+              ))}
+            </div>
+            <div class="fdiv" style="width:1px;height:13px;background:#e3e1da"></div>
+            {estadoChips.map(([k, l]) => (
+              <button class="chip-estado" data-estado={k} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12.5px;font-weight:400;color:#75726b;cursor:pointer">{l}</button>
+            ))}
+            <div class="fdiv" style="width:1px;height:13px;background:#e3e1da"></div>
+            {tagChips.map(([k, l]) => (
+              <button class="chip-tag" data-tag={k} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12.5px;font-weight:400;color:#75726b;cursor:pointer">{l}</button>
+            ))}
+            <button id="clear" style="border:0;background:transparent;font:inherit;font-size:11.5px;color:#bdbab2;cursor:pointer;text-decoration:underline;text-underline-offset:2px;visibility:hidden">Limpiar</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="axishead" style="display:grid;grid-template-columns:200px 1fr;gap:0;padding:8px 30px 8px;margin-top:26px">
+        <div></div>
+        <div style="position:relative;height:13px">
+          {ticks.map((t) => {
+            const tx = t.left <= 1 ? "0" : t.left >= 99 ? "-100%" : "-50%";
+            return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}>{`'${String(t.y).slice(2)}`}</span>);
+          })}
+        </div>
+      </div>
+    </div>
+
+    <div id="rows" data-rows style="padding:4px 30px 14px;overflow-y:auto;overflow-x:hidden;flex:1;min-height:0">
+      {startups.map((s) => (
+        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hascapital={s.hasCapital} data-name={s.name}>
+          <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
+            <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
+              <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
+              <span style="font-size:13.5px;font-weight:400;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0">{s.name}</span>
+              {s.aliases.length > 0 && (
+                <span title={`También conocida como: ${s.aliases.join(", ")}`} style="font-size:11px;color:#c4c0b8;white-space:nowrap;flex-shrink:0;overflow:hidden;text-overflow:ellipsis">· {s.aliases[0]}</span>
+              )}
+              <div class="nameline" style="flex:1;height:1px;background:#eceae4;min-width:10px"></div>
+            </div>
+            <div class="lane" style="position:relative;height:22px">
+              {ticks.map((t) => (<div style={`position:absolute;top:0;bottom:0;width:1px;background:#f3f2ed;left:${t.left}%`}></div>))}
+              <div style="position:absolute;left:0;right:0;top:50%;height:1px;background:#eceae4"></div>
+              {s.events.map((e) => (
+                <div style={`position:absolute;top:0;bottom:0;left:${e.left}%;width:0;z-index:2`}>
+                  <div class="evdot evdot-hit" data-tl={e.typeLabel} data-ti={e.title} data-dl={e.dateLabel} data-ba={e.basis}
+                       style={`position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:10px;height:10px;background:${e.fill};border:${e.border};border-radius:3px;box-shadow:0 0 0 3px #ffffff;cursor:pointer`}></div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="expand" hidden={s !== openMatch} style="padding:10px 0 32px 35px">
+            <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px">
+              <span style="font-size:12px;color:#bdbab2">{s.domain || "—"}</span>
+              <span style="font-size:12px;color:#bdbab2">·</span>
+              <span style="font-size:12px;color:#bdbab2">{s.tag}</span>
+              {s.aliases.length > 0 && (
+                <span style="font-size:12px;color:#bdbab2">· también <span style="color:#8a857c">{s.aliases.join(", ")}</span></span>
+              )}
+            </div>
+            {s.events.map((e) => {
+              const Chip: any = e.href ? "a" : "span";
+              const linkAttrs = e.href ? { href: e.href, target: "_blank", rel: "noopener noreferrer" } : {};
+              return (
+              <p style="font-size:15px;color:#33312a;line-height:1.85;margin:0 0 15px">{e.prose}<Chip {...linkAttrs} title={e.basis} class={e.href ? "srcchip srcchip-link" : "srcchip"} style="display:inline-flex;align-items:center;gap:5px;vertical-align:middle;font-size:11.5px;color:#75726b;border:1px solid #e3e1da;border-radius:7px;padding:2px 8px;margin-left:7px;white-space:nowrap;position:relative;top:-1px;text-decoration:none"><span style={`width:5px;height:5px;border-radius:1.5px;background:${e.chipColor};flex-shrink:0`}></span>{e.source}{e.href && (
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="flex-shrink:0;margin-left:1px" aria-hidden="true"><path d="M3 7L7 3M3.5 3H7V6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              )}</Chip></p>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div id="empty" hidden style="flex-direction:column;align-items:center;text-align:center;padding:90px 24px 76px">
+      <div style="font-size:24px;font-weight:400;letter-spacing:-0.02em">Sin resultados</div>
+      <div style="font-size:13.5px;color:#a8a49b;margin-top:10px;max-width:280px;line-height:1.6">Ninguna startup coincide con la<br />búsqueda y los filtros actuales.</div>
+      <button id="clear2" style="margin-top:22px;background:transparent;border:0;font:inherit;font-size:13px;color:#75726b;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Limpiar filtros</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const ACC = "#2f5fe6";
+  const state = { q: "", estado: new Set<string>(), years: new Set<string>(), tags: new Set<string>() };
+  const $ = (s: string) => document.querySelector(s) as HTMLElement;
+  const all = [...document.querySelectorAll<HTMLElement>(".startup")];
+  const rowsBox = $("#rows"), empty = $("#empty"), clearBtn = $("#clear"), fcount = $("#fcount");
+
+  function apply() {
+    let n = 0;
+    for (const el of all) {
+      const d = el.dataset;
+      let ok = true;
+      if (state.q && !d.search!.includes(state.q)) ok = false;
+      if (ok && state.estado.size && !state.estado.has(d.status!)) ok = false;
+      if (ok && state.years.size && !d.years!.split(",").some((y) => state.years.has(y))) ok = false;
+      if (ok && state.tags.has("pivot") && d.haspivot !== "true") ok = false;
+      if (ok && state.tags.has("capital") && d.hascapital !== "true") ok = false;
+      el.style.display = ok ? "" : "none";
+      if (ok) n++;
+    }
+    empty.style.display = n ? "none" : "flex";
+    rowsBox.style.display = n ? "" : "none";
+    const totalF = state.estado.size + state.years.size + state.tags.size;
+    fcount.textContent = totalF ? ` (${totalF})` : "";
+    const any = !!(state.q || totalF);
+    clearBtn.style.visibility = any ? "visible" : "hidden";
+  }
+
+  function paintYear(b: HTMLElement, on: boolean) { b.style.borderBottomColor = on ? ACC : "transparent"; b.style.color = on ? "#1a1916" : "#75726b"; }
+  function paintUnderline(b: HTMLElement, on: boolean) { b.style.borderBottomColor = on ? ACC : "transparent"; b.style.color = on ? "#1a1916" : "#75726b"; }
+
+  document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.year!; state.years.has(k) ? state.years.delete(k) : state.years.add(k); paintYear(b, state.years.has(k)); apply();
+  }));
+  document.querySelectorAll<HTMLElement>(".chip-estado").forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.estado!; state.estado.has(k) ? state.estado.delete(k) : state.estado.add(k); paintUnderline(b, state.estado.has(k)); apply();
+  }));
+  document.querySelectorAll<HTMLElement>(".chip-tag").forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.tag!; state.tags.has(k) ? state.tags.delete(k) : state.tags.add(k); paintUnderline(b, state.tags.has(k)); apply();
+  }));
+  ($("#search") as HTMLInputElement).addEventListener("input", (e) => { state.q = (e.target as HTMLInputElement).value.trim().toLowerCase(); apply(); });
+
+  function clearAll() {
+    state.q = ""; state.estado.clear(); state.years.clear(); state.tags.clear();
+    ($("#search") as HTMLInputElement).value = "";
+    document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => paintYear(b, false));
+    document.querySelectorAll<HTMLElement>(".chip-estado,.chip-tag").forEach((b) => paintUnderline(b, false));
+    apply();
+  }
+  clearBtn.addEventListener("click", clearAll);
+  $("#clear2").addEventListener("click", clearAll);
+
+  // Toggle de filtros (solo móvil): el chevron expande/colapsa años/estados/eventos.
+  const ftoggle = $("#filtertoggle"), fpanel = $("#filterpanel"), fchev = $("#fchev");
+  ftoggle.addEventListener("click", () => {
+    const willOpen = !fpanel.classList.contains("open");
+    fpanel.classList.toggle("open", willOpen);
+    ftoggle.setAttribute("aria-expanded", String(willOpen));
+    fchev.style.transform = willOpen ? "rotate(180deg)" : "";
+  });
+
+  // expand rows (one at a time)
+  let openPanel: HTMLElement | null = document.querySelector(".expand:not([hidden])");
+  all.forEach((el) => {
+    const row = el.querySelector("[data-toggle]") as HTMLElement;
+    const panel = el.querySelector(".expand") as HTMLElement;
+    row.addEventListener("click", () => {
+      const isOpen = !panel.hidden;
+      if (openPanel && openPanel !== panel) openPanel.hidden = true;
+      panel.hidden = isOpen;
+      openPanel = isOpen ? null : panel;
+      if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: "smooth" }));
+    });
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; openPanel = null; } });
+
+  // Deep-link: /cardda (o #cardda) abre esa startup ya expandida, en primera plana.
+  function openStartup(raw: string) {
+    const norm = (s: string) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    const key = norm(raw);
+    if (!key) return;
+    const target = all.find((el) => norm(el.dataset.name || "") === key)
+      || all.find((el) => (el.dataset.search || "").includes(raw.toLowerCase().trim()));
+    if (!target) return;
+    const panel = target.querySelector(".expand") as HTMLElement;
+    if (openPanel && openPanel !== panel) openPanel.hidden = true;
+    panel.hidden = false; openPanel = panel;
+    requestAnimationFrame(() => target.scrollIntoView({ block: "start", behavior: "auto" }));
+  }
+  openStartup(decodeURIComponent(location.pathname).replace(/\//g, "") || decodeURIComponent(location.hash).replace(/^#/, ""));
+
+  // floating event tooltip (solo desktop/hover — sin popover en móvil/touch)
+  const canHover = window.matchMedia("(hover: hover)").matches;
+  const tip = document.createElement("div");
+  tip.style.cssText = "position:fixed;width:200px;background:#fff;border:1px solid #e3e1da;border-radius:9px;box-shadow:0 8px 24px rgba(26,25,22,.13);padding:9px 11px;pointer-events:none;z-index:9999;display:none";
+  document.body.appendChild(tip);
+  document.querySelectorAll<HTMLElement>(".evdot").forEach((dot) => {
+    dot.addEventListener("mouseenter", () => {
+      if (!canHover) return;
+      const d = dot.dataset;
+      tip.innerHTML = `<div style="font-size:11.5px;font-weight:500;color:#1a1916;letter-spacing:-0.005em">${d.tl}</div>`
+        + `<div style="font-size:12px;color:#3a382f;margin-top:2px">${d.ti}</div>`
+        + `<div style="font-size:10.5px;color:#a8a49b;margin-top:5px;line-height:1.5">${d.dl}${d.ba ? " · " + d.ba : ""}</div>`;
+      const r = dot.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const cx = Math.max(108, Math.min(vw - 108, r.left + r.width / 2));
+      const below = r.top < 150;
+      tip.style.display = "block";
+      tip.style.left = cx + "px";
+      tip.style.top = (below ? r.bottom + 12 : r.top - 12) + "px";
+      tip.style.transform = below ? "translateX(-50%)" : "translate(-50%,-100%)";
+    });
+    dot.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+  });
+</script>
+</body>
+</html>
