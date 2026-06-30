@@ -55,6 +55,20 @@ input::placeholder { color: #bdbab2; }
   /* filtros en una sola línea con scroll horizontal (sin cortes ni wrap feo) */
   .filterbar { flex-wrap: nowrap !important; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; padding-bottom: 6px; margin-top: 4px; }
   .filterbar > * { flex-shrink: 0 !important; }
+
+  /* área de toque ~28px alrededor de cada punto (el punto mide ~10px) */
+  .evdot::after { content: ""; position: absolute; inset: -9px; border-radius: 50%; }
 }
 /* oculta la scrollbar de la barra de filtros en móvil */
 .filterbar::-webkit-scrollbar { display: none; }
+
+/* ── Hoja inferior (bottom sheet) — detalle de un hito / trayectoria en móvil ── */
+#sheet-scrim { position: fixed; inset: 0; background: rgba(26,25,22,.34); opacity: 0; visibility: hidden; transition: opacity .22s ease, visibility .22s; z-index: 9998; }
+#sheet-scrim.open { opacity: 1; visibility: visible; }
+#sheet { position: fixed; left: 0; right: 0; bottom: 0; background: #fff; border-radius: 20px 20px 0 0; box-shadow: 0 -10px 44px rgba(26,25,22,.18); transform: translateY(102%); transition: transform .28s cubic-bezier(.32,.72,0,1); z-index: 9999; max-height: 86vh; max-height: 86dvh; display: flex; flex-direction: column; }
+#sheet.open { transform: translateY(0); }
+#sheet .sheet-handle { width: 38px; height: 4px; background: #e3e1da; border-radius: 99px; margin: 10px auto 2px; flex-shrink: 0; }
+#sheet .sheet-head { padding: 10px 22px 10px; flex-shrink: 0; border-bottom: 1px solid #f1f0ec; }
+#sheet .sheet-body { padding: 14px 22px 40px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+#sheet .sheet-body > p { margin: 0 0 16px !important; }
+#sheet .sheet-hl { background: #f4f6ff; box-shadow: inset 3px 0 0 #2f5fe6; border-radius: 8px; padding: 10px 13px !important; margin: 0 -13px 16px !important; }
