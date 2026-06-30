@@ -57,8 +57,8 @@ input::placeholder { color: #bdbab2; }
   #filterpanel { display: none; flex-basis: 100%; min-width: 0; }
   #filterpanel.open { display: block; }
 
-  /* filtros prolijos: años en su propia fila; estados/tags abajo; sin barritas. */
+  /* filtros inline con wrap natural: todo fluye y baja de línea cuando no cabe. */
   .filterbar { width: 100% !important; row-gap: 11px !important; margin-top: 6px; gap: 13px; }
-  .yearsub { flex-basis: 100% !important; }
+  .yearsub { display: contents; }
   .fdiv { display: none !important; }
 }
