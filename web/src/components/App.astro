@@ -68,7 +68,11 @@ const description = openMatch
   ? `${openMatch.name}: ${String(openMatch.events[0]?.prose || "").replace(/\s+/g, " ").slice(0, 165)}`
   : baseDesc;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL("/og.png", Astro.site).href;
+// Cada startup trae su propio OG (/og/<slug>.png, generado por scripts/gen-og.ts); el home usa /og.png.
+const ogImage = new URL(openMatch ? `/og/${openMatch.slug}.png` : "/og.png", Astro.site).href;
+const ogAlt = openMatch
+  ? `${openMatch.name} — su trayectoria · Chile, Startups`
+  : "Chile, Startups — cómo evolucionaron las startups chilenas";
 ---
 
 <html lang="es">
@@ -90,7 +94,7 @@ const ogImage = new URL("/og.png", Astro.site).href;
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Chile, Startups — cómo evolucionaron las startups chilenas" />
+  <meta property="og:image:alt" content={ogAlt} />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={pageTitle} />
