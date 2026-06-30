@@ -1,12 +1,16 @@
 /**
- * OG por startup: SVG → PNG (1200x630) con resvg + Rubik.
+ * OG por startup: SVG → PNG (1200x630).
  * estrellita + "Chile, Startups" · nombre · timeline con SOLO los puntos
  * (mismo color-map y rango de eje que el sitio).
  *
- * Se usa desde el endpoint src/pages/og/[slug].png.ts: se prerenderiza en el BUILD,
- * no en el runtime del worker. resvg/Rubik solo viven en el CI.
+ * El texto se convierte a PATHS vectoriales con opentype.js en el BUILD, así el PNG
+ * no depende de que resvg matchee/cargue ninguna font en runtime: local == prod por
+ * construcción. (resvg matcheaba mal "Rubik" en el CI y caía a una font monospace.)
+ *
+ * Se prerenderiza desde el endpoint src/pages/og/[slug].png.ts (build-time, no en el worker).
  */
 import { Resvg } from "@resvg/resvg-js";
+import opentype from "opentype.js";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -30,9 +34,33 @@ const EV: Record<string, { fill: string; stroke?: string; dash?: boolean }> = {
   inactivo:    { fill: "#ffffff", stroke: "#a8a39a", dash: true },
 };
 
-const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// Rubik estática (instancias 400/500) leída del árbol fuente; opentype la usa para
+// sacar los contornos de glifos. cwd = web/ en `astro build` y en el CI.
+const load = (f: string) => {
+  const b = readFileSync(join(process.cwd(), "src/lib", f));
+  return opentype.parse(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength));
+};
+const RUBIK = { 400: load("Rubik-Regular.ttf"), 500: load("Rubik-Medium.ttf") };
 
-// Un punto en x,y absolutos: anillo blanco (separa solapados, como el box-shadow del sitio) + cuadrado.
+// Texto → contornos. Cada glifo se saca en origen (0,0) y se posiciona con
+// transform="translate" (lo aplica resvg). Pasar el pen fraccionario a opentype
+// gatilla un bug de toPathData que emite NaN en glifos con curvas y rompe el path.
+// tracking = letter-spacing en px (negativo aprieta).
+function text(str: string, x: number, baseY: number, size: number, weight: 400 | 500, fill: string, tracking = 0) {
+  const font = RUBIK[weight];
+  const scale = size / font.unitsPerEm;
+  let pen = x;
+  const parts: string[] = [];
+  for (const ch of str) {
+    const g = font.charToGlyph(ch);
+    const d = g.getPath(0, 0, size).toPathData(2);
+    if (d) parts.push(`<path transform="translate(${pen.toFixed(2)} ${baseY})" d="${d}"/>`);
+    pen += g.advanceWidth * scale + tracking;
+  }
+  return `<g fill="${fill}">${parts.join("")}</g>`;
+}
+
+// Un punto en x absoluto: anillo blanco (separa solapados, como el box-shadow del sitio) + cuadrado.
 function dot(x: number, type: string) {
   const c = EV[type] ?? EV.fundacion;
   const s = 22, r = 7;
@@ -56,26 +84,19 @@ function buildSvg(name: string, events: Ev[], start: number, end: number) {
   <g transform="translate(${PADX},66)">
     <rect width="40" height="40" rx="11" fill="${ACCENT}"/>
     <path transform="translate(8,8)" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z" fill="#ffffff"/>
-    <text x="56" y="28" font-family="Rubik" font-weight="400" font-size="27" fill="#1a1916" letter-spacing="-0.3">Chile, Startups</text>
+    ${text("Chile, Startups", 56, 28, 27, 500, "#1a1916", -0.3)}
   </g>
-  <text x="${PADX}" y="318" font-family="Rubik" font-weight="500" font-size="${nameSize}" fill="#1a1916" letter-spacing="-1.5">${esc(name)}</text>
+  ${text(name, PADX, 318, nameSize, 500, "#1a1916", -1.2)}
   ${axis}
   ${dots}
-  <text x="${PADX}" y="566" font-family="Rubik" font-weight="400" font-size="22" fill="#bdbab2" letter-spacing="-0.2">startups.emersoftware.cl</text>
+  ${text("startups.emersoftware.cl", PADX, 566, 22, 400, "#bdbab2", -0.2)}
 </svg>`;
 }
 
-// Rubik ESTÁTICA (instancias 400/500). La variable font renderizaba mal en resvg
-// (ignoraba el peso → otra tipografía en prod); las estáticas dan el peso exacto del home.
-// Leídas desde el árbol fuente (cwd = web/ en `astro build` y en el CI); no se bundlean.
-const fonts = ["Rubik-Regular.ttf", "Rubik-Medium.ttf"].map((f) =>
-  readFileSync(join(process.cwd(), "src/lib", f)),
-);
-
 export function ogPng(name: string, events: Ev[], range: { start: number; end: number }): Buffer {
+  // El SVG ya trae el texto como paths → resvg solo rasteriza vectores, sin fonts.
   const resvg = new Resvg(buildSvg(name, events, range.start, range.end), {
     fitTo: { mode: "width", value: W },
-    font: { fontBuffers: fonts, loadSystemFonts: false, defaultFontFamily: "Rubik" },
   });
   return resvg.render().asPng();
 }
