@@ -103,10 +103,10 @@ es **PISTA, no fuente** — y suele venir con su propia incertidumbre.
 ## Cómo se escribe y qué se muestra (reglas de presentación)
 
 1. **Prosa ORIENTADA A PRODUCTO, no al hero.** Di **qué hace el producto, para quién y qué
-   reemplaza** — no el copy de marketing. **Nunca cites el slogan entre comillas** ('your ally in
-   mastering technical debt', 'AI for the people', 'Revoluciona tu soporte…'): si lo citas, es que
-   curaste desde el hero en vez de leer el body (regla 2). Nombres/analogías reales SÍ ('Duolingo
-   para programar', 'ChatGPT para datos financieros') porque describen el producto.
+   reemplaza** — no el copy de marketing. **Nunca cites el slogan entre comillas** (p. ej. 'tu
+   aliado para X', 'IA para todos', 'revoluciona tu Y…'): si lo citas, es que curaste desde el
+   hero en vez de leer el body (regla 2). Las analogías comparativas SÍ ('el Duolingo de Z', 'el
+   ChatGPT de W') cuando describen el producto, porque no son copy.
 2. **No uses la palabra "cheque".** Para la inversión del programa: "inversión inicial / estándar
    (~US$X)".
 3. **Oculta la metodología del SITIO.** La heurística (TF-IDF, "variación mes a mes", "Wayback")
@@ -122,12 +122,11 @@ es **PISTA, no fuente** — y suele venir con su propia incertidumbre.
 
 ## Modos de falla (lecciones caras — revísalas antes de afirmar un pivot)
 
-- **El título mintió → pivot fabricado.** *Horizon*: el `<title>`/`<meta>` decía "Empower your
-  life / propósito de vida" sobre un body que YA era B2B ("AI business analyst for companies")
-  desde el primer snapshot. Curado desde el hero = pivot consumer→B2B inexistente. Leer el body lo
-  mató. **Siempre lee el cuerpo.**
-- **Buzzword ≠ pivot.** *Appio*: el hero cambió a "flota de repartidores", pero el body ya ofrecía
-  "repartidores ilimitados" un año antes → reposicionamiento, no pivot (regla 1).
+- **El título mintió → pivot fabricado.** Caso real: el `<title>`/`<meta>` vendía un propósito
+  aspiracional ("empodera tu vida") sobre un body que YA era B2B desde el primer snapshot. Curado
+  desde el hero = pivot consumer→B2B inexistente. Leer el body lo mató. **Siempre lee el cuerpo.**
+- **Buzzword ≠ pivot.** Caso real: el hero cambió a un nuevo eslogan de marketing, pero el body ya
+  ofrecía ese mismo posicionamiento un año antes → reposicionamiento, no pivot (regla 1).
 - **Ruido de dueño anterior.** Dominios con historia de otra empresa (idioma ajeno, "for sale",
   "create-react-app", placeholders) inflan el FLAG y NO son fases de la startup.
 - **El perfil rezaga.** Si dataste por el perfil del venture y no por la landing, probablemente
@@ -164,6 +163,67 @@ El método transfiere; reusa los mismos scripts cambiando dos entradas:
 Luego corre el mismo pipeline: archivar superficies → `title_timeline_audit.py` (FLAG) → curar con
 las 8 reglas leyendo el **body** → `build_pivots_curated.py` + `build_timeline.py` → build. Las
 **reglas, los modos de falla y las reglas de presentación son universales** — no dependen del venture.
+
+## Orquestación con subagentes (recopilación paralela, juicio centralizado)
+
+El pipeline tiene partes **independientes por startup** (pasos 1 y 5: estirar cadenas de
+dominios, websearch del estado vivo) que son lentas y triviales. Delegarlas a subagentes en
+paralelo (fan-out, 1 por startup) acelera mucho. Pero el **juicio curatorial — las 8 reglas
+del paso 4 — NUNCA se delega**: el orquestador aplica las reglas sobre lo que los subagentes
+devuelven. Delegar juicio es justo lo que fabrica pivots inexistentes (ver "Modos de falla").
+
+### Cuándo usar subagentes y cuál tipo
+
+| Paso | ¿Delegar? | Tipo | Por qué |
+|------|-----------|------|---------|
+| 1. Identidad → dominios | **Sí** | `general-purpose` | Websearch + CDX del archivo web, 1 por startup |
+| 2. Archivar superficies | Paraleliza *entre startups*, no entre dominios (el rate-limit del archivo web es global) | `Bash` directo | Es llamar a scripts |
+| 3. Detectar fases | No | — | `Bash` corre los scripts |
+| 4. Juzgar (8 reglas) | **No** | — | Juicio central del orquestador |
+| 5. Websearch vivo + fuentes | **Sí** | `general-purpose` | Gathering puro, 1 por startup |
+| 6. Verificabilidad | No | — | Juicio |
+| 7. Datos + build | No | — | Edición de `CURATED`/`CORRECTIONS` |
+
+Y dentro del paso 4, cuando hace falta **confirmar un pivot leyendo el cuerpo del snapshot**,
+se puede delegar el *hallazgo* (no el juicio) a un subagent `Explore` que grepee el `visible_text`
+de `data/wayback/<dom>/<AAAAMM>.html`. El orquestador lee su reporte y decide.
+
+### Regla anti-fabulación (no negociable al delegar)
+
+Un subagent devuelve texto. Si entrega **paráfrasis** en vez de URLs datadas + cita textual del
+body + fecha, perdemos verificabilidad — que es justo lo que cuida el paso 6. Todo subagent de
+recopilación debe recibir esta consigna explícita en su prompt de lanzamiento:
+
+> Devuelve, por cada fase/cambio que reportes: (a) la **URL datada** (snapshot, paper, prensa),
+> (b) una **cita textual corta** del body que lo confirma (entre comillas, en el idioma original),
+> (c) la **fecha**. **No resumas ni interpretes** — no digas "pivotearon a B2B"; cita el fragmento
+> que lo muestra. Si no encuentras evidencia en el body, di "sin evidencia en el body" — no inventes.
+
+Sin esa consigna, un subagent entusiasta fabrica un pivot.
+
+### Plantilla de lanzamiento (fan-out por startup)
+
+Lanza en un solo mensaje N subagentes (uno por startup) — el padre espera a todos y consolida:
+
+```
+Para cada startup S del portafolio, lanza en paralelo:
+
+[general-purpose] "Investiga la startup S (dominios: D1, D2, …). Para cada fase de su
+ trayectoria devuelve: URL datada + cita textual del body + fecha. Cubre: fundación, levantamientos
+ de capital, pivots de producto, rebrand, adquisición, cierre. Regla anti-fabulación: sin
+ evidencia en el body → 'sin evidencia', no inventes. Estado vivo confírmalo en el sitio actual
+ + prensa reciente."
+```
+
+Tras consolidar, el orquestador aplica las 8 reglas y escribe `CURATED`/`CORRECTIONS`. Los
+subagentes no tocan datos ni build.
+
+### Subagentes custom (opcional, upgrade)
+
+Los built-in (`Explore`, `general-purpose`) bastan. Si quieres identidad propia + tools
+restringidos (p. ej. un `wayback-gatherer` que solo tenga WebSearch+WebFetch, o un `body-reader`
+read-only), eso se crea desde **ZCode → Settings → Subagents (Beta)** (no vía archivo en disco,
+a diferencia de las skills). Recetas listas para pegar ahí en `references/subagents-recipes.md`.
 
 ## Convención de runtime
 Bun para JS/TS, `uv run python` para los scripts del scraper. Los scripts de scraping corren desde `scraper/`.
