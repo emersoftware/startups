@@ -10,24 +10,25 @@ body {
 ::selection { background: #dfe6fb; }
 input::placeholder { color: #bdbab2; }
 
-@keyframes starSpin {
-  0%   { transform: rotate(0deg);   animation-timing-function: cubic-bezier(.5,.04,.25,1); }
-  14%  { transform: rotate(72deg); }
-  25%  { transform: rotate(72deg);  animation-timing-function: cubic-bezier(.5,.04,.25,1); }
-  39%  { transform: rotate(144deg); }
-  50%  { transform: rotate(144deg); animation-timing-function: cubic-bezier(.5,.04,.25,1); }
-  64%  { transform: rotate(216deg); }
-  100% { transform: rotate(216deg); }
-}
+/* Oraciones extra del banner explicatorio por breakpoint:
+   desktop (>1024px): frase de hover + clic; móvil/tablet (≤1024px): frase de "Ábrelo". */
+@media (max-width: 1024px) { .intro-desktop { display: none; } }
+@media (min-width: 1025px) { .intro-mobile { display: none; } }
+
 @keyframes expandIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 
-.row:hover { background: #faf9f6; }
 .expand { animation: expandIn .18s ease both; }
-.searchbtn:hover { color: #2f5fe6; }
-.evdot-hit:hover { filter: brightness(.92); }
 .srcchip { cursor: default; }
 .srcchip-link { cursor: pointer; transition: color .12s, border-color .12s; }
-.srcchip-link:hover { color: #2f5fe6; border-color: #c7d2f7; }
+
+/* Hovers sólo en desktop (>1024px). En móvil/tablet se neutralizan:
+   el fondo gris no queda "pegado" después de tocar una fila. */
+@media (min-width: 1025px) {
+  .row:hover { background: #faf9f6; }
+  .searchbtn:hover { color: #2f5fe6; }
+  .evdot-hit:hover { filter: brightness(.92); }
+  .srcchip-link:hover { color: #2f5fe6; border-color: #c7d2f7; }
+}
 
 /* ── Móvil (portrait): Idea 1 — nombre arriba, eje a ancho completo ── */
 /* >640px (incl. teléfono en landscape) conserva la UI de escritorio tal cual. */
@@ -43,13 +44,16 @@ input::placeholder { color: #bdbab2; }
   .axishead { grid-template-columns: 1fr !important; padding: 14px 16px 6px !important; margin-top: 12px !important; }
   .axishead > div:first-child { display: none !important; }
 
-  /* cada fila se apila: nombre arriba, timeline a ancho completo y alineado */
+  /* cada fila se apila: nombre + chevron arriba (en extremos opuestos),
+     timeline a ancho completo debajo. Colocación explícita en la grid
+     para que el chevron quede en la misma fila que el nombre. */
   /* row-gap necesita !important: el estilo inline de .row trae gap:0 que si no, gana. */
-  .row { grid-template-columns: 1fr !important; height: auto !important; row-gap: 18px !important; padding: 12px 0 10px !important; align-items: stretch !important; }
-  .namecell { padding-left: 0 !important; }
+  .row { grid-template-columns: 1fr auto !important; grid-template-rows: auto auto !important; height: auto !important; row-gap: 18px !important; padding: 12px 0 10px !important; align-items: stretch !important; }
+  .namecell { padding-left: 0 !important; grid-column: 1 !important; grid-row: 1 !important; }
+  .chev { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
+  .lane { height: 20px !important; grid-column: 1 / -1 !important; grid-row: 2 !important; }
   .statusdot { display: none !important; }
   .nameline { display: none !important; }
-  .lane { height: 20px !important; }
   .expand { padding: 4px 0 30px 2px !important; }
 
   /* Filtros colapsables tras el chevron (solo móvil). En desktop van inline siempre. */
@@ -61,4 +65,7 @@ input::placeholder { color: #bdbab2; }
   .filterbar { width: 100% !important; row-gap: 11px !important; margin-top: 6px; gap: 13px; }
   .yearsub { display: contents; }
   .fdiv { display: none !important; }
+
+  /* Párrafo explicatorio: padding lateral ajustado a la UI móvil. */
+  #intro { margin-top: 14px !important; padding: 12px 14px !important; font-size: 12px !important; line-height: 1.7 !important; }
 }

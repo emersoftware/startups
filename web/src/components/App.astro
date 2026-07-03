@@ -58,6 +58,16 @@ const startups = data.startups.map((s: any) => {
 const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"]];
 const tagChips = [["pivot","Pivotearon"],["capital","Levantaron capital"]];
 
+// Cuadraditos de la leyenda del párrafo introductorio (mismos colores que EV).
+// `pre` es el conector que va antes de la frase dentro de la oración.
+const introEventos = [
+  { color: "#1a1916", pre: " desde que ",  phrase: "se fundaron" },
+  { color: "#2f5fe6", pre: ", cuando ",    phrase: "levantaron capital" },
+  { color: "#ffffff", border: "1.4px solid #b5760f", pre: ", cuando ", phrase: "pivotearon" },
+  { color: "#2f7d4f", pre: ", ",           phrase: "fueron adquiridas" },
+  { color: "#c0492f", pre: " o ",          phrase: "cerraron" },
+];
+
 // Startup a abrir (deep-link). Su panel se renderiza abierto server-side.
 const openMatch = open ? startups.find((s: any) => s.slug === open) : null;
 
@@ -109,9 +119,17 @@ const ogAlt = openMatch
       <div class="hdr" style="padding:22px 30px 0">
         <div class="topbar" style="display:flex;align-items:center;gap:16px">
           <a href="/" style="display:flex;align-items:center;gap:11px;flex-shrink:0;text-decoration:none;color:inherit">
-            <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24" style="animation:starSpin 2s infinite;transform-origin:50% 50%"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></svg></span>
+            <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z" transform="rotate(0 12 12)"><animateTransform attributeName="transform" type="rotate" calcMode="spline" keyTimes="0;0.14;0.25;0.39;0.5;0.64;1" keySplines=".5 .04 .25 1; 0 0 1 1; .5 .04 .25 1; 0 0 1 1; .5 .04 .25 1; 0 0 1 1" values="0 12 12;72 12 12;72 12 12;144 12 12;144 12 12;216 12 12;216 12 12" dur="2s" repeatCount="indefinite"></animateTransform></path></svg></span>
             <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
           </a>
+          <a href="https://emersoftware.cl/blog/startups-chile" target="_blank" rel="noopener noreferrer" style="margin-left:auto;font-size:12.5px;color:#75726b;text-decoration:none;border-bottom:1.5px solid transparent;padding-bottom:1px;transition:color .12s,border-color .12s" onmouseover="this.style.color='#2f5fe6';this.style.borderBottomColor='#2f5fe6'" onmouseout="this.style.color='#75726b';this.style.borderBottomColor='transparent'">Cómo se hizo →</a>
+        </div>
+
+        <div id="intro" style="position:relative;margin-top:18px;padding:14px 16px;border:1px solid #e9e7e0;border-radius:10px;font-size:12.5px;line-height:1.85;color:#5a5650">
+          <button id="introclose" type="button" aria-label="Cerrar explicación" style="position:absolute;top:7px;right:8px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;border:0;background:#ffffff;cursor:pointer;color:#bdbab2;padding:0;border-radius:5px;transition:color .12s,background .12s;z-index:1">
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"></path></svg>
+          </button>
+          <p style="margin:0">Cada fila es la trayectoria de una startup chilena, de su fundación a hoy. Cada punto marca un hito: {introEventos.map((e, i) => (<Fragment>{e.pre}<span style="white-space:nowrap;display:inline-flex;align-items:baseline;gap:5px;vertical-align:baseline"><span style={`width:9px;height:9px;background:${e.color};border:${e.border || "0"};border-radius:2.5px;display:inline-block;flex-shrink:0;position:relative;top:1px`}></span><span>{e.phrase}</span></span></Fragment>))}. <span class="intro-desktop">Pasa el cursor sobre un punto para ver qué pasó, o haz clic en la fila para leer el detalle con su fuente.</span><span class="intro-mobile">Ábrelo para leer el detalle con su fuente.</span></p>
         </div>
 
         <div class="controls" style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-top:18px">
@@ -125,7 +143,7 @@ const ogAlt = openMatch
           </div>
           <button id="filtertoggle" type="button" aria-expanded="false" style="display:none;align-items:center;gap:6px;align-self:flex-end;border:0;background:transparent;font:inherit;font-size:13px;color:#1a1916;cursor:pointer;padding:0 0 7px;flex-shrink:0">
             Filtros<span id="fcount" style="color:#75726b"></span>
-            <svg id="fchev" width="12" height="12" viewBox="0 0 24 24" style="transition:transform .18s"><path fill="currentColor" d="M7 10l5 5 5-5z"></path></svg>
+            <svg id="fchev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="transition:transform .18s"><path d="M6 9l6 6 6-6"></path></svg>
           </button>
           <div id="filterpanel">
             <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
@@ -163,7 +181,7 @@ const ogAlt = openMatch
     <div id="rows" data-rows style="padding:4px 30px 14px;overflow-y:auto;overflow-x:hidden;flex:1;min-height:0">
       {startups.map((s) => (
         <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hascapital={s.hasCapital} data-name={s.name}>
-          <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
+          <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr auto;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
             <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
               <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
               <span style="font-size:13.5px;font-weight:400;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0">{s.name}</span>
@@ -182,6 +200,7 @@ const ogAlt = openMatch
                 </div>
               ))}
             </div>
+            <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;color:#bdbab2;margin:0 14px;transition:transform .18s"><path d="M6 9l6 6 6-6"></path></svg>
           </div>
 
           <div class="expand" hidden={s !== openMatch} style="padding:10px 0 32px 35px">
@@ -279,18 +298,25 @@ const ogAlt = openMatch
 
   // expand rows (one at a time)
   let openPanel: HTMLElement | null = document.querySelector(".expand:not([hidden])");
+  const rotateChev = (panel: HTMLElement, open: boolean) => {
+    const row = panel.closest(".startup")?.querySelector("[data-toggle]");
+    const chev = row?.querySelector(".chev") as HTMLElement | null;
+    if (chev) chev.style.transform = open ? "rotate(180deg)" : "";
+  };
+  if (openPanel) rotateChev(openPanel, true);
   all.forEach((el) => {
     const row = el.querySelector("[data-toggle]") as HTMLElement;
     const panel = el.querySelector(".expand") as HTMLElement;
     row.addEventListener("click", () => {
       const isOpen = !panel.hidden;
-      if (openPanel && openPanel !== panel) openPanel.hidden = true;
+      if (openPanel && openPanel !== panel) { openPanel.hidden = true; rotateChev(openPanel, false); }
       panel.hidden = isOpen;
+      rotateChev(panel, !isOpen);
       openPanel = isOpen ? null : panel;
       if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: "smooth" }));
     });
   });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; openPanel = null; } });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; rotateChev(openPanel, false); openPanel = null; } });
 
   // Deep-link: /cardda (o #cardda) abre esa startup ya expandida, en primera plana.
   function openStartup(raw: string) {
@@ -330,6 +356,21 @@ const ogAlt = openMatch
     });
     dot.addEventListener("mouseleave", () => { tip.style.display = "none"; });
   });
+
+  // Párrafo explicatorio: se muestra solo la primera vez (cache en localStorage).
+  // Cerrar lo oculta y marca la preferencia para que no vuelva a aparecer.
+  const intro = $("#intro");
+  const introClose = $("#introclose") as HTMLButtonElement;
+  const introKey = "chile-startups:intro-dismissed";
+  if (localStorage.getItem(introKey) === "1") {
+    intro.style.display = "none";
+  }
+  introClose.addEventListener("click", () => {
+    intro.style.display = "none";
+    try { localStorage.setItem(introKey, "1"); } catch {}
+  });
+  introClose.addEventListener("mouseenter", () => { introClose.style.color = "#75726b"; introClose.style.background = "#f0eee8"; });
+  introClose.addEventListener("mouseleave", () => { introClose.style.color = "#bdbab2"; introClose.style.background = "transparent"; });
 </script>
 </body>
 </html>
