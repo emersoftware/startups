@@ -30,6 +30,11 @@ input::placeholder { color: #bdbab2; }
   .srcchip-link:hover { color: #2f5fe6; border-color: #c7d2f7; }
 }
 
+/* Labels del eje de años: año completo (2020) en desktop/laptop,
+   abreviado ('20) solo en móvil donde el eje va apretado. */
+@media (max-width: 640px) { .yr-full { display: none; } }
+@media (min-width: 641px) { .yr-abbr { display: none; } }
+
 /* ── Móvil (portrait): Idea 1 — nombre arriba, eje a ancho completo ── */
 /* >640px (incl. teléfono en landscape) conserva la UI de escritorio tal cual. */
 @media (max-width: 640px) {

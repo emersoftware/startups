@@ -172,7 +172,7 @@ const ogAlt = openMatch
         <div style="position:relative;height:13px">
           {ticks.map((t) => {
             const tx = t.left <= 1 ? "0" : t.left >= 99 ? "-100%" : "-50%";
-            return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}>{`'${String(t.y).slice(2)}`}</span>);
+            return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}><span class="yr-full">{String(t.y)}</span><span class="yr-abbr">{`'${String(t.y).slice(2)}`}</span></span>);
           })}
         </div>
       </div>
