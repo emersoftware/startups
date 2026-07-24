@@ -71,9 +71,9 @@ const introEventos = [
 // Startup a abrir (deep-link). Su panel se renderiza abierto server-side.
 const openMatch = open ? startups.find((s: any) => s.slug === open) : null;
 
-const baseTitle = "Chile, Startups — trayectorias de startups chilenas";
-const baseDesc = "Cómo evolucionaron las startups chilenas: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres — datados y con fuente.";
-const pageTitle = openMatch ? `${openMatch.name} — su trayectoria · Chile, Startups` : baseTitle;
+const baseTitle = "Chile, Startups · trayectorias de startups chilenas";
+const baseDesc = "Cómo evolucionaron las startups chilenas: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres, datados y con fuente.";
+const pageTitle = openMatch ? `${openMatch.name} · su trayectoria · Chile, Startups` : baseTitle;
 const description = openMatch
   ? `${openMatch.name}: ${String(openMatch.events[0]?.prose || "").replace(/\s+/g, " ").slice(0, 165)}`
   : baseDesc;
@@ -81,8 +81,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 // Cada startup trae su propio OG (/og/<slug>.png, generado por scripts/gen-og.ts); el home usa /og.png.
 const ogImage = new URL(openMatch ? `/og/${openMatch.slug}.png` : "/og.png", Astro.site).href;
 const ogAlt = openMatch
-  ? `${openMatch.name} — su trayectoria · Chile, Startups`
-  : "Chile, Startups — cómo evolucionaron las startups chilenas";
+  ? `${openMatch.name} · su trayectoria · Chile, Startups`
+  : "Chile, Startups · cómo evolucionaron las startups chilenas";
 ---
 
 <html lang="es">
@@ -205,7 +205,7 @@ const ogAlt = openMatch
 
           <div class="expand" hidden={s !== openMatch} style="padding:10px 0 32px 35px">
             <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px">
-              <span style="font-size:12px;color:#bdbab2">{s.domain || "—"}</span>
+              <span style="font-size:12px;color:#bdbab2">{s.domain || "–"}</span>
               <span style="font-size:12px;color:#bdbab2">·</span>
               <span style="font-size:12px;color:#bdbab2">{s.tag}</span>
               {s.aliases.length > 0 && (
@@ -333,7 +333,7 @@ const ogAlt = openMatch
   }
   openStartup(decodeURIComponent(location.pathname).replace(/\//g, "") || decodeURIComponent(location.hash).replace(/^#/, ""));
 
-  // floating event tooltip (solo desktop/hover — sin popover en móvil/touch)
+  // floating event tooltip (solo desktop/hover, sin popover en móvil/touch)
   const canHover = window.matchMedia("(hover: hover)").matches;
   const tip = document.createElement("div");
   tip.style.cssText = "position:fixed;width:200px;background:#fff;border:1px solid #e3e1da;border-radius:9px;box-shadow:0 8px 24px rgba(26,25,22,.13);padding:9px 11px;pointer-events:none;z-index:9999;display:none";

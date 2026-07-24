@@ -54,9 +54,9 @@ a Skip, y el destino de Kapso. Eso prueba que el método habría atrapado los 3 
 2. **El título SOLO detecta; el CUERPO COMPLETO es la evidencia.** Nunca cures desde el hero,
    el `<title>` ni la `description`: lee el `visible_text` ENTERO del snapshot. Casos reales que
    lo prueban: **Horizon** tenía un `<title>`/`<meta>` viejo ("Empower your life / life purpose")
-   sobre un body que ya era B2B ("AI business analyst for companies") — el título mentía y casi
+   sobre un body que ya era B2B ("AI business analyst for companies"): el título mentía y casi
    datamos un pivot consumer→B2B inexistente. **Appio** cambió el hero a "flota de repartidores"
-   pero el body ya ofrecía "repartidores ilimitados" un año antes — buzzword, no pivot. Si el body
+   pero el body ya ofrecía "repartidores ilimitados" un año antes; buzzword, no pivot. Si el body
    no confirma un cambio real de producto, NO hay pivot (regla 1).
 3. **Datación: gana la señal más temprana; la landing LIDERA, el perfil REZAGA.** Kapso: el perfil
    decía "strength training" hasta ago-2025 mientras kapso.ai ya decía "WhatsApp" en mar-2025. Datar
@@ -70,7 +70,7 @@ a Skip, y el destino de Kapso. Eso prueba que el método habría atrapado los 3 
 6. **La última fase (el "tip" vivo) casi siempre requiere websearch.** Puede post-datar el último
    snapshot o vivir en un dominio nuevo. Confirma el producto actual en el sitio vivo + prensa
    (Blar = agente de onboarding dentro del producto; Gokei = Skip "atiéndete ahora, paga después").
-7. **Verificabilidad gana siempre.** El relato del fundador es una PISTA, no una fuente — y suele venir
+7. **Verificabilidad gana siempre.** El relato del fundador es una PISTA, no una fuente, y suele venir
    con su propia incertidumbre. Cada fase necesita `source_url` (snapshot, paper o prensa con fecha).
    Si una época no tiene fuente datable (p.ej. el pitch 2023 pre-snapshots de Gokei), **se deja como
    nota/gap honesto, no se inventa una fecha.**

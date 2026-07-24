@@ -1,4 +1,4 @@
-# Chile, Startups — trayectorias de startups chilenas
+# Chile, Startups · trayectorias de startups chilenas
 
 Dataset + visualización de **cómo evolucionaron las startups chilenas**: pivots de
 producto, rebrands, rondas de inversión, adquisiciones y cierres, datados y con fuente.
@@ -16,10 +16,10 @@ aceleradora, registros) para análisis de ecosistema. No publica datos personale
 
 Dos piezas:
 
-- **`web/`** — el sitio (Astro, CSS puro, UI en español). Renderiza una línea de tiempo
+- **`web/`**: el sitio (Astro, CSS puro, UI en español). Renderiza una línea de tiempo
   donde cada startup muestra sus hitos, y cada hito enlaza a su fuente. El dato que consume
   es `web/src/data/timeline.json` (versionado).
-- **`scraper/`** — el pipeline de datos (Python + `uv`). Reconstruye la trayectoria real de
+- **`scraper/`**: el pipeline de datos (Python + `uv`). Reconstruye la trayectoria real de
   cada startup desde el archivo web y la lleva, ya verificada, a `timeline.json`.
 
 ### El pipeline (`scraper/`)
@@ -33,7 +33,7 @@ Dos piezas:
 5. **Construir** `timeline.json` (`build_pivots_curated.py` + `build_timeline.py`), garantizando
    que cada evento lleve `source_url`.
 
-La metodología completa —y cómo aplicarla a **otro portafolio o venture**— está en
+La metodología completa (y cómo aplicarla a **otro portafolio o venture**) está en
 [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md).
 
 ## Correr el proyecto
@@ -57,7 +57,7 @@ cd ../web && bunx astro build
 web/                 sitio Astro (timeline.json versionado)
 scraper/             pipeline de datos (Python/uv)
 docs/METHODOLOGY.md  el método para reconstruir trayectorias (reutilizable)
-data/                dataset + archivos de Wayback — NO versionado, ver data/README.md
+data/                dataset + archivos de Wayback (NO versionado, ver data/README.md)
 ```
 
 ## Los datos
