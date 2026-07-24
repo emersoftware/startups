@@ -69,7 +69,7 @@ function text(str: string, x: number, baseY: number, size: number, fill: string,
 // Marca (estrellita + "Chile, Startups") y footer (url) — comunes a ambas variantes.
 const brand = `<g transform="translate(${PADX},66)">
     <rect width="40" height="40" rx="11" fill="${ACCENT}"/>
-    <path transform="translate(8,8)" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z" fill="#ffffff"/>
+    <path transform="translate(20 20) translate(-12.0003 -12.5779)" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z" fill="#ffffff"/>
     ${text("Chile, Startups", 56, 28, 27, INK, -0.3)}
   </g>`;
 const footer = text("startups.emersoftware.cl", PADX, 566, 22, "#bdbab2", -0.2);
