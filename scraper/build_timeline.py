@@ -108,7 +108,7 @@ def main():
                 if corr.get("title"):
                     ev["title"] = corr["title"]
             if t == "fundacion":
-                ev["source_url"] = f"https://platan.us/startups/{slug}" if slug else None
+                ev["source_url"] = f"https://platan.us/startups/{slug}" if slug else ev.get("source_url")
             elif t == "capital":
                 ed = e["date"]
                 r = (rounds.get(ed)
@@ -188,6 +188,8 @@ def main():
         so["aliases"] = vis2
         # search blob: name + ALL names + all domains + slug
         blob = [disp, slug] + raw_names + all_domains
+        if not idt:
+            blob.append(s.get("search_blob", ""))
         so["search_blob"] = " ".join(x for x in blob if x).lower()
         so["status"] = {"active-pivoted":"activa","active-renamed":"activa","active":"activa",
                         "acquired":"adquirida","shutdown":"cerrada","unknown":"inactiva"}.get(

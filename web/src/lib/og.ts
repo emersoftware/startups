@@ -29,6 +29,7 @@ const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return y 
 // Mismo EV map que App.astro (fill / borde para los puntos vacíos sobre blanco).
 const EV: Record<string, { fill: string; stroke?: string; dash?: boolean }> = {
   fundacion:   { fill: INK },
+  programa:    { fill: "#ffffff", stroke: "#7856a6" },
   capital:     { fill: ACCENT },
   pivot:       { fill: "#ffffff", stroke: "#b5760f" },
   rebrand:     { fill: "#ffffff", stroke: "#4a6fa5" },
