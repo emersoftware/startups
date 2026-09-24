@@ -1,0 +1,14 @@
+---
+import type { ClosingSource } from "../lib/closing";
+const { source } = Astro.props as { source: ClosingSource };
+const Tag = source.url ? "a" : "span";
+const attributes = source.url ? { href: source.url, target: "_blank", rel: "noopener noreferrer" } : {};
+---
+<Tag {...attributes} title={source.basis} class:list={["source-chip", "srcchip", { "srcchip-link": !!source.url }]}><span class="source-dot" aria-hidden="true"></span>{source.label}{source.url && <svg width="9" height="9" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M3 7L7 3M3.5 3H7V6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>}</Tag>
+<style>
+  .source-chip { display:inline-flex; align-items:center; gap:5px; vertical-align:middle; font-size:11.5px; line-height:1.7; color:#75726b; border:1px solid #e3e1da; border-radius:7px; padding:2px 8px; margin-left:7px; position:relative; top:-1px; text-decoration:none; white-space:nowrap; }
+  .source-dot { width:5px; height:5px; border-radius:1.5px; background:#a8a39a; flex-shrink:0; }
+  svg { flex-shrink:0; margin-left:1px; }
+  a:focus-visible { outline:2px solid #2f5fe6; outline-offset:3px; }
+  @media(max-width:640px) { .source-chip { white-space:normal; } }
+</style>

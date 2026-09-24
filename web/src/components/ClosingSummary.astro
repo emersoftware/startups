@@ -1,0 +1,37 @@
+---
+import SourceChip from "./SourceChip.astro";
+import type { Closing } from "../lib/closing";
+const { closing, name, slug } = Astro.props as { closing: Closing; name: string; slug: string };
+const [year, month, day] = closing.reviewed_on?.split("-").map(Number) ?? [];
+const months = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const reviewedLabel = `${day} ${months[month - 1]} ${year}`;
+---
+<section class="closing-summary" id={`revision-${slug}`} aria-label={`Última revisión de ${name}`}>
+  <p class="review-date">{closing.reviewed_on ? <>Última revisión · <time datetime={closing.reviewed_on}>{reviewedLabel}</time></> : "Descripción documentada"}</p>
+  {closing.summary.map(paragraph => <p class="closing-paragraph">{paragraph.text}{paragraph.sources.map(source => <SourceChip source={source} />)}</p>)}
+  {closing.details.length > 0 && <details>
+    <summary>
+      Detalles de la revisión
+      <svg class="detail-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+    </summary>
+    <div class="review-detail">
+      {closing.details.map(paragraph => <p class="closing-paragraph">{paragraph.text}{paragraph.sources.map(source => <SourceChip source={source} />)}</p>)}
+    </div>
+  </details>}
+</section>
+<style>
+  .closing-summary { margin:21px 0 20px; }
+  .review-date { color:#75726b; font-size:12px; line-height:1.6; margin:0 0 8px; }
+  .closing-paragraph { font-size:15px; color:#33312a; line-height:1.85; margin:0 0 12px; }
+  summary { display:flex; align-items:center; gap:7px; width:fit-content; max-width:100%; margin-left:-8px; padding:6px 8px; border-radius:6px; color:#75726b; font-size:12.5px; line-height:1.7; list-style:none; cursor:pointer; }
+  summary::-webkit-details-marker { display:none; }
+  summary:focus-visible { outline:2px solid #2f5fe6; outline-offset:2px; }
+  .detail-chevron { flex-shrink:0; transition:transform .18s ease; }
+  details[open] summary { color:#33312a; }
+  details[open] .detail-chevron { transform:rotate(180deg); }
+  @media(hover:hover) { summary:hover { color:#33312a; background:#faf9f6; } }
+  .review-detail { padding-top:12px; }
+  .review-detail .closing-paragraph:last-child { margin-bottom:0; }
+  @media(pointer:coarse) { summary { min-height:44px; } }
+  @media(prefers-reduced-motion:reduce) { .detail-chevron { transition:none; } }
+</style>

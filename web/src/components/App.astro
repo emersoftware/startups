@@ -2,6 +2,14 @@
 import "../styles/global.css";
 import data from "../data/timeline.json";
 import { slugify } from "../lib/slug";
+import { mergeMilestones } from "../lib/milestones";
+import LineageLane from "./LineageLane.astro";
+import LineageDetail from "./LineageDetail.astro";
+import ClosingSummary from "./ClosingSummary.astro";
+import closingData from "../data/closings.json";
+import type { Closing } from "../lib/closing";
+
+const closings = closingData as Record<string, Closing>;
 
 // `open` = slug de la startup a abrir en primera plana (desde /[slug].astro). Sin él = home.
 const { open } = Astro.props as { open?: string };
@@ -18,10 +26,11 @@ const ST: Record<string, { color: string; label: string }> = {
   inactiva:  { color: "#a8a39a", label: "Sin señal" },
 };
 const EV: Record<string, { fill: string; border: string; label: string; dot: string }> = {
-  fundacion:   { fill: "#1a1916", border: "0",                   label: "Fundación",       dot: "#1a1916" },
+  fundacion:   { fill: "#1a1916", border: "0",                   label: "Inicio documentado", dot: "#1a1916" },
   capital:     { fill: ACCENT,    border: "0",                   label: "Levantó capital", dot: ACCENT },
   pivot:       { fill: "#ffffff", border: "1.6px solid #b5760f", label: "Pivot", dot: "#b5760f" },
   rebrand:     { fill: "#ffffff", border: "1.6px solid #4a6fa5", label: "Cambio de nombre", dot: "#4a6fa5" },
+  spinoff:     { fill: "#ffffff", border: "1.6px solid #2f5fe6", label: "Spin-off de producto", dot: ACCENT },
   adquisicion: { fill: "#2f7d4f", border: "0",                   label: "Adquisición",     dot: "#2f7d4f" },
   cierre:      { fill: "#c0492f", border: "0",                   label: "Cierre",          dot: "#c0492f" },
   inactivo:    { fill: "#ffffff", border: "1.4px dashed #a8a39a", label: "Sin señal reciente", dot: "#a8a39a" },
@@ -33,37 +42,61 @@ const dateLabel = (d: string) => { const [y, m] = d.split("-").map(Number); retu
 
 const ticks = data.meta.ticks.map((y: number) => ({ y, left: ((y - start) / (end - start)) * 100 }));
 
-const startups = data.startups.map((s: any) => {
-  const events = s.events.map((e: any) => ({
+const decorateEvents = (raw: any[]) => {
+  const events = raw.map((e: any) => ({
     ...e, left: pos(e.date), fill: (EV[e.type] ?? EV.pivot).fill, border: (EV[e.type] ?? EV.pivot).border,
     typeLabel: (EV[e.type] ?? EV.pivot).label, dateLabel: dateLabel(e.date), chipColor: (EV[e.type] ?? EV.pivot).dot,
     // The source chip is a link: for pivots (our own heuristic) it points to the
     // Wayback snapshot; for the rest, to the source (press/tracker/Platanus).
     href: e.wayback_url || e.source_url || null,
   }));
+  return mergeMilestones(events).map(group => ({
+    ...group.members[0],
+    date: group.date,
+    members: group.members,
+    title: [...new Set(group.members.map(e => e.title))].join(' · '),
+    typeLabel: [...new Set(group.members.map(e => e.typeLabel))].join(' · '),
+    basis: [...new Set(group.members.map(e => e.basis).filter(Boolean))].join(' · '),
+  }));
+};
+const startups = data.startups.map((s: any) => {
+  const closing = closings[slugify(s.name)];
+  if (s.current_product && !closing) {
+    throw new Error(`Falta el cierre editorial de ${s.name}.`);
+  }
+  if (closing && closing.reviewed_on !== s.reviewed_on) {
+    throw new Error(`El cierre editorial de ${s.name} debe revisarse con su nueva auditoría.`);
+  }
+  const milestones = decorateEvents(s.events);
+  const lineage = s.lineage ? {
+    ...s.lineage, child_name: s.name,
+    parent: { ...s.lineage.parent, events: decorateEvents(s.lineage.parent.events) },
+  } : null;
   // KISS: the status is only the outcome (Activa/Adquirida/Cerrada); the pivot
   // is an event, not a status. The "pivot" ones are still alive -> Activa.
-  const status = s.status === "pivot" ? "activa" : s.status === "inactiva" ? "cerrada" : s.status;
+  const status = s.status === "pivot" ? "activa" : s.status;
   return {
-    ...s, events, status, slug: slugify(s.name),
+    ...s, events: milestones, lineage, closing, status, slug: slugify(s.name),
     // El filtro de año matchea solo el PRIMER evento (año de fundación).
     years: s.events[0] ? [s.events[0].date.slice(0, 4)] : [],
     hasPivot: s.events.some((e: any) => e.type === "pivot"),
     hasRebrand: s.events.some((e: any) => e.type === "rebrand"),
     hasCapital: s.events.some((e: any) => e.type === "capital"),
+    hasSpinoff: !!lineage,
     st: ST[status] ?? ST.activa,
     aliases: s.aliases ?? [],
     search: (s.search_blob ?? `${s.name} ${s.domain}`).toLowerCase(),
   };
 });
 
-const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"]];
-const tagChips = [["pivot","Pivotearon"],["rebrand","Cambiaron de nombre"],["capital","Levantaron capital"]];
+const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"],["inactiva","Sin señal"]];
+const foundingYears = [...new Set(startups.flatMap(s => s.years))].sort();
+const tagChips = [["pivot","Pivotearon"],["rebrand","Cambiaron de nombre"],["capital","Levantaron capital"],["spinoff","Spin-offs"]];
 
 // Cuadraditos de la leyenda del párrafo introductorio (mismos colores que EV).
 // `pre` es el conector que va antes de la frase dentro de la oración.
 const introEventos = [
-  { color: "#1a1916", pre: " desde que ",  phrase: "se fundaron" },
+  { color: "#1a1916", pre: " desde su ",  phrase: "inicio documentado" },
   { color: "#2f5fe6", pre: ", cuando ",    phrase: "levantaron capital" },
   { color: "#ffffff", border: "1.4px solid #b5760f", pre: ", cuando ", phrase: "pivotearon" },
   { color: "#2f7d4f", pre: ", ",           phrase: "fueron adquiridas" },
@@ -77,13 +110,15 @@ const baseTitle = "Chile, Startups · trayectorias de startups chilenas";
 const baseDesc = "Cómo evolucionaron las startups chilenas: pivots de producto, rebrands, rondas de inversión, adquisiciones y cierres, datados y con fuente.";
 const pageTitle = openMatch ? `${openMatch.name} · su trayectoria · Chile, Startups` : baseTitle;
 const description = openMatch
-  ? `${openMatch.name}: ${String(openMatch.events[0]?.prose || "").replace(/\s+/g, " ").slice(0, 165)}`
+  ? (openMatch.lineage?.summary || `${openMatch.name}: ${String(openMatch.events[0]?.prose || "").replace(/\s+/g, " ").slice(0, 165)}`)
   : baseDesc;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-// Cada startup trae su propio OG (/og/<slug>.png, generado por scripts/gen-og.ts); el home usa /og.png.
-const ogImage = new URL(openMatch ? `/og/${openMatch.slug}.png` : "/og.png", Astro.site).href;
+// El endpoint genera cada OG; el hook de build añade su huella de contenido a la URL.
+const ogImage = new URL(openMatch ? `/og/${openMatch.slug}.png?v=${data.meta.updated_on}` : `/og.png?v=${data.meta.updated_on}`, Astro.site).href;
 const ogAlt = openMatch
-  ? `${openMatch.name} · su trayectoria · Chile, Startups`
+  ? (openMatch.lineage
+    ? `${openMatch.name}, spin-off de ${openMatch.lineage.parent.name}. Ambas plataformas continúan en trayectorias separadas.`
+    : `${openMatch.name} · su trayectoria · Chile, Startups`)
   : "Chile, Startups · cómo evolucionaron las startups chilenas";
 ---
 
@@ -112,6 +147,7 @@ const ogAlt = openMatch
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image:alt" content={ogAlt} />
 </head>
 <body>
 <div class="shell" style="height:100vh;background:#ffffff;padding:38px 24px 38px;display:flex;flex-direction:column">
@@ -135,8 +171,8 @@ const ogAlt = openMatch
         </div>
 
         <div class="controls" style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-top:18px">
-          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:0;max-width:340px">
-            <div style="flex:1;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:2px">
+          <div class="searchwrap" style="display:flex;align-items:stretch;gap:8px;flex:1;min-width:160px;max-width:340px">
+            <div style="flex:1;min-width:0;display:flex;align-items:center;border-bottom:1.5px solid #1a1916;padding-bottom:2px">
               <input id="search" placeholder="" style="flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:13.5px;color:#1a1916;padding:0" />
             </div>
             <button class="searchbtn" style="width:30px;height:30px;align-self:flex-end;background:transparent;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;color:#1a1916;padding:0">
@@ -151,7 +187,7 @@ const ogAlt = openMatch
             <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
             <div class="yearsub" style="display:flex;align-items:center;gap:8px">
               <span style="font-size:11px;color:#a8a49b">Año</span>
-              {data.meta.ticks.filter((y: number) => y <= 2024).map((y: number) => (
+              {foundingYears.map((y: string) => (
                 <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
               ))}
             </div>
@@ -169,7 +205,7 @@ const ogAlt = openMatch
         </div>
       </div>
 
-      <div class="axishead" style="display:grid;grid-template-columns:200px 1fr;gap:0;padding:8px 30px 8px;margin-top:26px">
+      <div class="axishead" style="display:grid;grid-template-columns:200px 1fr 42px;gap:0;padding:8px 30px 8px;margin-top:26px">
         <div></div>
         <div style="position:relative;height:13px">
           {ticks.map((t) => {
@@ -177,13 +213,14 @@ const ogAlt = openMatch
             return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}><span class="yr-full">{String(t.y)}</span><span class="yr-abbr">{`'${String(t.y).slice(2)}`}</span></span>);
           })}
         </div>
+        <div class="axis-end" aria-hidden="true"></div>
       </div>
     </div>
 
     <div id="rows" data-rows style="padding:4px 30px 14px;overflow-y:auto;overflow-x:hidden;flex:1;min-height:0">
       {startups.map((s) => (
-        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hasrebrand={s.hasRebrand} data-hascapital={s.hasCapital} data-name={s.name}>
-          <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr auto;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
+        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hasrebrand={s.hasRebrand} data-hascapital={s.hasCapital} data-hasspinoff={s.hasSpinoff} data-name={s.name}>
+          <div class:list={["row", { "lineage-row": !!s.lineage }]} data-toggle role="button" tabindex="0" aria-expanded={s === openMatch} aria-controls={`detail-${s.slug}`} aria-label={`Ver trayectoria de ${s.name}`} style="display:grid;grid-template-columns:200px 1fr auto;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
             <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
               <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
               <span style="font-size:13.5px;font-weight:400;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0">{s.name}</span>
@@ -192,7 +229,7 @@ const ogAlt = openMatch
               )}
               <div class="nameline" style="flex:1;height:1px;background:#eceae4;min-width:10px"></div>
             </div>
-            <div class="lane" style="position:relative;height:22px">
+            {s.lineage ? <LineageLane lineage={s.lineage} events={s.events} ticks={ticks} pos={pos} /> : <div class="lane" style="position:relative;height:22px">
               {ticks.map((t) => (<div style={`position:absolute;top:0;bottom:0;width:1px;background:#f3f2ed;left:${t.left}%`}></div>))}
               <div style="position:absolute;left:0;right:0;top:50%;height:1px;background:#eceae4"></div>
               {s.events.map((e) => (
@@ -201,11 +238,11 @@ const ogAlt = openMatch
                        style={`position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:10px;height:10px;background:${e.fill};border:${e.border};border-radius:3px;box-shadow:0 0 0 3px #ffffff;cursor:pointer`}></div>
                 </div>
               ))}
-            </div>
+            </div>}
             <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;color:#bdbab2;margin:0 14px;transition:transform .18s"><path d="M6 9l6 6 6-6"></path></svg>
           </div>
 
-          <div class="expand" hidden={s !== openMatch} style="padding:10px 0 32px 35px">
+          <div class="expand" id={`detail-${s.slug}`} hidden={s !== openMatch} style="padding:10px 0 32px 35px">
             <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px">
               <span style="font-size:12px;color:#bdbab2">{s.domain || "–"}</span>
               <span style="font-size:12px;color:#bdbab2">·</span>
@@ -214,15 +251,18 @@ const ogAlt = openMatch
                 <span style="font-size:12px;color:#bdbab2">· también <span style="color:#8a857c">{s.aliases.join(", ")}</span></span>
               )}
             </div>
-            {s.events.map((e) => {
+            {[...(s.lineage?.parent.events ?? []), ...s.events].sort((a, b) => a.date.localeCompare(b.date)).map((milestone) => (
+              <p style="font-size:15px;color:#33312a;line-height:1.85;margin:0 0 15px">{milestone.members.map((e) => {
               const Chip: any = e.href ? "a" : "span";
               const linkAttrs = e.href ? { href: e.href, target: "_blank", rel: "noopener noreferrer" } : {};
               return (
-              <p style="font-size:15px;color:#33312a;line-height:1.85;margin:0 0 15px">{e.prose}<Chip {...linkAttrs} title={e.basis} class={e.href ? "srcchip srcchip-link" : "srcchip"} style="display:inline-flex;align-items:center;gap:5px;vertical-align:middle;font-size:11.5px;color:#75726b;border:1px solid #e3e1da;border-radius:7px;padding:2px 8px;margin-left:7px;white-space:nowrap;position:relative;top:-1px;text-decoration:none"><span style={`width:5px;height:5px;border-radius:1.5px;background:${e.chipColor};flex-shrink:0`}></span>{e.source}{e.href && (
+              <span>{e.prose}<Chip {...linkAttrs} title={e.basis} class={e.href ? "srcchip srcchip-link" : "srcchip"} style="display:inline-flex;align-items:center;gap:5px;vertical-align:middle;font-size:11.5px;color:#75726b;border:1px solid #e3e1da;border-radius:7px;padding:2px 8px;margin-left:7px;white-space:nowrap;position:relative;top:-1px;text-decoration:none"><span style={`width:5px;height:5px;border-radius:1.5px;background:${e.chipColor};flex-shrink:0`}></span>{e.source}{e.href && (
                 <svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="flex-shrink:0;margin-left:1px" aria-hidden="true"><path d="M3 7L7 3M3.5 3H7V6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              )}</Chip></p>
+              )}</Chip>{" "}</span>
               );
-            })}
+            })}</p>))}
+            {s.closing && <ClosingSummary closing={s.closing} name={s.name} slug={s.slug} />}
+            {s.lineage && <LineageDetail lineage={s.lineage} />}
           </div>
         </div>
       ))}
@@ -255,6 +295,7 @@ const ogAlt = openMatch
       if (ok && state.tags.has("pivot") && d.haspivot !== "true") ok = false;
       if (ok && state.tags.has("rebrand") && d.hasrebrand !== "true") ok = false;
       if (ok && state.tags.has("capital") && d.hascapital !== "true") ok = false;
+      if (ok && state.tags.has("spinoff") && d.hasspinoff !== "true") ok = false;
       el.style.display = ok ? "" : "none";
       if (ok) n++;
     }
@@ -303,6 +344,7 @@ const ogAlt = openMatch
   let openPanel: HTMLElement | null = document.querySelector(".expand:not([hidden])");
   const rotateChev = (panel: HTMLElement, open: boolean) => {
     const row = panel.closest(".startup")?.querySelector("[data-toggle]");
+    row?.setAttribute("aria-expanded", String(open));
     const chev = row?.querySelector(".chev") as HTMLElement | null;
     if (chev) chev.style.transform = open ? "rotate(180deg)" : "";
   };
@@ -310,13 +352,16 @@ const ogAlt = openMatch
   all.forEach((el) => {
     const row = el.querySelector("[data-toggle]") as HTMLElement;
     const panel = el.querySelector(".expand") as HTMLElement;
+    row.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); row.click(); }
+    });
     row.addEventListener("click", () => {
       const isOpen = !panel.hidden;
       if (openPanel && openPanel !== panel) { openPanel.hidden = true; rotateChev(openPanel, false); }
       panel.hidden = isOpen;
       rotateChev(panel, !isOpen);
       openPanel = isOpen ? null : panel;
-      if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: "smooth" }));
+      if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
     });
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; rotateChev(openPanel, false); openPanel = null; } });
@@ -330,8 +375,9 @@ const ogAlt = openMatch
       || all.find((el) => (el.dataset.search || "").includes(raw.toLowerCase().trim()));
     if (!target) return;
     const panel = target.querySelector(".expand") as HTMLElement;
-    if (openPanel && openPanel !== panel) openPanel.hidden = true;
+    if (openPanel && openPanel !== panel) { openPanel.hidden = true; rotateChev(openPanel, false); }
     panel.hidden = false; openPanel = panel;
+    rotateChev(panel, true);
     requestAnimationFrame(() => target.scrollIntoView({ block: "start", behavior: "auto" }));
   }
   openStartup(decodeURIComponent(location.pathname).replace(/\//g, "") || decodeURIComponent(location.hash).replace(/^#/, ""));

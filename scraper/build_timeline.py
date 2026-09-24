@@ -97,7 +97,7 @@ def main():
         events = []
         for e in s["events"]:
             t = e["type"]
-            if t in ("pivot", "inactivo"):
+            if t in ("pivot", "rebrand", "inactivo"):
                 continue  # regenerated (curated / inactivity marker)
             ev = dict(e)
             corr = CORRECTIONS.get((name.strip(), t, e["date"]))
@@ -201,12 +201,16 @@ def main():
     meta["note"] = "Datos verificados. Cada hito enlaza a su fuente."
     meta["count"] = len(out)
     payload = {"meta": meta, "startups": sorted(out, key=lambda s: s["events"][0]["date"] if s["events"] else "9999")}
+    from audited_timeline import apply_audits
+    payload = apply_audits(payload, common.DATA_DIR)
+    out = payload['startups']
     WEB.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     from collections import Counter
-    nev = sum(len(s["events"]) for s in out)
-    et = Counter(e["type"] for s in out for e in s["events"])
-    nourl = [(s["name"], e["type"]) for s in out for e in s["events"] if not e.get("source_url")]
+    from lineages import all_events
+    nev = sum(len(all_events(s)) for s in out)
+    et = Counter(e["type"] for s in out for e in all_events(s))
+    nourl = [(s["name"], e["type"]) for s in out for e in all_events(s) if not e.get("source_url")]
     print(f"✔ {len(out)} startups · {nev} eventos · tipos {dict(et)}")
     print(f"  eventos SIN source_url: {len(nourl)}")
     for n,t in nourl[:30]: print(f"    {n} · {t}")

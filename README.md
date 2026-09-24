@@ -18,7 +18,8 @@ Dos piezas:
 
 - **`web/`**: el sitio (Astro, CSS puro, UI en español). Renderiza una línea de tiempo
   donde cada startup muestra sus hitos, y cada hito enlaza a su fuente. El dato que consume
-  es `web/src/data/timeline.json` (versionado).
+  es `web/src/data/timeline.json` (versionado). Los cierres de lectura se editan en
+  `web/src/data/closings.json`; ver [el criterio editorial](docs/CIERRES.md).
 - **`scraper/`**: el pipeline de datos (Python + `uv`). Reconstruye la trayectoria real de
   cada startup desde el archivo web y la lleva, ya verificada, a `timeline.json`.
 
@@ -48,7 +49,7 @@ cd web && bun install && bunx astro dev      # http://localhost:4321
 ```bash
 cd scraper
 uv run python build_pivots_curated.py && uv run python build_timeline.py
-cd ../web && bunx astro build
+cd ../web && bun run build
 ```
 
 ## Estructura
@@ -63,8 +64,9 @@ data/                dataset + archivos de Wayback (NO versionado, ver data/READ
 ## Los datos
 
 El dataset y los ~276 MB de capturas de Wayback **no se versionan** (`.gitignore`): se
-regeneran corriendo el pipeline. Lo único que viaja en el repo es el resultado final que
-el sitio renderiza (`web/src/data/timeline.json`). Detalle en
+regeneran corriendo el pipeline. Viajan en el repo la trayectoria final que
+el sitio renderiza (`web/src/data/timeline.json`) y sus cierres editoriales
+(`web/src/data/closings.json`). Detalle en
 [`data/README.md`](data/README.md).
 
 ## Stack

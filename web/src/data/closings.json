@@ -1,0 +1,2503 @@
+{
+  "cardda": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Hoy Cardda presenta su plataforma de control de gastos para empresas en Chile. Cubre desde las tarjetas hasta las cuentas por pagar, que se sincronizan con las facturas del SII y se integran a ERPs como SAP, Oracle, Defontana y Nubox. Su sitio declara más de 300 empresas clientas, desde corporativos hasta startups.",
+        "sources": [
+          {
+            "label": "Cardda",
+            "url": "https://www.cardda.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Emite tarjetas corporativas virtuales y físicas con límites por persona, equipo o proyecto. Gestiona reembolsos capturando las boletas por foto o por WhatsApp, con clasificación automática, y hace transferencias nacionales e internacionales con reglas de aprobación por monto y rol. Reemplaza la planilla de rendiciones, la tarjeta compartida del gerente y la conciliación contable manual.",
+        "sources": [
+          {
+            "label": "Cardda",
+            "url": "https://www.cardda.com/"
+          }
+        ]
+      },
+      {
+        "text": "Cardda anunció en prensa su llegada a Perú, pero su sitio actual no la menciona.",
+        "sources": [
+          {
+            "label": "FinteChile",
+            "url": "https://www.fintechile.org/noticias/cardda-la-startup-chilena-acelerada-por-y-combinator-alista-llegada-a-peru"
+          },
+          {
+            "label": "Revisión · 11 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-11: el sitio actual no menciona Perú."
+          }
+        ]
+      }
+    ]
+  },
+  "reversso": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Reversso mantiene su software de cambios y devoluciones y suma un módulo de cancelaciones para compras con quiebre de stock. Se dirige a marcas de retail online en Chile, México y Colombia, y su sitio tiene ediciones por país y en inglés.",
+        "sources": [
+          {
+            "label": "Reversso",
+            "url": "https://www.reversso.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El software integra la tienda online, la logística inversa (retiro a domicilio, punto de entrega o tienda física) y los medios de pago. Ofrece un portal de autoatención para el cliente final, reglas de negocio por marca, seguimiento del RMA, analítica de devoluciones y recomendación de productos para convertir devoluciones en cambios. Reemplaza la gestión manual de la postventa por correo y servicio al cliente.",
+        "sources": [
+          {
+            "label": "Reversso",
+            "url": "https://www.reversso.com/"
+          }
+        ]
+      },
+      {
+        "text": "Según la empresa, tiene más de 350 marcas integradas y trabaja con cerca de 500 marcas en más de nueve países.",
+        "sources": [
+          {
+            "label": "Reversso",
+            "url": "https://www.reversso.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "fintoc": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Con esa ampliación, Fintoc reúne los cobros y la gestión del dinero en una plataforma para negocios de Chile y México. Su oferta incluye además cuentas de negocio para automatizar flujos de dinero.",
+        "sources": [
+          {
+            "label": "Fintoc",
+            "url": "https://fintoc.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "En México tiene conexión directa a SPEI desde 2025, con infraestructura propia para enviar y recibir transferencias.",
+        "sources": [
+          {
+            "label": "Fintoc · SPEI",
+            "url": "https://www.fintoc.com/mx/blog/por-que-nos-conectamos-a-spei"
+          },
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/mercados/banca-fintech/los-planes-de-fintoc-para-2026-nuevo-sistema-operativo-de-pagos-y"
+          }
+        ]
+      },
+      {
+        "text": "En el sitio revisado, Fintoc declara más de 1.200 empresas clientes. Al cierre de 2025 procesaba cerca de US$350 millones al mes, según lo informado a Diario Financiero. Colombia figuraba entre los planes anunciados de expansión para 2026.",
+        "sources": [
+          {
+            "label": "Fintoc",
+            "url": "https://fintoc.com/"
+          },
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/mercados/banca-fintech/los-planes-de-fintoc-para-2026-nuevo-sistema-operativo-de-pagos-y"
+          }
+        ]
+      },
+      {
+        "text": "La plataforma busca reunir lo que antes requería integrar por separado: un botón de transferencia, un adquirente de tarjetas y un sistema de cobranza.",
+        "sources": [
+          {
+            "label": "Fintoc",
+            "url": "https://fintoc.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "toku": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Los agentes conversacionales se integran a la base de cobros y pagos que Toku ofrece a grandes empresas de Chile, México y Brasil: recaudación y gestión de pagos conectadas al ERP y a los bancos, portal de pago con marca propia y conciliación automática. Toku declara más de 600 empresas clientes.",
+        "sources": [
+          {
+            "label": "Toku",
+            "url": "https://trytoku.com/"
+          },
+          {
+            "label": "Diario Financiero · ago 2026",
+            "url": "https://www.df.cl/df-lab/innovacion-y-startups/toku-ficha-a-ceo-de-examedi-para-liderar-operacion-de-la-fintech-en-chile"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "saludtech": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Hoy Saludtech ofrece a pacientes en Chile videoconsultas con especialistas certificados a cualquier hora, con cobertura de Isapre y Fonasa. La receta, las indicaciones, la orden de exámenes y la boleta electrónica quedan en el portal del paciente.",
+        "sources": [
+          {
+            "label": "Saludtech",
+            "url": "https://home.saludtech.cl/"
+          }
+        ]
+      },
+      {
+        "text": "También permite reservar exámenes médicos en una red de laboratorios asociados en todo el país y atiende a empresas por convenio. Así reemplaza la consulta presencial y la búsqueda de laboratorio por separado.",
+        "sources": [
+          {
+            "label": "Saludtech",
+            "url": "https://home.saludtech.cl/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "milla": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "La plataforma de viajes corporativos para empresas no volvió a operar y no tiene sucesor. El sitio milla.travel ya no existe.",
+        "sources": [
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/df-mas/punto-de-partida/plutto-la-unica-chilena-en-y-combinator-cierra-ronda-por-us-500-mil"
+          },
+          {
+            "label": "Revisión · 6 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-06."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Desde 2021, Antonia San Martín e Ignacio Márquez dirigen Plutto, una empresa distinta, de verificación digital de empresas, que pasó por Y Combinator.",
+        "sources": [
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/df-mas/punto-de-partida/plutto-la-unica-chilena-en-y-combinator-cierra-ronda-por-us-500-mil"
+          }
+        ]
+      },
+      {
+        "text": "El perfil de Platanus sigue listando a Milla en su generación 2020-1, con la descripción original.",
+        "sources": [
+          {
+            "label": "Platanus · Milla",
+            "url": "https://platan.us/startups/milla"
+          }
+        ]
+      },
+      {
+        "text": "No encontramos prensa sobre Milla posterior a julio de 2022.",
+        "sources": [
+          {
+            "label": "Revisión · 6 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-06."
+          }
+        ]
+      }
+    ]
+  },
+  "mercately": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Mercately sigue en el mismo dominio y con la misma marca, y su CRM para WhatsApp, Instagram y Messenger gira ahora en torno a MIA, un agente de IA. MIA responde las 24 horas sobre productos, stock y envíos con el tono de cada marca. El producto no tuvo un pivot: pasó de centrarse en la sincronización con Mercado Libre a centrarse en WhatsApp y, desde 2025, en el agente.",
+        "sources": [
+          {
+            "label": "Mercately",
+            "url": "https://mercately.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La plataforma arma ciclos de venta automáticos para seguir leads, lanza campañas automatizadas por WhatsApp, cobra con links de pago y se conecta a Shopify, WooCommerce y HubSpot. Incluye un panel con tiempos de respuesta, clientes y ventas. Reemplaza la atención manual por WhatsApp y las herramientas sueltas de chat, inventario y cobro.",
+        "sources": [
+          {
+            "label": "Mercately",
+            "url": "https://mercately.com/"
+          }
+        ]
+      },
+      {
+        "text": "Se dirige a empresas latinoamericanas de e-commerce, educación, inmobiliario, automotriz, salud y food service. Mercately dice atender a más de 1.500 empresas en la región.",
+        "sources": [
+          {
+            "label": "Mercately",
+            "url": "https://mercately.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "tiendada": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "TiendaDa sigue en tiendada.com y con el mismo nombre, pero su tienda virtual se convirtió en una suite de venta por chat para emprendedores, pymes y negocios de Latinoamérica que venden por WhatsApp, Instagram y redes sociales. A la tienda se suman TiendaChat, un CRM de WhatsApp, y Anita, una vendedora con inteligencia artificial.",
+        "sources": [
+          {
+            "label": "TiendaDa",
+            "url": "https://tiendada.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La tienda online reúne pedidos, pagos, inventario y facturación electrónica en un solo panel. TiendaChat organiza las conversaciones, gestiona pedidos y pagos y automatiza secuencias y funnels de mensajes. Anita responde preguntas frecuentes, recomienda productos, recupera clientes interesados y ayuda a cerrar ventas por WhatsApp. La suite reemplaza la atención manual de los chats de venta y el uso de herramientas separadas de tienda, CRM y facturación.",
+        "sources": [
+          {
+            "label": "TiendaDa",
+            "url": "https://tiendada.com/"
+          }
+        ]
+      },
+      {
+        "text": "Se vende con demo agendada y 14 días de prueba gratis. Los planes pagados son de pago único por 1 o 6 meses, y además hay una línea corporativa.",
+        "sources": [
+          {
+            "label": "TiendaDa",
+            "url": "https://tiendada.com/"
+          }
+        ]
+      },
+      {
+        "text": "Según su propio sitio, TiendaDa está presente en más de 12 países de la región. Forbes Perú la incluyó en su lista de las 100 mejores startups de Perú de 2025.",
+        "sources": [
+          {
+            "label": "TiendaDa",
+            "url": "https://tiendada.com/"
+          },
+          {
+            "label": "Forbes Perú · oct 2025",
+            "url": "https://forbes.pe/negocios/2025-10-28/listado-forbes-estas-son-las-100-mejores-startups-de-peru-en-2025-2"
+          }
+        ]
+      }
+    ]
+  },
+  "wayak": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "Wayak se presenta hoy como un sistema operativo para las operaciones de una empresa, dirigido a organizaciones medianas y grandes de manufactura, seguros y atención al cliente. Conecta las fuentes de datos que la empresa ya usa, como bases de datos, APIs y tickets de soporte, y da a los agentes de IA el contexto completo del negocio.",
+        "sources": [
+          {
+            "label": "Wayak",
+            "url": "https://wayak.io"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El trabajo repetitivo se vuelve automatizaciones que igual pasan por aprobación humana antes de ejecutarse: la IA detecta la excepción y propone una acción, y una persona la aprueba o la rechaza. Así reemplaza los reportes manuales y las decisiones tomadas con datos dispersos.",
+        "sources": [
+          {
+            "label": "Wayak",
+            "url": "https://wayak.io"
+          }
+        ]
+      }
+    ]
+  },
+  "konstruedu": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Konstruedu mantiene su marca y ofrece cursos, rutas de aprendizaje y certificaciones en BIM, estructuras, Lean Construction y contratos NEC para profesionales y estudiantes de ingeniería y construcción de Latinoamérica. Vende cada curso por separado, tiene algunos gratis, una opción Premium y una oferta para empresas. Se presenta como reemplazo de la capacitación presencial fragmentada del sector.",
+        "sources": [
+          {
+            "label": "Konstruedu",
+            "url": "https://konstruedu.com/es/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "strade": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "La captura de septiembre de 2025 todavía muestra Strade World como marketplace de reventa y verificación de sneakers.",
+        "sources": [
+          {
+            "label": "Wayback Machine · sep 2025",
+            "url": "https://web.archive.org/web/20250913234249/http://stradeworld.com/"
+          }
+        ]
+      },
+      {
+        "text": "Al revisar sus sitios en septiembre de 2026, stradeworld.com ya mostraba contenido ajeno al marketplace y stradecustom.com no resolvía.",
+        "sources": [
+          {
+            "label": "Revisión de dominios · sep 2026",
+            "basis": "Observaciones conservadas en la auditoría del 9 de septiembre de 2026. El dominio en vivo ya no muestra contenido de Strade."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Los perfiles de Instagram @strade.world y @strade.custom seguían disponibles, con unos 62 mil y 73 mil seguidores, respectivamente. No se pudo leer la fecha de sus últimas publicaciones, por lo que no confirman actividad reciente.",
+        "sources": [
+          {
+            "label": "Instagram · Strade World",
+            "url": "https://www.instagram.com/strade.world/"
+          },
+          {
+            "label": "Instagram · Strade Custom",
+            "url": "https://www.instagram.com/strade.custom/"
+          }
+        ]
+      },
+      {
+        "text": "Facebook mostraba unos 72 mil seguidores y una última publicación visible del 13 de junio de 2025. El marketplace todavía aparecía en el archivo web tres meses después.",
+        "sources": [
+          {
+            "label": "Facebook · Strade World",
+            "url": "https://www.facebook.com/stradeworld/"
+          },
+          {
+            "label": "Wayback Machine · sep 2025",
+            "url": "https://web.archive.org/web/20250913234249/http://stradeworld.com/"
+          }
+        ]
+      },
+      {
+        "text": "No encontramos capturas entre el 13 de septiembre de 2025 y esta revisión que permitan fechar el cambio del sitio. El contenido ajeno y la falta de respuesta del otro dominio tampoco prueban un cambio de propietario.",
+        "sources": [
+          {
+            "label": "Revisión · 9 sep 2026",
+            "basis": "Límites de la evidencia registrados en la auditoría aprobada de Strade; no equivalen a una fecha de cierre."
+          }
+        ]
+      }
+    ]
+  },
+  "salduu": {
+    "reviewed_on": "2026-09-05",
+    "summary": [
+      {
+        "text": "Crear la tienda sigue siendo gratis y sin costo fijo mensual. Hoy Salduu cobra una comisión fija de 11,9% + US$0,5 por transacción. Desde 2026 su sitio se dirige sobre todo a marcas digitales en crecimiento, sin dejar de atender a creadores individuales, y suma una capa de checkout para lanzamientos.",
+        "sources": [
+          {
+            "label": "Salduu",
+            "url": "https://salduu.com/"
+          }
+        ]
+      },
+      {
+        "text": "Así busca reemplazar la combinación de una pasarela de pagos internacional, un constructor de funnels y herramientas antifraude contratadas por separado.",
+        "sources": [
+          {
+            "label": "Salduu",
+            "url": "https://salduu.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El checkout guarda los datos del comprador y permite upsells, downsells y order bumps en un clic, además de pagos divididos. Incluye antifraude con 3DS y protección ante contracargos. Ofrece liquidación multimoneda en 39 países, integraciones con CRM, herramientas de webinars y plataformas de anuncios, y soporte humano por chat, email y WhatsApp los 7 días.",
+        "sources": [
+          {
+            "label": "Salduu",
+            "url": "https://salduu.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "con-yappa": {
+    "reviewed_on": "2026-09-05",
+    "summary": [
+      {
+        "text": "Con Yappa no pasó de la lista de espera: la cuenta de ahorro con sorteos semanales nunca se anunció como operativa. El sitio conyappa.cl ya no existe, la app fue retirada de Google Play y no hay señales públicas de actividad desde mediados de 2021.",
+        "sources": [
+          {
+            "label": "Wayback Machine · jul 2021",
+            "url": "https://web.archive.org/web/20210725090519/http://conyappa.cl/"
+          },
+          {
+            "label": "Revisión · 5 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-05 sobre el sitio, la app y la actividad pública."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Los fundadores no han anunciado un cierre y no hay prensa que lo confirme. El perfil en el directorio de Platanus sigue publicado con la descripción original de 2021.",
+        "sources": [
+          {
+            "label": "Platanus · Con Yappa",
+            "url": "https://platan.us/startups/con-yappa"
+          },
+          {
+            "label": "Revisión · 5 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-05; no equivale a una fecha de cierre."
+          }
+        ]
+      }
+    ]
+  },
+  "examedi": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Examedi sigue activa en Chile y México, con un equipo que pasó de 160 a 25 personas. A agosto de 2026, Nicolás Pino es el CEO entrante y reemplaza a Mariano Werner, que deja el cargo en septiembre. La empresa lanzó además un servicio por suscripción de diagnóstico y tratamiento capilar con entrega de medicamentos, y planea extender ese modelo a otras categorías.",
+        "sources": [
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/df-lab/innovacion-y-startups/examedi-tras-la-cirugia-nuevo-ceo-sin-fundadores-y-a-meses-de-la"
+          },
+          {
+            "label": "Examedi",
+            "url": "https://examedi.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "En Chile vende a pacientes particulares, de Fonasa y de Isapre. Además de los exámenes de sangre, la telemedicina 24/7 y la gestión automática de reembolsos, ofrece inyecciones a domicilio en Santiago y regiones, nutrición online y lectura explicada de resultados. Tiene también un canal para empresas.",
+        "sources": [
+          {
+            "label": "Examedi",
+            "url": "https://examedi.cl/"
+          }
+        ]
+      },
+      {
+        "text": "En México, examedi.com.mx ofrece estudios de laboratorio y check-ups a domicilio en Ciudad de México, Monterrey y Guadalajara, con foco en clientes empresa.",
+        "sources": [
+          {
+            "label": "Examedi México",
+            "url": "https://examedi.com.mx/"
+          },
+          {
+            "label": "Examedi México · Cobertura",
+            "url": "https://examedi.com.mx/cobertura"
+          }
+        ]
+      }
+    ]
+  },
+  "watermelon-tools": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Ya no existe un sitio vivo del producto. El dominio watermelontools.com redirige a un sitio de bisutería vintage sin relación con la startup, y watermelon.tools ya no resuelve.",
+        "sources": [
+          {
+            "label": "Revisión · 8 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-08. El dominio en vivo ya no muestra contenido de Watermelon."
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "esponsor": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "eSponsor sigue siendo el mismo ecommerce de monetización, ahora también para profesionales independientes. Reúne en una sola página un link-in-bio, suscripciones de pago, una tienda de contenido digital y cursos, campañas con metas y recompensas, una lista de deseos, contenido a pedido, agenda de citas y reservas, y colaboraciones con marcas.",
+        "sources": [
+          {
+            "label": "eSponsor",
+            "url": "https://try.esponsor.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Cobra con más de 140 medios de pago nacionales e internacionales y tiene tres planes: gratuito, verificado (US$5 al mes) y creador (US$30 al mes). Se ofrece como alternativa a combinar Patreon, Linktree, una tienda aparte y un agendador.",
+        "sources": [
+          {
+            "label": "eSponsor",
+            "url": "https://try.esponsor.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "pulso-escolar": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "La plataforma de Pulso Escolar va hoy más allá de medir el clima. Sus sociogramas muestran el mapa de relaciones del curso e incluyen un mezclador que arma los cursos según las preferencias de los estudiantes. Además genera la planificación de actividades de clase para cada curso, configura los protocolos de convivencia escolar y suma un módulo vocacional en que un agente de IA conversa con cada estudiante.",
+        "sources": [
+          {
+            "label": "Pulso Escolar",
+            "url": "https://www.pulsoescolar.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Mantiene las encuestas de clima de convivencia escolar. Busca reemplazar el armado de cursos a mano, los protocolos armados desde cero y los cuestionarios vocacionales largos.",
+        "sources": [
+          {
+            "label": "Pulso Escolar",
+            "url": "https://www.pulsoescolar.cl/"
+          }
+        ]
+      },
+      {
+        "text": "El dominio pipoll.com, del antiguo producto para empresas, redirige a pulsoescolar.cl.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23."
+          }
+        ]
+      }
+    ]
+  },
+  "vivvidero": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Vivvidero remodela viviendas en Bogotá y en los municipios vecinos de Chía, Cota y Cajicá. También acepta remodelaciones parciales de un solo espacio. Antes de empezar, el equipo muestra en imágenes hiperrealistas cómo quedará el catálogo elegido (Boho, Minimal o Nordic) adaptado a la vivienda.",
+        "sources": [
+          {
+            "label": "Vivvidero",
+            "url": "https://www.vivvidero.com/"
+          }
+        ]
+      },
+      {
+        "text": "A quien remodela le ofrece además descuentos con marcas aliadas para equipar la vivienda al terminar la obra. La empresa presenta este programa como disponible por tiempo limitado.",
+        "sources": [
+          {
+            "label": "Vivvidero",
+            "url": "https://www.vivvidero.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El diseño toma 15 días y la obra, dos meses. El precio queda congelado y la obra se respalda con cuatro pólizas de cumplimiento y una garantía de seis meses sobre materiales y trabajos. Durante la obra, el cliente recibe reportes semanales. Es la alternativa que propone a contratar por separado a un diseñador y un contratista, con presupuesto abierto y sin plazo comprometido.",
+        "sources": [
+          {
+            "label": "Vivvidero",
+            "url": "https://www.vivvidero.com/"
+          }
+        ]
+      },
+      {
+        "text": "Los descuentos abarcan electrodomésticos, muebles, colchones, vajilla, iluminación, cortinas, cerraduras electrónicas y plantas. Incluyen también una categoría de hospedaje y mudanzas.",
+        "sources": [
+          {
+            "label": "Vivvidero",
+            "url": "https://www.vivvidero.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "cacttus": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Cacttus mantiene su seguro de mascotas 100% online, respaldado por BCI Seguros, en tres planes escalonados: Mini, Care y Care+. Cubren entre el 60% y el 90% de los gastos veterinarios, con deducibles anuales. El sitio aborda de forma explícita la cobertura de mascotas con condiciones preexistentes.",
+        "sources": [
+          {
+            "label": "Cacttus",
+            "url": "https://cacttus.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Se presenta como alternativa al trámite de reembolso lento y manual de las aseguradoras generalistas tradicionales. En una consulta del 6 de julio de 2026, la portada declaraba más de 9.231 mascotas protegidas.",
+        "sources": [
+          {
+            "label": "Cacttus",
+            "url": "https://cacttus.cl/"
+          }
+        ]
+      }
+    ]
+  },
+  "crecy": {
+    "reviewed_on": "2026-09-05",
+    "summary": [
+      {
+        "text": "Hoy crecy.io redirige a un sitio de streaming deportivo en vietnamita sin relación con la startup, y el dominio está en manos de un tercero. La tarjeta de crédito con garantía cripto para holders en México no se ofrece.",
+        "sources": [
+          {
+            "label": "Revisión · 5 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-05."
+          }
+        ]
+      },
+      {
+        "text": "No hay sitio sucesor ni app vigente. Tampoco hay prensa posterior a agosto de 2023 ni actividad de Crecy desde 2024.",
+        "sources": [
+          {
+            "label": "Revisión · 5 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-05."
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "larnu": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "El dominio larnu.com sigue registrado, pero ya no entrega el producto. Redirige a una página de dominio estacionado, sin contenido ni descarga de la app.",
+        "sources": [
+          {
+            "label": "Revisión · 8 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-08. El dominio en vivo ya no muestra contenido de LarnU."
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "unifyr": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "El dominio unifyr.ai ya no es del proyecto. Figura registrado a nombre de otra empresa y redirige a unifyr.com, el sitio de una compañía distinta y sin relación que vende software de gestión de ecosistemas de partners. Allí no aparece ninguna referencia al producto de datos ni a sus fundadores.",
+        "sources": [
+          {
+            "label": "Revisión · 8 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-08."
+          }
+        ]
+      },
+      {
+        "text": "El equipo tampoco continuó con el producto. Su CEO y fundador, Santiago Fiaschi, encabeza hoy Escalate Ops / Escalate Partners, un negocio de servicios de operaciones y crecimiento ajeno a la analítica de datos.",
+        "sources": [
+          {
+            "label": "Santiago Fiaschi · LinkedIn",
+            "url": "https://www.linkedin.com/in/santifiaschi/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "En julio de 2024 el sitio de producto ya respondía con una página de error, y no volvió a publicarse.",
+        "sources": [
+          {
+            "label": "Wayback Machine · jul 2024",
+            "url": "https://web.archive.org/web/20240724110507/https://www.unifyr.ai/"
+          }
+        ]
+      }
+    ]
+  },
+  "crema": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "En febrero de 2026, el sitio de Crema todavía ofrecía a freelancers con clientes internacionales herramientas para registrar el tiempo por proyecto, compartir avances con el cliente y gestionar cotizaciones e impuestos, por una suscripción mensual y junto con una cuenta para recibir pagos.",
+        "sources": [
+          {
+            "label": "Wayback Machine · feb 2026",
+            "url": "https://web.archive.org/web/20260210154327/https://crema.cm/en/"
+          }
+        ]
+      },
+      {
+        "text": "En septiembre de 2026, el dominio crema.cm no resuelve y ya no figura en el registro del dominio .cm.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El perfil de Crema en el directorio de Platanus sigue publicado, con la descripción de la cuenta bancaria sin fronteras.",
+        "sources": [
+          {
+            "label": "Platanus · Crema",
+            "url": "https://platan.us/startups/crema"
+          }
+        ]
+      }
+    ]
+  },
+  "plutto": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Hoy la plataforma de Plutto evalúa a proveedores, clientes y colaboradores de empresas de Chile, Perú y México, y también mide el desempeño de contratos y proveedores. En 2026 declara más de 100 empresas cliente y más de 590.000 entidades evaluadas.",
+        "sources": [
+          {
+            "label": "Plutto",
+            "url": "https://getplutto.com/"
+          },
+          {
+            "label": "Wayback Machine · abr 2026",
+            "url": "https://web.archive.org/web/20260412034336/http://getplutto.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Recibe las solicitudes de nuevos proveedores y centraliza documentos y declaraciones en un portal de terceros. Corre una debida diligencia financiera, legal, laboral y regulatoria asistida por IA, que revisa listas de sanciones, PEP, conflictos de interés y bases de riesgo.",
+        "sources": [
+          {
+            "label": "Plutto",
+            "url": "https://getplutto.com/"
+          }
+        ]
+      },
+      {
+        "text": "La usan los equipos de compliance y legal, de abastecimiento y compras, y de finanzas y riesgo. Reemplaza la debida diligencia manual por correo y planillas.",
+        "sources": [
+          {
+            "label": "Plutto",
+            "url": "https://getplutto.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "bemmbo": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Como Buk Finanzas, el producto se ofrece a las empresas chilenas que ya usan Buk. A los pagos a proveedores, la cobranza, las rendiciones y la conciliación suma pagos de nóminas y fondos por rendir para los colaboradores. También incluye órdenes de compra con firma digital y flujo de aprobación.",
+        "sources": [
+          {
+            "label": "Buk Finanzas",
+            "url": "https://www.buk.cl/productos/finanzas"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La conciliación de cuentas por cobrar deja los registros listos para cargar en el ERP. Buk Finanzas busca reemplazar la gestión de pagos y cobros en planillas y portales bancarios.",
+        "sources": [
+          {
+            "label": "Buk Finanzas",
+            "url": "https://www.buk.cl/productos/finanzas"
+          }
+        ]
+      },
+      {
+        "text": "El dominio de Bemmbo redirige a Buk Finanzas. En febrero de 2026, su fundador, Rodrigo Oyarzún, lideraba producto en esa unidad.",
+        "sources": [
+          {
+            "label": "Wayback Machine · ene 2026",
+            "url": "https://web.archive.org/web/20260107025912/https://www.bemmbo.com/"
+          },
+          {
+            "label": "Diario Financiero · feb 2026",
+            "url": "https://www.df.cl/df-mas/punto-de-partida/a-6-meses-de-la-venta-a-buk-las-lecciones-de-rodrigo-oyarzun-fundador-de"
+          }
+        ]
+      }
+    ]
+  },
+  "wallstate": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "wallstate.cl sigue en línea y presenta a WallState como una plataforma de inversión fraccionada en tokens inmobiliarios para personas en Chile, desde $50.000. El sitio muestra un fondo residencial en dólares con propiedades de renta en Estados Unidos y proyectos de desarrollo en Chile, como el Fundo Río Sur.",
+        "sources": [
+          {
+            "label": "WallState",
+            "url": "https://wallstate.cl/"
+          }
+        ]
+      },
+      {
+        "text": "En la revisión de septiembre de 2026, la página pública mantenía el contenido de marzo de 2024 y la pantalla de acceso seguía disponible. No encontramos prensa ni anuncios posteriores a 2023 que confirmaran nueva actividad.",
+        "sources": [
+          {
+            "label": "WallState · mar 2024",
+            "url": "https://web.archive.org/web/20240325061435/http://wallstate.cl/"
+          },
+          {
+            "label": "WallState · acceso a la plataforma",
+            "url": "https://app.wallstate.cl/entrar"
+          },
+          {
+            "label": "Revisión · 8 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-08 sobre la antigüedad de la página pública y la falta de prensa posterior a 2023."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El sitio mantiene el registro con verificación biométrica de identidad y un mercado secundario para vender los tokens a otros inversionistas. Lo propone en lugar de comprar una propiedad completa y administrar arrendatarios.",
+        "sources": [
+          {
+            "label": "WallState",
+            "url": "https://wallstate.cl/"
+          }
+        ]
+      }
+    ]
+  },
+  "horizon": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Horizon se orienta ahora a los equipos de transformación de grandes empresas. Sus agentes de IA entrevistan a cientos de empleados a la vez, mapean cómo se trabaja en la práctica y arman un grafo de conocimiento vivo de la organización. Después, el equipo co-crea iniciativas con un consultor de IA y obtiene entregables.",
+        "sources": [
+          {
+            "label": "Horizon",
+            "url": "https://usehorizon.ai/"
+          },
+          {
+            "label": "Horizon · About",
+            "url": "https://usehorizon.ai/about"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Los hallazgos se ordenan por impacto y esfuerzo. Entre los entregables hay presentaciones ejecutivas, casos de negocio, mapas de procesos actuales y futuros, pliegos de solicitud de propuestas y hojas de ruta de implementación.",
+        "sources": [
+          {
+            "label": "Horizon",
+            "url": "https://usehorizon.ai/"
+          }
+        ]
+      },
+      {
+        "text": "Reemplaza la etapa de descubrimiento de la consultoría tradicional, basada en entrevistas manuales, limitadas y por muestreo. Ofrece, a pedido, una prueba de cinco días sobre la organización real del cliente. Tiene páginas específicas para servicios financieros y para marketplaces digitales, y su sede está en San Francisco.",
+        "sources": [
+          {
+            "label": "Horizon",
+            "url": "https://usehorizon.ai/"
+          },
+          {
+            "label": "Horizon · Servicios financieros",
+            "url": "https://usehorizon.ai/bfsi"
+          },
+          {
+            "label": "Horizon · Marketplaces",
+            "url": "https://usehorizon.ai/marketplace"
+          },
+          {
+            "label": "Horizon · About",
+            "url": "https://usehorizon.ai/about"
+          }
+        ]
+      }
+    ]
+  },
+  "brolly": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Brolly mantiene en brolly.cl el producto con que opera desde 2022. Además de los préstamos de baja tasa con descuento por planilla y la educación financiera, ofrece a los trabajadores acompañamiento y alternativas de ahorro. A recursos humanos le entrega reportes sobre la salud financiera del equipo.",
+        "sources": [
+          {
+            "label": "Brolly",
+            "url": "https://www.brolly.cl/"
+          }
+        ]
+      },
+      {
+        "text": "La empresa declara más de 120 empresas con convenio. En marzo de 2025 eran más de 60.",
+        "sources": [
+          {
+            "label": "Brolly",
+            "url": "https://www.brolly.cl/"
+          },
+          {
+            "label": "Wayback Machine · mar 2025",
+            "url": "https://web.archive.org/web/20250321074318/http://brolly.cl/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "fraccional": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Según Fraccional, desde enero de 2026 cada Fracción representa un derecho económico proporcional sobre un vehículo independiente por proyecto, en lugar de acciones de una SpA chilena. Se registra en el Sistema Alternativo de Transacción que la empresa declara operar bajo el régimen transitorio de la Ley Fintech. Las inversiones anteriores pueden migrar de forma voluntaria.",
+        "sources": [
+          {
+            "label": "Fraccional · Migración de Fracciones",
+            "url": "https://www.fraccional.cl/blog/posts/migracion-fracciones"
+          },
+          {
+            "label": "Fraccional · Proceso regulatorio",
+            "url": "https://www.fraccional.cl/cmf"
+          }
+        ]
+      },
+      {
+        "text": "La oferta tampoco se limita ya a propiedades seleccionadas por Fraccional. Desde mediados de 2025, los desarrolladores profesionales pueden postular sus proyectos a financiamiento colectivo en la plataforma, que desde fines de 2024 también opera fuera de Chile.",
+        "sources": [
+          {
+            "label": "Chócale · jul 2025",
+            "url": "https://chocale.cl/2025/07/fraccional-lanza-modelo-global-de-crowdfunding-para-proyectos-inmobiliarios/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Pueden invertir personas con RUT chileno, que compran Fracciones desde $100.000 CLP de propiedades y proyectos de gestores externos: departamentos de renta, Airbnb, locales, estacionamientos, parcelas, flipping y etapas de construcción. Participan de las rentas o de la plusvalía y pueden revender sus Fracciones a otros usuarios. Sigue siendo una alternativa al pie y el crédito hipotecario para invertir en propiedades.",
+        "sources": [
+          {
+            "label": "Fraccional",
+            "url": "https://www.fraccional.cl/"
+          }
+        ]
+      },
+      {
+        "text": "El primer proyecto fuera de Chile fue en Miami, en diciembre de 2024, y Paraguay se sumó en 2025. Hoy la plataforma ofrece proyectos en Chile, Paraguay, Uruguay, España y Estados Unidos. En ese país, además de Miami, tuvo proyectos en Dallas y St. Petersburg durante 2025.",
+        "sources": [
+          {
+            "label": "Diario Financiero",
+            "url": "https://www.df.cl/df-lab/innovacion-y-startups/fraccional-da-el-salto-internacional-con-proyecto-inmobiliario-de-lujo"
+          },
+          {
+            "label": "La Tercera",
+            "url": "https://www.latercera.com/pulso/noticia/fintech-fraccional-llega-a-paraguay-y-busca-sumar-presencia-en-europa-asia-y-oceania-en-2025/"
+          },
+          {
+            "label": "Fraccional",
+            "url": "https://www.fraccional.cl/"
+          },
+          {
+            "label": "Fraccional · oct 2025",
+            "url": "https://web.archive.org/web/20251003160320/http://fraccional.cl/"
+          }
+        ]
+      }
+    ]
+  },
+  "appio": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Ese canal de WhatsApp ahora incorpora un cajero de IA para restaurantes en México: conversa con el cliente, arma el pedido, cobra y lo envía a cocina. Si hace falta, pasa la conversación a una persona. La red de repartidores completa la entrega.",
+        "sources": [
+          {
+            "label": "Appio",
+            "url": "https://appio.ai/"
+          }
+        ]
+      },
+      {
+        "text": "Se contrata por sucursal mediante una suscripción mensual, sin comisión sobre la venta. El cobro por efectivo o tarjeta y el envío tienen cargos aparte; la transferencia no agrega un cargo por cobro.",
+        "sources": [
+          {
+            "label": "Appio · precios",
+            "url": "https://appio.ai/precios"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Hay un plan de solo reparto y otro que suma el cajero de IA, con 200 conversaciones incluidas y un cargo por cada conversación extra, sin contrato largo. El envío se paga aparte y va directo al repartidor; su precio aumenta con la distancia.",
+        "sources": [
+          {
+            "label": "Appio · precios",
+            "url": "https://appio.ai/precios"
+          }
+        ]
+      },
+      {
+        "text": "Según Appio, el cajero atiende las 24 horas y responde en menos de un minuto. La empresa declara una red de más de 200.000 repartidores independientes, llegada al local en unos 8 minutos, seguimiento por WhatsApp y cobertura de hasta 15 km.",
+        "sources": [
+          {
+            "label": "Appio",
+            "url": "https://appio.ai/"
+          }
+        ]
+      },
+      {
+        "text": "También declara más de 2.000 restaurantes activos en 115 ciudades y 32 estados de México, y que el 90% de las entregas llega en menos de 30 minutos.",
+        "sources": [
+          {
+            "label": "Appio",
+            "url": "https://appio.ai/"
+          }
+        ]
+      },
+      {
+        "text": "La propuesta combina la atención y el cobro por WhatsApp con el reparto: busca reemplazar a la persona que contesta pedidos a mano o al chatbot que no cierra la venta, junto con la flota propia de costo fijo y las comisiones por venta de las apps de terceros.",
+        "sources": [
+          {
+            "label": "Appio",
+            "url": "https://appio.ai/"
+          }
+        ]
+      }
+    ]
+  },
+  "sento": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Sento mantiene el posicionamiento multicanal que adoptó su sitio en marzo de 2025: audita de forma automática y con IA el 100% de las conversaciones de atención al cliente, en llamadas, chat y email. Entre sus verticales figuran, además de las originales, retail y comida rápida. Ahora suma un mensaje comercial orientado a mostrar el impacto en los ingresos del negocio del cliente.",
+        "sources": [
+          {
+            "label": "Sento",
+            "url": "https://sento-ai.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Está dirigido a equipos de calidad y riesgo de contact centers y BPO, banca y servicios financieros, aseguradoras y salud, que buscan detectar puntos de mejora, riesgos operativos e insights sobre el comportamiento del consumidor sin depender de un muestreo manual.",
+        "sources": [
+          {
+            "label": "Sento",
+            "url": "https://sento-ai.com/"
+          }
+        ]
+      },
+      {
+        "text": "En su perfil de Platanus de febrero de 2026, la compañía se sigue definiendo como proveedora de speech analytics.",
+        "sources": [
+          {
+            "label": "Platanus · feb 2026",
+            "url": "https://web.archive.org/web/20260210204821/https://platan.us/startups/sento"
+          }
+        ]
+      }
+    ]
+  },
+  "morfy": {
+    "reviewed_on": null,
+    "summary": [
+      {
+        "text": "Morfy mantiene su marketplace gastronómico en Argentina y, desde noviembre de 2024, en Santiago de Chile. En julio de 2026, morfy.app declaraba más de 1 millón de descargas, 8 millones de seguidores y 2.000 locales adheridos, sin mencionar otros países.",
+        "sources": [
+          {
+            "label": "Morfy",
+            "url": "https://www.morfy.app/"
+          },
+          {
+            "label": "Portal Prensa Salud · nov 2024",
+            "url": "https://portalprensasalud.cl/2024/11/30/recorrer-santiago-nunca-fue-tan-delicioso-morfy-app-lanza-su-version-en-chile/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Una nota sin fecha de blogventurecapital.com mencionaba a Perú, Colombia y México entre los próximos mercados en la mira. Ni el sitio ni el perfil de Morfy en Platanus repiten ese plan ni confirman que se haya concretado.",
+        "sources": [
+          {
+            "label": "blogventurecapital.com · sin fecha",
+            "url": "https://www.blogventurecapital.com/Morfy-La-App-Gastronomica-Argentina-Desembarca-en-Chile-para-Liderar-el-Mercado_a560.html"
+          }
+        ]
+      },
+      {
+        "text": "El perfil de Platanus, actualizado por última vez en mayo de 2026, seguía listando a Morfy como portafolio activo, en la categoría Foodtech y en el batch 2023-2.",
+        "sources": [
+          {
+            "label": "Platanus · Morfy",
+            "url": "https://platan.us/startups/morfy"
+          }
+        ]
+      }
+    ]
+  },
+  "flair": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "Entre los logos de clientes que muestra hoy su sitio están Walmart (Líder), Tottus, Copec y Mutual de Seguridad. La plataforma entrena un modelo de IA para cada edificio con datos de ocupación y clima, y con él ajusta los setpoints en tiempo real sobre los equipos ya instalados.",
+        "sources": [
+          {
+            "label": "Flair",
+            "url": "https://goflair.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Según prensa de mayo de 2026 (Startups Latam), Flair proyecta escalar hacia supermercados, centros comerciales, tiendas de conveniencia y clínicas.",
+        "sources": [
+          {
+            "label": "Startups Latam",
+            "url": "https://startupslatam.com/esta-startup-chilena-y-copec-se-unen-para-reducir-hasta-40-el-consumo-energetico-en-climatizacion/"
+          }
+        ]
+      }
+    ]
+  },
+  "nodek": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Nodek no tiene hoy un sitio activo. En septiembre de 2026, el dominio nodekbrands.com ya no estaba registrado y la tienda de nodek.co no estaba disponible.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23 sobre nodekbrands.com y nodek.co."
+          }
+        ]
+      },
+      {
+        "text": "La última versión archivada del sitio, de febrero de 2025, seguía presentando a Nodek como una empresa que crea una marca de moda para cada nicho del mercado. Platanus la mantiene en su portafolio.",
+        "sources": [
+          {
+            "label": "Wayback Machine · feb 2025",
+            "url": "https://web.archive.org/web/20250217231654/https://nodekbrands.com/"
+          },
+          {
+            "label": "Platanus · Nodek",
+            "url": "https://platan.us/startups/nodek"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "tiki": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "No hay app ni landing de la plataforma de inversión en canastas de criptomonedas, ni un dominio sucesor conocido.",
+        "sources": [
+          {
+            "label": "Revisión · 6 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-06."
+          }
+        ]
+      },
+      {
+        "text": "El perfil de Tiki en el directorio de Platanus sigue publicado con la descripción original y el enlace a tiki.cl, sin etiqueta de estado.",
+        "sources": [
+          {
+            "label": "Platanus · Tiki",
+            "url": "https://platan.us/startups/tiki"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "trendi": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Tras el cierre, el sitio de Trendi dejó de estar disponible. Desde marzo de 2023 el dominio aparece estacionado, a fines de 2023 solo servía un placeholder de CDN y hoy jointrendi.com no resuelve en DNS.",
+        "sources": [
+          {
+            "label": "Wayback Machine · dic 2023",
+            "url": "https://web.archive.org/web/20231204224954/https://jointrendi.com/"
+          },
+          {
+            "label": "Revisión · 6 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-06 sobre el estado del dominio."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El perfil de Platanus sigue listando a Trendi en la generación 2022-1, con su última descripción, un programa de educación y comunidad para creadores, y con Alan Arguello como excofundador. Ningún producto, equipo ni sucesor opera bajo la marca.",
+        "sources": [
+          {
+            "label": "Platanus · Trendi (may 2026)",
+            "url": "https://web.archive.org/web/20260510150155/https://platan.us/startups/trendi?ref=blog.platan.us"
+          },
+          {
+            "label": "Revisión · 6 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-06."
+          }
+        ]
+      }
+    ]
+  },
+  "carttera": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "La última versión publicada del producto, de mayo de 2024, era una herramienta de cobranza para pymes en México. Permitía controlar las cuentas por cobrar, enviar recordatorios de pago por WhatsApp, correo y SMS, generar links de pago y conciliar automáticamente. Así reemplazaba el seguimiento manual de la cobranza y las hojas de cálculo.",
+        "sources": [
+          {
+            "label": "Carttera · may 2024",
+            "url": "https://web.archive.org/web/20240521025233/http://getcarttera.com/"
+          }
+        ]
+      },
+      {
+        "text": "El perfil del programa sigue en línea con esa descripción y sin declarar cierre. Su enlace al sitio apunta a un dominio que ya no resuelve.",
+        "sources": [
+          {
+            "label": "Platanus · Carttera",
+            "url": "https://platan.us/startups/verso"
+          },
+          {
+            "label": "Revisión · 8 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-08."
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "carvuk": {
+    "reviewed_on": "2026-09-06",
+    "summary": [
+      {
+        "text": "Carvuk también opera hoy como corredora de seguros regulada. Carvuk Corredores de Seguros SpA, constituida en octubre de 2024, cotiza e intermedia pólizas de al menos seis aseguradoras. También arma productos propios con asistencias y gestión de siniestros para dueños de auto particulares en Santiago y la Región Metropolitana.",
+        "sources": [
+          {
+            "label": "Carvuk · seguro automotriz",
+            "url": "https://www.carvuk.com/seguro-automotriz"
+          },
+          {
+            "label": "CMF · registro de corredores",
+            "url": "https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=S&rut=77977793&grupo=&tipoentidad=CSJUR&row=AAAwU3AAWAAAWPtAAL&vig=VI&control=svs&pestania=2"
+          }
+        ]
+      },
+      {
+        "text": "Junto a su plataforma de servicios a domicilio, ofrece una sección para empresas y herramientas gratuitas.",
+        "sources": [
+          {
+            "label": "Carvuk",
+            "url": "https://www.carvuk.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La corredora tiene el RUT 77.977.793-6 y trabaja con BCI, HDI, Consorcio, FID, Mapfre y Reale. Sus productos propios incluyen conductor de reemplazo, asistencia por portonazo y reparación in situ.",
+        "sources": [
+          {
+            "label": "Carvuk · seguro automotriz",
+            "url": "https://www.carvuk.com/seguro-automotriz"
+          },
+          {
+            "label": "Wayback Machine · dic 2025",
+            "url": "https://web.archive.org/web/20251211232859/http://carvuk.com/"
+          }
+        ]
+      },
+      {
+        "text": "La plataforma reúne más de 50 servicios automotrices con retiro y entrega a domicilio, entre ellos revisión técnica, mantención, grabado de patente, desabolladura y cambio de neumáticos. Las herramientas gratuitas cubren consulta de multas, revisión técnica y examen de conducir. Carvuk se presenta como reemplazo del corredor tradicional, de la aseguradora como interlocutor y del taller presencial.",
+        "sources": [
+          {
+            "label": "Carvuk",
+            "url": "https://www.carvuk.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "bircle": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Bircle presenta hoy su oferta como «Bircle AOS», una operación autónoma de relacionamiento con clientes para empresas B2B de Latinoamérica. Sus agentes de IA deciden, ejecutan y auditan cada interacción en tiempo real, y solo pasan el caso a una persona cuando hay una excepción.",
+        "sources": [
+          {
+            "label": "Bircle",
+            "url": "https://bircle.ai/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Los agentes venden, cobran y atienden a los clientes de sus clientes las 24 horas por WhatsApp, voz, email o SMS y redes sociales. El sitio compara punto por punto este modelo con el contact center de agentes humanos en tiempos de espera, costo de escalar y efectividad.",
+        "sources": [
+          {
+            "label": "Bircle",
+            "url": "https://bircle.ai/"
+          }
+        ]
+      },
+      {
+        "text": "Según el sitio, cobra por resultado: un porcentaje de lo recuperado o vendido, o un monto por caso resuelto. No cobra por una dotación fija de personal ni una suscripción plana.",
+        "sources": [
+          {
+            "label": "Bircle",
+            "url": "https://bircle.ai/"
+          }
+        ]
+      }
+    ]
+  },
+  "plenti": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Plenti se presenta como una cuenta global para inversionistas, freelancers y viajeros en Colombia. Guarda saldos en USDT, dólares, euros y pesos colombianos, y permite enviar y recibir transferencias entre EE. UU., Colombia y Europa.",
+        "sources": [
+          {
+            "label": "Plenti",
+            "url": "https://www.plenti.com.co/"
+          }
+        ]
+      },
+      {
+        "text": "Sus fundadores crearon además Finity, su línea de negocio para empresas, con marca y sitio propios. Finity ofrece cuentas virtuales en USD y EUR, pagos internacionales y conversión de divisas desde un portal o una API.",
+        "sources": [
+          {
+            "label": "Forbes Colombia · jul 2025",
+            "url": "https://forbes.co/2025/07/07/editors-picks/30-under-30-2025-nicolas-zuleta-martin-pelaez-y-sebastian-correa/"
+          },
+          {
+            "label": "Finity",
+            "url": "https://www.finity.com.co/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Desde la app se pueden fondear brokers o plataformas de inversión por ACH, Wire o con la tarjeta de Plenti, y comprar acciones, oro tokenizado o criptomonedas desde US$6. El saldo en dólares genera recompensas diarias, y la tarjeta multimoneda no cobra cuota de manejo.",
+        "sources": [
+          {
+            "label": "Plenti",
+            "url": "https://www.plenti.com.co/"
+          }
+        ]
+      }
+    ]
+  },
+  "shinkansen": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Shinkansen organiza hoy su oferta para grandes empresas de Latinoamérica con operación financiera compleja en tres capas: agentes de IA (AI Flows) que pueden originar órdenes de pago, un Treasury centralizado que orquesta pagos, conciliaciones y tesorería, y conexión directa con múltiples bancos. Un motor de aprobación humana deja trazado cada pago, lo haya originado un sistema, una persona o un agente.",
+        "sources": [
+          {
+            "label": "Shinkansen",
+            "url": "https://shinkansen.finance/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Las reglas de aprobación se configuran por monto o por RUT, con cadenas de aprobadores como analista, jefe de finanzas y gerente. Treasury se conecta a los sistemas Core, ERP y Front-to-Back de la empresa, en lugar de aprobar y conciliar los pagos a mano, banco por banco.",
+        "sources": [
+          {
+            "label": "Shinkansen",
+            "url": "https://shinkansen.finance/"
+          }
+        ]
+      },
+      {
+        "text": "El sitio nombra como cliente a Bci Asset Management, que conecta su Core, ERP y Front-to-Back a Treasury para orquestar su operación crítica de pagos.",
+        "sources": [
+          {
+            "label": "Shinkansen",
+            "url": "https://shinkansen.finance/"
+          }
+        ]
+      }
+    ]
+  },
+  "identyz": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Al motor de verificación, Identyz suma un módulo integrado de firma electrónica, y su sitio se organiza en «Autentificación» y «Firma Digital». Antes de firmar un documento, cada firmante debe acreditar su identidad con cédula, Clave Única, biometría, preguntas personales o SMS, en lugar de firmar con un simple correo electrónico. Está pensado para empresas que necesitan onboarding o contratos con identidad garantizada.",
+        "sources": [
+          {
+            "label": "Identyz",
+            "url": "https://identyz.com/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "elcerokm": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "El catálogo de ElCeroKm, que compara precio y stock de concesionarios oficiales según la ubicación, suma ahora un buscador con IA para encontrar el auto. Así reúne en un solo lugar el precio real por zona que antes obligaba a recorrer concesionarias. Quien prefiere delegar la compra puede seguir pagando una consulta para que un asesor del equipo negocie en su nombre.",
+        "sources": [
+          {
+            "label": "ElCeroKm",
+            "url": "https://elcerokm.com/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "kambia": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Kambia concentra su infraestructura en la deuda perdida o castigada. Con autorización previa del deudor, la cobra por débito automático desde sus cuentas bancarias, wallets y otros rieles, ya sea en una sola operación o con cobros recurrentes desde cuentas de varios bancos. Como producto complementario, ofrece transferencias masivas a bancos y entidades (payout).",
+        "sources": [
+          {
+            "label": "Kambia",
+            "url": "https://kambia.app/"
+          },
+          {
+            "label": "Kambia · Términos",
+            "url": "https://kambia.app/terminos"
+          },
+          {
+            "label": "Platanus · Kambia",
+            "url": "https://platan.us/startups/kambia"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Atiende a empresas de crédito y pagos, e-commerce, inversión y ahorro, fabricantes y distribuidores, inmobiliarias y educación. No cobra mensualidades ni exige mínimos.",
+        "sources": [
+          {
+            "label": "Kambia",
+            "url": "https://kambia.app/"
+          }
+        ]
+      }
+    ]
+  },
+  "pullpo": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Hoy Pullpo combina métricas de desarrollo, encuestas y feedback de los desarrolladores con herramientas para su flujo de trabajo, como los canales de Slack por pull request y las revisiones de código con IA. Suma informes sobre cómo la IA cambia la entrega de software, con el objetivo de que los equipos de ingeniería entreguen código de calidad más rápido.",
+        "sources": [
+          {
+            "label": "Pullpo",
+            "url": "https://pullpo.io/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "divisso": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "No hay un producto activo de Divisso. El dominio divisso.com no resuelve: fue registrado de nuevo en agosto de 2025, alojó un sitio WordPress genérico y hoy está suspendido. divisso.cl ya no está registrado.",
+        "sources": [
+          {
+            "label": "Registro .com (RDAP)",
+            "url": "https://rdap.verisign.com/com/v1/domain/DIVISSO.COM"
+          },
+          {
+            "label": "Wayback Machine · oct 2025",
+            "url": "https://web.archive.org/web/20251010181110/https://divisso.com/contacto/"
+          },
+          {
+            "label": "NIC Chile",
+            "url": "https://www.nic.cl/registry/Whois.do?d=divisso.cl"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El perfil de Divisso en el portafolio de Platanus sigue publicado, con la descripción de plataforma de inversión inmobiliaria.",
+        "sources": [
+          {
+            "label": "Platanus · Divisso",
+            "url": "https://platan.us/startups/divisso"
+          }
+        ]
+      },
+      {
+        "text": "Su CEO, Martín Andrade, se presenta hoy como cofundador de dos comercios electrónicos, Verken y Kaut.",
+        "sources": [
+          {
+            "label": "LinkedIn · Martín Andrade",
+            "url": "https://www.linkedin.com/posts/mart%C3%ADn-andrade-0085b7117_proptech-divisso-inversioninmobiliaria-activity-7049745384423739392-imlM"
+          }
+        ]
+      }
+    ]
+  },
+  "lokal": {
+    "reviewed_on": "2026-09-08",
+    "summary": [
+      {
+        "text": "Lokal declara que abastece a más de 3.500 comercios pequeños en más de 260 comunas de Chile, con ventas anualizadas de US$5 millones y un equipo de nueve personas.",
+        "sources": [
+          {
+            "label": "Diario Financiero · ago 2026",
+            "url": "https://www.df.cl/df-mas/coffee-break/lokal-levanta-us-700-mil-de-invexor-para-su-marketplace-b2b"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "bree": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "Hoy breecopilot.com solo muestra una pantalla de inicio de sesión con la marca Bree, para entrar con correo y contraseña o con una cuenta de Google. La web pública no describe funciones.",
+        "sources": [
+          {
+            "label": "Bree · inicio de sesión",
+            "url": "https://www.breecopilot.com/auth/signin?callbackUrl=https%3A%2F%2Fwww.breecopilot.com%2F"
+          }
+        ]
+      },
+      {
+        "text": "La última descripción fechada del producto es de diciembre de 2024 y corresponde a documentación clínica para profesionales de la salud y clínicas: recopilar el historial del paciente antes de la consulta, escuchar y documentar el expediente durante la consulta y dar seguimiento después, en vez de llenarlo a mano al terminar de atender.",
+        "sources": [
+          {
+            "label": "Bree Copilot · dic 2024",
+            "url": "https://web.archive.org/web/20241209210411/https://copilot.bree.mx/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "wizybot": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Wizybot es hoy una plataforma de atención al cliente con IA para tiendas y marcas de ecommerce. Su chatbot, conectado a la información de la tienda, atiende a cualquier hora y en más de 90 idiomas. Funciona dentro de un centro de chat con CRM que reúne en una sola bandeja WhatsApp, Instagram, Messenger, Telegram y otros canales, para dejar de gestionar cada canal por separado.",
+        "sources": [
+          {
+            "label": "Wizybot",
+            "url": "https://www.wizybot.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Suma automatizaciones por WhatsApp para recuperar carritos abandonados, confirmar pagos y seguir pedidos. Se instala como app nativa de Shopify y se integra con VTEX, WooCommerce, WordPress y Tiendanube, además de herramientas como HubSpot y Salesforce.",
+        "sources": [
+          {
+            "label": "Wizybot",
+            "url": "https://www.wizybot.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "kunzapp": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "La plataforma abarca ahora también las herramientas de IA y la manera en que la empresa compra, renueva y negocia su software. Incluye un servicio de compra asistida en el que expertos negocian precios y condiciones. Se dirige a equipos de finanzas, compras, tecnología y seguridad de empresas de más de ocho países de Latinoamérica.",
+        "sources": [
+          {
+            "label": "Kunzapp",
+            "url": "https://www.kunzapp.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Para detectar qué software se paga y quién lo usa, se conecta con el inicio de sesión de Google, Microsoft u Okta, con el correo y con el ERP o software contable. Reúne facturas, contratos y un calendario de renovaciones con alertas.",
+        "sources": [
+          {
+            "label": "Kunzapp",
+            "url": "https://www.kunzapp.com/"
+          },
+          {
+            "label": "Kunzapp · Integraciones",
+            "url": "https://www.kunzapp.com/integraciones"
+          }
+        ]
+      },
+      {
+        "text": "Tiene además un catálogo interno de aplicaciones aprobadas, desde el que se piden compras y accesos, y un asistente de IA que responde sobre los datos de la propia empresa. Busca reemplazar el software disperso por la organización y las planillas Excel desactualizadas con que se intentaba seguirlo.",
+        "sources": [
+          {
+            "label": "Kunzapp",
+            "url": "https://www.kunzapp.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "perhaps": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Hoy Faces es una herramienta de presentaciones en que cada diapositiva puede llevar software web real, como un formulario, un mapa interactivo, gráficos en vivo o una demo de producto. Importa archivos de PowerPoint o PDF para seguir trabajándolos ahí. Tiene planes pagos por miembro para creadores y equipos chicos, y otros para equipos más grandes. Se presenta como el paso siguiente a las diapositivas físicas, PowerPoint y Google Slides.",
+        "sources": [
+          {
+            "label": "Faces",
+            "url": "https://faces.app/"
+          },
+          {
+            "label": "Faces · Introducing Faces II",
+            "url": "https://faces.app/blog/faces-ii"
+          },
+          {
+            "label": "Faces · precios",
+            "url": "https://faces.app/pricing"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "partsflow": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "Partsflow es la marca vigente de la compañía. Su CRM atiende por WhatsApp las consultas de repuestos que reciben distribuidoras y concesionarios: extrae los datos del vehículo, identifica la pieza y arma la cotización con precio sugerido. Al vendedor solo le queda validar y cerrar la venta.",
+        "sources": [
+          {
+            "label": "Partsflow",
+            "url": "https://www.partsflow.ai/"
+          }
+        ]
+      },
+      {
+        "text": "En septiembre de 2026, repartes.com seguía activo con su servicio de cotización orientado principalmente a dueños de autos particulares.",
+        "sources": [
+          {
+            "label": "Repartes",
+            "url": "https://www.repartes.com/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "lummy": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Hoy getlummy.com redirige a una página de venta del dominio, la app de Lummy ya no está en Google Play ni en App Store y kapibara.cl no responde.",
+        "sources": [
+          {
+            "label": "Revisión · 11 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-11 sobre el dominio, las tiendas de apps y kapibara.cl."
+          }
+        ]
+      },
+      {
+        "text": "Su perfil en Platanus y su página de LinkedIn siguen en línea. Ambos conservan la descripción de la app de salud mental lanzada en 2023 y no mencionan un producto posterior.",
+        "sources": [
+          {
+            "label": "Platanus · Lummy",
+            "url": "https://platan.us/startups/telaio"
+          },
+          {
+            "label": "LinkedIn · Lummy",
+            "url": "https://cl.linkedin.com/company/getlummy"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "winston": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Winston mantiene el coaching con coaches humanos para todos los colaboradores de una empresa, en procesos estructurados o sesiones sueltas, individuales o en equipo. Su bot recuerda las sesiones y las tareas entre un encuentro y otro. El sitio también ofrece formación para quienes quieren ser coaches.",
+        "sources": [
+          {
+            "label": "Winston",
+            "url": "https://elwinston.io/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "caudal": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "En septiembre de 2026, caudal.app mostraba una pantalla de acceso en español con la marca Caudal, con campos de email y contraseña. No había una descripción pública del servicio en esa página.",
+        "sources": [
+          {
+            "label": "Caudal",
+            "url": "https://caudal.app"
+          },
+          {
+            "label": "Revisión · 11 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-11."
+          }
+        ]
+      },
+      {
+        "text": "El perfil de Caudal en Platanus conserva la descripción de marzo de 2024: un servicio que coordina el reparto de agua por camión aljibe en zonas rurales de Chile.",
+        "sources": [
+          {
+            "label": "Platanus · Caudal",
+            "url": "https://platan.us/startups/unacuarta"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "calypso": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Calypso se presenta ahora como un sistema operativo de mensajería para equipos de ventas y soporte, con cuatro Manager Agents: Leads, Support, Marketing y Knowledge. Entre ellos ejecutan la conversación completa, desde el primer mensaje hasta la conversión, y comparten el mismo contexto en WhatsApp, el widget web, el email y el resto del stack.",
+        "sources": [
+          {
+            "label": "Calypso",
+            "url": "https://www.calypso.ms/en"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "trutix": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "El último producto de Trutix fue el intercambio de boletas entre dos personas que lanzó en mayo de 2025 en trutix.co, en inglés. El comprador pagaba en una moneda digital estable atada al dólar, y el pago quedaba retenido hasta que el vendedor transfería la entrada por la plataforma oficial del evento.",
+        "sources": [
+          {
+            "label": "Wayback Machine · may 2025",
+            "url": "https://web.archive.org/web/20250514224040/http://trutix.co/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Estaba pensado para quien no podía ir a un evento o arreglaba una venta con un desconocido por Reddit, Facebook o WhatsApp. Se presentaba como alternativa a esos chats sin garantías y a las plataformas de reventa con comisiones más altas.",
+        "sources": [
+          {
+            "label": "Wayback Machine · may 2025",
+            "url": "https://web.archive.org/web/20250514224040/http://trutix.co/"
+          }
+        ]
+      },
+      {
+        "text": "El aviso de cierre en la portada de trutix.io enlaza a la explicación pública del CEO sobre el cierre. El sitio no tiene activo ningún flujo de compra ni de venta de entradas.",
+        "sources": [
+          {
+            "label": "Trutix",
+            "url": "https://trutix.io/"
+          }
+        ]
+      }
+    ]
+  },
+  "tu-mejor-amigo": {
+    "reviewed_on": null,
+    "summary": [
+      {
+        "text": "El servicio de paseos de perros con el que nació Tu Mejor Amigo sigue dentro del catálogo de Cuida Mi Mascota, con paseos desde 30 minutos, junto con hospedaje, guardería y visitas a domicilio, en más de 100 ciudades de México.",
+        "sources": [
+          {
+            "label": "Cuida Mi Mascota",
+            "url": "https://www.cuidamimascota.com.mx/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "blokay": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Ese generador sigue siendo el producto de Blokay: crea tablas, gráficos de barras o líneas y formularios listos para producción, que el desarrollador integra directamente en el código de su app.",
+        "sources": [
+          {
+            "label": "Blokay",
+            "url": "https://blokay.com/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "gokei": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Skip funciona como una app y un agente de WhatsApp que gestionan tanto el reembolso como el copago virtual. Así, el paciente no tiene que pagar la prestación completa por adelantado ni seguir a mano el trámite ante la isapre o el seguro.",
+        "sources": [
+          {
+            "label": "Skip",
+            "url": "https://www.getskip.ai/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "wasabil": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Wasabil organiza hoy su facturación electrónica conectada al SII en tres usos. Emite la boleta o factura de cada venta en tiendas propias y marketplaces, y sincroniza precios y stock entre canales. También emite facturas recurrentes a clientes y mantiene su línea original para los servicios digitales pagados en dólares.",
+        "sources": [
+          {
+            "label": "Wasabil",
+            "url": "https://wasabil.com/"
+          }
+        ]
+      },
+      {
+        "text": "Para agosto de 2026 había abierto una operación en Estados Unidos, con oficina en Miami.",
+        "sources": [
+          {
+            "label": "Diario Financiero · 12 ago 2026",
+            "url": "https://www.df.cl/df-lab/innovacion-y-startups/fintech-respaldada-por-platanus-y-start-up-chile-abre-operacion-en-estados"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Se integra con Shopify, Mercado Libre, WooCommerce y otras plataformas. Para servicios como Google, Meta o AWS, genera y declara la factura de compra de cada cobro para documentar su IVA.",
+        "sources": [
+          {
+            "label": "Wasabil",
+            "url": "https://wasabil.com/"
+          }
+        ]
+      },
+      {
+        "text": "Suma conciliación bancaria en beta y acceso por API y MCP para asistentes de IA. Se dirige a comercio electrónico, fintechs, universidades y estudios profesionales. Busca reemplazar el papeleo tributario de ventas y gastos, y un conjunto de herramientas separadas.",
+        "sources": [
+          {
+            "label": "Wasabil",
+            "url": "https://wasabil.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "manifest": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Bloocks no tiene hoy un producto activo. El antiguo dominio manifest-hq.com redirige a bloocks.com, que a su vez lleva a una ficha de venta del dominio en el marketplace de GoDaddy/Afternic.",
+        "sources": [
+          {
+            "label": "Revisión · 11 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-11 sobre las redirecciones de manifest-hq.com y bloocks.com."
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "No se encontró un sitio, app o dominio sucesor con el mismo producto, ni prensa sobre un cierre. Fuera del propio dominio, la fuente de primera mano disponible es el perfil de Manifest en el directorio de Platanus, sin cambios desde diciembre de 2024 y sin mención de Bloocks ni de un cierre.",
+        "sources": [
+          {
+            "label": "Platanus · Manifest",
+            "url": "https://platan.us/startups/grandpa"
+          },
+          {
+            "label": "Revisión · 11 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-11; no equivale a una fecha de cierre."
+          }
+        ]
+      }
+    ]
+  },
+  "altur": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Los agentes de voz con IA de Altur ahora también llaman y responden por WhatsApp y SMS a deudores y prospectos. Gestionan la cobranza y las ventas de bancos y empresas financieras en México y Latinoamérica. Según la empresa, operan el call center completo sin personal humano.",
+        "sources": [
+          {
+            "label": "Altur",
+            "url": "https://www.altur.io/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "blar": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Blar sigue ofreciendo a los equipos de Customer Success y onboarding el mismo agente embebido en el producto del cliente. El agente guía al usuario nuevo por la interfaz y actúa en su nombre para activar cada registro, y deriva a soporte humano en Intercom o Zendesk cuando hace falta.",
+        "sources": [
+          {
+            "label": "Blar",
+            "url": "https://blar.io/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "sendmage": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Hasta febrero de 2025, sendmage.com seguía ofreciendo la plataforma de correos en frío para equipos de ventas.",
+        "sources": [
+          {
+            "label": "Wayback Machine · feb 2025",
+            "url": "https://web.archive.org/web/20250210113132/http://sendmage.com/"
+          }
+        ]
+      },
+      {
+        "text": "En septiembre de 2026 el dominio no resolvía y figuraba registrado de nuevo desde noviembre de 2025. Ese mes, uno de sus cofundadores se presentaba como excofundador de Sendmage y cofundador de otra empresa. Platanus la sigue listando.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23."
+          },
+          {
+            "label": "Manuel Martínez Arraya · X",
+            "url": "https://x.com/manuarraya"
+          },
+          {
+            "label": "Platanus · Sendmage",
+            "url": "https://platan.us/startups/sendmage"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "teambit": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "La plataforma reúne ahora en un solo lugar los datos de las herramientas del equipo y sigue métricas DORA, como tiempo de ciclo, frecuencia de despliegue y tasa de fallas de cambios, para encontrar cuellos de botella. Da la misma visibilidad a líderes, desarrolladores y product managers, y su implementación incorpora los datos históricos.",
+        "sources": [
+          {
+            "label": "Teambit",
+            "url": "https://www.teambit.dev/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "frust": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "La oferta está pensada para los CTO, CFO y CEO de las empresas que pagan AWS. Frust suma una cuenta a la organización de AWS del cliente y, con permisos de solo lectura sobre la facturación, agrega o retira de forma automática las instancias reservadas y los Savings Plans que compra. No crea, modifica ni elimina recursos del cliente.",
+        "sources": [
+          {
+            "label": "Frust",
+            "url": "https://www.frust.co/"
+          }
+        ]
+      },
+      {
+        "text": "Su comisión del 20 % sobre lo ahorrado se cobra en la propia factura de AWS, como complemento de AWS Marketplace, sin contratos plurianuales.",
+        "sources": [
+          {
+            "label": "Frust",
+            "url": "https://www.frust.co/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "grupalia": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Grupalia entrega sus créditos grupales mediante una app a emprendedoras y personas con pequeños negocios en México. Un asesor de crédito de Grupalia invita a formar el grupo, que se arma desde la app, donde cada integrante pide su crédito. Los montos van de 4.000 a 90.000 pesos y se pagan en 16 cuotas semanales, también en efectivo en tiendas OXXO. No exige dejar base ni contratar seguros, y evita las filas y vueltas del crédito grupal tradicional.",
+        "sources": [
+          {
+            "label": "Grupalia",
+            "url": "https://www.grupalia.com/"
+          },
+          {
+            "label": "Grupalia · Nosotros",
+            "url": "https://www.grupalia.com/nosotros"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El mismo sitio recluta asesores de crédito, a quienes ofrece ganancias semanales. El dominio original, creditogrupalia.com, hoy redirige a grupalia.com.",
+        "sources": [
+          {
+            "label": "Grupalia",
+            "url": "https://www.grupalia.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "fireflux": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "En 2026, Fireflux sigue siendo una plataforma no-code para crear apps de campo que capturan datos y automatizan procesos con IA. Se conecta en minutos con el ERP, el CRM, la base de datos, las APIs o Google Sheets de la empresa.",
+        "sources": [
+          {
+            "label": "Platanus · Fireflux",
+            "url": "https://platan.us/startups/utomata"
+          },
+          {
+            "label": "Fireflux · mar 2025",
+            "url": "https://web.archive.org/web/20250323092509/http://fireflux.app/"
+          }
+        ]
+      },
+      {
+        "text": "Su perfil en Platanus y sus listados en Google Play y App Store siguen activos.",
+        "sources": [
+          {
+            "label": "Platanus · Fireflux",
+            "url": "https://platan.us/startups/utomata"
+          },
+          {
+            "label": "Google Play · Fireflux",
+            "url": "https://play.google.com/store/apps/details?id=app.fireflux.shared"
+          },
+          {
+            "label": "App Store · Fireflux",
+            "url": "https://apps.apple.com/sg/app/fireflux/id6497567104"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "comos": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "El asistente de comOS sincroniza las propiedades de cada oficina desde su Portal Inmobiliario y atiende tanto a corredores independientes como a oficinas en equipo. Además de precalificar a los interesados y agendar visitas, les hace seguimiento. Los planes se cobran en UF según el tamaño: corredor independiente, oficina de 2 a 6 personas, y oficina grande o red.",
+        "sources": [
+          {
+            "label": "comOS",
+            "url": "https://www.comos.ai/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "lici": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Respecto de 2024, Lici sumó la gestión de órdenes de compra y la inteligencia de negocios. Su plataforma con IA acompaña a las empresas que venden al Estado en el mercado público, a compradores como hospitales, universidades y municipalidades, desde el aviso de una oportunidad hasta el cobro.",
+        "sources": [
+          {
+            "label": "Lici",
+            "url": "https://lici.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Avisa por WhatsApp las oportunidades que calzan con cada negocio y los resultados de sus postulaciones. Con la información de la empresa, prepara cotizaciones y propuestas con IA, automatiza tareas repetitivas y sigue el estado de cada proceso.",
+        "sources": [
+          {
+            "label": "Lici",
+            "url": "https://lici.cl/"
+          }
+        ]
+      },
+      {
+        "text": "Entrega información sobre la competencia y sus precios, el comportamiento de los compradores públicos y las licitaciones y adjudicaciones históricas. También gestiona las órdenes de compra, con reportes y métricas de rendimiento. Así reemplaza el trabajo repetitivo de rastrear licitaciones, preparar cada postulación y seguirla hasta el cobro.",
+        "sources": [
+          {
+            "label": "Lici",
+            "url": "https://lici.cl/"
+          }
+        ]
+      }
+    ]
+  },
+  "onda": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Onda se dirige hoy a coleccionistas y aficionados de nicho en México y amplió su catálogo más allá de las cartas Pokémon y deportivas. Vendedores independientes transmiten shows en vivo, con subastas y breaks, de cartas de One Piece, plantas, cómics y tenis o streetwear, organizados por categoría. El sitio también tiene categorías de funkos, juguetes y joyería.",
+        "sources": [
+          {
+            "label": "Onda",
+            "url": "https://onda.lol/"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "gopa": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "El perfil de GOPA en Platanus la describe como un servicio que conecta financiamiento con vendedores de autos en México. Así podrían seguir comprando autos en vez de frenar sus compras por falta de crédito.",
+        "sources": [
+          {
+            "label": "Platanus · GOPA",
+            "url": "https://platan.us/startups/gopa"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Esa descripción no prueba que el servicio siga operando. En septiembre de 2026 la startup no tenía un sitio propio en funcionamiento y no se encontró prensa posterior a junio de 2024. Tampoco hay un anuncio de cierre.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23."
+          }
+        ]
+      }
+    ]
+  },
+  "superposition-labs": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "El equipo de SignatureAPI se presenta hoy como Superposition Labs. Dice construir la infraestructura y la capa de confianza para desplegar con seguridad IA médica autónoma ante la escasez estructural de médicos: integraciones clínicas, responsabilidad legal y andamiaje regulatorio. Se dirige a sistemas de salud, hospitales y reguladores, país por país.",
+        "sources": [
+          {
+            "label": "Superposition Labs",
+            "url": "https://superposition.company/"
+          }
+        ]
+      },
+      {
+        "text": "SignatureAPI sigue operando sin cambios, y la compañía la presenta como el primer producto desplegado de esa infraestructura: firma electrónica en volumen para consentimientos, autorizaciones y auditoría de documentos.",
+        "sources": [
+          {
+            "label": "Superposition Labs",
+            "url": "https://superposition.company/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "SignatureAPI se usa vía API, sin programar mediante Power Automate o Zapier, o a través de un servidor MCP para agentes de IA. La compañía la plantea como reemplazo del papeleo clínico manual y del vacío de confianza regulatoria que, a su juicio, hoy frena el despliegue de IA médica a escala.",
+        "sources": [
+          {
+            "label": "SignatureAPI",
+            "url": "https://signatureapi.com/"
+          },
+          {
+            "label": "SignatureAPI · AI Toolkit",
+            "url": "https://signatureapi.com/docs/ai-toolkit/agents"
+          },
+          {
+            "label": "Superposition Labs",
+            "url": "https://superposition.company/"
+          }
+        ]
+      }
+    ]
+  },
+  "kapso": {
+    "reviewed_on": "2026-09-09",
+    "summary": [
+      {
+        "text": "Kapso ahora también permite que sus clientes conecten el WhatsApp de sus propios clientes, no solo el suyo. Ofrece tres formas de conectar un número oficial: uno administrado por Kapso, la SIM propia del cliente o la cuenta de WhatsApp Business que ya usa.",
+        "sources": [
+          {
+            "label": "Kapso",
+            "url": "https://kapso.com/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Mensajes, webhooks, inbox y workflows están disponibles por API, CLI y MCP. Sobre la misma conexión se pueden construir agentes de IA y automatizaciones, con soporte explícito para que agentes de código como Claude Code, Cursor y Codex también lo integren.",
+        "sources": [
+          {
+            "label": "Kapso",
+            "url": "https://kapso.com/"
+          }
+        ]
+      },
+      {
+        "text": "Kapso declara que más de 30.000 desarrolladores en el mundo confían en su plataforma. Se presenta como alternativa a pasar meses integrando directamente la API de Meta o a pagar por mensaje, como en Twilio.",
+        "sources": [
+          {
+            "label": "Kapso",
+            "url": "https://kapso.com/"
+          },
+          {
+            "label": "Kapso · precios",
+            "url": "https://kapso.com/pricing"
+          }
+        ]
+      }
+    ]
+  },
+  "cuidapet": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "CuidaPet atiende hoy a domicilio en el Gran Santiago y en ciudades como Viña del Mar, Valparaíso, Concón, Coquimbo, La Serena, Antofagasta y Concepción. Suma teleurgencia para hablar en minutos con un médico veterinario y CuidaPet360, un plan anual desde $10.500 al mes. El plan incluye consultas, vacunas y exámenes preventivos, con descuentos en especialidades.",
+        "sources": [
+          {
+            "label": "CuidaPet",
+            "url": "https://www.cuidapet.cl/"
+          }
+        ]
+      },
+      {
+        "text": "Desde 2026 tiene además un espacio físico en Providencia. Por ahora solo atiende consultas de especialidad y cuenta con un pabellón quirúrgico para procedimientos.",
+        "sources": [
+          {
+            "label": "CuidaPet",
+            "url": "https://www.cuidapet.cl/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La visita se agenda en la web, sin llamados telefónicos. Cubre medicina general y de especialidad, vacunación, exámenes de sangre y orina, ecografías y radiografías, además de baño y peluquería. CuidaPet declara trabajar con más de 100 médicos generales y especialistas, y guarda en su plataforma la información clínica de cada mascota.",
+        "sources": [
+          {
+            "label": "CuidaPet",
+            "url": "https://www.cuidapet.cl/"
+          }
+        ]
+      },
+      {
+        "text": "La empresa anunciaba para mediados de 2026 una clínica de mediana complejidad en el mismo espacio de Providencia.",
+        "sources": [
+          {
+            "label": "CuidaPet",
+            "url": "https://www.cuidapet.cl/"
+          }
+        ]
+      }
+    ]
+  },
+  "jaro": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "JARO mantiene su directorio de transportistas en México, ahora con un asistente conversacional para buscar por ciudad y tipo de flete. El sitio también promueve Red Reley, una red privada y sin comisión de transportistas verificados en México y Estados Unidos.",
+        "sources": [
+          {
+            "label": "JARO",
+            "url": "https://jaro.mx"
+          },
+          {
+            "label": "Reley · Red Reley",
+            "url": "https://reley.ai/es/proveedores-verificados"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "La conversación con el asistente ocupa el lugar de la página de búsqueda con filtros y testimonios que JARO mostraba a fines de 2025. Siguen el listado de transportistas por ciudad y el seguro de carga con CHUBB.",
+        "sources": [
+          {
+            "label": "JARO",
+            "url": "https://jaro.mx"
+          },
+          {
+            "label": "JARO · dic 2025",
+            "url": "https://web.archive.org/web/20251215224328/http://jaro.mx/"
+          },
+          {
+            "label": "JARO · Seguro de carga (nov 2025)",
+            "url": "https://web.archive.org/web/20251107130453/https://www.jaro.mx/seguro-de-carga"
+          }
+        ]
+      },
+      {
+        "text": "A Red Reley se entra por solicitud. Busca evitar que el alta de cada transportista se repita desde cero entre documentos antiguos, permisos faltantes y semanas de seguimiento.",
+        "sources": [
+          {
+            "label": "Reley · Red Reley",
+            "url": "https://reley.ai/es/proveedores-verificados"
+          }
+        ]
+      },
+      {
+        "text": "La empresa detrás de JARO, Jaro Freight, LLC, opera en reley.ai la marca Reley, que tiene dos partes. Reley Network es la red privada de proveedores verificados que jaro.mx promueve como Red Reley. La otra es una plataforma para equipos de logística y finanzas: pide a sus contrapartes documentos como pólizas de seguro o constancias fiscales, les da seguimiento hasta recibirlos y los vuelve a pedir antes de que venzan, para que el equipo no tenga que perseguirlos a mano.",
+        "sources": [
+          {
+            "label": "Reley",
+            "url": "https://reley.ai/"
+          },
+          {
+            "label": "Reley Network",
+            "url": "https://reley.ai/proveedores-verificados"
+          }
+        ]
+      }
+    ]
+  },
+  "runni": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Runni alquila bicicletas eléctricas a repartidores en Medellín y cuenta ahora con cinco estaciones de cambio de batería en la ciudad: Laureles, Estadio, Ruta N, La 30 y Terminal del Sur. El repartidor deja la batería descargada, se lleva una cargada y sigue trabajando, sin necesitar un cargador. Es la alternativa que propone a comprar un vehículo propio y cargar la batería por su cuenta.",
+        "sources": [
+          {
+            "label": "Runni",
+            "url": "https://runni.co/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "El alquiler incluye mantenimiento y cambio ilimitado de batería. Se toma por día o por semana, con un depósito reembolsable y una permanencia mínima de siete días. Se pide un documento válido en Colombia (CC, CE o PPT), y el pago se hace desde la app Runni, desde cualquier banco, por Nequi o en efectivo.",
+        "sources": [
+          {
+            "label": "Runni",
+            "url": "https://runni.co/"
+          }
+        ]
+      }
+    ]
+  },
+  "movana": {
+    "reviewed_on": "2026-09-23",
+    "summary": [
+      {
+        "text": "Hasta mayo de 2026, Movana ofrecía a empresas transporte de personal con monitoreo en tiempo real de cada trayecto, integración con el control de asistencia y cámaras con IA que puntúan a los conductores. Desde mediados de 2025 ofrecía también transporte de carga con tractocamiones, portacontenedores y carga proyecto.",
+        "sources": [
+          {
+            "label": "Wayback Machine · may 2026",
+            "url": "https://web.archive.org/web/20260521170407/https://www.movana.io/"
+          }
+        ]
+      },
+      {
+        "text": "El 23 de septiembre de 2026, movana.io no respondía: el proveedor del sitio rechazaba la conexión. Su perfil en Platanus seguía publicado.",
+        "sources": [
+          {
+            "label": "Revisión · 23 sep 2026",
+            "basis": "Observación registrada en la revisión del 2026-09-23."
+          },
+          {
+            "label": "Platanus · Movana",
+            "url": "https://platan.us/startups/movana"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "felz": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Los mini-markets de barrio de Felz en México se concentran hoy en abarrotes frescos y esenciales del hogar a precio justo, gracias a la compra directa a proveedores. Los vecinos de cada tienda también pueden recibir sus pedidos por Uber Eats, DiDi y Rappi.",
+        "sources": [
+          {
+            "label": "Tiendas Felz",
+            "url": "https://www.tiendasfelz.com/"
+          },
+          {
+            "label": "Platanus · Felz",
+            "url": "https://platan.us/startups/felz"
+          }
+        ]
+      }
+    ],
+    "details": []
+  },
+  "taxflow": {
+    "reviewed_on": "2026-09-11",
+    "summary": [
+      {
+        "text": "Houston reúne hoy los agentes de IA de un equipo en un solo lugar, con el modelo que cada equipo elija y conectados a herramientas que ya usa, como Gmail, Slack, QuickBooks, HubSpot o Google Drive. Los agentes se comparten con roles de dueño, administrador y miembro, de modo que lo que aprenden queda en la empresa y no en la cuenta de una persona.",
+        "sources": [
+          {
+            "label": "Houston",
+            "url": "https://gethouston.ai/"
+          }
+        ]
+      },
+      {
+        "text": "Está en beta. Es gratis hasta tres personas y tiene un plan pagado por usuario para equipos.",
+        "sources": [
+          {
+            "label": "Houston",
+            "url": "https://gethouston.ai/"
+          }
+        ]
+      }
+    ],
+    "details": [
+      {
+        "text": "Taxflow Inc. la ofrece como aplicación de escritorio de código abierto para macOS, Windows y Linux, a la que también se accede por web. Trae un asistente personal y agentes de contabilidad, recursos humanos, soporte y ventas, entre otros, además de una tienda para instalar más agentes o crear los propios. Está pensada para los equipos de ventas, contabilidad, contratación y soporte de una empresa, y busca reemplazar los chats privados de IA de cada empleado.",
+        "sources": [
+          {
+            "label": "Houston",
+            "url": "https://gethouston.ai/"
+          },
+          {
+            "label": "Houston · términos",
+            "url": "https://gethouston.ai/terms/"
+          }
+        ]
+      },
+      {
+        "text": "En jointaxflow.ai sigue publicado el producto de Taxflow para firmas contables de EE. UU. Es una herramienta de recepción de documentos tributarios: arma la lista de documentos de cada cliente a partir de su declaración del año anterior, los recibe por enlace seguro, los ordena y genera la carpeta de trabajo para revisión, en lugar de perseguir a los clientes por correo. La acompaña un extractor de estados bancarios hacia Excel.",
+        "sources": [
+          {
+            "label": "Taxflow · recepción de documentos",
+            "url": "https://jointaxflow.ai/data-intake"
+          },
+          {
+            "label": "Taxflow · extractor de estados bancarios",
+            "url": "https://jointaxflow.ai/bank-statements-extractor"
+          }
+        ]
+      }
+    ]
+  }
+}

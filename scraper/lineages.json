@@ -1,0 +1,52 @@
+[
+  {
+    "startup": "Salduu",
+    "type": "spinoff",
+    "label": "Spin-off de producto",
+    "date": "2022-06",
+    "date_precision": "first_documented",
+    "date_note": "Salduu ya estaba documentado en junio de 2022; la fecha exacta de su lanzamiento no está confirmada.",
+    "summary": "Salduu surgió como un producto del equipo de Profe Social. Ambas plataformas siguen funcionando.",
+    "source_url": "https://x.com/bsilva96/status/2102947040703483979",
+    "source_label": "Benjamín Silva · 23 sep 2026",
+    "confirmed_on": "2026-09-23",
+    "parent": {
+      "name": "Profe Social",
+      "domain": "profe.social",
+      "aliases": [
+        "Profe Social",
+        "Profe.Social"
+      ],
+      "status_label": "En funcionamiento · con soporte",
+      "description": "Su comunidad y marketplace de recursos para docentes siguen funcionando. El equipo le da soporte, sin trabajar activamente en su desarrollo.",
+      "event_keys": [
+        [
+          "2021-01",
+          "fundacion"
+        ],
+        [
+          "2021-09",
+          "capital"
+        ],
+        [
+          "2022-01",
+          "capital"
+        ]
+      ]
+    },
+    "child_status_label": "En funcionamiento · dedicación completa",
+    "child_description": "Plataforma para vender y cobrar productos digitales. El cofundador de Benjamín se dedica a Salduu a tiempo completo.",
+    "event": {
+      "type": "spinoff",
+      "date": "2022-06",
+      "title": "Salduu surge del equipo de Profe Social",
+      "prose": "En junio de 2022 ya está documentado Salduu, un spin-off de producto del equipo de Profe Social SpA: tienda en línea sin costo fijo para que cualquier persona que venda productos o servicios digitales cobre a compradores de Latinoamérica y del resto del mundo. El comprador paga en su propia moneda con más de 200 medios de pago locales de 11 países (y PayPal fuera de la región), el producto se entrega automáticamente tras el pago y el vendedor retira sus ganancias a su cuenta bancaria cuando quiera; Salduu cobra solo comisión por venta (9% que baja hasta 3% según ventas acumuladas). Reemplaza montar un e-commerce propio con pasarela internacional o cobrar a mano por transferencia y PayPal. Profe Social continúa operando en paralelo como marketplace docente. La fecha exacta del lanzamiento de Salduu no está confirmada.",
+      "source": "Wayback Machine · jun 2022",
+      "source_url": "https://web.archive.org/web/20220610130116/http://salduu.com/",
+      "quote": "",
+      "basis": "Primera evidencia archivada de Salduu; no fecha exacta de lanzamiento. La continuidad de ambas plataformas fue confirmada por Benjamín Silva.",
+      "wayback_url": null
+    },
+    "continuity_note": "En septiembre de 2026, Benjamín Silva confirmó que ambas plataformas siguen funcionando. Profe Social recibe soporte y mantiene su comunidad docente, mientras su cofundador se dedica a Salduu a tiempo completo."
+  }
+]

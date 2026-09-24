@@ -10,11 +10,11 @@ export function getStaticPaths() {
   return (data.startups as any[])
     .map((s) => ({ s, slug: slugify(s.name) }))
     .filter(({ slug }) => slug && !seen.has(slug) && seen.add(slug))
-    .map(({ s, slug }) => ({ params: { slug }, props: { name: s.name, events: s.events } }));
+    .map(({ s, slug }) => ({ params: { slug }, props: { name: s.name, events: s.events, lineage: s.lineage } }));
 }
 
 export const GET: APIRoute = ({ props }) => {
-  const png = ogPng(props.name, props.events, data.meta.range);
+  const png = ogPng(props.name, props.events, data.meta.range, props.lineage);
   return new Response(new Uint8Array(png), {
     headers: { "Content-Type": "image/png", "Cache-Control": "public, max-age=31536000, immutable" },
   });

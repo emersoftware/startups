@@ -1,0 +1,35 @@
+---
+const { lineage, events, ticks, pos } = Astro.props;
+const parent = lineage.parent;
+const branch = pos(lineage.date);
+const origin = pos(parent.events[0].date);
+const bend = Math.min(4, (100 - branch) / 2);
+const start = branch * 10;
+const curve = `M ${start} 22 C ${start + bend * 5} 22, ${start} 70, ${start + bend * 10} 70 H 1000`;
+const first = events.find((e: any) => e.type === "spinoff");
+---
+<div class="lane lineage-lane" aria-label={`${parent.name} continúa; ${lineage.label} en ${lineage.date}. ${events[0]?.title}.`}>
+  {ticks.map((t: any) => <span class="gridline" style={`left:${t.left}%`}></span>)}
+  <svg class="branches" viewBox="0 0 1000 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d={`M ${origin * 10} 22 H 1000`} class="parent-line" />
+    <path d={curve} class="child-line" />
+  </svg>
+  <span class="lane-label parent-label" style={`left:${origin}%`}>{parent.name}</span>
+  <span class="lane-label child-label" style={`left:${branch + bend}%`}>{lineage.child_name} <span>· spin-off</span></span>
+  {parent.events.map((e: any) => <span class="evdot evdot-hit" data-tl={`${parent.name} · ${e.typeLabel}`} data-ti={e.title} data-dl={e.dateLabel} data-ba={e.basis} style={`left:${e.left}%;top:22px;background:${e.fill};border:${e.border}`}></span>)}
+  {events.map((e: any) => <span class="evdot evdot-hit" data-tl={e.typeLabel} data-ti={e.title} data-dl={e.dateLabel} data-ba={e.basis} style={`left:${e.left}%;top:${e === first ? 22 : 70}px;background:${e.fill};border:${e.border}`}></span>)}
+</div>
+<style>
+  .lineage-lane { position:relative; height:90px !important; margin:10px 0 4px; }
+  .gridline { position:absolute; top:0; bottom:0; width:1px; background:#f3f2ed; }
+  .branches { position:absolute; width:100%; height:90px; overflow:visible; }
+  .branches path { fill:none; stroke-width:1.6; vector-effect:non-scaling-stroke; }
+  .parent-line { stroke:#bdbab2; }
+  .child-line { stroke:#2f5fe6; }
+  .lane-label { position:absolute; font-size:11px; white-space:nowrap; line-height:1; }
+  .parent-label { top:0; color:#75726b; }
+  .child-label { top:48px; color:#2f5fe6; }
+  .child-label span { color:#75726b; }
+  .evdot { position:absolute; transform:translate(-50%,-50%); width:10px; height:10px; border-radius:3px; box-shadow:0 0 0 3px #fff; z-index:2; }
+  @media(max-width:640px) { .lineage-lane { margin:0; } }
+</style>

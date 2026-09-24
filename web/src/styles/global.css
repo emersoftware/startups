@@ -18,6 +18,11 @@ input::placeholder { color: #bdbab2; }
 @keyframes expandIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 
 .expand { animation: expandIn .18s ease both; }
+.row.lineage-row { height:104px !important; }
+#rows, .axishead { scrollbar-gutter:stable; }
+.axishead { overflow-y:hidden; }
+.row:focus-visible { outline:2px solid #2f5fe6; outline-offset:-2px; }
+@media(prefers-reduced-motion:reduce) { .expand { animation:none; } }
 .srcchip { cursor: default; }
 .srcchip-link { cursor: pointer; transition: color .12s, border-color .12s; }
 
@@ -48,12 +53,14 @@ input::placeholder { color: #bdbab2; }
   /* eje de años a ancho completo (sin la columna de 200px) */
   .axishead { grid-template-columns: 1fr !important; padding: 14px 16px 6px !important; margin-top: 12px !important; }
   .axishead > div:first-child { display: none !important; }
+  .axis-end { display:none; }
 
   /* cada fila se apila: nombre + chevron arriba (en extremos opuestos),
      timeline a ancho completo debajo. Colocación explícita en la grid
      para que el chevron quede en la misma fila que el nombre. */
   /* row-gap necesita !important: el estilo inline de .row trae gap:0 que si no, gana. */
   .row { grid-template-columns: 1fr auto !important; grid-template-rows: auto auto !important; height: auto !important; row-gap: 18px !important; padding: 12px 0 10px !important; align-items: stretch !important; }
+  .row.lineage-row { height:auto !important; row-gap:12px !important; }
   .namecell { padding-left: 0 !important; grid-column: 1 !important; grid-row: 1 !important; }
   .chev { grid-column: 2 !important; grid-row: 1 !important; align-self: center !important; }
   .lane { height: 20px !important; grid-column: 1 / -1 !important; grid-row: 2 !important; }

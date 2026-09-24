@@ -46,3 +46,6 @@ report.[0-9]*.json
 
 # Claude Code: herramienta local, no parte del dataset
 .claude/
+
+# Wrangler local cache
+.wrangler/

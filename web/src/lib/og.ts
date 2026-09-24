@@ -10,6 +10,7 @@
  * Se prerenderiza desde endpoints (build-time, no en el worker):
  *  src/pages/og/[slug].png.ts  y  src/pages/og.png.ts
  */
+import { mergeMilestones } from "./milestones";
 import { Resvg } from "@resvg/resvg-js";
 import opentype from "opentype.js";
 import { readFileSync } from "node:fs";
@@ -23,6 +24,7 @@ const ACCENT = "#2f5fe6";
 const INK = "#1a1916";
 
 type Ev = { type: string; date: string };
+type Lineage = { date: string; label: string; parent: { name: string; events: Ev[] } };
 
 const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return y + (m - 0.5) / 12; };
 
@@ -32,6 +34,7 @@ const EV: Record<string, { fill: string; stroke?: string; dash?: boolean }> = {
   capital:     { fill: ACCENT },
   pivot:       { fill: "#ffffff", stroke: "#b5760f" },
   rebrand:     { fill: "#ffffff", stroke: "#4a6fa5" },
+  spinoff:     { fill: "#ffffff", stroke: ACCENT },
   adquisicion: { fill: "#2f7d4f" },
   cierre:      { fill: "#c0492f" },
   inactivo:    { fill: "#ffffff", stroke: "#a8a39a", dash: true },
@@ -85,10 +88,10 @@ const frame = (inner: string) => `<svg xmlns="http://www.w3.org/2000/svg" width=
 const png = (svg: string): Buffer => new Resvg(svg, { fitTo: { mode: "width", value: W } }).render().asPng();
 
 // Un punto en x absoluto: anillo blanco (separa solapados, como el box-shadow del sitio) + cuadrado.
-function dot(x: number, type: string) {
+function dot(x: number, type: string, y = LANE_Y) {
   const c = EV[type] ?? EV.fundacion;
   const s = 22, r = 7;
-  const x0 = x - s / 2, y0 = LANE_Y - s / 2;
+  const x0 = x - s / 2, y0 = y - s / 2;
   const ring = `<rect x="${(x0 - 4).toFixed(1)}" y="${y0 - 4}" width="${s + 8}" height="${s + 8}" rx="${r + 3}" fill="#ffffff"/>`;
   const stroke = c.stroke
     ? ` stroke="${c.stroke}" stroke-width="2.6"${c.dash ? ` stroke-dasharray="3 2.6"` : ""}`
@@ -97,12 +100,29 @@ function dot(x: number, type: string) {
 }
 
 // Deeplink: nombre grande + su timeline (solo puntos).
-export function ogPng(name: string, events: Ev[], range: { start: number; end: number }): Buffer {
-  const xOf = (d: string) => LANE_L + ((tval(d) - range.start) / (range.end - range.start)) * (LANE_R - LANE_L);
+export function ogPng(name: string, events: Ev[], range: { start: number; end: number }, lineage?: Lineage): Buffer {
+  const allEvents = [...(lineage?.parent.events ?? []), ...events];
+  const start = Math.min(range.start, ...allEvents.map(e => Math.floor(tval(e.date))));
+  const end = Math.max(range.end, ...allEvents.map(e => Math.ceil(tval(e.date))));
+  const xOf = (d: string) => LANE_L + ((tval(d) - start) / (end - start)) * (LANE_R - LANE_L);
   const n = name.length;
   const nameSize = n <= 11 ? 96 : n <= 16 ? 80 : n <= 22 ? 64 : 52;
+  if (lineage) {
+    const branch = xOf(lineage.date), parentY = 392, childY = 486;
+    const bend = Math.min(48, (LANE_R - branch) / 2);
+    const parentStart = xOf(lineage.parent.events[0].date);
+    const lines = `<path d="M ${parentStart} ${parentY} H ${LANE_R}" fill="none" stroke="#bdbab2" stroke-width="2"/>
+      <path d="M ${branch} ${parentY} C ${branch + bend} ${parentY}, ${branch} ${childY}, ${branch + bend} ${childY} H ${LANE_R}" fill="none" stroke="${ACCENT}" stroke-width="3"/>`;
+    const parentDots = mergeMilestones(lineage.parent.events).map(e => dot(xOf(e.date), e.type, parentY)).join("");
+    const childDots = mergeMilestones(events).map(e => dot(xOf(e.date), e.type, e.type === 'spinoff' ? parentY : childY)).join("");
+    return png(frame(`${text(name, PADX, 250, nameSize, INK, -1.2)}
+      ${text(`${lineage.label} de ${lineage.parent.name}`, PADX, 296, 27, "#75726b", -0.3)}
+      ${text(lineage.parent.name, parentStart, 363, 21, "#75726b")}
+      ${text(name, branch + bend, 460, 21, ACCENT)}
+      ${lines}${parentDots}${childDots}`));
+  }
   const axis = `<line x1="${LANE_L}" y1="${LANE_Y}" x2="${LANE_R}" y2="${LANE_Y}" stroke="#eceae4" stroke-width="2"/>`;
-  const dots = events.map((e) => dot(xOf(e.date), e.type)).join("");
+  const dots = mergeMilestones(events).map((e) => dot(xOf(e.date), e.type)).join("");
   return png(frame(`${text(name, PADX, 318, nameSize, INK, -1.2)}
   ${axis}
   ${dots}`));
