@@ -88,6 +88,13 @@ def main():
 
     out = []
     for name, s in old_by_name.items():
+        # Other portfolios (Kayyak) are built by their own script
+        # (kayyak_timeline.py) from their audit artifacts: pass them through
+        # untouched, or their pivots and founding source would be overwritten
+        # with Platanus data.
+        if s.get("portafolio", "platanus") != "platanus":
+            out.append(s)
+            continue
         idt = ident.get(name.strip(), {})
         slug = idt.get("slug") or plat.get(name, {}).get("slug", "")
         fu = fund.get(name.strip(), {})

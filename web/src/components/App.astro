@@ -27,11 +27,12 @@ const EV: Record<string, { fill: string; border: string; label: string; dot: str
   inactivo:    { fill: "#ffffff", border: "1.4px dashed #a8a39a", label: "Sin señal reciente", dot: "#a8a39a" },
 };
 
-const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return y + (m - 0.5) / 12; };
+// Fechas "YYYY-MM" o solo "YYYY" (fundaciones sin mes documentado): sin mes va a mitad de año.
+const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return m ? y + (m - 0.5) / 12 : y + 0.5; };
 const pos = (d: string) => ((tval(d) - start) / (end - start)) * 100;
-const dateLabel = (d: string) => { const [y, m] = d.split("-").map(Number); return `${MES[m - 1]} ${y}`; };
+const dateLabel = (d: string) => { const [y, m] = d.split("-").map(Number); return m ? `${MES[m - 1]} ${y}` : String(y); };
 
-const ticks = data.meta.ticks.map((y: number) => ({ y, left: ((y - start) / (end - start)) * 100 }));
+const ticks = data.meta.ticks.map((y: number) => ({ y, left: ((y - start) / (end - start)) * 100, odd: y % 2 === 1 }));
 
 const startups = data.startups.map((s: any) => {
   const events = s.events.map((e: any) => ({
@@ -60,6 +61,8 @@ const startups = data.startups.map((s: any) => {
   };
 });
 
+// Año de fundación: lo anterior a 2020 se agrupa en un solo chip (el eje parte en 2009).
+const yearChips = [["antes", "Antes de '20"], ...[2020, 2021, 2022, 2023, 2024].map((y) => [String(y), `'${String(y).slice(2)}`])];
 const estadoChips = [["activa","Activas"],["adquirida","Adquiridas"],["cerrada","Cerradas"]];
 const tagChips = [["pivot","Pivotearon"],["rebrand","Cambiaron de nombre"],["capital","Levantaron capital"]];
 
@@ -154,8 +157,8 @@ const ogAlt = openMatch
             <div class="filterbar" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
             <div class="yearsub" style="display:flex;align-items:center;gap:8px">
               <span style="font-size:11px;color:#a8a49b">Año</span>
-              {data.meta.ticks.filter((y: number) => y <= 2024).map((y: number) => (
-                <button class="chip-year" data-year={y} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{`'${String(y).slice(2)}`}</button>
+              {yearChips.map(([k, l]) => (
+                <button class="chip-year" data-year={k} style="border:0;border-bottom:2px solid transparent;background:transparent;padding:2px 0;font:inherit;font-size:12px;font-weight:400;color:#75726b;cursor:pointer">{l}</button>
               ))}
             </div>
             <div class="fdiv" style="width:1px;height:13px;background:#e3e1da"></div>
@@ -177,7 +180,7 @@ const ogAlt = openMatch
         <div style="position:relative;height:13px">
           {ticks.map((t) => {
             const tx = t.left <= 1 ? "0" : t.left >= 99 ? "-100%" : "-50%";
-            return (<span style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}><span class="yr-full">{String(t.y)}</span><span class="yr-abbr">{`'${String(t.y).slice(2)}`}</span></span>);
+            return (<span class={t.odd ? "tick-odd" : undefined} style={`position:absolute;left:${t.left}%;transform:translateX(${tx});font-size:10px;color:#bdbab2`}><span class="yr-full">{String(t.y)}</span><span class="yr-abbr">{`'${String(t.y).slice(2)}`}</span></span>);
           })}
         </div>
       </div>
@@ -265,7 +268,7 @@ const ogAlt = openMatch
     const p = new URLSearchParams(location.search);
     for (const v of list(p.get("estado"))) if (ESTADO_KEY[v]) state.estado.add(ESTADO_KEY[v]);
     for (const v of list(p.get("evento"))) if (EVENTO_KEY[v]) state.tags.add(EVENTO_KEY[v]);
-    for (const v of list(p.get("fundada"))) state.years.add(v);
+    for (const v of list(p.get("fundada"))) state.years.add(v === "antes-de-2020" ? "antes" : v);
     for (const v of list(p.get("portafolio"))) state.portafolio.add(v);
     for (const v of list(p.get("solo"))) state.solo.add(v);
     const q = p.get("buscar") ?? "";
@@ -279,7 +282,7 @@ const ogAlt = openMatch
     set("portafolio", [...state.portafolio]);
     set("estado", [...state.estado].map((k) => ESTADO_URL[k]));
     set("evento", [...state.tags].map((k) => EVENTO_URL[k]));
-    set("fundada", [...state.years].sort());
+    set("fundada", [...state.years].sort().map((y) => (y === "antes" ? "antes-de-2020" : y)));
     set("solo", [...state.solo]);
     if (searchInput.value.trim()) p.set("buscar", searchInput.value.trim());
     // Las comas se dejan legibles en la URL compartida.
@@ -296,7 +299,7 @@ const ogAlt = openMatch
       if (ok && state.portafolio.size && !state.portafolio.has(d.portafolio!)) ok = false;
       if (ok && state.q && !d.search!.includes(state.q)) ok = false;
       if (ok && state.estado.size && !state.estado.has(d.status!)) ok = false;
-      if (ok && state.years.size && !d.years!.split(",").some((y) => state.years.has(y))) ok = false;
+      if (ok && state.years.size && !d.years!.split(",").some((y) => state.years.has(y) || (state.years.has("antes") && Number(y) < 2020))) ok = false;
       if (ok && state.tags.has("pivot") && d.haspivot !== "true") ok = false;
       if (ok && state.tags.has("rebrand") && d.hasrebrand !== "true") ok = false;
       if (ok && state.tags.has("capital") && d.hascapital !== "true") ok = false;

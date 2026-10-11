@@ -1,14 +1,25 @@
 {
   "meta": {
     "title": "Chile, Startups",
-    "count": 82,
+    "count": 111,
     "preliminary": false,
     "note": "Datos verificados. Cada hito enlaza a su fuente.",
     "range": {
-      "start": 2020.0,
-      "end": 2026.5
+      "start": 2009.0,
+      "end": 2027.0
     },
     "ticks": [
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
       2020,
       2021,
       2022,
@@ -19,6 +30,2230 @@
     ]
   },
   "startups": [
+    {
+      "name": "HealthAtom",
+      "domain": "healthatom.com",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2009",
+          "title": "Nace HealthAtom",
+          "prose": "Dentalink era un software como servicio para administrar clínicas dentales, que digitalizaba la gestión cotidiana del prestador en lugar de una operación sin digitalizar.",
+          "source": "web-latam.softwaredentalink.com",
+          "basis": "",
+          "source_url": "https://web-latam.softwaredentalink.com/blog/healthatom-inversion-10-millones-mejorar-el-acceso-salud-america-latina"
+        },
+        {
+          "type": "capital",
+          "date": "2023-01",
+          "title": "Serie A de US$10 millones",
+          "prose": "HealthAtom levantó una Serie A de US$10M con Kayyak Ventures, Amarena, Chile Ventures y otros. HealthAtom ofrecía Dentalink para clínicas dentales y Medilink para centros médicos: software como servicio que reunía la gestión clínica y administrativa del prestador en lugar de una gestión sin digitalizar.",
+          "source": "LatamList",
+          "basis": "",
+          "source_url": "https://latamlist.com/healthatom-secures-a-10m-series-a/"
+        },
+        {
+          "type": "capital",
+          "date": "2024-07",
+          "title": "Ingreso a la red Endeavor",
+          "prose": "HealthAtom entró a Endeavor.",
+          "source": "Endeavor",
+          "basis": "",
+          "source_url": "https://endeavor.org/stories/17-new-high-impact-entrepreneurs-join-endeavor-in-july/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "healthatom dentalink medilink healthatom.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "TIMining",
+      "domain": "timining.com",
+      "status": "activa",
+      "tag": "Minería",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2011",
+          "title": "Nace TIMining",
+          "prose": "Desarrollaba software 3D para los equipos de geotecnia de las minas, con el que podían estudiar el terreno mediante modelos digitales y abordar la recopilación y fusión manual de datos de sensores e instrumentos.",
+          "source": "iProUP",
+          "basis": "",
+          "source_url": "https://www.iproup.com/innovacion/11950-mineria-4-0-una-startup-latinoamericana-desarrollo-una-solucion-para-construir-minas-inteligentes.amp"
+        },
+        {
+          "type": "capital",
+          "date": "2018-10",
+          "title": "Intercambio tecnológico METStech Passport",
+          "prose": "TIMining entró a METStech Passport.",
+          "source": "fch.cl",
+          "basis": "",
+          "source_url": "https://fch.cl/noticias/metstech-passport-proveedores-locales-se-reunen-con-los-principales-actores-del-ecosistema-australiano/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-12",
+          "title": "Apoyo Corfo: Fondo de Gestión del Portafolio de Innovación",
+          "prose": "TIMining recibió un aporte no reembolsable de CORFO.",
+          "source": "Expande Minería",
+          "basis": "",
+          "source_url": "https://expandemineria.cl/wp-content/uploads/2021/03/expande-casos-vol-3.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2018-12",
+          "title": "Apoyo Corfo: Fondo de Validación y Empaquetamiento",
+          "prose": "TIMining recibió un aporte no reembolsable de CORFO.",
+          "source": "Expande Minería",
+          "basis": "",
+          "source_url": "https://expandemineria.cl/wp-content/uploads/2021/03/expande-casos-vol-3.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2018-12",
+          "title": "Apoyo Corfo: Programa Catapult(a)",
+          "prose": "TIMining recibió un aporte no reembolsable de CORFO.",
+          "source": "Expande Minería",
+          "basis": "",
+          "source_url": "https://expandemineria.cl/wp-content/uploads/2021/03/expande-casos-vol-3.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Serie A para software minero",
+          "prose": "TIMining levantó una Serie A de US$4M con Aurus Capital y ChileGlobal Ventures (Fondo CLIN).",
+          "source": "La Tercera",
+          "basis": "",
+          "source_url": "https://www.latercera.com/pulso/noticia/timining-la-startup-chilena-que-replica-minas-en-3d-en-los-principales-polos-mineros/RRHHGD6PWJDDBHI4W4PEHJWSMU/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-10",
+          "title": "Serie B de US$10 millones con Kayyak Ventures",
+          "prose": "TIMining levantó una Serie B de US$10M con Kayyak Ventures, Komatsu Ventures, Aurus Capital y otros. Software para grandes yacimientos que integra sensores, cámaras y GPS en herramientas de visualización 3D, monitoreo, análisis y simulación; permite a los equipos mineros consultar la operación, las desviaciones del plan y los procesos geotécnicos en una representación digital. En lugar de depender de observar físicamente una faena extensa al iniciar el turno, el supervisor podía consultar dónde y cómo se operaba, las desviaciones y los camiones desde el teléfono.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/el-saas-timining-concreta-serie-b-por-us10-millones-para-fortalecer-su-id/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "timining timining.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Co-Work Latam",
+      "domain": "coworklatam.com",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2011-10",
+          "title": "Nace Co-Work Latam",
+          "prose": "Ofrecía espacios de trabajo compartidos para emprendedores, con una comunidad donde intercambiar experiencias y recibir asesoría legal y financiera, como alternativa a trabajar solos desde casa o desde cafeterías.",
+          "source": "El Definido",
+          "basis": "",
+          "source_url": "https://eldefinido.cl/actualidad/pais/156/CoWorking_Como_formar_un_Silicon_Valley_en_miniatura/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Ingreso al portafolio de Kayyak Ventures",
+          "prose": "Kayyak Ventures invirtió en Co-Work Latam; la etapa y el monto no se informaron. Operaba espacios compartidos y oficinas privadas adaptables al tamaño de las empresas, encargándose del diseño, construcción y operación para que los clientes no tuvieran que montar y administrar su propia infraestructura de oficina.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-11",
+          "title": "Participación en España-Latam Scale-up",
+          "prose": "Co-Work Latam entró a España-Latam Scale-up (ICEX-Invest in Spain, BID Lab y Endeavor).",
+          "source": "investinspain.org",
+          "basis": "",
+          "source_url": "https://www.investinspain.org/es/noticias/2022/spain-latam"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "co-work latam coworklatam coworklatam.com co-work.cl",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Webdox",
+      "domain": "webdoxclm.com",
+      "status": "activa",
+      "tag": "Legaltech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2012",
+          "title": "Nace Webdox",
+          "prose": "Webdox nace como un buscador de documentación legal para estudios de abogados, con ordenamiento, digitalización e indexación jurídica de sus archivos, en lugar de localizar la información manualmente entre los documentos acumulados del estudio.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/webdox-anuncia-plan-de-inversion-para-desarrollar-innovaciones-con"
+        },
+        {
+          "type": "pivot",
+          "date": "2014-12",
+          "title": "De estudios jurídicos a documentación legal empresarial",
+          "prose": "Webdox lleva la clasificación, digitalización OCR y gestión online de documentos legales a las empresas, con acceso por usuario y herramientas para compartir archivos con terceros, en lugar de buscar, escanear y enviar documentos desde carpetas físicas.",
+          "quote": "",
+          "source": "webdox.cl · dic 2014",
+          "source_url": "https://web.archive.org/web/20141222212732/http://webdox.cl/",
+          "wayback_url": "https://web.archive.org/web/20141222212732/http://webdox.cl/",
+          "basis": ""
+        },
+        {
+          "type": "pivot",
+          "date": "2017-10",
+          "title": "De documentos legales a gestionar el ciclo contractual",
+          "prose": "Webdox concentra su software en contratos para organizaciones: centraliza y busca contratos, coordina su creación y validación mediante flujos de trabajo y avisa las fechas críticas, en lugar de administrarlos entre papeles y carpetas del computador.",
+          "quote": "",
+          "source": "webdox.cl · oct 2017",
+          "source_url": "https://web.archive.org/web/20171005221915/http://webdox.cl/",
+          "wayback_url": "https://web.archive.org/web/20171005221915/http://webdox.cl/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2018-05",
+          "title": "Programa NAVE de Axtel",
+          "prose": "Webdox entró a NAVE de Axtel 2018.",
+          "source": "elfinanciero.com.mx",
+          "basis": "",
+          "source_url": "https://www.elfinanciero.com.mx/emprendedores/4-scaleups-mexicanas-se-graduan-de-programa-y-reciben-2-3-mdp-y-algo-mas/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-08",
+          "title": "Inversión de Wayra",
+          "prose": "Webdox levantó una ronda semilla de US$775K con Wayra Chile.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/wayra-chile-makes-undisclosed-investment-in-webdox-en-espanol/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-08",
+          "title": "Ronda semilla liderada por Kayyak",
+          "prose": "Webdox levantó una ronda semilla de US$2M con Kayyak Ventures. Kayyak Ventures lidera una inversión semilla en Webdox, cuyo software para empresas reúne solicitud, confección, validación, firma y explotación de contratos, en lugar de gestionarlos mediante archivos y procesos separados.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://dfmas.df.cl/df-mas/punto-de-partida/webdox-la-startup-chilena-que-seduce-a-inversionistas-y-se-consolida-en"
+        },
+        {
+          "type": "capital",
+          "date": "2021-10",
+          "title": "Serie A de US$7,3 millones",
+          "prose": "Webdox levantó una Serie A de US$7,3M con Taram Capital, Kayyak Ventures, Alacrity México y otros.",
+          "source": "webdoxclm.com",
+          "basis": "",
+          "source_url": "https://www.webdoxclm.com/blog/webdox-cierra-ronda-de-inversion"
+        },
+        {
+          "type": "capital",
+          "date": "2023-04",
+          "title": "Extensión de Serie A con Kayyak",
+          "prose": "Webdox levantó una Serie A con Kayyak Ventures.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/webdox/financials"
+        },
+        {
+          "type": "capital",
+          "date": "2024-09",
+          "title": "Ampliación de Serie A de US$1,5 millones",
+          "prose": "Webdox levantó una Serie A de US$1,5M con Kayyak Ventures, Taram Capital y Undisclosed Investors.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/webdox/financials"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "webdox webdox.cl webdoxclm.com webdoxlegal.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Cytovale",
+      "domain": "cytovale.com",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2013",
+          "title": "Nace Cytovale",
+          "prose": "Desarrollaba un instrumento de sobremesa y cartuchos desechables que examinaban las propiedades mecánicas de células mediante microfluidos, con la detección temprana de sepsis como aplicación inicial para la atención clínica; buscaba aportar una prueba antes de que el daño orgánico hiciera reconocible la enfermedad.",
+          "source": "BioSpace",
+          "basis": "",
+          "source_url": "https://www.biospace.com/b-peter-thiel-s-b-breakout-labs-funds-two-bay-area-startups"
+        },
+        {
+          "type": "capital",
+          "date": "2013-11",
+          "title": "Apoyo de Breakout Labs",
+          "prose": "Cytovale recibió un aporte no reembolsable de Breakout Labs (Thiel Foundation).",
+          "source": "BioSpace",
+          "basis": "",
+          "source_url": "https://www.biospace.com/b-peter-thiel-s-b-breakout-labs-funds-two-bay-area-startups"
+        },
+        {
+          "type": "capital",
+          "date": "2014-06",
+          "title": "Serie A de US$4,3 millones",
+          "prose": "Cytovale levantó una Serie A de US$4,3M con NetScientific y IT-Farm Corporation.",
+          "source": "centerforbiotechnology.org",
+          "basis": "",
+          "source_url": "https://centerforbiotechnology.org/new/wp-content/uploads/2018/08/BARDA-DRIVe-funded-companies-report-Feb2019.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2015-04",
+          "title": "Grant BD de US$25.000",
+          "prose": "Cytovale recibió US$25K no reembolsable de Becton, Dickinson and Company.",
+          "source": "centerforbiotechnology.org",
+          "basis": "",
+          "source_url": "https://centerforbiotechnology.org/new/wp-content/uploads/2018/08/BARDA-DRIVe-funded-companies-report-Feb2019.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2016-09",
+          "title": "Grant HHS y NSF de US$2,97 millones",
+          "prose": "Cytovale recibió US$3M no reembolsable de U.S. Department of Health and Human Services y National Science Foundation.",
+          "source": "centerforbiotechnology.org",
+          "basis": "",
+          "source_url": "https://centerforbiotechnology.org/new/wp-content/uploads/2018/08/BARDA-DRIVe-funded-companies-report-Feb2019.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2017-11",
+          "title": "Programa Google Launchpad Studio",
+          "prose": "Cytovale entró a Google Launchpad Studio.",
+          "source": "developers.googleblog.com",
+          "basis": "",
+          "source_url": "https://developers.googleblog.com/google-developers-launchpad-studio-works-with-top-startups-to-tackle-healthcare-challenges-with-machine-learning/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-07",
+          "title": "Serie B de US$7,25 millones",
+          "prose": "Cytovale levantó una Serie B de US$7,2M con Baidu Ventures, Blackhorn Ventures, Breakout Ventures y otros.",
+          "source": "centerforbiotechnology.org",
+          "basis": "",
+          "source_url": "https://centerforbiotechnology.org/new/wp-content/uploads/2018/08/BARDA-DRIVe-funded-companies-report-Feb2019.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2019-10",
+          "title": "Extensión de Serie B de US$7,4 millones",
+          "prose": "Cytovale levantó una Serie B de US$7,4M con Breakout Ventures, Blackhorn Ventures y Western Technology Investment.",
+          "source": "BioSpace",
+          "basis": "",
+          "source_url": "https://www.biospace.com/cytovale-announces-15-million-in-financing-for-technology-enabling-early-sepsis-detection-in-the-emergency-department"
+        },
+        {
+          "type": "capital",
+          "date": "2019-10",
+          "title": "Contrato BARDA para desarrollar la prueba",
+          "prose": "Cytovale recibió US$3,4M no reembolsable de BARDA / HHS.",
+          "source": "cidrap.umn.edu",
+          "basis": "",
+          "source_url": "https://www.cidrap.umn.edu/antimicrobial-stewardship/stewardship-resistance-scan-oct-31-2019"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Inversión de Kayyak Ventures",
+          "prose": "Kayyak Ventures invirtió en Cytovale; la etapa y el monto no se informaron. Desarrollaba una prueba de respuesta inmunitaria para ayudar a médicos de urgencias a identificar sepsis a partir de una muestra de sangre en menos de diez minutos, como apoyo frente a una evaluación clínica que podía detectar la enfermedad tarde.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-02",
+          "title": "BARDA ejerce la opción final del contrato",
+          "prose": "Cytovale recibió un aporte no reembolsable de BARDA / HHS.",
+          "source": "BioSpace",
+          "basis": "",
+          "source_url": "https://www.biospace.com/cytovale-secures-additional-barda-funding-for-10-minute-intellisep-test-for-sepsis"
+        },
+        {
+          "type": "capital",
+          "date": "2023-11",
+          "title": "Serie C de US$84 millones",
+          "prose": "Cytovale levantó una Serie C de US$84M con Norwest Venture Partners, Sands Capital y Global Health Investment Corporation.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/cytovale-secures-84-million-series-c-to-advance-commercialization-of-transformative-sepsis-diagnostic-tool-301988581.html"
+        },
+        {
+          "type": "capital",
+          "date": "2024-10",
+          "title": "Serie D de US$100 millones",
+          "prose": "Cytovale levantó una Serie D de US$100M con Sands Capital, CPP Investments, Norwest Venture Partners y otros.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/cytovale-completes-100-million-series-d-funding-to-accelerate-commercial-expansion-of-its-rapid-sepsis-solution-302272909.html"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "cytovale cytovale.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "1DOC3",
+      "domain": "1doc3.com",
+      "status": "activa",
+      "tag": "Healthtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2013",
+          "title": "Nace 1DOC3",
+          "prose": "Orientación médica por internet para personas con dudas de salud: enviaban preguntas gratuitas y anónimas que respondían médicos verificados, como alternativa a buscar respuestas por su cuenta en la web.",
+          "source": "1doc3.com · 2013",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20140610145612/http://1doc3.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2014-08",
+          "title": "Apoyo de Wayra Colombia",
+          "prose": "1DOC3 entró a Wayra Colombia.",
+          "source": "El Espectador",
+          "basis": "",
+          "source_url": "https://www.elespectador.com/salud/un-exito-el-portal-colombiano-de-consultas-medicas-gratuitas-article-510588/"
+        },
+        {
+          "type": "capital",
+          "date": "2016-07",
+          "title": "Programa de aceleración de Endeavor",
+          "prose": "1DOC3 entró a Endeavor Colombia — programa con J.P. Morgan Chase Foundation y Corporación Las Mercedes.",
+          "source": "Portafolio",
+          "basis": "",
+          "source_url": "https://www.portafolio.co/negocios/empresas/jp-morgan-endeavor-y-las-mercedes-logran-acelerar-startups-por-5-5-millones-de-dolares-506772"
+        },
+        {
+          "type": "capital",
+          "date": "2017-12",
+          "title": "Seed de US$2 millones",
+          "prose": "1DOC3 levantó una ronda semilla de US$2M con TheVentureCity y Mountain Nazca Colombia.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/latam-deals-theventurecity-invests-in-1doc3-exclusive-interview-w-the-founder/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-09",
+          "title": "Programa de crecimiento de TheVentureCity",
+          "prose": "1DOC3 entró a TheVentureCity Growth Acceleration Program.",
+          "source": "theventure.city",
+          "basis": "",
+          "source_url": "https://www.theventure.city/article/graduation-time-at-theventurecity"
+        },
+        {
+          "type": "capital",
+          "date": "2021-04",
+          "title": "Pre-Serie A de US$3 millones con Kayyak",
+          "prose": "1DOC3 levantó una ronda semilla de US$3M con MatterScale Ventures, Kayyak Ventures, Swanhill Capital y otros. Telemedicina por texto y chat para personas en Latinoamérica, con evaluación de síntomas antes de conectarse con un médico, como alternativa a esperar una consulta presencial.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/matterscale-ventures-and-kayyak-ventures-lead-usd3m-pre-series-a-for-telemedicine-platform-1doc3/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-04",
+          "title": "Serie A de US$2,2 millones",
+          "prose": "1DOC3 levantó una Serie A de US$2,2M con Kayyak Ventures, EWA Capital, MatterScale Ventures y otros.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/1doc3/financials"
+        },
+        {
+          "type": "pivot",
+          "date": "2022-05",
+          "title": "De teleconsultas a beneficios de salud para empresas",
+          "prose": "Beneficio de salud contratado por empresas para sus colaboradores y familiares: consultas ilimitadas de medicina, psicología y nutrición desde una aplicación, como alternativa a esperar citas y desplazarse para recibir atención.",
+          "quote": "",
+          "source": "1doc3.com · may 2022",
+          "source_url": "https://web.archive.org/web/20220515193540/http://1doc3.com/",
+          "wayback_url": "https://web.archive.org/web/20220515193540/http://1doc3.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "1doc3 1doc3.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "AgendaPro",
+      "domain": "agendapro.com",
+      "status": "activa",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2013",
+          "title": "Nace AgendaPro",
+          "prose": "Buscador y sistema de reservas online para que las personas encontraran prestadores locales de salud y belleza y pidieran una hora por internet, en lugar de llamar al negocio; los prestadores podían incorporar su empresa a la plataforma.",
+          "source": "agendapro.cl · 2013",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20140823084315/http://agendapro.cl/about_us"
+        },
+        {
+          "type": "capital",
+          "date": "2016-12",
+          "title": "Open Startup 6 de UDD Ventures",
+          "prose": "AgendaPro entró a UDD Ventures Open Startup 6: open Startup 6 de UDD Ventures.",
+          "source": "uddventures.udd.cl",
+          "basis": "",
+          "source_url": "https://uddventures.udd.cl/hubfs/Reporte%20UDDV%2010%20a%C3%B1os/Reporte%202010%20-%202020%20UDD%20Ventures%20%2010%20a%C3%B1os%20creando%20futuro.pdf?hsLang=es-cl"
+        },
+        {
+          "type": "capital",
+          "date": "2021-01",
+          "title": "Y Combinator W21",
+          "prose": "AgendaPro entró a Y Combinator W21: y Combinator W21.",
+          "source": "Y Combinator",
+          "basis": "",
+          "source_url": "https://www.ycombinator.com/companies/agendapro"
+        },
+        {
+          "type": "capital",
+          "date": "2021-10",
+          "title": "Serie A: US$2 millones con Kayyak",
+          "prose": "AgendaPro levantó una Serie A de US$2M con Kayyak Ventures. Recibió US$2 millones de inversión con Kayyak Ventures para su software de agenda, clientes y ventas para centros de salud, belleza y bienestar, con reservas online en lugar de coordinar cada hora por teléfono.",
+          "source": "globallegalchronicle.com",
+          "basis": "",
+          "source_url": "https://globallegalchronicle.com/tag/kayyak-ventures/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-01",
+          "title": "US$3,7 millones liderados por Kayyak",
+          "prose": "Kayyak Ventures, FEN Ventures, TMT Investments y otros invirtió en AgendaPro; la etapa y el monto no se informaron.",
+          "source": "Bloomberg Línea",
+          "basis": "",
+          "source_url": "https://www.bloomberglinea.com/2022/01/18/agendapro-shopify-for-beauty-and-wellness-raises-37m/"
+        },
+        {
+          "type": "capital",
+          "date": "2025-08",
+          "title": "Serie B: US$35 millones con Riverwood",
+          "prose": "AgendaPro levantó una Serie B de US$35M con Riverwood Capital y Kayyak Ventures.",
+          "source": "LexLatin",
+          "basis": "",
+          "source_url": "https://lexlatin.com/noticias/agendapro-ronda-serie-b-millones"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "agendapro agendapro.cl agendapro.com agendapro.com/cl",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Rankmi",
+      "domain": "rankmi.com",
+      "status": "activa",
+      "tag": "HR Tech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2013",
+          "title": "Nace Rankmi",
+          "prose": "Rankmi nació como un proyecto de herramienta para que jefes y empresas evaluaran y desarrollaran el liderazgo mediante valoraciones de sus equipos, comparación entre empresas y planes personalizados. Proponía que la evaluación se apoyara en feedback actualizado de quienes trabajaban con cada jefe, en lugar de depender solo de la percepción del propio líder.",
+          "source": "rankmi.com · 2013",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20130815215122/http://rankmi.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2014-12",
+          "title": "Apoyo de Start-Up Chile",
+          "prose": "Rankmi entró a Start-Up Chile y recibió US$40K.",
+          "source": "LinkedIn",
+          "basis": "",
+          "source_url": "https://cl.linkedin.com/in/felipecc"
+        },
+        {
+          "type": "capital",
+          "date": "2015-06",
+          "title": "Programa FOUNDER.org, clase 2016",
+          "prose": "Rankmi entró a FOUNDER.org Class of 2016: programa FOUNDER.org, clase 2016.",
+          "source": "PRWeb",
+          "basis": "",
+          "source_url": "https://www.prweb.com/releases/40_innovative_startups_join_investor_founder_org_s_class_of_2016/prweb12761390.htm"
+        },
+        {
+          "type": "capital",
+          "date": "2015-12",
+          "title": "Premios Knapp Venture Competition",
+          "prose": "Rankmi recibió US$9K no reembolsable de UCLA Anderson — Knapp Venture Competition.",
+          "source": "anderson.ucla.edu",
+          "basis": "",
+          "source_url": "https://www.anderson.ucla.edu/knapp-venture-competition/past-winners"
+        },
+        {
+          "type": "capital",
+          "date": "2015-12",
+          "title": "Summer Accelerator de Startup UCLA",
+          "prose": "Rankmi entró a Startup UCLA Summer Accelerator 2015.",
+          "source": "startupucla.com",
+          "basis": "",
+          "source_url": "https://startupucla.com/summer-accelerator/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-07",
+          "title": "US$1,5 millones de Beagle Ventures",
+          "prose": "Beagle Ventures invirtió en Rankmi; la etapa y el monto no se informaron.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/beagle-ventures-invests-us1-5m-in-rankmi/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-03",
+          "title": "Serie A liderada por SoftBank",
+          "prose": "Rankmi levantó una Serie A con SoftBank Latin America Fund.",
+          "source": "rankmi.com",
+          "basis": "",
+          "source_url": "https://www.rankmi.com/blog/rankmi-announces-series-a-round-led-by-softbank-and-a-merger-with-osmos-in-two-operations-involving-us-48-million"
+        },
+        {
+          "type": "capital",
+          "date": "2025-10",
+          "title": "Extensión de Serie A con Kayyak e IDB Lab",
+          "prose": "Rankmi levantó una Serie A de US$11M con Kayyak Ventures y IDB Lab. Rankmi ofrecía un software por suscripción para empresas medianas y grandes, con módulos para administradores de recursos humanos y trabajadores. Centralizaba solicitudes de vacaciones, documentos, reportes y beneficios, como alternativa a los procesos manuales y fragmentados de gestión de personas.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/rankmi-cierra-ronda-de-inversion-para-crecer-en-mexico-cambia-su-imagen-y"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "rankmi rankmi.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Miroculus",
+      "domain": "miroculus.com",
+      "status": "adquirida",
+      "tag": "Biotech",
+      "events": [
+        {
+          "type": "capital",
+          "date": "2013-06",
+          "title": "Programa de Singularity University GSP 2013",
+          "prose": "Miroculus entró a Singularity University GSP 2013: programa de Singularity University GSP 2013.",
+          "source": "singularityhub.com",
+          "basis": "",
+          "source_url": "https://singularityhub.com/2013/01/23/spend-the-summer-changing-the-world-apply-now-to-singularity-universitys-graduate-studies-program/"
+        },
+        {
+          "type": "fundacion",
+          "date": "2013-08",
+          "title": "Nace Miroculus",
+          "prose": "Desarrollaba una prueba de sangre y un lector de placas para detectar patrones de microARN asociados al cáncer, dirigida a quienes realizaban detección temprana. Buscaba hacer ese análisis mediante un dispositivo sencillo y resultados digitales, en lugar de depender de un proceso de laboratorio especializado; era un prototipo, no un diagnóstico clínico aprobado.",
+          "source": "miroculus.com · ago 2013",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20130829040834/http://miroculus.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2015-04",
+          "title": "Primer tramo de ronda semilla",
+          "prose": "Miroculus levantó una ronda semilla de US$2,3M.",
+          "source": "medcitynews.com",
+          "basis": "",
+          "source_url": "https://medcitynews.com/2015/04/miroculus/"
+        },
+        {
+          "type": "pivot",
+          "date": "2019-04",
+          "title": "De detectar microARN a automatizar protocolos genómicos",
+          "prose": "Desarrollaba una plataforma de microfluídica digital para equipos de laboratorio que procesaban muestras y ejecutaban protocolos de preparación para secuenciación, biología sintética y química combinatoria. Automatizaba esos pasos dentro de un cartucho, como alternativa a ejecutar manualmente los protocolos moleculares.",
+          "quote": "",
+          "source": "miroculus.com · abr 2019",
+          "source_url": "https://web.archive.org/web/20190402215525/http://miroculus.com/",
+          "wayback_url": "https://web.archive.org/web/20190402215525/http://miroculus.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2021-02",
+          "title": "Extensión de Serie B para Miro Canvas",
+          "prose": "Miroculus levantó una Serie B con Cota Capital y Section 32.",
+          "source": "BioSpace",
+          "basis": "",
+          "source_url": "https://www.biospace.com/miroculus-closes-extension-to-45m-series-b-financing"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Kayyak Ventures entra al portafolio",
+          "prose": "Kayyak Ventures invirtió en Miroculus; la etapa y el monto no se informaron. Kayyak respaldó a Miroculus, que desarrollaba un sistema de microfluídica digital para automatizar preparación de bibliotecas de secuenciación y otros protocolos de laboratorio. El sistema manipulaba muestras y reactivos en lugar de realizar manualmente las operaciones de cada protocolo.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "adquisicion",
+          "date": "2023-03",
+          "title": "Adquisición por INTEGRA Biosciences",
+          "prose": "INTEGRA Biosciences adquirió Miroculus e incorporó su tecnología de automatización genómica. Miro Canvas preparaba bibliotecas de secuenciación para laboratorios académicos, de investigación y diagnóstico, sustituyendo pasos manuales de preparación de muestras.",
+          "source": "integra-biosciences.com",
+          "basis": "",
+          "source_url": "https://www.integra-biosciences.com/global/en/stories/advancing-genomics-discoveries-acquisition-biotechnology-specialist"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "miroculus miroculus.com integra-biosciences.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "F4F",
+      "domain": "f4f.cl",
+      "status": "activa",
+      "tag": "Agtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2014",
+          "title": "Nace F4F",
+          "prose": "Cultivaba insectos para producir harina destinada a la alimentación de peces, como alternativa a los ingredientes convencionales de la acuicultura.",
+          "source": "f4f.cl · 2014",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20181105073117/http://f4f.cl:80/sobre-f4f.html"
+        },
+        {
+          "type": "capital",
+          "date": "2015-12",
+          "title": "Capital inicial de Andrés Pesce",
+          "prose": "Andrés Pesce invirtió en F4F; la etapa y el monto no se informaron.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/la-apuesta-por-proteina-de-insectos-que-une-a-ibanez-luksic-y-angelini"
+        },
+        {
+          "type": "capital",
+          "date": "2015-12",
+          "title": "Inversión ángel de John Scott",
+          "prose": "John Scott invirtió en F4F; la etapa y el monto no se informaron.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/la-apuesta-por-proteina-de-insectos-que-une-a-ibanez-luksic-y-angelini"
+        },
+        {
+          "type": "capital",
+          "date": "2021-04",
+          "title": "Serie A de US$4,5 millones",
+          "prose": "F4F levantó una Serie A de US$4,5M con Kayyak Ventures, Inversiones Amarena, LDG Inversiones y otros. Producía harina y otros ingredientes de insectos para alimentar salmones y otros animales, como alternativa a la harina de pescado y la soya; el capital financió el escalamiento de su producción.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/la-apuesta-por-proteina-de-insectos-que-une-a-ibanez-luksic-y-angelini"
+        },
+        {
+          "type": "capital",
+          "date": "2022-03",
+          "title": "Start-Up Chile Growth 3",
+          "prose": "F4F entró a Start-Up Chile Growth 3: start-Up Chile Growth 3.",
+          "source": "Start-Up Chile",
+          "basis": "",
+          "source_url": "https://startupchile.org/blog/growth-3-new-generation/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-03",
+          "title": "Programa AgriFood Tech de Mana",
+          "prose": "F4F entró a Mana Tech / Base Miami / Koi Group — AgriFood Tech 2023.",
+          "source": "tech.manacommon.com",
+          "basis": "",
+          "source_url": "https://tech.manacommon.com/agri-food-tech-program-series-a-startups-latam/"
+        },
+        {
+          "type": "capital",
+          "date": "2024-04",
+          "title": "Inversión de WildSur",
+          "prose": "WildSur invirtió en F4F; la etapa y el monto no se informaron.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/por-dentro/el-nuevo-proyecto-venture-de-oscar-leria-luksic"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "f4f f4f.cl",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "WherEx",
+      "domain": "wherex.com",
+      "status": "activa",
+      "tag": "Marketplace",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2014",
+          "title": "Nace AQMarket",
+          "prose": "AQMarket conectaba a compradores y proveedores de bienes y servicios de la industria acuícola mediante un marketplace en la nube. Ofrecía a las áreas de abastecimiento una alternativa a captar ofertas por separado y comprar con poca visibilidad sobre otros proveedores.",
+          "source": "aqmarket.com · 2014",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20151227200926/http://www.aqmarket.com:80/en/about-us/"
+        },
+        {
+          "type": "rebrand",
+          "date": "2019-10",
+          "title": "AQMarket adopta Wherex para compras industriales",
+          "prose": "AQMarket pasó a llamarse Wherex y mantuvo su plataforma para conectar las necesidades de compra de empresas con proveedores de insumos y servicios. La oferta ya atendía distintas industrias, llevando las cotizaciones y licitaciones a un portal compartido en lugar de captar propuestas por separado.",
+          "quote": "",
+          "source": "LinkedIn",
+          "source_url": "https://es.linkedin.com/posts/wherex_licitaciones-competencia-transparencia-activity-6584774522044502016-qqNx",
+          "wayback_url": null,
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2021-08",
+          "title": "Levantó capital",
+          "prose": "WherEx levantó una Serie A de US$7M con Kayyak Ventures, FJ Labs, Jaguar Ventures y otros. Wherex ofrecía software de cotizaciones y licitaciones para las áreas de compras de empresas industriales y de servicios. Permitía solicitar bienes o servicios y recibir ofertas de proveedores calificados en un mismo portal, en lugar de gestionar cada búsqueda y propuesta por separado; la Serie A financió su expansión internacional.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/wherex-e-sourcing-b2b-marketplace-raises-7m-series-a-to-expand-to-latam-and-us-market-301359754.html"
+        }
+      ],
+      "aliases": [
+        "AQMarket"
+      ],
+      "search_blob": "wherex aqmarket wherex.com aqmarket.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "VMetrix",
+      "domain": "vmetrix.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2014",
+          "title": "Nace VMetrix",
+          "prose": "Consultoría e implementación de sistemas de inversión para instituciones financieras: conectaba los sistemas de sus clientes y sus procesos de administración de portafolios que requerían integración, mediante servicios técnicos y funcionales a medida.",
+          "source": "vmetrix.com · 2014",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20220707010919/https://vmetrix.com/empresa/"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-03",
+          "title": "De implementaciones a SaaS por suscripción",
+          "prose": "Ofrece a instituciones que administran portafolios de inversión un software en la nube para gestionar operaciones, riesgos, contratos, contabilidad y reportes. La contratación por usuarios activos sustituye el pago inicial y la infraestructura y actualización quedan a cargo de VMetrix.",
+          "quote": "",
+          "source": "vmetrix.com · mar 2023",
+          "source_url": "https://web.archive.org/web/20230331162116/http://vmetrix.com/",
+          "wayback_url": "https://web.archive.org/web/20230331162116/http://vmetrix.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2025-05",
+          "title": "Ronda semilla de US$3,2 millones",
+          "prose": "VMetrix levantó una ronda semilla de US$3,2M con Kayyak Ventures y Bridge Latam (hoy Nazca). Plataforma SaaS de inversiones, riesgos y tesorería para bancos, aseguradoras y fondos de pensiones, concebida como alternativa a sistemas financieros legados con implementaciones largas. La ronda financia el crecimiento de sus equipos y el desarrollo de funcionalidades.",
+          "source": "en.vmetrix.com",
+          "basis": "",
+          "source_url": "https://en.vmetrix.com/blog/vmetrix-levanta-usd-32-millones-en-ronda-semilla-liderada-por-kayak-ventures-para-impulsar-la-transformacion-digital-del-sistema-financiero-en-america-latina"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "vmetrix vmetrix.com vmetrix.cl",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Fracttal",
+      "domain": "fracttal.com",
+      "status": "activa",
+      "tag": "SaaS",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2014-04",
+          "title": "Nace Fracttal",
+          "prose": "Nació en Santiago de Chile para desarrollar un software de gestión de mantenimiento y activos en la nube, accesible a empresas grandes y pequeñas, como alternativa a sistemas costosos con servidores propios y a registros manuales en papel y hojas de cálculo.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/la-historia-de-una-idea-fracttal"
+        },
+        {
+          "type": "capital",
+          "date": "2015-03",
+          "title": "Entrada a Start-Up Chile, generación 11",
+          "prose": "Fracttal entró a Start-Up Chile: entrada a Start-Up Chile, generación 11.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/la-historia-de-una-idea-fracttal"
+        },
+        {
+          "type": "capital",
+          "date": "2015-03",
+          "title": "Start-Up Chile: premio del Demo Day",
+          "prose": "Fracttal entró a Start-Up Chile.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/fracttal-gana-demo-day-startup-chile"
+        },
+        {
+          "type": "capital",
+          "date": "2018-04",
+          "title": "US$2 millones de Scale Capital",
+          "prose": "Fracttal levantó una Serie A de US$2M con Scale Capital / Amérigo Early Stage & Growth Fund.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/levantamos-una-inversion-de-2-millones-de-dolares"
+        },
+        {
+          "type": "capital",
+          "date": "2021-06",
+          "title": "US$5,3 millones de Seaya y GoHub",
+          "prose": "Seaya Ventures y GoHub Ventures invirtió en Fracttal; la etapa y el monto no se informaron.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/fracttal-cierra-ronda-de-5.3-millones-de-dolares"
+        },
+        {
+          "type": "capital",
+          "date": "2023-10",
+          "title": "Serie B de US$10 millones con Kayyak",
+          "prose": "Fracttal levantó una Serie B de US$10M con Kayyak Ventures, GoHub Ventures y Amador Holdings. Software por suscripción para que equipos de manufactura, servicios y gestión de inmuebles administren mantenimiento, sensores y predicción de fallas en una plataforma, sustituyendo hojas de cálculo y registros separados.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/ronda-de-inversion-octubre-2023"
+        },
+        {
+          "type": "capital",
+          "date": "2023-10",
+          "title": "Financiamiento de deuda de BBVA Spark",
+          "prose": "Fracttal obtuvo financiamiento de deuda de BBVA Spark.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/fracttal-cierra-ronda-de-inversion-respaldada-por-kayyak-ventures-y-bbva"
+        },
+        {
+          "type": "capital",
+          "date": "2026-01",
+          "title": "US$35 millones liderados por Riverwood",
+          "prose": "Riverwood Capital, Seaya Ventures, Kayyak Ventures y otros invirtió en Fracttal; la etapa y el monto no se informaron.",
+          "source": "fracttal.com",
+          "basis": "",
+          "source_url": "https://www.fracttal.com/es/blog/fracttal-ronda-inversion-35-millones-riverwood-capital"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "fracttal fracttal.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Humatics",
+      "domain": "humatics.com",
+      "status": "activa",
+      "tag": "Robótica",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2015",
+          "title": "Nace Humatics",
+          "prose": "Desarrollaba sensores, software y sistemas de control para que fabricantes de robots y otros sistemas autónomos pudieran operarlos en entornos compartidos con personas. Su tecnología de posicionamiento ofrecía una alternativa a la precisión limitada de las soluciones de ubicación existentes para relacionar personas, máquinas e infraestructura.",
+          "source": "site.humatics.com · 2015",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20160129095519/http://site.humatics.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2017-09",
+          "title": "Serie A de US$18 millones",
+          "prose": "Humatics levantó una Serie A de US$18M con Fontinalis Partners, Airbus Ventures, Lockheed Martin Ventures y otros.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/humatics-corporation-raises-18-million-series-a-financing-led-by-fontinalis-partners-300521529.html"
+        },
+        {
+          "type": "capital",
+          "date": "2019-01",
+          "title": "Serie A1 de US$28 millones",
+          "prose": "Humatics levantó una Serie A de US$28M con Tenfore Holdings, Blackhorn Ventures, JCI Ventures y otros.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/humatics-raises-28-million-in-series-a1-financing-to-meet-growing-demand-for-microlocation-300773642.html"
+        },
+        {
+          "type": "capital",
+          "date": "2020-09",
+          "title": "Serie B de US$30 millones",
+          "prose": "Humatics levantó una Serie B de US$30M con Blackhorn Ventures, Tenfore Holdings, Fontinalis Partners y otros.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/leading-microlocation-startup-humatics-secures-30-million-in-series-b-funding-301131674.html"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Inversión de Kayyak Ventures (cota superior)",
+          "prose": "Kayyak Ventures invirtió en Humatics; la etapa y el monto no se informaron. Kayyak Ventures incorporó a Humatics a su portafolio. La empresa ofrecía localización para operaciones industriales y ferroviarias mediante sensores y software que integraban varias fuentes de posición, frente a las limitaciones de un sensor aislado.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-05",
+          "title": "Transit Tech Lab, cohorte 2023",
+          "prose": "Humatics entró a Transit Tech Lab 2023: transit Tech Lab, cohorte 2023.",
+          "source": "throughput.world",
+          "basis": "",
+          "source_url": "https://throughput.world/press-releases/throughput-to-collaborate-with-metro-north-railroad-to-improve-operational-efficiency/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-06",
+          "title": "Serie B con Alumni Ventures, monto no divulgado",
+          "prose": "Humatics levantó una Serie B con Alumni Ventures.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/humatics/financials"
+        },
+        {
+          "type": "capital",
+          "date": "2024-06",
+          "title": "Plug and Play Japan, Summer/Fall 2024",
+          "prose": "Humatics entró a Plug and Play Japan Summer/Fall 2024: plug and Play Japan, Summer/Fall 2024.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/humatics/financials"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "humatics humatics.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Chipax",
+      "domain": "chipax.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2016",
+          "title": "Nace Chipax",
+          "prose": "Aplicación web para reunir la información financiera de pequeñas y medianas empresas y administrar sus finanzas, en lugar de consolidar datos dispersos en hojas de cálculo.",
+          "source": "FinteChile",
+          "basis": "",
+          "source_url": "https://www.fintechile.org/noticias/chipax-entra-en-aceleracion-en-y-combinator-y-aterriza-en-mexico"
+        },
+        {
+          "type": "capital",
+          "date": "2017-07",
+          "title": "Apoyo de Emprende FCh y fondo SSAF-i",
+          "prose": "Chipax entró a Emprende FCh.",
+          "source": "fch.cl",
+          "basis": "",
+          "source_url": "https://fch.cl/noticias/conoce-a-los-nuevos-integrantes-de-nuestra-comunidad-emprende-fch/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-10",
+          "title": "Capital semilla de US$300 mil",
+          "prose": "Chipax levantó una ronda semilla de US$300K con Chile Ventures, Platanus y Juan Cristóbal Pavez.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/mercados/banca-fintech/chipax-la-fintech-que-ordena-los-fujos-de-caja-y-que-busca-captar"
+        },
+        {
+          "type": "capital",
+          "date": "2020-07",
+          "title": "500 Startups LatAm, Batch 12",
+          "prose": "Chipax entró a 500 Startups LatAm Batch 12 y recibió US$60K.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/500-startups-invierte-en-3-companias-chilenas/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-06",
+          "title": "Y Combinator S21",
+          "prose": "Chipax entró a Y Combinator S21: y Combinator S21.",
+          "source": "FinteChile",
+          "basis": "",
+          "source_url": "https://www.fintechile.org/noticias/chipax-entra-en-aceleracion-en-y-combinator-y-aterriza-en-mexico"
+        },
+        {
+          "type": "capital",
+          "date": "2021-10",
+          "title": "Inversión de Kayyak Ventures",
+          "prose": "Kayyak Ventures invirtió en Chipax; la etapa y el monto no se informaron. Software para que las pymes sincronicen información tributaria y bancaria y gestionen cobranza, conciliación y reportes desde una aplicación, en lugar de consolidar datos y administrar sus finanzas con hojas de cálculo.",
+          "source": "kayyakventures.com · oct 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20211026170115/https://www.kayyakventures.com/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "chipax chipax.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Wheel the World",
+      "domain": "wheeltheworld.com",
+      "status": "activa",
+      "tag": "Travel",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2017",
+          "title": "Nace Wheel the World",
+          "prose": "Organiza aventuras y adapta actividades con equipamiento y capacitación local para personas con discapacidad y sus acompañantes, en lugar de exigirles coordinar por su cuenta una expedición sin apoyos accesibles.",
+          "source": "El Mostrador",
+          "basis": "",
+          "source_url": "https://www.elmostrador.cl/agenda-pais/2017/11/01/emprendedores-chilenos-impulsan-turismo-inclusivo-en-el-mundo-y-partiran-por-isla-de-pascua/"
+        },
+        {
+          "type": "capital",
+          "date": "2017-11",
+          "title": "Berkeley SkyDeck HotDesk",
+          "prose": "Wheel the World entró a Berkeley SkyDeck HotDesk.",
+          "source": "El Mostrador",
+          "basis": "",
+          "source_url": "https://www.elmostrador.cl/agenda-pais/2017/11/01/emprendedores-chilenos-impulsan-turismo-inclusivo-en-el-mundo-y-partiran-por-isla-de-pascua/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-05",
+          "title": "Booking Booster 2018",
+          "prose": "Wheel the World entró a Booking.com Booking Booster 2018: booking Booster 2018.",
+          "source": "news.booking.com",
+          "basis": "",
+          "source_url": "https://news.booking.com/bookingcom-announces-the-10-startups-that-will-join-its-2018-accelerator-programme-in-sustainable-tourism/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-10",
+          "title": "Premio TECLA de Caja Los Andes",
+          "prose": "Wheel the World recibió un aporte no reembolsable de Caja Los Andes — TECLA 2018.",
+          "source": "Diario Sustentable",
+          "basis": "",
+          "source_url": "https://www.diariosustentable.com/2018/10/fondos-tecla-repartio-192-millones-en-premios/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-04",
+          "title": "Start-Up Chile SEED20",
+          "prose": "Wheel the World entró a Start-Up Chile SEED20: start-Up Chile SEED20.",
+          "source": "Medium",
+          "basis": "",
+          "source_url": "https://medium.com/@camilo_74146/wheel-the-world-empowering-people-with-disabilities-to-explore-the-world-without-limits-679c2e54dd99"
+        },
+        {
+          "type": "capital",
+          "date": "2019-04",
+          "title": "Facebook Community Leadership Program",
+          "prose": "Wheel the World entró a Facebook Community Leadership Program.",
+          "source": "La Tercera",
+          "basis": "",
+          "source_url": "https://www.latercera.com/piensa-digital/noticia/startup-chilena-de-turismo-inclusivo-elogiada-por-el-creador-de-facebook/924054/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-04",
+          "title": "Google Launchpad Accelerator México",
+          "prose": "Wheel the World entró a Google Launchpad Accelerator México 2019.",
+          "source": "latam.googleblog.com",
+          "basis": "",
+          "source_url": "https://latam.googleblog.com/2019/04/anunciamos-los-ganadores-del-launchpad-accelerator-mexico.html"
+        },
+        {
+          "type": "capital",
+          "date": "2020-03",
+          "title": "Subsidio Chivas Venture: US$40.000",
+          "prose": "Wheel the World recibió US$40K no reembolsable de Chivas Venture — Pernod Ricard.",
+          "source": "Diario Sustentable",
+          "basis": "",
+          "source_url": "https://www.diariosustentable.com/2020/03/chivas-venture-beneficiara-con-40-000-a-emprendedores-sociales/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-05",
+          "title": "Start it @KBC",
+          "prose": "Wheel the World entró a Start it @KBC.",
+          "source": "start-it-x.prezly.com",
+          "basis": "",
+          "source_url": "https://start-it-x.prezly.com/start-it-kbc-makes-a-virtue-of-necessity-applying-a-digital-approach-to-attract-even-more-international-startups-to-belgium"
+        },
+        {
+          "type": "capital",
+          "date": "2020-11",
+          "title": "Inversión con Susan Wojcicki",
+          "prose": "Susan Wojcicki invirtió en Wheel the World; la etapa y el monto no se informaron.",
+          "source": "conecta.tec.mx",
+          "basis": "",
+          "source_url": "https://conecta.tec.mx/es/noticias/hidalgo/emprendedores/wheel-world-exatec-busca-caminos-ante-la-discapacidad"
+        },
+        {
+          "type": "capital",
+          "date": "2021-08",
+          "title": "Ronda seed: US$2 millones",
+          "prose": "Wheel the World levantó una ronda semilla de US$2M con Chile Global Ventures, Dadneo, Plug N Play Ventures y otros.",
+          "source": "TechCrunch",
+          "basis": "",
+          "source_url": "https://techcrunch.com/2021/08/09/wheel-the-world-raises-2m-to-provide-unlimited-experiences-for-travelers-with-limited-accessibility/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-05",
+          "title": "Entrada al portafolio de Kayyak",
+          "prose": "Kayyak Ventures invirtió en Wheel the World; la etapa y el monto no se informaron. Permite a personas con discapacidad reservar alojamientos y experiencias usando perfiles de necesidades y datos medidos de accesibilidad, en lugar de depender de descripciones generales de cada hotel.",
+          "source": "kayyakventures.com · may 2022",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20220527143329/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-01",
+          "title": "Expedia Open World Accelerator",
+          "prose": "Wheel the World entró a Expedia Group Open World Accelerator 2023.",
+          "source": "Medium",
+          "basis": "",
+          "source_url": "https://medium.com/expedia-group-tech/creating-a-more-sustainable-and-accessible-future-for-travelers-3f1f60b36e83"
+        },
+        {
+          "type": "capital",
+          "date": "2023-03",
+          "title": "Ronda pre Serie A: US$6 millones",
+          "prose": "Wheel the World levantó una Serie A de US$6M con Kayyak Ventures, Detroit Venture Partners, REI Path Ahead Ventures y otros.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/wheel-the-world-concreta-ronda-pre-serie-a-por-us-6-millones-y-lanza-nueva-funcionalidad/"
+        },
+        {
+          "type": "capital",
+          "date": "2026-02",
+          "title": "Extensión de Serie A: US$3,5 millones",
+          "prose": "Wheel the World levantó una Serie A de US$3,5M con Enable Ventures, Kayyak Ventures, Vulcano y otros.",
+          "source": "blog.wheeltheworld.com",
+          "basis": "",
+          "source_url": "https://blog.wheeltheworld.com/wheel-the-world-series-a-accessible-travel/"
+        },
+        {
+          "type": "capital",
+          "date": "2026-07",
+          "title": "Leap amplía la ronda",
+          "prose": "Leap — Caja Los Andes hizo una inversión estratégica en Wheel the World.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/caja-los-andes-concreta-la-segunda-inversion-de-su-fondo-en-la-startup"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "wheel the world wheeltheworld wheeltheworld.com wheeltheworld.cl gowheeltheworld.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Enerlink",
+      "domain": "enerlink.com",
+      "status": "activa",
+      "tag": "Energía",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2017",
+          "title": "Nace Enerlink",
+          "prose": "Enerlink asesoraba a empresas consumidoras de electricidad para comprar energía como clientes libres, agrupándolas y negociando su suministro, en lugar de que cada una enfrentara por su cuenta las tarifas y contratos del mercado eléctrico.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/enerlink-levanta-capital-con-kayyak-familia-del-rio-y-fondo-mexicano-para"
+        },
+        {
+          "type": "pivot",
+          "date": "2023-10",
+          "title": "El software de carga pasa al centro del negocio",
+          "prose": "Enerlink ofrece software por suscripción a operadores de flotas eléctricas para conectar y administrar sus cargadores, centralizando la operación que antes dependía de instrucciones y controles manuales. Mantiene servicios de consultoría energética y medición inteligente.",
+          "quote": "",
+          "source": "Diario Financiero",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/familia-del-rio-y-antartica-ventures-entran-a-ronda-puente-de-enerlink",
+          "wayback_url": null,
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2023-10",
+          "title": "Ronda de US$3,6 millones liderada por Kayyak",
+          "prose": "Enerlink levantó una ronda semilla de US$3,6M con Kayyak Ventures, VX Ventures, Familia Marinetti y otros. Enerlink ofrece software por suscripción a operadores de flotas eléctricas para conectar y administrar sus cargadores, centralizando la operación que antes dependía de instrucciones y controles manuales. Mantiene servicios de consultoría energética y medición inteligente.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/kayyak-ventures-lidera-ronda-de-us-3-6-millones-en-enerlink"
+        },
+        {
+          "type": "capital",
+          "date": "2025-02",
+          "title": "Ronda puente de US$1,1 millones",
+          "prose": "Enerlink levantó una ronda puente de US$1,1M con Kayyak Ventures, Familia Marinetti, Inversiones GP y otros.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/familia-del-rio-y-antartica-ventures-entran-a-ronda-puente-de-enerlink"
+        },
+        {
+          "type": "capital",
+          "date": "2026-01",
+          "title": "Pre serie A de US$3,1 millones",
+          "prose": "Enerlink levantó una ronda semilla de US$3,1M con Kayyak Ventures, Dalus Capital, Grupo Inder y otros.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/enerlink-levanta-capital-con-kayyak-familia-del-rio-y-fondo-mexicano-para"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "enerlink enerlink.cl enerlink.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "AgroUrbana",
+      "domain": "agrourbana.ag",
+      "status": "activa",
+      "tag": "Agtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2018",
+          "title": "Nace AgroUrbana",
+          "prose": "Desarrollaba una granja urbana de cultivo vertical hidropónico de lechugas y otras hojas para abastecer a hogares chilenos, como alternativa a hortalizas cultivadas al aire libre y sujetas a estaciones y condiciones climáticas.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/tendencias/df-lab/agrourbana-instala-la-primera-granja-vertical-en-quilicura"
+        },
+        {
+          "type": "capital",
+          "date": "2018-12",
+          "title": "Capital semilla para la granja piloto",
+          "prose": "AgroUrbana levantó una ronda semilla de US$500K.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/tendencias/df-lab/agrourbana-instala-la-primera-granja-vertical-en-quilicura"
+        },
+        {
+          "type": "capital",
+          "date": "2020-06",
+          "title": "Ronda semilla liderada por CLIN",
+          "prose": "AgroUrbana levantó una ronda semilla de US$1M con CLIN Fondo de Inversión Privado.",
+          "source": "Diario Sustentable",
+          "basis": "",
+          "source_url": "https://www.diariosustentable.com/2020/06/startup-pionera-de-agricultura-vertical-en-latinoamerica-levanta-ronda-de-financiamiento-cercana-al-millon-de-dolares/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Entrada al portafolio de Kayyak",
+          "prose": "Kayyak Ventures invirtió en AgroUrbana; la etapa y el monto no se informaron. Kayyak incorporó a su portafolio a AgroUrbana, que cultivaba hortalizas urbanas durante todo el año para consumidores, como alternativa a cultivos dependientes del clima y de la estación.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-10",
+          "title": "Serie A para ampliar la producción",
+          "prose": "AgroUrbana levantó una Serie A de US$4M con Kayyak Ventures y CLIN Fondo de Inversión Privado.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/agrourbana-levanta-capital-y-construira-la-primera-planta-de-agricultura"
+        },
+        {
+          "type": "capital",
+          "date": "2023-03",
+          "title": "Programa AgriFood Tech de Mana Tech",
+          "prose": "AgroUrbana entró a Mana Tech AgriFood Tech (Base Miami y Koi Group).",
+          "source": "tech.manacommon.com",
+          "basis": "",
+          "source_url": "https://tech.manacommon.com/agri-food-tech-program-series-a-startups-latam/"
+        },
+        {
+          "type": "capital",
+          "date": "2024-05",
+          "title": "Pre-Serie B para ampliar la granja",
+          "prose": "AgroUrbana levantó una ronda puente de US$6M con ALB Inversiones, Juan Andrés Camus, Amarena y otros.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/agrourbana-cierra-serie-b-de-us-6-millones-para-expandir-sus"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "agrourbana agrourbana.com agrourbana.ag",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Galgo",
+      "domain": "galgo.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2018",
+          "title": "Nace Migrante",
+          "prose": "Migrante financiaba el depósito de arriendo y la reválida de títulos de inmigrantes, principalmente venezolanos recién llegados a Chile, como alternativa para quienes no recibían crédito de la banca tradicional.",
+          "source": "galgo.com",
+          "basis": "",
+          "source_url": "https://www.galgo.com/?p=14259"
+        },
+        {
+          "type": "capital",
+          "date": "2020-03",
+          "title": "Selección en Endeavor Scale Fintech",
+          "prose": "Migrante entró a Endeavor Chile.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/endeavor-selecciona-cinco-fintech-para-la-primera-version-de-su-programa"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Primera inversión de Kayyak, registrada a marzo de 2021",
+          "prose": "Migrante levantó una ronda pre-semilla con Kayyak Ventures. Migrante ofrecía créditos para autos, motos, arriendo y necesidades personales a inmigrantes en Chile que quedaban fuera del crédito convencional.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Notas convertibles por US$2,5 millones",
+          "prose": "Migrante levantó una ronda semilla de US$2,5M con Kayyak Ventures, Fen Ventures, Olivo Capital y otros.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/coffee-break/fintech-migrante-levanta-fondo-por-20-mil-millones"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Fondo para préstamos por CLP20.000 millones",
+          "prose": "Migrante obtuvo financiamiento de deuda: fondo para préstamos por CLP20.000 millones.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/coffee-break/fintech-migrante-levanta-fondo-por-20-mil-millones"
+        },
+        {
+          "type": "pivot",
+          "date": "2021-09",
+          "title": "De prestar dinero a vender vehículos con crédito",
+          "prose": "Migrante vendía motos y autos con financiamiento integrado para inmigrantes y trabajadores que necesitaban un vehículo para generar ingresos, reuniendo la compra y el crédito que antes debían gestionar por separado.",
+          "quote": "",
+          "source": "migrante.com · sep 2021",
+          "source_url": "https://web.archive.org/web/20210923141841/http://migrante.com/",
+          "wayback_url": "https://web.archive.org/web/20210923141841/http://migrante.com/",
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2022-03",
+          "title": "Serie A de US$29 millones",
+          "prose": "Migrante levantó una Serie A de US$29M con Kayyak Ventures, Fynsa, Fen Ventures y otros.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-mas/punto-de-partida/fintech-para-migrantes-levanta-us-29-millones-en-serie-a-y-debutara-con"
+        },
+        {
+          "type": "capital",
+          "date": "2022-03",
+          "title": "Financiamiento de deuda para la cartera",
+          "prose": "Migrante obtuvo financiamiento de deuda.",
+          "source": "TechCrunch",
+          "basis": "",
+          "source_url": "https://techcrunch.com/2022/03/29/migrante-steps-on-the-gas-of-vehicle-leasing-startup-for-gig-workers-in-latin-america/"
+        },
+        {
+          "type": "rebrand",
+          "date": "2023-05",
+          "title": "Migrante pasa a Galgo para financiar motos",
+          "prose": "Galgo concentra su oferta en comercializar y financiar motos para personas subbancarizadas de América Latina, incluidos clientes locales y migrantes, con catálogo, solicitud de crédito y firma digital en lugar de tramitar por separado la compra y el financiamiento.",
+          "quote": "",
+          "source": "galgo.com",
+          "source_url": "https://www.galgo.com/?p=14259",
+          "wayback_url": null,
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2023-10",
+          "title": "Serie B de US$40,8 millones",
+          "prose": "Galgo levantó una Serie B de US$40,8M con Nazca, Grupo Auteco, WIND Ventures y otros.",
+          "source": "FinteChile",
+          "basis": "",
+          "source_url": "https://www.fintechile.org/noticias/galgo-concreta-ronda-de-capital-por-us-40-8-millones-y-se-convierte-en-el-mayor-levantamiento-local-de-2023"
+        },
+        {
+          "type": "capital",
+          "date": "2024-11",
+          "title": "Segundo préstamo de Kiva",
+          "prose": "Galgo obtuvo deuda por US$2M de Kiva Refugee Investment Fund.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/galgo/financials"
+        },
+        {
+          "type": "capital",
+          "date": "2025-08",
+          "title": "Serie B posterior de US$52 millones",
+          "prose": "Galgo levantó una Serie B de US$52M.",
+          "source": "CB Insights",
+          "basis": "",
+          "source_url": "https://www.cbinsights.com/company/galgo/financials"
+        },
+        {
+          "type": "capital",
+          "date": "2026-08",
+          "title": "Inversión estratégica de Uber",
+          "prose": "Uber hizo una inversión estratégica en Galgo.",
+          "source": "galgo.prezly.com",
+          "basis": "",
+          "source_url": "https://galgo.prezly.com/uber-y-galgo-se-unen-para-expandir-el-financiamiento-de-motos-en-america-latina"
+        },
+        {
+          "type": "capital",
+          "date": "2026-09",
+          "title": "Línea de BBVA Spark por MXN1.000 millones",
+          "prose": "Galgo obtuvo financiamiento de deuda de BBVA Spark: línea de BBVA Spark por MXN1.000 millones.",
+          "source": "BBVA",
+          "basis": "",
+          "source_url": "https://www.bbva.com/es/mx/empresas/bbva-spark-y-galgo-sellan-acuerdo-por-1000-mdp-para-potenciar-la-movilidad-en-motocicletas/"
+        }
+      ],
+      "aliases": [
+        "Migrante"
+      ],
+      "search_blob": "galgo migrante migrante.cl migrante.com galgo.com/latam galgo.com/cl galgo.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Colektia",
+      "domain": "colektia.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2018",
+          "title": "Nace Colektia",
+          "prose": "Automatizaba recordatorios y estrategias de cobro para empresas grandes y pequeñas: cargaban sus facturas mediante una hoja de cálculo o una API y el sistema elegía cuándo y por qué canal contactar a cada cliente, en lugar de perseguir pagos con contactos repetidos; podía integrarse con el equipo de cobranza existente.",
+          "source": "colektia.com · 2018",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20180827102625/http://colektia.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2018-12",
+          "title": "Start-Up Chile Seed",
+          "prose": "Colektia entró a Start-Up Chile Seed y recibió US$30K.",
+          "source": "amexcap.com",
+          "basis": "",
+          "source_url": "https://amexcap.com/colektia-cierra-inversion-de-4-2-mdd-para-su-expansion-en-latinoamerica/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-08",
+          "title": "Village Capital Finance Forward LatAm 2019",
+          "prose": "Colektia entró a Village Capital Finance Forward Latin America 2019: village Capital Finance Forward LatAm 2019.",
+          "source": "newsandviews.vilcap.com",
+          "basis": "",
+          "source_url": "https://newsandviews.vilcap.com/posts/announcing-the-cohort-finance-forward-latin-america-2019"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Magical: incorporación a su portafolio",
+          "prose": "Magical invirtió en Colektia; la etapa y el monto no se informaron.",
+          "source": "LinkedIn",
+          "basis": "",
+          "source_url": "https://es.linkedin.com/posts/colektia_colektia-cobranza-magical-activity-6929475928699867136-wmrW"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Inversión semilla de Wayra Chile",
+          "prose": "Colektia levantó una ronda semilla con Wayra Chile.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/feature/telefonica-open-innovation-wayra-investment-highlights-for-2019/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-10",
+          "title": "Start-Up Chile Growth: generación piloto",
+          "prose": "Colektia entró a Start-Up Chile Growth 2020.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/generacion-piloto-de-growth-start-up-chile/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-11",
+          "title": "Google for Startups Accelerator Invierno 2020",
+          "prose": "Colektia entró a Google for Startups Accelerator LATAM Invierno 2020: google for Startups Accelerator Invierno 2020.",
+          "source": "colektia.com · nov 2020",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20201201110044/https://colektia.com/blog/colektia-entre-las-12-startups-seleccionadas-por-google-para-su-programa-de-aceleracion"
+        },
+        {
+          "type": "capital",
+          "date": "2020-12",
+          "title": "Endeavor Scale Fintech",
+          "prose": "Colektia entró a Endeavor Chile Scale Fintech.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/fintech-de-cobranza-chilena-sera-acelerada-por-google/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-02",
+          "title": "Serie A de US$4,2 millones con Kayyak",
+          "prose": "Colektia levantó una Serie A de US$4,2M con Angel Ventures, Mountain Nazca, Kayyak Ventures y otros. Gestionaba cobranza digital para instituciones financieras mediante inteligencia artificial y machine learning, combinando automatización y trabajo humano como alternativa a operaciones tradicionales centradas en call centers. La Serie A financió su consolidación en México y Chile y la expansión hacia Colombia y Perú.",
+          "source": "amexcap.com",
+          "basis": "",
+          "source_url": "https://amexcap.com/colektia-cierra-inversion-de-4-2-mdd-para-su-expansion-en-latinoamerica/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-09",
+          "title": "Financiamiento de capital y deuda",
+          "prose": "Kayyak Ventures invirtió en Colektia; la etapa y el monto no se informaron.",
+          "source": "colektia.com · sep 2023",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20240223225539/https://colektia.com/blog/colektia-cierra-ronda-de-financiamiento-y-adquiere-cartera-valorada-en-usd-72-millones-para-impulsar-la-reinsercion-financiera-en-la-region"
+        },
+        {
+          "type": "capital",
+          "date": "2024-12",
+          "title": "Serie B de US$9 millones",
+          "prose": "Colektia levantó una Serie B de US$9M con Mouro Capital, Endeavor's Forward Fund, Full Spectrum Capital y otros.",
+          "source": "colektia.com",
+          "basis": "",
+          "source_url": "https://colektia.com/blog/colektia-cierra-ronda-de-financiamiento-por-9-millones-de-dolares-liderada-por-mouro-capital"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "colektia colektia.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Sofía",
+      "domain": "sofiasalud.com",
+      "status": "activa",
+      "tag": "Insurtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2018",
+          "title": "Nace Sofía",
+          "prose": "Desarrollaba un seguro médico para personas en México, centrado en cuidar su salud como alternativa al seguro que les cobra más cada año; recibía registros para avisar cuando estuviera disponible.",
+          "source": "sofiasalud.com · 2018",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20180820100950/http://sofiasalud.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-03",
+          "title": "Capital semilla de US$6,3M",
+          "prose": "Sofía levantó una ronda semilla de US$6,3M con Kaszek Ventures, Ribbit Capital, Cavalry Ventures y otros.",
+          "source": "damu.mx",
+          "basis": "",
+          "source_url": "https://damu.mx/2020/11/19/sofia-startup-mexicana-de-salud-y-tecnologia-anuncia-autorizacion-lanzamiento-y-ronda-de-inversion-serie-a-de-19-millones-de-dolares/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-11",
+          "title": "Serie A de US$19M",
+          "prose": "Sofía levantó una Serie A de US$19M con Index Ventures.",
+          "source": "damu.mx",
+          "basis": "",
+          "source_url": "https://damu.mx/2020/11/19/sofia-startup-mexicana-de-salud-y-tecnologia-anuncia-autorizacion-lanzamiento-y-ronda-de-inversion-serie-a-de-19-millones-de-dolares/"
+        },
+        {
+          "type": "capital",
+          "date": "2024-12",
+          "title": "Ronda de US$13,5M liderada por Kfund",
+          "prose": "Kfund (Leadwind), Index Ventures, Kaszek y otros invirtió en Sofía; la etapa y el monto no se informaron.",
+          "source": "webcapitalriesgo.com",
+          "basis": "",
+          "source_url": "https://www.webcapitalriesgo.com/k-fund-se-estrena-en-mexico-y-lidera-una-ronda-de-e128m-en-la-insurtech-sofia/"
+        },
+        {
+          "type": "capital",
+          "date": "2026-05",
+          "title": "Ronda de US$21M con entrada de Kayyak",
+          "prose": "Kfund, Index Ventures, Kaszek y otros invirtió en Sofía; la etapa y el monto no se informaron. Ofrecía a empresas y personas en México un seguro que reunía prevención, atención cotidiana y cobertura médica, con una app y una red de prestadores, como alternativa a gestionar aseguradora y atención por separado.",
+          "source": "DPL News",
+          "basis": "",
+          "source_url": "https://dplnews.com/sofia-levanta-21-mdd/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "sofía sofiasalud sofiasalud.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Foodology",
+      "domain": "foodology.com.co",
+      "status": "activa",
+      "tag": "Foodtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Foodology",
+          "prose": "Creaba y operaba marcas virtuales de restaurantes para personas que pedían comida a domicilio, preparando los platos en cocinas compartidas en lugar de atenderlas en salones de restaurante.",
+          "source": "La República",
+          "basis": "",
+          "source_url": "https://www.larepublica.co/empresas/foodology-la-startup-colombiana-ganadora-del-premio-al-emprendimiento-de-harvard-2994346"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Capital inicial de familiares y amigos",
+          "prose": "Foodology levantó una ronda pre-semilla de US$500K con Familiares y amigos.",
+          "source": "Harvard Business School",
+          "basis": "",
+          "source_url": "https://www.hbs.edu/mba/blog/to-go-go-a-foodtech-startup-serves-up-scale-in-latin-america"
+        },
+        {
+          "type": "capital",
+          "date": "2020-04",
+          "title": "Premio HBS New Venture Competition",
+          "prose": "Foodology recibió US$75K no reembolsable de Harvard Business School New Venture Competition.",
+          "source": "Harvard Business School",
+          "basis": "",
+          "source_url": "https://www.hbs.edu/news/releases/new-venture-competition-2020"
+        },
+        {
+          "type": "capital",
+          "date": "2020-08",
+          "title": "Ronda semilla liderada por Jaguar Ventures",
+          "prose": "Foodology levantó una ronda semilla con Jaguar Ventures, XFactor, Ideas VC & Impact Investing y otros.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/new-rounds-for-wildlife-studios-amparo-saude-beejobs-caju-fund-launches-for-devlabs-ventures-and-vox-capital-interview-with-foodology-2/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "Inversión inicial de Kayyak Ventures",
+          "prose": "Kayyak Ventures invirtió en Foodology; la etapa y el monto no se informaron. Creaba y operaba marcas virtuales de restaurantes para personas que pedían comida a domicilio, preparando los platos en cocinas compartidas en lugar de atenderlas en salones de restaurante.",
+          "source": "kayyakventures.com · mar 2021",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20210305054201/https://www.kayyakventures.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-10",
+          "title": "Serie A de US$15 millones",
+          "prose": "Foodology levantó una Serie A de US$15M con Andreessen Horowitz, Base Partners, Kayyak Ventures y otros.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/emprendedores-foodology-obtiene-15-mdd-en-ronda-encabezada-por-a16z-y-base-partners/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-04",
+          "title": "Entrada a la red Endeavor Colombia",
+          "prose": "Foodology entró a Endeavor Colombia.",
+          "source": "Endeavor Colombia",
+          "basis": "",
+          "source_url": "https://colombia.endeavor.org/foodology-se-une-a-endeavor-colombia/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-05",
+          "title": "Selección para Endeavor Outliers",
+          "prose": "Foodology entró a Endeavor Outliers 2022.",
+          "source": "Endeavor Colombia",
+          "basis": "",
+          "source_url": "https://colombia.endeavor.org/estos-son-los-emprendedores-endeavor-colombia-elegidos-outliers/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-10",
+          "title": "Extensión Serie A de US$20 millones",
+          "prose": "Foodology levantó una Serie A de US$20M con Andreessen Horowitz, Wollef, Kayyak Ventures y otros.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/foodology-consigue-50-mdd-sumando-como-accionistas-a-maluma-y-al-fondo-arabe-chimera/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-10",
+          "title": "Deuda de US$30 millones",
+          "prose": "Foodology obtuvo deuda por US$30M de TriplePoint Venture Capital.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/foodology-consigue-50-mdd-sumando-como-accionistas-a-maluma-y-al-fondo-arabe-chimera/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-07",
+          "title": "Financiación de US$17 millones",
+          "prose": "30N Ventures, Andreessen Horowitz y Chimera invirtió en Foodology; la etapa y el monto no se informaron.",
+          "source": "30n.ventures",
+          "basis": "",
+          "source_url": "https://www.30n.ventures/insights/why-we-invested-in-foodology"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "foodology foodology.com.co",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Xepelin",
+      "domain": "xepelin.cl",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Xepelin",
+          "prose": "Ofrecía acceso digital a capital para pymes chilenas y reunía información tributaria, previsional y bancaria, en lugar de consultar cada institución por separado.",
+          "source": "xepelin.com · 2019",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20191114040825/http://xepelin.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Capital inicial para financiar pymes",
+          "prose": "Xepelin levantó una ronda pre-semilla de US$1M con Manutara Ventures, Diego Fleischmann, Gonzalo Rojas y otros.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/xepelin-alista-un-nuevo-producto-para-pymes-y-busca-llegar-a-un-nuevo-mercado-en-2021/"
+        },
+        {
+          "type": "capital",
+          "date": "2020-10",
+          "title": "Semilla de US$2,5 millones con entrada de Kayyak",
+          "prose": "Xepelin levantó una ronda semilla de US$2,5M con Impact Ideas VC, Kayyak Ventures, Amarena y otros. Permitía a pymes financiar sus cuentas por cobrar y solicitar capital de trabajo por internet, en lugar de esperar el pago de sus clientes o presentar solicitudes en papel.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/xepelin-fintech/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-01",
+          "title": "Extensión semilla de US$2,5 millones",
+          "prose": "Xepelin levantó una ronda semilla de US$2,5M con Picus Capital, Kayyak Ventures, Chile Ventures y otros.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/lavca-2021-edtech-loft-reaches-usd2-2b-valuation-tiendanube-nuvemshop-raises-usd90m-series-d-valor-capital-group-and-dila-capital-spac-listings-2/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-07",
+          "title": "Serie A de US$30 millones",
+          "prose": "Xepelin levantó una Serie A de US$30M con Kaszek Ventures, DST Global Partners, Picus Capital y otros.",
+          "source": "TechCrunch",
+          "basis": "",
+          "source_url": "https://techcrunch.com/2021/07/30/chilean-fintech-xepelin-secures-230m-in-debt-equity-from-kaszek-high-profile-angels/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-07",
+          "title": "Facilidades de crédito por US$200 millones",
+          "prose": "Xepelin obtuvo deuda por US$200M.",
+          "source": "TechCrunch",
+          "basis": "",
+          "source_url": "https://techcrunch.com/2021/07/30/chilean-fintech-xepelin-secures-230m-in-debt-equity-from-kaszek-high-profile-angels/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-01",
+          "title": "Deuda de US$80 millones de CIM",
+          "prose": "Xepelin obtuvo deuda por US$80M de Community Investment Management.",
+          "source": "LAVCA",
+          "basis": "",
+          "source_url": "https://www.lavca.org/xepelin-secures-usd80m-in-debt-financing-from-community-investment-management-en-espanol/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-05",
+          "title": "Serie B de US$111 millones",
+          "prose": "Xepelin levantó una Serie B de US$111M con Avenir, Kaszek Ventures, PayPal Ventures y otros.",
+          "source": "newsroom.paypal-corp.com",
+          "basis": "",
+          "source_url": "https://newsroom.paypal-corp.com/2022-05-02-PayPal-Ventures-Invests-in-Xepelin"
+        },
+        {
+          "type": "capital",
+          "date": "2022-09",
+          "title": "Goldman: US$40 millones, ampliables hasta US$140M",
+          "prose": "Xepelin obtuvo deuda por US$40M de Goldman Sachs.",
+          "source": "Kayyak Ventures",
+          "basis": "",
+          "source_url": "https://static1.squarespace.com/static/58d2d686ff7c50366a50805d/t/631b86a19023d52308ebecff/1662748322100/Comunicado%2BXepelin%2BGoldman%2BSachs_.docx%2B%281%29.pdf"
+        },
+        {
+          "type": "capital",
+          "date": "2025-06",
+          "title": "Crédito de 300 millones de pesos de BBVA Spark",
+          "prose": "Xepelin obtuvo financiamiento de deuda de BBVA Spark: crédito de 300 millones de pesos de BBVA Spark.",
+          "source": "BBVA",
+          "basis": "",
+          "source_url": "https://www.bbva.com/es/mx/innovacion/xepelin-firma-acuerdo-de-300-millones-de-pesos-con-bbva-spark/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "xepelin xepelin.com xepelin.cl xepelin.com.mx",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Marco",
+      "domain": "marcofi.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Marco",
+          "prose": "Marco ofrecía anticipos sobre facturas de exportación a pequeñas y medianas empresas latinoamericanas que vendían a Estados Unidos, como alternativa al financiamiento bancario y a la evaluación manual de sus cuentas por cobrar.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-financial-cierra-ronda-de-capital-semilla-de-82-millones-de-dolares-para-acelerar-el-crecimiento-870481861.html"
+        },
+        {
+          "type": "capital",
+          "date": "2019-09",
+          "title": "Levantó capital",
+          "prose": "Marco entró a Antler US / New York.",
+          "source": "Antler",
+          "basis": "",
+          "source_url": "https://www.antler.co/blog/startup-series-meet-marco"
+        },
+        {
+          "type": "capital",
+          "date": "2020-09",
+          "title": "Levantó capital",
+          "prose": "Marco levantó una ronda semilla con Antler y Struck Capital.",
+          "source": "Antler",
+          "basis": "",
+          "source_url": "https://www.antler.co/blog/startup-series-meet-marco"
+        },
+        {
+          "type": "capital",
+          "date": "2020-09",
+          "title": "Levantó capital",
+          "prose": "Marco obtuvo financiamiento de deuda de Arcadia Funds.",
+          "source": "Antler",
+          "basis": "",
+          "source_url": "https://www.antler.co/blog/startup-series-meet-marco"
+        },
+        {
+          "type": "capital",
+          "date": "2021-07",
+          "title": "Levantó capital",
+          "prose": "Marco levantó una ronda semilla de US$7M con Kayyak Ventures. Marco ofrecía anticipos sobre facturas de exportación a pequeñas y medianas empresas latinoamericanas que vendían a Estados Unidos, como alternativa al financiamiento bancario y a la evaluación manual de sus cuentas por cobrar.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-financial-cierra-ronda-de-capital-semilla-de-82-millones-de-dolares-para-acelerar-el-crecimiento-870481861.html"
+        },
+        {
+          "type": "capital",
+          "date": "2021-07",
+          "title": "Levantó capital",
+          "prose": "Marco obtuvo deuda por US$75M de Arcadia Funds.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-financial-cierra-ronda-de-capital-semilla-de-82-millones-de-dolares-para-acelerar-el-crecimiento-870481861.html"
+        },
+        {
+          "type": "capital",
+          "date": "2023-02",
+          "title": "Levantó capital",
+          "prose": "Marco obtuvo deuda por US$200M de MidCap Financial y Castlelake.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-continua-un-rapido-crecimiento-con-mas-de-usd-200-millones-en-financiacion-para-permitir-el-acceso-de-los-exportadores-latinoamericanos-a-la-economia-global-825293152.html"
+        },
+        {
+          "type": "capital",
+          "date": "2023-02",
+          "title": "Levantó capital",
+          "prose": "Arcadia Funds invirtió en Marco; la etapa y el monto no se informaron.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-continua-un-rapido-crecimiento-con-mas-de-usd-200-millones-en-financiacion-para-permitir-el-acceso-de-los-exportadores-latinoamericanos-a-la-economia-global-825293152.html"
+        },
+        {
+          "type": "capital",
+          "date": "2024-03",
+          "title": "Levantó capital",
+          "prose": "Marco levantó una Serie A de US$12M con IDC Ventures, IDB Lab, Barn Invest y otros.",
+          "source": "PR Newswire",
+          "basis": "",
+          "source_url": "https://www.prnewswire.com/news-releases/marco-secures-12m-in-series-a-funding-to-revolutionize-latam-sme-trade-finance-302091982.html"
+        },
+        {
+          "type": "pivot",
+          "date": "2026-05",
+          "title": "Del financiamiento a operar finanzas LatAm–EE.UU.",
+          "prose": "Para mayo de 2026, Marco centraba su oferta en cuentas multimoneda, cobros, pagos, divisas, crédito revolvente y contabilidad y cumplimiento en Estados Unidos para empresas que operan entre Latinoamérica y EE.UU., en lugar de gestionar tesorería con cuentas separadas y conciliación manual.",
+          "quote": "",
+          "source": "marcofi.com · may 2026",
+          "source_url": "https://web.archive.org/web/20260520020159/http://marcofi.com/",
+          "wayback_url": "https://web.archive.org/web/20260520020159/http://marcofi.com/",
+          "basis": ""
+        }
+      ],
+      "aliases": [],
+      "search_blob": "marco marcofi.com holamarco.co",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Pulsar",
+      "domain": "pulsarml.com",
+      "status": "activa",
+      "tag": "Industria",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Pulsar",
+          "prose": "Sistema de sensores y software para que las plantas industriales obtuvieran indicadores de operación y productividad en tiempo real, en lugar de recopilar los datos de las máquinas manualmente.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/pulsar-la-startup-que-con-iot-monitorea-los-signos-vitales-de-las-fabricas-cierra-ronda-por-us-36-millones/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-07",
+          "title": "Apoyo del programa Innovation Transfer de TomKat",
+          "prose": "Pulsar recibió un aporte no reembolsable de Stanford TomKat Center.",
+          "source": "tomkat.stanford.edu",
+          "basis": "",
+          "source_url": "https://tomkat.stanford.edu/news/2018-19-innovation-transfer-awards"
+        },
+        {
+          "type": "capital",
+          "date": "2020-06",
+          "title": "Entrada a StartX Summer 2020",
+          "prose": "Pulsar entró a StartX Summer 2020: entrada a StartX Summer 2020.",
+          "source": "Startups Latam",
+          "basis": "",
+          "source_url": "https://startupslatam.com/pulsar-la-startup-que-con-iot-monitorea-los-signos-vitales-de-las-fabricas-cierra-ronda-por-us-36-millones/"
+        },
+        {
+          "type": "capital",
+          "date": "2021-08",
+          "title": "Ronda seed de US$3,6 millones",
+          "prose": "Pulsar levantó una ronda semilla de US$3,6M con Global Founders Capital, Jaguar Ventures, Picus Capital y otros. Sensores y una plataforma SaaS de analítica para que manufactureras medianas monitorearan la operación de sus fábricas en tiempo real, sustituyendo la recopilación manual de datos por operadores y las descargas históricas desde las máquinas.",
+          "source": "Bloomberg Línea",
+          "basis": "",
+          "source_url": "https://www.bloomberglinea.com/2021/08/20/pulsar-raises-31-million-to-grow-operations-in-mexico-and-expand-to-the-us/"
+        },
+        {
+          "type": "capital",
+          "date": "2024-02",
+          "title": "Serie A de US$8 millones",
+          "prose": "Pulsar levantó una Serie A de US$8M con Cometa, Seaya Cathay Latam, Kayyak Ventures y otros.",
+          "source": "miranda-newswire.com",
+          "basis": "",
+          "source_url": "https://miranda-newswire.com/wp-content/uploads/2024/02/Pulsar-Press-Release.pdf"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "pulsar pulsarml.com pulsarml.com/en",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Fairplay",
+      "domain": "getfairplay.com",
+      "status": "activa",
+      "tag": "Fintech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Fairplay",
+          "prose": "Financiaba campañas de marketing digital para comercios y otros negocios con ventas predecibles, evaluando sus datos y recuperando el capital mediante una parte de los ingresos más un costo fijo; ofrecía una alternativa a comprometer garantías personales para obtener capital.",
+          "source": "getfairplay.com · 2019",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20200514183244/http://getfairplay.com/"
+        },
+        {
+          "type": "capital",
+          "date": "2019-12",
+          "title": "Capital semilla de QED Investors y Nazca",
+          "prose": "Fairplay levantó una ronda semilla de US$5M con QED Investors y Mountain Nazca.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/emprendedores-fairplay-levanta-35-mdd-para-emprendimientos-digitales-en-latinoamerica/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-01",
+          "title": "Serie A de US$15M con Kayyak Ventures",
+          "prose": "Fairplay levantó una Serie A de US$15M con DILA Capital, Kayyak Ventures, Speedinvest y otros. Adelantaba ventas futuras a empresas de comercio electrónico y vendedores de marketplaces para financiar marketing, inventario y logística, con comisión y pagos vinculados a ingresos, como alternativa al crédito con garantías o a diluir la propiedad del negocio.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/emprendedores-fairplay-levanta-35-mdd-para-emprendimientos-digitales-en-latinoamerica/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-01",
+          "title": "Deuda de US$20M de Architect Capital",
+          "prose": "Fairplay obtuvo deuda por US$20M de Architect Capital.",
+          "source": "Forbes México",
+          "basis": "",
+          "source_url": "https://forbes.com.mx/emprendedores-fairplay-levanta-35-mdd-para-emprendimientos-digitales-en-latinoamerica/"
+        },
+        {
+          "type": "capital",
+          "date": "2023-04",
+          "title": "Línea de deuda de US$100M de CIM",
+          "prose": "Fairplay obtuvo deuda por US$100M de Community Investment Management.",
+          "source": "LatamFintech",
+          "basis": "",
+          "source_url": "https://www.latamfintech.co/articles/fairplay-levanto-una-linea-de-credito-de-us-100-para-apoyar-nuevos-emprendimientos-en-mexico"
+        },
+        {
+          "type": "capital",
+          "date": "2023-04",
+          "title": "Capital puente de US$8,5M",
+          "prose": "Fairplay levantó una ronda puente de US$8,5M con DILA Capital, Elevar Equity, Speedinvest y otros.",
+          "source": "LatamFintech",
+          "basis": "",
+          "source_url": "https://www.latamfintech.co/articles/fairplay-levanto-una-linea-de-credito-de-us-100-para-apoyar-nuevos-emprendimientos-en-mexico"
+        },
+        {
+          "type": "capital",
+          "date": "2024-10",
+          "title": "Línea de US$35M de BBVA Spark",
+          "prose": "Fairplay obtuvo deuda por US$35M de BBVA Spark.",
+          "source": "BBVA Spark",
+          "basis": "",
+          "source_url": "https://www.bbvaspark.com/es/noticias/fairplay-recibe-655-millones-de-pesos-de-financiamiento-de-bbva-spark/"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "fairplay getfairplay.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Henry",
+      "domain": "soyhenry.com",
+      "status": "activa",
+      "tag": "Edtech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019",
+          "title": "Nace Henry",
+          "prose": "Servicio de crédito educativo para personas que necesitan ayuda financiera para estudiar carreras tecnológicas. Financiaba el 100% de sus estudios y recibía solicitudes por internet, en lugar de que el estudiante afrontara por su cuenta todo el costo de su educación.",
+          "source": "soyhenry.com · 2019",
+          "basis": "",
+          "source_url": "https://web.archive.org/web/20191113015225/http://soyhenry.com/"
+        },
+        {
+          "type": "pivot",
+          "date": "2020-03",
+          "title": "De crédito educativo a academia con pago por ingresos",
+          "prose": "Academia para personas de Latinoamérica que quieren comenzar a trabajar en tecnología: enseña desarrollo web Full Stack a distancia y acompaña la búsqueda de empleo. En lugar de exigir el pago de los estudios al ingresar, cobra una parte de los ingresos del egresado cuando consigue trabajo.",
+          "quote": "",
+          "source": "Accion",
+          "source_url": "https://www.accion.org/news/henry-closes-us-1-5-million-seed-round-led-by-accion-venture-lab-to-provide-technical-education-to-students-in-latin-america/",
+          "wayback_url": null,
+          "basis": ""
+        },
+        {
+          "type": "capital",
+          "date": "2020-06",
+          "title": "Participación en Y Combinator S20",
+          "prose": "Henry entró a Y Combinator S20: participación en Y Combinator S20.",
+          "source": "Y Combinator",
+          "basis": "",
+          "source_url": "https://www.ycombinator.com/companies/henry"
+        },
+        {
+          "type": "capital",
+          "date": "2020-12",
+          "title": "Semilla de US$1,5 millones",
+          "prose": "Henry levantó una ronda semilla de US$1,5M con Accion Venture Lab, Emles Venture Partners, Noveus VC y otros.",
+          "source": "Accion",
+          "basis": "",
+          "source_url": "https://www.accion.org/news/henry-closes-us-1-5-million-seed-round-led-by-accion-venture-lab-to-provide-technical-education-to-students-in-latin-america/"
+        },
+        {
+          "type": "capital",
+          "date": "2022-05",
+          "title": "Serie A de US$10 millones con Kayyak y Seaya Cathay",
+          "prose": "Henry levantó una Serie A de US$10M con Kayyak Ventures, Seaya Cathay Latam, Amarena y otros. Academia online para personas de Latinoamérica que buscan formarse y conseguir empleo en desarrollo Full Stack o ciencia de datos. Combina formación intensiva, proyectos y apoyo laboral, con pago por ingresos compartidos tras conseguir trabajo en lugar de una matrícula inicial; también conecta a sus graduados con empleadores mediante Henry Talent.",
+          "source": "soyhenry.com",
+          "basis": "",
+          "source_url": "https://www.soyhenry.com/blog/henry-cierra-su-serie-a"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "henry soyhenry.com",
+      "portafolio": "kayyak"
+    },
+    {
+      "name": "Aptuno",
+      "domain": "aptuno.com",
+      "status": "activa",
+      "tag": "Proptech",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2019-10",
+          "title": "Nace Aptuno",
+          "prose": "Plataforma de arriendo residencial para inquilinos y propietarios de Bogotá que reunía búsqueda, visitas, solicitud, firma y administración en línea, en lugar de gestionar esos pasos por separado mediante avisos y trámites presenciales.",
+          "source": "Forbes Colombia",
+          "basis": "",
+          "source_url": "https://forbes.co/emprendedores/proptech-aptuno-obtiene-us680-000-en-ronda-pre-semilla-liderada-por-magma-partners"
+        },
+        {
+          "type": "capital",
+          "date": "2020-06",
+          "title": "US$680 mil de inversión presemilla",
+          "prose": "Aptuno levantó una ronda pre-semilla de US$680K con Magma Partners.",
+          "source": "Forbes Colombia",
+          "basis": "",
+          "source_url": "https://forbes.co/emprendedores/proptech-aptuno-obtiene-us680-000-en-ronda-pre-semilla-liderada-por-magma-partners"
+        },
+        {
+          "type": "capital",
+          "date": "2021-03",
+          "title": "US$1,9 millones para arriendos sin codeudor",
+          "prose": "Aptuno levantó una ronda pre-semilla de US$1,9M con FJ Labs, Simon Baker, Jonathan Wasserstrum y otros.",
+          "source": "La República",
+          "basis": "",
+          "source_url": "https://www.larepublica.co/empresas/aptuno-anuncio-el-levantamiento-de-us-1-9-millones-en-primera-ronda-de-inversion-3140393"
+        },
+        {
+          "type": "capital",
+          "date": "2021-11",
+          "title": "US$5,1 millones con Dalus y Kayyak",
+          "prose": "Aptuno levantó una ronda semilla de US$5,1M con Dalus Capital, Kayyak Ventures, Amador Holdings y otros. Servicio digital de arriendo para inquilinos, propietarios e intermediarios en Bogotá, Medellín y Ciudad de México que reunía búsqueda, aprobación crediticia, firma y administración, con garantías de pago y anticipos de renta, en lugar de tramitar el alquiler y su cobranza por separado.",
+          "source": "Forbes Colombia",
+          "basis": "",
+          "source_url": "https://forbes.co/emprendedores/aptuno-que-esta-digitalizando-los-arriendos-de-vivienda-obtiene-us5-millones"
+        },
+        {
+          "type": "capital",
+          "date": "2022-02",
+          "title": "Google for Startups Accelerator LATAM",
+          "prose": "Aptuno entró a Google for Startups Accelerator LATAM 2022.",
+          "source": "developers-latam.googleblog.com",
+          "basis": "",
+          "source_url": "https://developers-latam.googleblog.com/2022/02/google-for-startups-accelerator-latam.html"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "aptuno aptuno.com",
+      "portafolio": "kayyak"
+    },
     {
       "name": "Cardda",
       "domain": "cardda.com",
@@ -2436,6 +4671,35 @@
       ],
       "aliases": [],
       "search_blob": "movana movana movana movana movana.io"
+    },
+    {
+      "name": "Future Beyond",
+      "domain": "futurebeyond.ai",
+      "status": "activa",
+      "tag": "AI",
+      "events": [
+        {
+          "type": "fundacion",
+          "date": "2026",
+          "title": "Nace Future Beyond",
+          "prose": "Desarrolla una plataforma de IA para empresas mineras e industrias pesadas que integra sensores, documentos y datos de plantas o faenas para planificar y recomendar acciones operativas, pasando de la predicción a la comprensión de los procesos físicos y su lógica operativa.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/fundadores-de-spike-crean-nueva-startup-de-ia-para-mineria-e-industria-y"
+        },
+        {
+          "type": "capital",
+          "date": "2026-05",
+          "title": "Primera ronda con Kayyak Ventures",
+          "prose": "Future Beyond levantó una ronda semilla de US$1,5M con Kayyak Ventures. Desarrolla una plataforma de IA para empresas mineras e industrias pesadas que integra sensores, documentos y datos de plantas o faenas para planificar y recomendar acciones operativas, pasando de la predicción a la comprensión de los procesos físicos y su lógica operativa.",
+          "source": "Diario Financiero",
+          "basis": "",
+          "source_url": "https://www.df.cl/df-lab/innovacion-y-startups/fundadores-de-spike-crean-nueva-startup-de-ia-para-mineria-e-industria-y"
+        }
+      ],
+      "aliases": [],
+      "search_blob": "future beyond futurebeyond futurebeyond.ai",
+      "portafolio": "kayyak"
     }
   ]
 }

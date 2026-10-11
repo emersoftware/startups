@@ -24,7 +24,7 @@ const INK = "#1a1916";
 
 type Ev = { type: string; date: string };
 
-const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return y + (m - 0.5) / 12; };
+const tval = (d: string) => { const [y, m] = d.split("-").map(Number); return m ? y + (m - 0.5) / 12 : y + 0.5; };
 
 // Mismo EV map que App.astro (fill / borde para los puntos vacíos sobre blanco).
 const EV: Record<string, { fill: string; stroke?: string; dash?: boolean }> = {
