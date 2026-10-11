@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import data from "../data/timeline.json";
 import { slugify } from "../lib/slug";
+import PostHog from "./PostHog.astro";
 
 // `open` = slug de la startup a abrir en primera plana (desde /[slug].astro). Sin él = home.
 const { open } = Astro.props as { open?: string };
@@ -118,6 +119,7 @@ const ogAlt = openMatch
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
+  <PostHog />
 </head>
 <body>
 <div class="shell" style="height:100vh;background:#ffffff;padding:38px 24px 38px;display:flex;flex-direction:column">
@@ -130,7 +132,7 @@ const ogAlt = openMatch
             <span style="width:18px;height:18px;background:#2f5fe6;display:inline-flex;align-items:center;justify-content:center;border-radius:5px"><svg width="11" height="11" viewBox="0 0 24 24"><g transform="translate(12 12)"><g><animateTransform attributeName="transform" type="rotate" calcMode="spline" keyTimes="0;0.14;0.25;0.39;0.5;0.64;1" keySplines=".5 .04 .25 1; 0 0 1 1; .5 .04 .25 1; 0 0 1 1; .5 .04 .25 1; 0 0 1 1" values="0;72;72;144;144;216;216" dur="2s" repeatCount="indefinite"></animateTransform><path fill="#ffffff" transform="translate(-12.0003 -12.5779)" d="M12 2l2.94 6.34L22 9.27l-5 4.73 1.18 6.99L12 17.77 5.82 21l1.18-6.99-5-4.73 7.06-.93z"></path></g></g></svg></span>
             <span style="font-size:17px;font-weight:400;letter-spacing:-0.015em">Chile, Startups</span>
           </a>
-          <a href="https://emersoftware.cl/blog/startups-chile" target="_blank" rel="noopener noreferrer" style="margin-left:auto;font-size:12.5px;color:#75726b;text-decoration:none;border-bottom:1.5px solid transparent;padding-bottom:1px;transition:color .12s,border-color .12s" onmouseover="this.style.color='#2f5fe6';this.style.borderBottomColor='#2f5fe6'" onmouseout="this.style.color='#75726b';this.style.borderBottomColor='transparent'">Cómo se hizo →</a>
+          <a id="metodo" href="https://emersoftware.cl/blog/startups-chile" target="_blank" rel="noopener noreferrer" style="margin-left:auto;font-size:12.5px;color:#75726b;text-decoration:none;border-bottom:1.5px solid transparent;padding-bottom:1px;transition:color .12s,border-color .12s" onmouseover="this.style.color='#2f5fe6';this.style.borderBottomColor='#2f5fe6'" onmouseout="this.style.color='#75726b';this.style.borderBottomColor='transparent'">Cómo se hizo →</a>
         </div>
 
         <div id="intro" style="position:relative;margin-top:18px;padding:14px 16px;border:1px solid #e9e7e0;border-radius:10px;font-size:12.5px;line-height:1.85;color:#5a5650">
@@ -224,7 +226,7 @@ const ogAlt = openMatch
               const Chip: any = e.href ? "a" : "span";
               const linkAttrs = e.href ? { href: e.href, target: "_blank", rel: "noopener noreferrer" } : {};
               return (
-              <p style="font-size:15px;color:#33312a;line-height:1.85;margin:0 0 15px">{e.prose}<Chip {...linkAttrs} title={e.basis} class={e.href ? "srcchip srcchip-link" : "srcchip"} style="display:inline-flex;align-items:center;gap:5px;vertical-align:middle;font-size:11.5px;color:#75726b;border:1px solid #e3e1da;border-radius:7px;padding:2px 8px;margin-left:7px;white-space:nowrap;position:relative;top:-1px;text-decoration:none"><span style={`width:5px;height:5px;border-radius:1.5px;background:${e.chipColor};flex-shrink:0`}></span>{e.source}{e.href && (
+              <p style="font-size:15px;color:#33312a;line-height:1.85;margin:0 0 15px">{e.prose}<Chip {...linkAttrs} title={e.basis} data-type={e.type} class={e.href ? "srcchip srcchip-link" : "srcchip"} style="display:inline-flex;align-items:center;gap:5px;vertical-align:middle;font-size:11.5px;color:#75726b;border:1px solid #e3e1da;border-radius:7px;padding:2px 8px;margin-left:7px;white-space:nowrap;position:relative;top:-1px;text-decoration:none"><span style={`width:5px;height:5px;border-radius:1.5px;background:${e.chipColor};flex-shrink:0`}></span>{e.source}{e.href && (
                 <svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="flex-shrink:0;margin-left:1px" aria-hidden="true"><path d="M3 7L7 3M3.5 3H7V6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               )}</Chip></p>
               );
@@ -254,6 +256,11 @@ const ogAlt = openMatch
   const all = [...document.querySelectorAll<HTMLElement>(".startup")];
   const rowsBox = $("#rows"), empty = $("#empty"), clearBtn = $("#clear"), fcount = $("#fcount");
   const searchInput = $("#search") as HTMLInputElement;
+
+  // PostHog: sin PUBLIC_POSTHOG_PROJECT_TOKEN en el build, window.posthog no
+  // existe y esto no hace nada.
+  const track = (event: string, props: Record<string, unknown> = {}) => (window as any).posthog?.capture(event, props);
+  let visibles = all.length;
 
   // Filtros ↔ URL. Los valores usan las mismas palabras que los chips:
   //   ?estado=activas,cerradas  ?evento=pivotearon  ?fundada=2021  ?buscar=salud
@@ -306,6 +313,7 @@ const ogAlt = openMatch
       el.style.display = ok ? "" : "none";
       if (ok) n++;
     }
+    visibles = n;
     empty.style.display = n ? "none" : "flex";
     rowsBox.style.display = n ? "" : "none";
     const totalF = state.estado.size + state.years.size + state.tags.size;
@@ -320,14 +328,23 @@ const ogAlt = openMatch
 
   document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => b.addEventListener("click", () => {
     const k = b.dataset.year!; state.years.has(k) ? state.years.delete(k) : state.years.add(k); paintYear(b, state.years.has(k)); apply();
+    track("filter_toggled", { filtro: "fundada", valor: k === "antes" ? "antes-de-2020" : k, activo: state.years.has(k), resultados: visibles, url: location.search });
   }));
   document.querySelectorAll<HTMLElement>(".chip-estado").forEach((b) => b.addEventListener("click", () => {
     const k = b.dataset.estado!; state.estado.has(k) ? state.estado.delete(k) : state.estado.add(k); paintUnderline(b, state.estado.has(k)); apply();
+    track("filter_toggled", { filtro: "estado", valor: ESTADO_URL[k], activo: state.estado.has(k), resultados: visibles, url: location.search });
   }));
   document.querySelectorAll<HTMLElement>(".chip-tag").forEach((b) => b.addEventListener("click", () => {
     const k = b.dataset.tag!; state.tags.has(k) ? state.tags.delete(k) : state.tags.add(k); paintUnderline(b, state.tags.has(k)); apply();
+    track("filter_toggled", { filtro: "evento", valor: EVENTO_URL[k], activo: state.tags.has(k), resultados: visibles, url: location.search });
   }));
-  searchInput.addEventListener("input", () => { state.q = searchInput.value.trim().toLowerCase(); apply(); });
+  let searchTimer: ReturnType<typeof setTimeout> | undefined;
+  searchInput.addEventListener("input", () => {
+    state.q = searchInput.value.trim().toLowerCase(); apply();
+    // Una búsqueda por pausa de tipeo, no un evento por tecla.
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => { if (state.q) track("search_performed", { busqueda: state.q, resultados: visibles }); }, 900);
+  });
 
   function clearAll() {
     state.q = ""; state.estado.clear(); state.years.clear(); state.tags.clear();
@@ -337,8 +354,8 @@ const ogAlt = openMatch
     document.querySelectorAll<HTMLElement>(".chip-estado,.chip-tag").forEach((b) => paintUnderline(b, false));
     apply();
   }
-  clearBtn.addEventListener("click", clearAll);
-  $("#clear2").addEventListener("click", clearAll);
+  clearBtn.addEventListener("click", () => { track("filters_cleared", { url: location.search }); clearAll(); });
+  $("#clear2").addEventListener("click", () => { track("filters_cleared", { url: location.search, desde: "sin_resultados" }); clearAll(); });
 
   // Al cargar: aplica los filtros que vengan en la URL y pinta sus chips.
   readURL();
@@ -346,6 +363,8 @@ const ogAlt = openMatch
   document.querySelectorAll<HTMLElement>(".chip-estado").forEach((b) => paintUnderline(b, state.estado.has(b.dataset.estado!)));
   document.querySelectorAll<HTMLElement>(".chip-tag").forEach((b) => paintUnderline(b, state.tags.has(b.dataset.tag!)));
   apply();
+  // Alguien llegó con una vista filtrada (link compartido en X, LinkedIn, etc.).
+  if (location.search) track("filtered_view_opened", { url: location.search, resultados: visibles });
 
   // Toggle de filtros (solo móvil): el chevron expande/colapsa años/estados/eventos.
   const ftoggle = $("#filtertoggle"), fpanel = $("#filterpanel"), fchev = $("#fchev");
@@ -374,6 +393,7 @@ const ogAlt = openMatch
       rotateChev(panel, !isOpen);
       openPanel = isOpen ? null : panel;
       if (!isOpen) requestAnimationFrame(() => row.scrollIntoView({ block: "nearest", behavior: "smooth" }));
+      if (!isOpen) track("startup_opened", { slug: el.dataset.slug, nombre: el.dataset.name, portafolio: el.dataset.portafolio, origen: "fila" });
     });
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openPanel) { openPanel.hidden = true; rotateChev(openPanel, false); openPanel = null; } });
@@ -390,8 +410,18 @@ const ogAlt = openMatch
     if (openPanel && openPanel !== panel) openPanel.hidden = true;
     panel.hidden = false; openPanel = panel;
     requestAnimationFrame(() => target.scrollIntoView({ block: "start", behavior: "auto" }));
+    track("startup_opened", { slug: target.dataset.slug, nombre: target.dataset.name, portafolio: target.dataset.portafolio, origen: "enlace" });
   }
   openStartup(decodeURIComponent(location.pathname).replace(/\//g, "") || decodeURIComponent(location.hash).replace(/^#/, ""));
+
+  // Clic en la fuente de un hito (el chip que enlaza a la captura o a la prensa).
+  document.addEventListener("click", (ev) => {
+    const chip = (ev.target as HTMLElement).closest<HTMLAnchorElement>("a.srcchip-link");
+    if (!chip) return;
+    const st = chip.closest<HTMLElement>(".startup")?.dataset;
+    track("source_clicked", { slug: st?.slug, portafolio: st?.portafolio, tipo_hito: chip.dataset.type, fuente: chip.textContent?.trim(), destino: chip.href });
+  });
+  $("#metodo").addEventListener("click", () => track("methodology_clicked"));
 
   // floating event tooltip (solo desktop/hover, sin popover en móvil/touch)
   const canHover = window.matchMedia("(hover: hover)").matches;
@@ -426,6 +456,7 @@ const ogAlt = openMatch
     intro.style.display = "none";
   }
   introClose.addEventListener("click", () => {
+    track("intro_dismissed");
     intro.style.display = "none";
     try { localStorage.setItem(introKey, "1"); } catch {}
   });
