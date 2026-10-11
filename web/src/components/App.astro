@@ -283,8 +283,12 @@ const ogAlt = openMatch
     state.q = q.trim().toLowerCase();
   }
 
+  const FILTER_PARAMS = ["portafolio", "estado", "evento", "fundada", "solo", "buscar"];
   function writeURL() {
-    const p = new URLSearchParams();
+    // Parte de la URL actual para no borrar parámetros ajenos a los filtros
+    // (utm_source de un post, etc.): PostHog los necesita para atribuir la visita.
+    const p = new URLSearchParams(location.search);
+    for (const k of FILTER_PARAMS) p.delete(k);
     const set = (k: string, vals: string[]) => { if (vals.length) p.set(k, vals.join(",")); };
     set("portafolio", [...state.portafolio]);
     set("estado", [...state.estado].map((k) => ESTADO_URL[k]));
