@@ -53,6 +53,9 @@ const startups = data.startups.map((s: any) => {
     hasCapital: s.events.some((e: any) => e.type === "capital"),
     st: ST[status] ?? ST.activa,
     aliases: s.aliases ?? [],
+    // Portafolio de origen (filtro solo por URL: ?portafolio=). Las entradas
+    // previas a Kayyak no traen el campo: todas son de Platanus.
+    portafolio: s.portafolio ?? "platanus",
     search: (s.search_blob ?? `${s.name} ${s.domain}`).toLowerCase(),
   };
 });
@@ -182,7 +185,7 @@ const ogAlt = openMatch
 
     <div id="rows" data-rows style="padding:4px 30px 14px;overflow-y:auto;overflow-x:hidden;flex:1;min-height:0">
       {startups.map((s) => (
-        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hasrebrand={s.hasRebrand} data-hascapital={s.hasCapital} data-name={s.name}>
+        <div class="startup" data-search={s.search} data-status={s.status} data-years={s.years.join(",")} data-haspivot={s.hasPivot} data-hasrebrand={s.hasRebrand} data-hascapital={s.hasCapital} data-name={s.name} data-slug={s.slug} data-portafolio={s.portafolio}>
           <div class="row" data-toggle style="display:grid;grid-template-columns:200px 1fr auto;gap:0;align-items:center;height:42px;cursor:pointer;border-radius:10px">
             <div class="namecell" style="display:flex;align-items:center;gap:11px;min-width:0;padding-left:16px">
               <span class="statusdot" style={`width:8px;height:8px;flex-shrink:0;background:${s.st.color};border-radius:2.5px`} title={s.st.label}></span>
@@ -239,17 +242,59 @@ const ogAlt = openMatch
 
 <script>
   const ACC = "#2f5fe6";
-  const state = { q: "", estado: new Set<string>(), years: new Set<string>(), tags: new Set<string>() };
+  const state = {
+    q: "", estado: new Set<string>(), years: new Set<string>(), tags: new Set<string>(),
+    // Solo por URL (sin chip en la interfaz):
+    portafolio: new Set<string>(), solo: new Set<string>(),
+  };
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
   const all = [...document.querySelectorAll<HTMLElement>(".startup")];
   const rowsBox = $("#rows"), empty = $("#empty"), clearBtn = $("#clear"), fcount = $("#fcount");
+  const searchInput = $("#search") as HTMLInputElement;
+
+  // Filtros ↔ URL. Los valores usan las mismas palabras que los chips:
+  //   ?estado=activas,cerradas  ?evento=pivotearon  ?fundada=2021  ?buscar=salud
+  //   ?portafolio=kayyak  ?solo=galgo,henry   (estos dos solo existen en la URL)
+  const ESTADO_URL: Record<string, string> = { activa: "activas", adquirida: "adquiridas", cerrada: "cerradas" };
+  const EVENTO_URL: Record<string, string> = { pivot: "pivotearon", rebrand: "cambiaron-de-nombre", capital: "levantaron-capital" };
+  const invert = (o: Record<string, string>) => Object.fromEntries(Object.entries(o).map(([k, v]) => [v, k]));
+  const ESTADO_KEY = invert(ESTADO_URL), EVENTO_KEY = invert(EVENTO_URL);
+  const list = (v: string | null) => (v ?? "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
+
+  function readURL() {
+    const p = new URLSearchParams(location.search);
+    for (const v of list(p.get("estado"))) if (ESTADO_KEY[v]) state.estado.add(ESTADO_KEY[v]);
+    for (const v of list(p.get("evento"))) if (EVENTO_KEY[v]) state.tags.add(EVENTO_KEY[v]);
+    for (const v of list(p.get("fundada"))) state.years.add(v);
+    for (const v of list(p.get("portafolio"))) state.portafolio.add(v);
+    for (const v of list(p.get("solo"))) state.solo.add(v);
+    const q = p.get("buscar") ?? "";
+    searchInput.value = q;
+    state.q = q.trim().toLowerCase();
+  }
+
+  function writeURL() {
+    const p = new URLSearchParams();
+    const set = (k: string, vals: string[]) => { if (vals.length) p.set(k, vals.join(",")); };
+    set("portafolio", [...state.portafolio]);
+    set("estado", [...state.estado].map((k) => ESTADO_URL[k]));
+    set("evento", [...state.tags].map((k) => EVENTO_URL[k]));
+    set("fundada", [...state.years].sort());
+    set("solo", [...state.solo]);
+    if (searchInput.value.trim()) p.set("buscar", searchInput.value.trim());
+    // Las comas se dejan legibles en la URL compartida.
+    const qs = p.toString().replace(/%2C/g, ",");
+    history.replaceState(null, "", location.pathname + (qs ? `?${qs}` : "") + location.hash);
+  }
 
   function apply() {
     let n = 0;
     for (const el of all) {
       const d = el.dataset;
       let ok = true;
-      if (state.q && !d.search!.includes(state.q)) ok = false;
+      if (state.solo.size && !state.solo.has(d.slug!)) ok = false;
+      if (ok && state.portafolio.size && !state.portafolio.has(d.portafolio!)) ok = false;
+      if (ok && state.q && !d.search!.includes(state.q)) ok = false;
       if (ok && state.estado.size && !state.estado.has(d.status!)) ok = false;
       if (ok && state.years.size && !d.years!.split(",").some((y) => state.years.has(y))) ok = false;
       if (ok && state.tags.has("pivot") && d.haspivot !== "true") ok = false;
@@ -262,8 +307,9 @@ const ogAlt = openMatch
     rowsBox.style.display = n ? "" : "none";
     const totalF = state.estado.size + state.years.size + state.tags.size;
     fcount.textContent = totalF ? ` (${totalF})` : "";
-    const any = !!(state.q || totalF);
+    const any = !!(state.q || totalF || state.portafolio.size || state.solo.size);
     clearBtn.style.visibility = any ? "visible" : "hidden";
+    writeURL();
   }
 
   function paintYear(b: HTMLElement, on: boolean) { b.style.borderBottomColor = on ? ACC : "transparent"; b.style.color = on ? "#1a1916" : "#75726b"; }
@@ -278,17 +324,25 @@ const ogAlt = openMatch
   document.querySelectorAll<HTMLElement>(".chip-tag").forEach((b) => b.addEventListener("click", () => {
     const k = b.dataset.tag!; state.tags.has(k) ? state.tags.delete(k) : state.tags.add(k); paintUnderline(b, state.tags.has(k)); apply();
   }));
-  ($("#search") as HTMLInputElement).addEventListener("input", (e) => { state.q = (e.target as HTMLInputElement).value.trim().toLowerCase(); apply(); });
+  searchInput.addEventListener("input", () => { state.q = searchInput.value.trim().toLowerCase(); apply(); });
 
   function clearAll() {
     state.q = ""; state.estado.clear(); state.years.clear(); state.tags.clear();
-    ($("#search") as HTMLInputElement).value = "";
+    state.portafolio.clear(); state.solo.clear();
+    searchInput.value = "";
     document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => paintYear(b, false));
     document.querySelectorAll<HTMLElement>(".chip-estado,.chip-tag").forEach((b) => paintUnderline(b, false));
     apply();
   }
   clearBtn.addEventListener("click", clearAll);
   $("#clear2").addEventListener("click", clearAll);
+
+  // Al cargar: aplica los filtros que vengan en la URL y pinta sus chips.
+  readURL();
+  document.querySelectorAll<HTMLElement>(".chip-year").forEach((b) => paintYear(b, state.years.has(b.dataset.year!)));
+  document.querySelectorAll<HTMLElement>(".chip-estado").forEach((b) => paintUnderline(b, state.estado.has(b.dataset.estado!)));
+  document.querySelectorAll<HTMLElement>(".chip-tag").forEach((b) => paintUnderline(b, state.tags.has(b.dataset.tag!)));
+  apply();
 
   // Toggle de filtros (solo móvil): el chevron expande/colapsa años/estados/eventos.
   const ftoggle = $("#filtertoggle"), fpanel = $("#filterpanel"), fchev = $("#fchev");
